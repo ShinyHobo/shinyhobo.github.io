@@ -2,7 +2,7 @@ html, body {
     height: 100%
 }
 
-.wrap header h1:before {
+#wrap header h1:before {
     content: none;
     font-size: 24px;
 }
@@ -16,7 +16,7 @@ body > header h1 {
     padding-bottom: 200px;
 }
 
-.wrap {
+#wrap {
     min-height: 100%;
 }
 
