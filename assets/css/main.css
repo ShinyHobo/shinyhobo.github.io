@@ -16,6 +16,10 @@ body > header h1 {
     padding-bottom: 200px;
 }
 
+.wrapper {
+    min-height: 100%;
+}
+
 footer {
     width: 90%;
     margin: 0 auto;
