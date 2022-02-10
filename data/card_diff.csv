@@ -1,0 +1,151 @@
+id|tid|title|description|category|release_id|release_title|updateDate|addedDate|thumbnail
+1|804|Aegis Redeemer|All tasks required for the implementation of the Aegis Redeemer gunship|Ships and Vehicles|42|3.15|1611811530000|1629867600000|/media/wi8f4yvv6qdw2r/source/Red1.jpg
+2|874|Doctor, Nurse AI Behaviors|Adding more realistic behaviors and reactions for Doctors and Nurses|AI|42|3.15|1628669181000|1629867600000|/media/2zga7nu74hs3mr/source/Medical.jpg
+3|864|Area 18 Hospital|Hospital interior located in the Area 18 landing zone|Locations|44|3.16|1628718431000|1629867600000|/media/6jonz01d8bnmbr/source/Area18.png
+4|869|Asset Manager mobiGlas App |Adding the Asset Manager mobiGlas App to help players manage their belongings|Gameplay|42|3.15|1628708838000|1629867600000|/media/9pip04rt4e7j1r/source/Niknax.png
+5|838|Behring S7 Ballistic Gatling|Creation and implementation of the new Behring S7 Ballistic Gatling ship weapon|Weapons and Items|42|3.15|1613010025000|1629867600000|/media/pi34b7bcq3kvor/source/Behring-S7-Ballistic-Gatling.png
+6|837|Behring S7 Laser Cannon|Creation and implementation of the new Behring S7 Laser Cannon ship weapon|Weapons and Items|42|3.15|1613009997000|1629867600000|/media/li7hcgyvojidcr/source/Behring-S7-Laser-Cannon.png
+7|808|Bombs|Players will have the ability to drop powerful bombs on targets from ships in atmosphere|Gameplay|42|3.15|1629850267000|1629867600000|/media/z4lsu1gi1ixaqr/source/CRUS_Starlifter_Promo_MOAB_SM01_PJ01_Grade-Squashed.jpg
+8|797|Cave Entrances - Drive-In & Sinkhole|Adding two new entrances to planetary caves|Locations|41|3.13|1620256605000|1629867600000|/media/afokrxyug5jamr/source/NewCaveEntrances.jpg
+9|820|Weapon Charge/Drain T0 - Tech| Creating the back-end tech required for implementing Weapon Charge/Drain|Gameplay|44|3.16|1621463690000|1629867600000|/media/1ilghweyoka9ir/source/TractorBeam_02_Wip_12_2020-Min.jpg
+10|730|Object Push & Pull |Allow players to push and pull objects|Gameplay|41|3.13|1620256632000|1629867600000|/media/3rqqqehxhzu23r/source/NotSignedOff_Trolley.jpg
+11|663|Planet - Crusader|The design, creation, and implementation of the Crusader gas giant|Locations|43|3.14|1628666647000|1629867600000|/media/muwfptj1gm1per/source/Crusader.jpg
+12|801|Crusader Ares Starfighter Inferno|Implementing the Crusader Ares Starfighter Inferno into the game|Ships and Vehicles|42|3.15|1611811519000|1629867600000|/media/wxpcey7m0xyj1r/source/StarfighterInferno.jpg
+13|802|Crusader Ares Starfighter Ion|Implementing the Crusader Ares Starfighter Ion into the game|Ships and Vehicles|42|3.15|1611811523000|1629867600000|/media/70gj1inip63c2r/source/StarfighterION.jpg
+14|803|Crusader A2 Hercules Starlifter|All tasks required for the implementation of the Crusader A2 Hercules Starlifter gunship|Ships and Vehicles|42|3.15|1611811526000|1629867600000|/media/naejanws37upmr/source/A2.jpg
+15|787|Crusader C2 Hercules Starlifter|Implementing the Crusader Hercules Starlifter C2 into the game|Ships and Vehicles|41|3.13|1621471051000|1629867600000|/media/435mfzob8dttbr/source/CRUS_Starlifter_Promo_Basic_Landed_MO01-Squashed.jpg
+16|788|Crusader M2 Hercules Starlifter|All tasks required for the implementation of the Crusader M2 Hercules Starlifter military transporter|Ships and Vehicles|41|3.13|1621471046000|1629867600000|/media/q3tesog4t3jq0r/source/CRUS_Starlifter_Promo_Military_Flares_MO01-Squashed.jpg
+17|836|Curelife Medical Tool|Create and implement a medical tool.|Weapons and Items|42|3.15|1621463226000|1629867600000|/media/1oi347sw2077cr/source/Curelife-Medical-Tool.jpg
+18|623|Ship to Station Docking|Implementing the ability to dock ships to space stations|Gameplay|41|3.13|1621471791000|1629867600000|/media/ryxxzinyhhc0xr/source/NotSignedOff_ARGO_MPUV_landing_v01.jpg
+19|828|Actor Feature - EVA T2|Further improves the EVA experience following the transition to IFCS|Gameplay|44|3.16|1621463665000|1629867600000|/media/0yhz5zfi833nbr/source/4Mike_EVA.jpg
+20|766|Force Reactions|Actors react to direct, indirect & sustained forces|Gameplay|39|3.11|1611800471000|1629867600000|/media/2helblcduw4gmr/source/Force_Reaction.jpg
+21|824|FPS Radar & Scanning|Implementing radar and scanning for players on foot|Gameplay|42|3.15|1621463887000|1629867600000|/media/1bbvxnmy29xetr/source/Radar_concept.png
+22|848|Greycat ROC-DS|Implementing the Greycat ROC-DS into the game|Ships and Vehicles|41|3.13|1620256637000|1629867600000|/media/2pbk9dkxndblcr/source/00_Grin_ROC-DS.png
+23|863|GrimHex Clinic|Clinic interior located in the GrimHex landing zone|Locations|42|3.15|1629503270000|1629867600000|/media/2sr835w1tl6y0r/source/GrimHex.png
+24|790|Hacking - Tech|Creating the back end tech required for Hacking|Gameplay|44|3.16|1627503885000|1629867600000|/media/dxmo0375daxhcr/source/CloudImperiumGames_StarCitizen_HackableTerminalUI.jpg
+25|853|Hangar Manager App|New mobiGlas app that emulates the functionality of ASOP terminals|Gameplay|46|3.17|1621464971000|1629867600000|/media/cjuhkmzb433jzr/source/HangarManager.jpg
+26|815|Tech - Healing T0|Creating the back-end technology required for Healing T0|Gameplay|42|3.15|1621464031000|1629867600000|/media/2hz4a8eq3ttjkr/source/DRAKE_CutlassRed_MedBed_012020-Min.jpg
+27|791|Vehicle Visual Degradation|Introducing visual wear-and-tear to player ships as they age and degrade|Gameplay|41|3.13|1620256624000|1629867600000|/media/vgtnzoewdq18br/source/Hull-Degradation.jpg
+28|871|Infiltrate and Defend Missions|Infiltrate and Defend missions using existing locations|Gameplay|42|3.15|1629850241000|1629867600000|/media/xkbcthxpc6zvcr/source/Mission.jpg
+29|868|Loot Generation T0|Implementing the system responsible for the generation of lootable containers throughout the world|Gameplay|42|3.15|1629850144000|1629867600000|/media/ewya1u0p949dvr/source/00_Loot.png
+30|865|Lorville Hospital: Maria Pure of Heart|Hospital interior located in the Lorville landing zone|Locations|46|3.17|1628665308000|1629867600000|/media/5qhq6xrt0pqzcr/source/MPoH.png
+31|842|Mining Sub-Components |Implementation of mining laser sub-components|Gameplay|41|3.13|1620256551000|1629867600000|/media/u5dbi3kvbg40or/source/Mining-Sub-Components.png
+32|852|MISC Hull A|All tasks required for the implementation of the MISC Hull A cargo hauler|Ships and Vehicles|46|3.17|1621464840000|1629867600000|/media/o166pcqzmxrhzr/source/Hull_A_1_v002_compflat.jpg
+33|851|MISC Hull C|All tasks required for the implementation of the Hull-C heavy cargo hauler|Ships and Vehicles|44|3.16|1621464717000|1629867600000|/media/512wabue5xotmr/source/Hull_C_2_v002_compflat.jpg
+34|728|Missile Operator Mode|Giving players the ability to select and fire specific missiles|Gameplay|43|3.14|1628666639000|1629867600000|/media/46fyctc2qki4rr/source/0-Missile-Operator.jpg
+35|794|Missiles - Guidance & Control Rework|Convert missiles to use the IFCS guidance and control systems|Gameplay|43|3.14|1628666634000|1629867600000|/media/lavi3872mx6jor/source/Missiles-Rework.jpg
+36|435|Mounted Guns|Ability to use mounted guns on vehicles||21|SQ42 Q2 2020|1582942296000|1629867600000|
+37|835|Greycat Multi-tool Healing Attachment|Creation and implementation of the new multi-tool healing attachment|Weapons and Items|42|3.15|1621463028000|1629867600000|/media/2rm87o48ex8ivr/source/GRIN-Multi-Tool-Healing-Attachment.png
+38|839|Greycat Multi-tool Salvage Attachment|Creation and implementation of the new multi-tool salvage attachment|Weapons and Items|44|3.16|1621464104000|1629867600000|/media/uue9tms74ojfwr/source/GRIN-Multi-Tool-Salvage-Attachment.jpg
+39|860|New Babbage Hospital|Hospital interior located in the New Babbage landing zone|Locations|42|3.15|1628663491000|1629867600000|/media/i9ylrlbegochfr/source/NewBabb.png
+40|810|Origin M50 Engine Swapping|Enabling the Origin M50’s bespoke engine to be swapped|Core Tech|44|3.16|1611811450000|1629867600000|/media/iotwuaoa8ngxsr/source/M50-Engine.jpg
+41|861|Orison Hospital|Hospital interior located in the Orison landing zone|Locations|42|3.15|1628664667000|1629867600000|/media/oqognk8zqh41qr/source/Orison.png
+42|665|Orison Landing Zone|All tasks required to add Crusader’s landing zone into the game|Locations|43|3.14|1628666652000|1629867600000|/media/2fmmdcuhojqkpr/source/Orison.jpg
+43|833|Orison v2|Adding more shops and services to the Orison landing zone|Locations|42|3.15|1628663271000|1629867600000|/media/4jtd81n7whbkvr/source/Orison-Landing-Zone-V2.jpg
+44|858|Outpost Homestead - Independent & Outlaw |Implementing Outpost Homestead - Independent & Outlaw locations into the persistent universe.|Locations|46|3.17|1626300221000|1629867600000|/media/x7kfy2wzd8char/source/Outpostroadmap.jpg
+45|859|Persistent Hangars|Ability to have persistent hangars at your starting location, and temporary hangars in locations you're visiting|Gameplay|46|3.17|1626300142000|1629867600000|/media/kwxwtq5qmr6g8r/source/Origin404inhangar.png
+46|819|Actor Feature - Personal Inventory|Implements the Personal Inventory for all usable and storable items. |Gameplay|42|3.15|1621462985000|1629867600000|/media/1dei6jsy0thefr/source/Backpack_Hurston-1-Min.jpg
+47|870|Physical/Local Inventory Support|Adjusting shops and VMA to support the required API changes for local/physical inventory|Gameplay|42|3.15|1628667723000|1629867600000|/media/mix20l3z4g7z3r/source/VMA_NikNax_Gladius.png
+48|816|Player Interaction Experience|The Player Interaction Experience (PIE) represents complimentary features and systems related to the player|Gameplay|46|3.17|1627504535000|1629867600000|/media/n36ltr2k2u778r/source/2cddcd75-66a4-4480-9260-Dd62da8a90f3.jpg
+49|818|Radar, Scanning, and Ping|Implementing Radar, Scanning, and Ping|Gameplay|43|3.14|1628666631000|1629867600000|/media/rrxfrtrhahv9wr/source/Radar_Scanning.png
+50|800|Refinery Stations - Non-Commercial Overlays|Adding non-commercial entrances to refinery stations|Locations|41|3.13|1620256590000|1629867600000|/media/g977mstda9tv8r/source/Refinery-Station-Non-Commercial-Room-Overlays-5eb34377-63ad-43a5-A3b4-840260936aff.jpg
+51|841|UI - Reputation|Integrating data related to a player's reputation with NPCs and organizations into the UI.|Gameplay|41|3.13|1620256555000|1629867600000|https://media.robertsspaceindustries.com/dxhdohyx4xdi6/source.png
+52|401|RSI Bengal|Building, implementing, and balancing the Bengal carrier||15|SQ42 Q4 2019|1580524476000|1629867600000|
+53|200|RSI Constellation Taurus|Implementing the revised model of the Constellation Taurus into the game|Ships and Vehicles|43|3.14|1628666658000|1629867600000|/media/o87n8g9btc6shr/source/RSI_Constellation_Taurus.jpg
+54|849|RSI Scorpius|All tasks required for the implementation of the Scorpius heavy fighter.|Ships and Vehicles|46|3.17|1621462852000|1629867600000|/media/wgd5i9ixx4r5jr/source/RSI-Scorpius-SKU.png
+55|806|Salvage T0 - Tech|Creating the backend tech required for Salvage T0|Gameplay|44|3.16|1621463677000|1629867600000|/media/v8gafouv8pu11r/source/Aegis_Reclaimer_3840x1280.jpg
+56|798|New Asteroids - Stanton System|Adding additional asteroid variations to the Stanton System|Locations|41|3.13|1620256600000|1629867600000|/media/kcfhqamchsvdor/source/NewStantonAsteroids.jpg
+57|856|Power Management v2|Integration of the capacitor system and rebalance of all connected systems to accommodate|Gameplay|43|3.14|1628666620000|1629867600000|/media/ggbvy2uyyzycjr/source/CapRM.jpg
+58|807|Ship Shield-Emitters|Converting ship shield-emitters into physical objects|Ships and Vehicles|44|3.16|1611811443000|1629867600000|/media/fos2a1wh9i6qhr/source/Shield-Emitters.jpg
+59|873|Shops and Patrons|Add the ‘vendor’ behavior to the Coffee Stand, Pizza bar, Kiosks, and more|AI|42|3.15|1628669194000|1629867600000|/media/sw2kg92evtkc5r/source/02_Shopping_Kelto_FINAL.jpg
+60|862|Rest Stops: Space Station Clinics|Clinic interior located in the various rest stops|Locations|42|3.15|1629503284000|1629867600000|/media/g2588sztcov80r/source/SpaceClinics.png
+61|823|Missions - Spawn Closets |The initial implementation of ‘spawn closets’|Gameplay|41|3.13|1621471743000|1629867600000|/media/owcv74mey2xwsr/source/Spawn-Closets.jpg
+62|799|Stanton System Polish|Visual improvements to the Stanton system planets|Locations|41|3.13|1620256595000|1629867600000|/media/5j0tm12e4dmczr/source/PlanetaryPolish.jpg
+63|716|Law System v2: Surrender|Ability for criminals in ships to surrender to security rather than be killed|Gameplay|43|3.14|1628666643000|1629867600000|/media/a4ptx88bwjwgir/source/0_Surrender.jpg
+64|805|Tumbril Nova|Implementing the Tumbril Nova into the game|Ships and Vehicles|41|3.13|1621471701000|1629867600000|/media/jxc6c96sfth39r/source/Tonk-Roadmap.png
+65|872|Updates - Broken Moon Map|Improvements to the Broken Moon map|Gameplay|42|3.15|1629850280000|1629867600000|/media/hsr5aipjlg0lvr/source/Brokenmoon.jpg
+66|811|Dynamic Door Alignment - Vehicles|Adding dynamic alignment to ship doors and elevators|Core Tech|44|3.16|1611811455000|1629867600000|/media/iegdnagildpwcr/source/Cargo-Door.jpg
+67|792|Vehicle Names and Serial Numbers|Displaying custom names and serial numbers on the sides of ships|Gameplay|41|3.13|1620256621000|1629867600000|/media/s79k8re73m418r/source/VehicleCanvas.png
+68|822|Actor Tech - Physicalized Weapon Handling|Introduces character animations while interacting with and customizing FPS weapons|Gameplay|44|3.16|1611811464000|1629867600000|/media/xg32kunuckrcfr/source/Weapon-Handling-T2.jpg
+69|600|Zero-G Push & Pull|Zero-g traversal without EVA, using the player's hands|Gameplay|44|3.16|1621463651000|1629867600000|/media/adu7gey36fcner/source/NotSignedOff_Zero_G_PushAndPull_Closer.jpg
+70|401|RSI Bengal|Building, implementing, and balancing the Bengal carrier|||||1631077200000|
+71|435|Mounted Guns|Ability to use mounted guns on vehicles|||||1631077200000|
+72|820|Weapon Charge/Drain T0 - Tech| Creating the back-end tech required for implementing Weapon Charge/Drain|Gameplay||||1631077200000|/media/1ilghweyoka9ir/source/TractorBeam_02_Wip_12_2020-Min.jpg
+73|874|Doctor, Nurse AI Behaviors|Adding more realistic behaviors and reactions for Doctors and Nurses|AI|42|3.15|1631067301000|1631077200000|/media/2zga7nu74hs3mr/source/Medical.jpg
+74|869|Asset Manager mobiGlas App |Adding the Asset Manager mobiGlas App to help players manage their belongings|Gameplay|42|3.15|1631067215000|1631077200000|/media/9pip04rt4e7j1r/source/Niknax.png
+75|836|Curelife Medical Tool|Create and implement a medical tool.|Weapons and Items|42|3.15|1631067290000|1631077200000|/media/1oi347sw2077cr/source/Curelife-Medical-Tool.jpg
+76|828|Actor Feature - EVA T2|Further improves the EVA experience following the transition to IFCS|Gameplay|49|3.18|1631075466000|1631077200000|/media/0yhz5zfi833nbr/source/4Mike_EVA.jpg
+77|824|FPS Radar & Scanning|Implementing radar and scanning for players on foot|Gameplay|49|3.18|1631075618000|1631077200000|/media/1bbvxnmy29xetr/source/Radar_concept.png
+78|790|Hacking - Tech|Creating the back end tech required for Hacking|Gameplay|49|3.18|1631075899000|1631077200000|/media/dxmo0375daxhcr/source/CloudImperiumGames_StarCitizen_HackableTerminalUI.jpg
+79|815|Tech - Healing T0|Creating the back-end technology required for Healing T0|Gameplay|42|3.15|1631067255000|1631077200000|/media/2hz4a8eq3ttjkr/source/DRAKE_CutlassRed_MedBed_012020-Min.jpg
+80|796|Mounted Guns|Ability to use mounted guns on vehicles|Gameplay|41|3.13|1620256612000|1631077200000|/media/38cw523fqgyvdr/source/1c3c0d9f-99e1-4e9f-B5e3-044fd5b5f86b.jpg
+81|835|Greycat Multi-tool Healing Attachment|Creation and implementation of the new multi-tool healing attachment|Weapons and Items|42|3.15|1631067263000|1631077200000|/media/2rm87o48ex8ivr/source/GRIN-Multi-Tool-Healing-Attachment.png
+82|833|Orison v2|Adding more shops and services to the Orison landing zone|Locations|42|3.15|1631067355000|1631077200000|/media/4jtd81n7whbkvr/source/Orison-Landing-Zone-V2.jpg
+83|819|Actor Feature - Personal Inventory|Implements the Personal Inventory for all usable and storable items. |Gameplay|42|3.15|1631067278000|1631077200000|/media/1dei6jsy0thefr/source/Backpack_Hurston-1-Min.jpg
+84|870|Physical/Local Inventory Support|Adjusting shops and VMA to support the required API changes for local/physical inventory|Gameplay|42|3.15|1631067234000|1631077200000|/media/mix20l3z4g7z3r/source/VMA_NikNax_Gladius.png
+85|600|Zero-G Push & Pull|Zero-g traversal without EVA, using the player's hands|Gameplay|49|3.18|1631075878000|1631077200000|/media/adu7gey36fcner/source/NotSignedOff_Zero_G_PushAndPull_Closer.jpg
+86|858|Outpost Homestead - Independent & Outlaw |Implementing Outpost Homestead - Independent & Outlaw locations into the persistent universe.|Locations||||1632286800000|/media/x7kfy2wzd8char/source/Outpostroadmap.jpg
+87|860|New Babbage Hospital|Hospital interior located in the New Babbage landing zone|Locations|42|3.15|1632357541000|1632286800000|/media/i9ylrlbegochfr/source/NewBabb.png
+88|861|Orison Hospital|Hospital interior located in the Orison landing zone|Locations|42|3.15|1632357534000|1632286800000|/media/oqognk8zqh41qr/source/Orison.png
+89|862|Rest Stops: Space Station Clinics|Clinic interior located in the various rest stops|Locations|42|3.15|1632357527000|1632286800000|/media/g2588sztcov80r/source/SpaceClinics.png
+90|803|Crusader A2 Hercules Starlifter|All tasks required for the implementation of the Crusader A2 Hercules Starlifter gunship|Ships and Vehicles|42|3.15|1633548727000|1633496400000|/media/naejanws37upmr/source/A2.jpg
+91|863|GrimHex Clinic|Clinic interior located in the GrimHex landing zone|Locations|42|3.15|1633548738000|1633496400000|/media/2sr835w1tl6y0r/source/GrimHex.png
+92|878|Origin 400i|All tasks required for the implementation of the Origin 400i explorer.|Ships and Vehicles|42|3.15|1634609701000|1634706000000|/media/z3gfwsfhn33ipr/source/400i_Explore_2_092021.jpg
+93|873|Shops and Patrons|Add the ‘vendor’ behavior to the Coffee Stand, Pizza bar, Kiosks, and more|AI|44|3.16|1634762600000|1634706000000|/media/sw2kg92evtkc5r/source/02_Shopping_Kelto_FINAL.jpg
+94|806|Salvage T0 - Tech|Creating the backend tech required for Salvage T0|Gameplay||||1635915600000|/media/v8gafouv8pu11r/source/Aegis_Reclaimer_3840x1280.jpg
+95|807|Ship Shield-Emitters|Converting ship shield-emitters into physical objects|Ships and Vehicles||||1635915600000|/media/fos2a1wh9i6qhr/source/Shield-Emitters.jpg
+96|810|Origin M50 Engine Swapping|Enabling the Origin M50’s bespoke engine to be swapped|Core Tech||||1635915600000|/media/iotwuaoa8ngxsr/source/M50-Engine.jpg
+97|811|Dynamic Door Alignment - Vehicles|Adding dynamic alignment to ship doors and elevators|Core Tech||||1635915600000|/media/iegdnagildpwcr/source/Cargo-Door.jpg
+98|822|Actor Tech - Physicalized Weapon Handling|Introduces character animations while interacting with and customizing FPS weapons|Gameplay||||1635915600000|/media/xg32kunuckrcfr/source/Weapon-Handling-T2.jpg
+99|881|Derelict Spaceships - Points of Interest|Derelict spaceships scattered on planets|Locations|44|3.16|1635906655000|1635915600000|/media/e179qlgzk73cpr/source/Derelicts.png
+100|879|Drake Vulture|All tasks required for the implementation of the Drake Vulture salvage ship.|Ships and Vehicles|49|3.18|1635884299000|1635915600000|/media/uf5rt7vyvbtxdr/source/DRAK_Vulture_Promo_Extra_InFlight_AA02_Grade01-Squashed.jpg
+101|880|Mining Gadgets|Implementing new gadgets that can be placed on a ship-mineable rock that makes the rock easier to mine.|Gameplay|44|3.16|1635885289000|1635915600000|/media/rnipumtc6906ir/source/Mining_gadget.jpg
+102|851|MISC Hull C|All tasks required for the implementation of the Hull-C heavy cargo hauler|Ships and Vehicles|44|3.16|1635930121000|1635915600000|/media/512wabue5xotmr/source/Hull_C_2_v002_compflat.jpg
+103|839|Greycat Multi-tool Salvage Attachment|Creation and implementation of the new multi-tool salvage attachment|Weapons and Items|49|3.18|1635884581000|1635915600000|/media/uue9tms74ojfwr/source/GRIN-Multi-Tool-Salvage-Attachment.jpg
+104|886|Selling Items To Shops|"Adding the ""Sell"" screen to item kiosks and converting them to Building Blocks Tech"|Gameplay|46|3.17|1635909150000|1635915600000|/media/698aej48szuzjr/source/Kiosks.jpg
+105|882|Ship to Ship Refueling|Implementing refueling capability to specifically equipped ships|Gameplay|44|3.16|1635885515000|1635915600000|/media/6mrlwmqskp9tlr/source/Starfarer_HR_ext_b.jpg
+106|873|Shops and Patrons|Add the ‘vendor’ behavior to the Coffee Stand, Pizza bar, Kiosks, and more|AI||||1639461600000|/media/sw2kg92evtkc5r/source/02_Shopping_Kelto_FINAL.jpg
+107|804|Aegis Redeemer|All tasks required for the implementation of the Aegis Redeemer gunship|Ships and Vehicles|42|3.15|1638399628000|1639461600000|/media/wi8f4yvv6qdw2r/source/Red1.jpg
+108|874|Doctor, Nurse AI Behaviors|Adding more realistic behaviors and reactions for Doctors and Nurses|AI|42|3.15|1637128599000|1639461600000|/media/2zga7nu74hs3mr/source/Medical.jpg
+109|864|Area 18 Hospital|Hospital interior located in the Area 18 landing zone|Locations|44|3.16|1637128157000|1639461600000|/media/6jonz01d8bnmbr/source/Area18.png
+110|869|Asset Manager mobiGlas App |Adding the Asset Manager mobiGlas App to help players manage their belongings|Gameplay|42|3.15|1637128650000|1639461600000|/media/9pip04rt4e7j1r/source/Niknax.png
+111|838|Behring S7 Ballistic Gatling|Creation and implementation of the new Behring S7 Ballistic Gatling ship weapon|Weapons and Items|42|3.15|1638399601000|1639461600000|/media/pi34b7bcq3kvor/source/Behring-S7-Ballistic-Gatling.png
+112|837|Behring S7 Laser Cannon|Creation and implementation of the new Behring S7 Laser Cannon ship weapon|Weapons and Items|42|3.15|1638399614000|1639461600000|/media/li7hcgyvojidcr/source/Behring-S7-Laser-Cannon.png
+113|808|Bombs|Players will have the ability to drop powerful bombs on targets from ships in atmosphere|Gameplay|42|3.15|1637128706000|1639461600000|/media/z4lsu1gi1ixaqr/source/CRUS_Starlifter_Promo_MOAB_SM01_PJ01_Grade-Squashed.jpg
+114|889|Cargo System Refactor|Refactor of the ship cargo system to support found and purchased cargo|Gameplay|49|3.18|1637190461000|1639461600000|/media/bu2rlurxhhh4gr/source/Titan_10.jpg
+115|801|Crusader Ares Starfighter Inferno|Implementing the Crusader Ares Starfighter Inferno into the game|Ships and Vehicles|42|3.15|1638399644000|1639461600000|/media/wxpcey7m0xyj1r/source/StarfighterInferno.jpg
+116|802|Crusader Ares Starfighter Ion|Implementing the Crusader Ares Starfighter Ion into the game|Ships and Vehicles|42|3.15|1638399620000|1639461600000|/media/70gj1inip63c2r/source/StarfighterION.jpg
+117|803|Crusader A2 Hercules Starlifter|All tasks required for the implementation of the Crusader A2 Hercules Starlifter gunship|Ships and Vehicles|42|3.15|1637128715000|1639461600000|/media/naejanws37upmr/source/A2.jpg
+118|836|Curelife Medical Tool|Create and implement a medical tool.|Weapons and Items|42|3.15|1637128685000|1639461600000|/media/1oi347sw2077cr/source/Curelife-Medical-Tool.jpg
+119|881|Derelict Spaceships - Points of Interest|Derelict spaceships scattered on planets|Locations|44|3.16|1638399240000|1639461600000|/media/e179qlgzk73cpr/source/Derelicts.png
+120|885|DNA Head Textures Update|Art updates for DNA archetype heads|Characters|44|3.16|1635971516000|1639461600000|/media/e3omos8kevwb3r/source/Dnaroadmap.png
+121|884|Gravlev Physics Rework|A significant upgrade of gravlev handling and physics|Gameplay|44|3.16|1637128072000|1639461600000|/media/g2qv2toyodxhdr/source/Gravlev.jpg
+122|863|GrimHex Clinic|Clinic interior located in the GrimHex landing zone|Locations|42|3.15|1637128658000|1639461600000|/media/2sr835w1tl6y0r/source/GrimHex.png
+123|815|Tech - Healing T0|Creating the back-end technology required for Healing T0|Gameplay|42|3.15|1637128702000|1639461600000|/media/2hz4a8eq3ttjkr/source/DRAKE_CutlassRed_MedBed_012020-Min.jpg
+124|871|Infiltrate and Defend Missions|Infiltrate and Defend missions using existing locations|Gameplay|42|3.15|1637128607000|1639461600000|/media/xkbcthxpc6zvcr/source/Mission.jpg
+125|868|Loot Generation T0|Implementing the system responsible for the generation of lootable containers throughout the world|Gameplay|42|3.15|1637128655000|1639461600000|/media/ewya1u0p949dvr/source/00_Loot.png
+126|880|Mining Gadgets|Implementing new gadgets that can be placed on a ship-mineable rock that makes the rock easier to mine.|Gameplay|44|3.16|1638397666000|1639461600000|/media/rnipumtc6906ir/source/Mining_gadget.jpg
+127|851|MISC Hull C|All tasks required for the implementation of the Hull-C heavy cargo hauler|Ships and Vehicles|49|3.18|1637190476000|1639461600000|/media/512wabue5xotmr/source/Hull_C_2_v002_compflat.jpg
+128|835|Greycat Multi-tool Healing Attachment|Creation and implementation of the new multi-tool healing attachment|Weapons and Items|42|3.15|1637128690000|1639461600000|/media/2rm87o48ex8ivr/source/GRIN-Multi-Tool-Healing-Attachment.png
+129|860|New Babbage Hospital|Hospital interior located in the New Babbage landing zone|Locations|42|3.15|1637128670000|1639461600000|/media/i9ylrlbegochfr/source/NewBabb.png
+130|878|Origin 400i|All tasks required for the implementation of the Origin 400i explorer.|Ships and Vehicles|42|3.15|1637128556000|1639461600000|/media/z3gfwsfhn33ipr/source/400i_Explore_2_092021.jpg
+131|861|Orison Hospital|Hospital interior located in the Orison landing zone|Locations|42|3.15|1637128667000|1639461600000|/media/oqognk8zqh41qr/source/Orison.png
+132|833|Orison v2|Adding more shops and services to the Orison landing zone|Locations|42|3.15|1637128695000|1639461600000|/media/4jtd81n7whbkvr/source/Orison-Landing-Zone-V2.jpg
+133|819|Actor Feature - Personal Inventory|Implements the Personal Inventory for all usable and storable items. |Gameplay|42|3.15|1637128698000|1639461600000|/media/1dei6jsy0thefr/source/Backpack_Hurston-1-Min.jpg
+134|870|Physical/Local Inventory Support|Adjusting shops and VMA to support the required API changes for local/physical inventory|Gameplay|42|3.15|1637128644000|1639461600000|/media/mix20l3z4g7z3r/source/VMA_NikNax_Gladius.png
+135|888|Salvage T0|Hull stripping and repair of ships, both by hand as well as aboard the Vulture|Gameplay|49|3.18|1635975322000|1639461600000|/media/ydhforz0nhexyr/source/DRAK_Vulture_Promo_JunkYard_AA01_Grade01-Squashed.jpg
+136|882|Ship to Ship Refueling|Implementing refueling capability to specifically equipped ships|Gameplay|46|3.17|1638397658000|1639461600000|/media/6mrlwmqskp9tlr/source/Starfarer_HR_ext_b.jpg
+137|862|Rest Stops: Space Station Clinics|Clinic interior located in the various rest stops|Locations|42|3.15|1637128663000|1639461600000|/media/g2588sztcov80r/source/SpaceClinics.png
+138|872|Updates - Broken Moon Map|Improvements to the Broken Moon map|Gameplay|42|3.15|1637128603000|1639461600000|/media/hsr5aipjlg0lvr/source/Brokenmoon.jpg
+139|891|Anvil Spartan|All tasks required for the implementation of the Anvil Spartan APC.|Ships and Vehicles|42|3.15|1638413771000|1639548000000|/media/u0y73rqrvghk4r/source/03_Anvil_Spartan_ReadyBattlefield_102021.jpg
+140|890|Argo RAFT|All tasks required for the implementation of the Argo RAFT cargo hauler.|Ships and Vehicles|42|3.15|1638399586000|1639548000000|/media/6dq1yquq9k4iir/source/Argo_Raft_96SCU_Multi_Colored_112021.jpg
+141|885|DNA Head Textures Update|Art updates for DNA archetype heads|Characters|46|3.17|1639620354000|1639548000000|/media/e3omos8kevwb3r/source/Dnaroadmap.png
+142|880|Mining Gadgets|Implementing new gadgets that can be placed on a ship-mineable rock that makes the rock easier to mine.|Gameplay|46|3.17|1639620374000|1639548000000|/media/rnipumtc6906ir/source/Mining_gadget.jpg
+143|600|Zero-G Push & Pull|Zero-g traversal without EVA, using the player's hands|Gameplay||||1644395928711|/media/adu7gey36fcner/source/NotSignedOff_Zero_G_PushAndPull_Closer.jpg
+144|790|Hacking - Tech|Creating the back end tech required for Hacking|Gameplay||||1644395928711|/media/dxmo0375daxhcr/source/CloudImperiumGames_StarCitizen_HackableTerminalUI.jpg
+145|816|Player Interaction Experience|The Player Interaction Experience (PIE) represents complimentary features and systems related to the player|Gameplay||||1644395928711|/media/n36ltr2k2u778r/source/2cddcd75-66a4-4480-9260-Dd62da8a90f3.jpg
+146|824|FPS Radar & Scanning|Implementing radar and scanning for players on foot|Gameplay||||1644395928711|/media/1bbvxnmy29xetr/source/Radar_concept.png
+147|828|Actor Feature - EVA T2|Further improves the EVA experience following the transition to IFCS|Gameplay||||1644395928711|/media/0yhz5zfi833nbr/source/4Mike_EVA.jpg
+148|851|MISC Hull C|All tasks required for the implementation of the Hull-C heavy cargo hauler|Ships and Vehicles||||1644395928711|/media/512wabue5xotmr/source/Hull_C_2_v002_compflat.jpg
+149|853|Hangar Manager App|New mobiGlas app that emulates the functionality of ASOP terminals|Gameplay||||1644395928711|/media/cjuhkmzb433jzr/source/HangarManager.jpg
+150|859|Persistent Hangars|Ability to have persistent hangars at your starting location, and temporary hangars in locations you're visiting|Gameplay||||1644395928711|/media/kwxwtq5qmr6g8r/source/Origin404inhangar.png
