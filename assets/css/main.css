@@ -38,6 +38,6 @@ details > summary::marker {
     display: none;
 }
 
-details > summary > p {
+details > p {
     font-size: .8em;
 }
