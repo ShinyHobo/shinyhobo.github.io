@@ -1,7 +1,7 @@
-layout: post
-title: "Progress Tracker"
-date: 2022-02-03
-categories: RSI
+layout: post  
+title: "Progress Tracker"  
+date: 2022-02-03  
+categories: RSI  
 
 # Progress Report Delta #  
 ### 431 deliverables listed | Wed Dec 15 2021 => Wed Feb 09 2022 ###  
