@@ -5,7 +5,7 @@ date: 2022-02-09
 categories: Teams  
 ---
 
-There are currently 95 scheduled tasks being done by 41 teams:  
+# There are currently 95 scheduled tasks being done by 41 teams: #  
   
 **AI - Arcade Machine** [SC, SQ42]  
 * AI Content Team (AIC) until Wed Mar 16 2022 {PT}  
