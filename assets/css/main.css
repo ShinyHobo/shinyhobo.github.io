@@ -1,5 +1,5 @@
-body {
-    min-height: 100vh;
+html, body {
+    height: 100%
 }
 
 body > header h1:before {
@@ -11,8 +11,15 @@ body > header h1 {
     margin: 0;
 }
 
+.main {
+    overflow: auto;
+    padding-bottom: 200px;
+}
+
 footer {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    clear: both;
 }
