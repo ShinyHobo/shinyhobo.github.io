@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign data_files = site.static_files | where: "csv", true %}
+{% assign data_files = site.static_files %}
 {% for data_file in data_files %}
   {{ data_file.path }}
 {% endfor %}
