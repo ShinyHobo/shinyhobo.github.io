@@ -879,3 +879,8 @@ game-ready vehicle."
   
 **Zero G Push & Pull** [SC, SQ42]  
 * Actor Feature Team (AFT) until Thu Mar 31 2022 {PT}  
+
+<details>
+    <summary>View timeline</summary>  
+    Gantt here
+</details>
