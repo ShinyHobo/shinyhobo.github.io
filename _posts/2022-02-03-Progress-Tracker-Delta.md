@@ -1,8 +1,8 @@
 ---
 layout: post  
-title: "2022-02-03"  
+title: "Delta - 2022-02-03"  
 date: 2022-02-03  
-categories: RSI  
+categories: Delta  
 ---
 
 # Progress Report Delta #  

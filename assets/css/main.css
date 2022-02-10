@@ -1,3 +1,7 @@
+body {
+    min-height: 100vh;
+}
+
 body > header h1:before {
     content: none;
     font-size: 24px;
