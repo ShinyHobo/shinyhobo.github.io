@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: "Progress Tracker Delta"  
+title: "2022-02-03"  
 date: 2022-02-03  
 categories: RSI  
 ---
