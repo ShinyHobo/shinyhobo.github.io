@@ -28,6 +28,11 @@ footer {
     clear: both;
 }
 
-details summary {
+details > summary {
+    list-style: none;
     cursor: pointer;
+}
+
+details > summary::marker {
+    display: none;
 }
