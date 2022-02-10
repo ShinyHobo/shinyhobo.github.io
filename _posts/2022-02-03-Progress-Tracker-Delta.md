@@ -521,7 +521,7 @@ game-ready vehicle."
 
 ## This section lists all currently scheduled deliverable time allocations. Any given item is assigned to either Star Citizen (SC), Squadron 42 (SQ42), or both, and the teams that work on each deliverable can be split between many tasks (marked with {PT} for part time). ##  
   
-## There are currently 95 scheduled tasks being done by 41 teams: ##  
+## There are currently 95 scheduled tasks being worked on by 41 teams: ##  
   
 ### **AI - Arcade Machine** [SC, SQ42] ###  
 <details><summary>AI Content Team <ul><li> until Wed Mar 16 2022 {PT}</li></ul> 
