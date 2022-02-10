@@ -37,3 +37,7 @@ details > summary {
 details > summary::marker {
     display: none;
 }
+
+details > summary > p {
+    font-size: .8em;
+}
