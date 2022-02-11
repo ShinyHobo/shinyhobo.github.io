@@ -5,7 +5,7 @@ date: 2022-02-10
 categories: Teams  
 ---
 
-## There are currently 95 scheduled tasks being worked on by 41 teams: ##  
+## There are currently 95 scheduled tasks being worked on by 41 teams ##  
 
 ---
 
