@@ -6,6 +6,9 @@ categories: Teams
 ---
 
 ## There are currently 95 scheduled tasks being worked on by 41 teams: ##  
+
+---
+
 (Click team to view gantt chart breakdown)  
   
 ### **AI - Arcade Machine** [SC, SQ42] ###  
