@@ -49,3 +49,7 @@ details > p {
 .post h3 {
     margin-bottom: 0;
 }
+
+.post [id^="removed-from-release-roadmap"] {
+    color: darkturquoise;
+}
