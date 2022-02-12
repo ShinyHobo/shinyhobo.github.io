@@ -1,12 +1,12 @@
----
+---  
 layout: post  
-title: "Progress Report Delta - 2022-02-03"  
-date: 2022-02-03  
-categories: Delta  
----
-
+title: "Progress Report Delta - 2022-02-12"  
+date: 2022-02-12  
+categories: Teams  
+---  
+  
 # Progress Report Delta #  
-### 431 deliverables listed | Wed Dec 15 2021 => Fri Feb 03 2022 ###  
+### 431 deliverables listed | Wed Dec 15 2021 => Fri Feb 11 2022 ###  
 There were 89 modifications, 4 removals, and 15 additions (with 2 returning) in this update.  
   
 ---  

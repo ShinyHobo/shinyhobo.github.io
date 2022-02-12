@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: "Sprint Report - 2022-02-10"  
+title: "Scheduled Tasks - 2022-02-10"  
 date: 2022-02-10  
 categories: Teams  
 ---
