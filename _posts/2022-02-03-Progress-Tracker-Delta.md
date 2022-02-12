@@ -41,7 +41,7 @@ AI behavior where the AI will play multiple rounds on an arcade machine, with va
 results depending on if they win or lose.  
   
 The following team(s) were assigned:  
-* AI Content Team began work Thu Feb 03 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9qk0teoycf5xa" target="_blank">AI Content Team began work Thu Feb 03 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oks76s96dlad7" target="_blank">AI - Usable System V2</a>** ###  
 *Thu Jan 06 2022 => Wed Mar 02 2022*  
@@ -49,14 +49,14 @@ Improving the implementation of the existing usable system to optimize the memor
 the performance when querying usable data at runtime.   
   
 The following team(s) were assigned:  
-* AI Tech and Feature Team began work Thu Jan 06 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/a4comxhvpvdaf" target="_blank">AI Tech and Feature Team began work Thu Jan 06 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jqdwjyvaz1yuy" target="_blank">Argo SRV</a>** ###  
 *Sun Apr 17 2022 => Thu Sep 15 2022*  
 Building, implementing, and balancing Argo's tugboat, the SRV, as a game-ready vehicle.  
   
 The following team(s) were assigned:  
-* Vehicle Content - EU will begin work Sun Apr 17 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/0dis7eb2ffkpp" target="_blank">Vehicle Content - EU will begin work Sun Apr 17 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/sweea1bv8b2f9" target="_blank">Bounty Hunter V2</a>** (returning!) ###  
 *Tue Jan 18 2022 => Thu Aug 25 2022*  
@@ -65,7 +65,7 @@ arrays, air traffic control systems, cameras, and NPC informants. This will rely
 backend tech, including Virtual AI, the NPC Scheduler, and Security Service.  
   
 The following team(s) were assigned:  
-* US PU Gameplay Feature Team began work Tue Jan 18 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/1vmcmadlzs4kr" target="_blank">US PU Gameplay Feature Team began work Tue Jan 18 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/u3qj6egndvw8g" target="_blank">DGS Crash Recovery</a>** ###  
 *Tue Mar 01 2022 => Thu Mar 24 2022*  
@@ -73,7 +73,7 @@ When a Dedicated Game Server (DGS) crashes, this system will spin-up a replaceme
 its state from the Replication Layer.  
   
 The following team(s) were assigned:  
-* Network Team will begin work Tue Mar 01 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/nex7tlvh4gdti" target="_blank">Network Team will begin work Tue Mar 01 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/f16hmyq2unc7o" target="_blank">Greycat Industrial Cydnus Mining Droid</a>** ###  
 *Mon Jan 03 2022 => Mon Mar 28 2022*  
@@ -81,7 +81,7 @@ Building, implementing, and balancing Greycat's mining platform, the Cydnus, as 
 vehicle.  
   
 The following team(s) were assigned:  
-* SQ42 Art began work Mon Jan 03 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/zyhb2x096wk4c" target="_blank">SQ42 Art began work Mon Jan 03 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9wjqyh6xox7e7" target="_blank">Hospital Surgeon</a>** ###  
 *Sun Jan 02 2022 => Thu Feb 24 2022*  
@@ -89,8 +89,8 @@ Concepting, creating, and implementing the outfits worn by surgeons, beginning w
 in the Orison General hospital location.  
   
 The following team(s) were assigned:  
-* Character Tech Art will begin work Sun Feb 13 2022  
-* SC Character Art began work Sun Jan 02 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/xmosla0i10dy4" target="_blank">Character Tech Art will begin work Sun Feb 13 2022</a>  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/padrvbv3z0xf9" target="_blank">SC Character Art began work Sun Jan 02 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xyrgrfj4awzt9" target="_blank">Long Term Persistence Enhancements</a>** ###  
 *Tue Mar 01 2022 => Mon Mar 28 2022*  
@@ -99,7 +99,7 @@ functionality will stay the same, but the system will read/write the data from t
 database.  
   
 The following team(s) were assigned:  
-* Persistent Tech Team will begin work Tue Mar 01 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/cmj5hpo87rv45" target="_blank">Persistent Tech Team will begin work Tue Mar 01 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/wgiyern57ydzr" target="_blank">Look IK Architecture Refactor</a>** ###  
 *Tue Feb 01 2022 => Mon Mar 28 2022*  
@@ -107,14 +107,14 @@ Update to the existing Look IK system to remap eye trajectory to use eye express
 defined in rig logic.  
   
 The following team(s) were assigned:  
-* Tech Animation Team began work Tue Feb 01 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9q953d4kfdhy2" target="_blank">Tech Animation Team began work Tue Feb 01 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/o2gbepnwbc37r" target="_blank">Military Multi-Tool</a>** ###  
 *Sun Jan 09 2022 => Thu Feb 03 2022*  
 Designing and building a multi-tool variant used by the UEE Military in the Squadron 42 campaign.  
   
 The following team(s) were assigned:  
-* Weapon Content Team began work Sun Jan 09 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/dwczuhei6sq2t" target="_blank">Weapon Content Team began work Sun Jan 09 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9ektw7aujkbtd" target="_blank">Modular Shaders</a>** ###  
 *Mon Jan 03 2022 => Mon Mar 07 2022*  
@@ -122,22 +122,22 @@ Updating the existing shader system and its workflows to allow for implementatio
 basic modularity.  
   
 The following team(s) were assigned:  
-* Graphics Team began work Mon Jan 03 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9552ppfm6wczk" target="_blank">Graphics Team began work Mon Jan 03 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ykjwtf4sqiou4" target="_blank">Name Resolving API</a>** (returning!) ###  
 *Tue Feb 01 2022 => Mon Feb 28 2022*  
 Engine implementation for entity class name resolving service.  
   
 The following team(s) were assigned:  
-* Persistent Tech Team began work Tue Feb 01 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/cmj5hpo87rv45" target="_blank">Persistent Tech Team began work Tue Feb 01 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hqjlw4d34ph63" target="_blank">Reputation V2</a>** ###  
 *Sun Dec 26 2021 => Mon Feb 14 2022*  
 An upgrade to the reputation system that allows reputation to drive AI hostility.  
   
 The following team(s) were assigned:  
-* Narrative began work Sun Dec 26 2021  
-* US PU Gameplay Feature Team began work Mon Jan 03 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/dqdbdlj2iad9e" target="_blank">Narrative began work Sun Dec 26 2021</a>  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/1vmcmadlzs4kr" target="_blank">US PU Gameplay Feature Team began work Mon Jan 03 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lxjcm8gtyvjqf" target="_blank">Server Streaming</a>** ###  
 *Mon Jan 03 2022 => Mon Feb 14 2022*  
@@ -145,7 +145,7 @@ Changes the implementation of Server Object Container Streaming (S-OCS) to be dr
 network code's Replication Layer, backed by EntityGraph for persistent storage.  
   
 The following team(s) were assigned:  
-* Network Team began work Mon Jan 03 2022  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/nex7tlvh4gdti" target="_blank">Network Team began work Mon Jan 03 2022</a>  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/5kcik2skwxklu" target="_blank">Wheeled Vehicle Physics Improvements</a>** ###  
 *Mon Sep 27 2021 => Sun Nov 28 2021*  
@@ -153,7 +153,7 @@ Improving physics for ground vehicles by taking static environment and collision
 during network prediction and synchronization.  
   
 The following team(s) were assigned:  
-* Physics Team began work Mon Sep 27 2021  
+* <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/nzki3zatwmu9w" target="_blank">Physics Team began work Mon Sep 27 2021</a>  
   
 ---  
 
