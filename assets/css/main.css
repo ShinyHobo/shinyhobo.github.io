@@ -62,4 +62,5 @@ details > p {
 
 .post h3 span img {
     height: 25px;
+    vertical-align: middle;
 }
