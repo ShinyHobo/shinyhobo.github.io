@@ -57,4 +57,5 @@ details > p {
 .post strong a {
     color: #b5e853;
     text-decoration: none;
+    text-shadow: none;
 }
