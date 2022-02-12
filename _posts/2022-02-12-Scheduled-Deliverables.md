@@ -1,11 +1,11 @@
 ---  
 layout: post  
-title: "Scheduled Tasks - 2022-02-12"  
+title: "Scheduled Deliverables - 2022-02-12"  
 date: 2022-02-12  
 categories: Teams  
 ---  
   
-## There are currently 84 scheduled tasks being worked on by 34 teams ##  
+## There are currently 84 scheduled deliverables being worked on by 34 teams ##  
 ---  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/pat1gv0usevez" target="_blank">AI - Arcade Machine</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  

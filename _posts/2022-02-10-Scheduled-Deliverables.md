@@ -1,11 +1,11 @@
 ---
 layout: post  
-title: "Scheduled Tasks - 2022-02-10"  
+title: "Scheduled Deliverables - 2022-02-10"  
 date: 2022-02-10  
 categories: Teams  
 ---
 
-## There are currently 95 scheduled tasks being worked on by 41 teams ##  
+## There are currently 95 scheduled deliverables being worked on by 41 teams ##  
 
 ---
 
