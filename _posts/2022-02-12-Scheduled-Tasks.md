@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: "Scheduled Deliverables - 2022-02-12"  
+title: "Scheduled Tasks - 2022-02-12"  
 date: 2022-02-12  
 categories: Teams  
 ---  
