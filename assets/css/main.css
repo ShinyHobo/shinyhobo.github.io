@@ -53,3 +53,8 @@ details > p {
 .post [id^="removed-from-release-roadmap"] {
     color: darkturquoise;
 }
+
+.post strong a {
+    color: #b5e853;
+    text-decoration: none;
+}
