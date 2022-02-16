@@ -149,3 +149,11 @@ id|tid|title|description|category|release_id|release_title|updateDate|addedDate|
 148|851|MISC Hull C|All tasks required for the implementation of the Hull-C heavy cargo hauler|Ships and Vehicles||||1644806199669|/media/512wabue5xotmr/source/Hull_C_2_v002_compflat.jpg
 149|853|Hangar Manager App|New mobiGlas app that emulates the functionality of ASOP terminals|Gameplay||||1644806199669|/media/cjuhkmzb433jzr/source/HangarManager.jpg
 150|859|Persistent Hangars|Ability to have persistent hangars at your starting location, and temporary hangars in locations you're visiting|Gameplay||||1644806199669|/media/kwxwtq5qmr6g8r/source/Origin404inhangar.png
+151|894|Consolidated Outland HoverQuad|All tasks required for the implementation of the Consolidated Outland HoverQuad.|Ships and Vehicles|44|3.16|1644992976000|1645042427807|/media/cgq5o25doq4idr/source/CNOUHQ.png
+152|881|Derelict Spaceships - Points of Interest|Derelict spaceships scattered on planets|Locations|44|3.16|1644993012000|1645042427807|/media/e179qlgzk73cpr/source/Derelicts.png
+153|885|DNA Head Textures Update|Art updates for DNA archetype heads|Characters|46|3.17|1644993041000|1645042427807|/media/e3omos8kevwb3r/source/Dnaroadmap.png
+154|893|Drake Cutlass Steel|All tasks required for the implementation of the Cutlass Steel dropship.|Ships and Vehicles|44|3.16|1643253632000|1645042427807|https://media.robertsspaceindustries.com/5fivkm20fcrca/source.jpg
+155|884|Gravlev Physics Rework|A significant upgrade of gravlev handling and physics|Gameplay|44|3.16|1644993001000|1645042427807|/media/g2qv2toyodxhdr/source/Gravlev.jpg
+156|880|Mining Gadgets|Implementing new gadgets that can be placed on a ship-mineable rock that makes the rock easier to mine.|Gameplay|46|3.17|1644993045000|1645042427807|/media/rnipumtc6906ir/source/Mining_gadget.jpg
+157|888|Salvage - Hull Stripping|Hull stripping and repair of ships|Gameplay|49|3.18|1644998971000|1645042427807|/media/ydhforz0nhexyr/source/DRAK_Vulture_Promo_JunkYard_AA01_Grade01-Squashed.jpg
+158|882|Ship to Ship Refueling|Implementing refueling capability to specifically equipped ships|Gameplay|46|3.17|1644993038000|1645042427807|/media/6mrlwmqskp9tlr/source/Starfarer_HR_ext_b.jpg
