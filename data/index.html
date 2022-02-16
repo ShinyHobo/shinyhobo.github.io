@@ -18,7 +18,7 @@ title: Data
   {% assign data_files = site.static_files | where: "json", true | reverse %}
   {% for data_file in data_files %}
     <li>
-      <a href="{{ data_file.path }}">{{ data_file.name }}</a>
+      <a download="{{ data_file.name }}" href="{{ data_file.path }}">{{ data_file.name }}</a>
     </li>
   {% endfor %}
   </ul>
