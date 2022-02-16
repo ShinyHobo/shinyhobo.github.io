@@ -7,3 +7,7 @@ defaults:
       path: "data"
     values:
       csv: true
+  - scope:
+      path: "snapshots"
+    values:
+      json: true

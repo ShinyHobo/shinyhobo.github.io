@@ -4,6 +4,7 @@ title: Data
 ---
 
 <h2>Biweekly delta data dumps are accessible below:</h2>
+<h3>Database Tables</h3>
 <ul>
 {% assign data_files = site.static_files | where: "csv", true %}
 {% for data_file in data_files %}
@@ -12,3 +13,12 @@ title: Data
   </li>
 {% endfor %}
 </ul>
+<h3>Snapshots</h3>
+<ul>
+  {% assign data_files = site.static_files | where: "json", true %}
+  {% for data_file in data_files %}
+    <li>
+      <a href="{{ data_file.path }}">{{ data_file.name }}</a>
+    </li>
+  {% endfor %}
+  </ul>
