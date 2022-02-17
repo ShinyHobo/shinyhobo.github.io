@@ -19,11 +19,13 @@ extreme ranges far beyond the reach of ship scanners. The signatures can ultimat
 identify point-of-interest and plan quantum travel.  
   
 * The following team(s) have been freed up: Systemic Services and Tools Team  
+  
 ### **Unannounced** ###  
 *Last scheduled from Sun Apr 24 2022 to Thu Jun 23 2022*  
 Unannounced Vehicle  
   
 * The following team(s) have been freed up: Vehicle Content - EU  
+  
 ---  
 
 ## [11] deliverable(s) *added*: ##  
