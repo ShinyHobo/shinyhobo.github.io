@@ -1,6 +1,6 @@
 theme: jekyll-theme-hacker
 markdown: kramdown
-title: RSI "Progress Tracker" Deltas
+title: ShinyTracker
 description: Lists and displays detected changes on the RSI "Progress Tracker"
 defaults:
   - scope:
