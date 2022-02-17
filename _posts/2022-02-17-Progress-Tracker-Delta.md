@@ -312,7 +312,6 @@ x1 Engineering dev previously completed all available tasks
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7ruthnrbdma5s" target="_blank">Drake Vulture</a>** ###  
 *Sun May 30 2021 => Thu Mar 31 2022*  
 * End date has moved closer from Sun Apr 03 2022 to Thu Mar 31 2022  
-* Vehicle Content - US added 0 days of work  
   
 ![](https://robertsspaceindustries.com/media/uf5rt7vyvbtxdr/source/DRAK_Vulture_Promo_Extra_InFlight_AA02_Grade01-Squashed.jpg)  
 <sup>Release 3.18</sup>  
@@ -458,7 +457,6 @@ x1 Engineering dev previously completed all available tasks
 * End date has been extended from Sun Apr 03 2022 to Thu Apr 14 2022  
 * Actor Feature Team was assigned, revealing 45 days of work  
 * Vehicle Feature Team added 17 days of work  
-* Weapon Feature Team added 0 days of work  
   
 * Release Title has been changed from  
 'Salvage T0'  
