@@ -134,34 +134,29 @@ x1 Engineering dev previously completed all available tasks
 ---  
 
 ## [65] deliverable(s) *updated*: ##  
-### **Actor Status T2** ###  
+* End date has been extended from Wed Sep 28 2022 to Fri Dec 30 2022  
 *Thu Aug 18 2022 => Fri Dec 30 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/mpn4648rn5dke" target="_blank">Actor Status T2</a>** ###  
-* End date has been extended from Wed Sep 28 2022 to Fri Dec 30 2022  
 * Actor Feature Team added 41 days of work  
   
-### **Atmospheric Pressure Damage** ###  
+* End date has been extended from Mon Feb 28 2022 to Tue May 24 2022  
 *Mon Jun 21 2021 => Tue May 24 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xffyseweue5kz" target="_blank">Atmospheric Pressure Damage</a>** ###  
-* End date has been extended from Mon Feb 28 2022 to Tue May 24 2022  
 * EU PU Gameplay Feature Team freed up 11 days of work  
   
-### **Banu Merchantman** ###  
+* End date has been extended from Thu Jun 16 2022 to Thu Sep 15 2022  
 *Sun Jan 03 2021 => Thu Sep 15 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/wgncoopr3uw8f" target="_blank">Banu Merchantman</a>** ###  
-* End date has been extended from Thu Jun 16 2022 to Thu Sep 15 2022  
 * Vehicle Content - EU added 81 days of work  
   
-### **Bounty Hunter V2** ###  
+* End date has been extended from Thu Aug 25 2022 to Thu Oct 20 2022  
 *Tue Jan 18 2022 => Thu Oct 20 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/sweea1bv8b2f9" target="_blank">Bounty Hunter V2</a>** ###  
-* End date has been extended from Thu Aug 25 2022 to Thu Oct 20 2022  
 * US PU Gameplay Feature Team added 25 days of work  
   
-### **Bug Fixing & Tech Debt** ###  
+* End date has been extended from Thu Sep 29 2022 to Tue Jan 03 2023  
 *Thu Dec 31 2020 => Tue Jan 03 2023*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oouhlnscv4cqu" target="_blank">Bug Fixing & Tech Debt</a>** ###  
-* End date has been extended from Thu Sep 29 2022 to Tue Jan 03 2023  
 * Vehicle Content - EU freed up 70 days of work  
 * UI Feature Team added 11 days of work  
 * Vehicle Experience Team added 28 days of work  
@@ -175,252 +170,216 @@ x1 Engineering dev previously completed all available tasks
 * EU Landing Zone Team added 27 days of work  
 * Weapon Feature Team freed up 14 days of work  
   
-### **Building Interiors** ###  
+* End date has been extended from Wed Sep 14 2022 to Fri Dec 30 2022  
 *Mon Feb 15 2021 => Fri Dec 30 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/rm4sptqkc0xlx" target="_blank">Building Interiors</a>** ###  
-* End date has been extended from Wed Sep 14 2022 to Fri Dec 30 2022  
 * MTL Sandbox 1 added 69 days of work  
 * Location Concept Art added 242 days of work  
   
-### **Cargo System Refactor** ###  
+* Actor Feature Team added 31 days of work  
 *Sun Jan 03 2021 => Thu Jun 02 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/42e91zsr4xs2f" target="_blank">Cargo System Refactor</a>** ###  
-* Actor Feature Team added 31 days of work  
 * Props Team added 2 days of work  
   
 ![](https://robertsspaceindustries.com/media/bu2rlurxhhh4gr/source/Titan_10.jpg)  
 <sup>Release 3.18</sup>  
 
-### **Chapter 01** ###  
+* End date has been extended from Fri Jan 14 2022 to Thu Mar 31 2022  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/p6q8plpm8dovk" target="_blank">Chapter 01</a>** ###  
-* End date has been extended from Fri Jan 14 2022 to Thu Mar 31 2022  
 * Cinematics Team added 49 days of work  
 * SQ42 Level Design 1 - FPS added 49 days of work  
 * SQ42 Level Design 2 - Flight added 49 days of work  
 * SQ42 Level Design 3 - Social added 70 days of work  
   
-### **Chapter 02** ###  
+* End date has been extended from Thu Oct 28 2021 to Thu Feb 03 2022  
 *Sun Oct 17 2021 => Thu Feb 03 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4g1yehlr65pfm" target="_blank">Chapter 02</a>** ###  
-* End date has been extended from Thu Oct 28 2021 to Thu Feb 03 2022  
 * SQ42 Level Design 3 - Social added 13 days of work  
   
-### **Chapter 03** ###  
+* End date has been extended from Thu Nov 11 2021 to Thu Feb 17 2022  
 *Sun Oct 31 2021 => Thu Feb 17 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/fs947h4k8zqb3" target="_blank">Chapter 03</a>** ###  
-* End date has been extended from Thu Nov 11 2021 to Thu Feb 17 2022  
 * SQ42 Level Design 3 - Social added 13 days of work  
   
-### **Chapter 04** ###  
+* End date has been extended from Sun Jan 30 2022 to Mon Mar 28 2022  
 *Thu Dec 31 2020 => Mon Mar 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8t07kw90qvhf0" target="_blank">Chapter 04</a>** ###  
-* End date has been extended from Sun Jan 30 2022 to Mon Mar 28 2022  
 * Cinematics Team added 49 days of work  
 * SQ42 Level Design 3 - Social added 45 days of work  
   
-### **Chapter 05** ###  
+* End date has been extended from Thu Dec 30 2021 to Mon Mar 28 2022  
 *Thu Dec 31 2020 => Mon Mar 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ase8e8mmixff4" target="_blank">Chapter 05</a>** ###  
-* End date has been extended from Thu Dec 30 2021 to Mon Mar 28 2022  
 * Cinematics Team added 49 days of work  
 * SQ42 Level Design 3 - Social added 31 days of work  
   
-### **Chapter 07** ###  
+* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 *Tue Jan 05 2021 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/55ihw5xes1jpp" target="_blank">Chapter 07</a>** ###  
-* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 * Cinematics Team added 49 days of work  
 * SQ42 Level Design 2 - Flight added 49 days of work  
   
-### **Chapter 09** ###  
+* End date has been extended from Thu Dec 30 2021 to Mon Mar 28 2022  
 *Tue Jan 05 2021 => Mon Mar 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51lg16ocusxjo" target="_blank">Chapter 09</a>** ###  
-* End date has been extended from Thu Dec 30 2021 to Mon Mar 28 2022  
 * Cinematics Team added 49 days of work  
   
-### **Chapter 11** ###  
+* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/z97whnirtcy29" target="_blank">Chapter 11</a>** ###  
-* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 * Cinematics Team added 49 days of work  
 * SQ42 Level Design 1 - FPS added 49 days of work  
 * SQ42 Level Design 2 - Flight added 21 days of work  
   
-### **Chapter 12** ###  
+* End date has been extended from Sun Feb 27 2022 to Thu Mar 31 2022  
 *Tue Jan 05 2021 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3mwo1tt5tkkl6" target="_blank">Chapter 12</a>** ###  
-* End date has been extended from Sun Feb 27 2022 to Thu Mar 31 2022  
 * Cinematics Team added 49 days of work  
 * SQ42 Level Design 1 - FPS added 49 days of work  
   
-### **Chapter 13** ###  
+* End date has been extended from Thu Nov 25 2021 to Thu Mar 03 2022  
 *Fri Apr 30 2021 => Thu Mar 03 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/m4hon3qy5aj7j" target="_blank">Chapter 13</a>** ###  
-* End date has been extended from Thu Nov 25 2021 to Thu Mar 03 2022  
 * SQ42 Level Design 3 - Social added 59 days of work  
   
-### **Chapter 14** ###  
+* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/muo5mcszz0enx" target="_blank">Chapter 14</a>** ###  
-* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 * SQ42 Level Design 1 - FPS added 49 days of work  
 * SQ42 Level Design 2 - Flight added 69 days of work  
   
-### **Chapter 17** ###  
+* End date has been extended from Thu Oct 28 2021 to Thu Feb 03 2022  
 *Thu Dec 31 2020 => Thu Feb 03 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a9rux14dc5wdj" target="_blank">Chapter 17</a>** ###  
-* End date has been extended from Thu Oct 28 2021 to Thu Feb 03 2022  
 * SQ42 Level Design 1 - FPS added 31 days of work  
 * SQ42 Level Design 2 - Flight added 17 days of work  
   
-### **Chapter 18** ###  
+* End date has been extended from Sun Feb 27 2022 to Thu Mar 31 2022  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4sbmlw2c4by8m" target="_blank">Chapter 18</a>** ###  
-* End date has been extended from Sun Feb 27 2022 to Thu Mar 31 2022  
 * SQ42 Level Design 1 - FPS added 49 days of work  
   
-### **Chapter 19** ###  
+* End date has been extended from Mon Mar 14 2022 to Thu Mar 31 2022  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oj3oi90mrslpv" target="_blank">Chapter 19</a>** ###  
-* End date has been extended from Mon Mar 14 2022 to Thu Mar 31 2022  
 * SQ42 Level Design 1 - FPS added 49 days of work  
   
-### **Chapter 20** ###  
+* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 *Tue Jan 05 2021 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51czsbt2ajcs1" target="_blank">Chapter 20</a>** ###  
-* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 * Cinematics Team added 49 days of work  
 * SQ42 Level Design 1 - FPS added 49 days of work  
   
-### **Chapter 21** ###  
+* End date has been extended from Mon Mar 14 2022 to Mon Mar 28 2022  
 *Sun May 30 2021 => Mon Mar 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kfhortybw0xo5" target="_blank">Chapter 21</a>** ###  
-* End date has been extended from Mon Mar 14 2022 to Mon Mar 28 2022  
 * Cinematics Team added 49 days of work  
 * SQ42 Level Design 3 - Social added 13 days of work  
   
-### **Chapter 22** ###  
+* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/y1b9hiipoykw3" target="_blank">Chapter 22</a>** ###  
-* End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
 * SQ42 Level Design 1 - FPS added 49 days of work  
   
-### **Chapter 23** ###  
+* End date has been extended from Mon Mar 14 2022 to Mon Mar 28 2022  
 *Fri Apr 30 2021 => Mon Mar 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7cnbz3e3830yf" target="_blank">Chapter 23</a>** ###  
-* End date has been extended from Mon Mar 14 2022 to Mon Mar 28 2022  
 * Cinematics Team added 49 days of work  
   
-### **Chapter 26** ###  
+* End date has been extended from Mon Mar 28 2022 to Thu Mar 31 2022  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9pyp286qji194" target="_blank">Chapter 26</a>** ###  
-* End date has been extended from Mon Mar 28 2022 to Thu Mar 31 2022  
 * SQ42 Level Design 1 - FPS added 49 days of work  
   
-### **Commodity Kiosk** ###  
+* Systemic Services and Tools Team was assigned, revealing 16 days of work  
 *Sun Jan 17 2021 => Thu Apr 07 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4y0iw4tc02r1u" target="_blank">Commodity Kiosk</a>** ###  
-* Systemic Services and Tools Team was assigned, revealing 16 days of work  
   
-### **Cutting T2** ###  
+* End date has been extended from Wed Sep 28 2022 to Fri Dec 30 2022  
 *Thu Aug 18 2022 => Fri Dec 30 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/tqg3c7qk5spp8" target="_blank">Cutting T2</a>** ###  
-* End date has been extended from Wed Sep 28 2022 to Fri Dec 30 2022  
 * Weapon Feature Team added 41 days of work  
   
-### **Derelict Spaceships - Points of Interest** ###  
+* End date has been extended from Wed Sep 14 2022 to Wed Dec 07 2022  
 *Thu Apr 01 2021 => Wed Dec 07 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gc9nco1v95l85" target="_blank">Derelict Spaceships - Points of Interest</a>** ###  
-* End date has been extended from Wed Sep 14 2022 to Wed Dec 07 2022  
 * MTL Sandbox 1 added 69 days of work  
   
 ![](https://robertsspaceindustries.com/media/e179qlgzk73cpr/source/Derelicts.png)  
 <sup>Release 3.16</sup>  
 
-### **Drake Vulture** ###  
+* End date has moved closer from Sun Apr 03 2022 to Thu Mar 31 2022  
 *Sun May 30 2021 => Thu Mar 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7ruthnrbdma5s" target="_blank">Drake Vulture</a>** ###  
-* End date has moved closer from Sun Apr 03 2022 to Thu Mar 31 2022  
 * Vehicle Content - US added 0 days of work  
   
 ![](https://robertsspaceindustries.com/media/uf5rt7vyvbtxdr/source/DRAK_Vulture_Promo_Extra_InFlight_AA02_Grade01-Squashed.jpg)  
 <sup>Release 3.18</sup>  
 
-### **EVA T2** ###  
+* Actor Tech Team added 95 days of work  
 *Thu May 13 2021 => Thu Jul 07 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/79gdor1nyks3d" target="_blank">EVA T2</a>** ###  
-* Actor Tech Team added 95 days of work  
 * EU Landing Zone Team freed up 11 days of work  
   
 #### Removed from release roadmap! ####  
   
-### **Hacking T0** ###  
+* End date has been extended from Thu Apr 21 2022 to Tue Jul 26 2022  
 *Sun Jan 03 2021 => Tue Jul 26 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/33474a7cs0v1j" target="_blank">Hacking T0</a>** ###  
-* End date has been extended from Thu Apr 21 2022 to Tue Jul 26 2022  
 * EU Sandbox 1 freed up 63 days of work  
 * UI Tech Team was assigned, revealing 4 days of work  
   
-### **Jump Point Spacescaping** ###  
+* End date has been extended from Mon Jan 31 2022 to Tue Jul 26 2022  
 *Mon Mar 08 2021 => Tue Jul 26 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kv4g4bc7qr6zt" target="_blank">Jump Point Spacescaping</a>** ###  
-* End date has been extended from Mon Jan 31 2022 to Tue Jul 26 2022  
 * EU Sandbox 1 added 28 days of work  
   
-### **Life Support T0** ###  
+* End date has been extended from Wed Sep 28 2022 to Tue Dec 20 2022  
 *Sun Apr 18 2021 => Tue Dec 20 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3fbborm2578lc" target="_blank">Life Support T0</a>** ###  
-* End date has been extended from Wed Sep 28 2022 to Tue Dec 20 2022  
 * EU PU Gameplay Feature Team added 110 days of work  
   
-### **Lockable Containers** ###  
+* End date has moved closer from Wed Aug 17 2022 to Tue Jun 21 2022  
 *Mon Nov 08 2021 => Tue Jun 21 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/zycubzkd5pn9a" target="_blank">Lockable Containers</a>** ###  
-* End date has moved closer from Wed Aug 17 2022 to Tue Jun 21 2022  
 * EU PU Gameplay Feature Team freed up 70 days of work  
   
-### **Loot Generation T1** ###  
-*Fri Aug 13 2021 => Thu Dec 30 2021*  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/mbmjis7brhzg7" target="_blank">Loot Generation T1</a>** ###  
 * End date has moved earlier (time allocation removal(s) likely)  
  from Wed Sep 28 2022 to Thu Dec 30 2021  
+*Fri Aug 13 2021 => Thu Dec 30 2021*  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/mbmjis7brhzg7" target="_blank">Loot Generation T1</a>** ###  
 * EU PU Gameplay Feature Team freed up 179 days of work  
   
-### **Mag Stripping/Refill** ###  
+* End date has been extended from Thu Jun 03 2021 to Fri Dec 30 2022  
 *Sun Jan 10 2021 => Fri Dec 30 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/mckqpqjm2zzyb" target="_blank">Mag Stripping/Refill</a>** ###  
-* End date has been extended from Thu Jun 03 2021 to Fri Dec 30 2022  
 * Weapon Feature Team was assigned, adding 92 days of work  
   
-### **Map and Radar System Rework** ###  
+* End date has been extended from Tue Dec 21 2021 to Thu Feb 10 2022  
 *Sun Apr 04 2021 => Thu Feb 10 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lz0inyoyefgtn" target="_blank">Map and Radar System Rework</a>** ###  
-* End date has been extended from Tue Dec 21 2021 to Thu Feb 10 2022  
 * UI Feature Team added 25 days of work  
 * UI Tech Team added 25 days of work  
   
-### **Mining Gadgets** ###  
+* End date has been extended from Mon Dec 20 2021 to Thu Jan 20 2022  
 *Mon Feb 01 2021 => Thu Jan 20 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/0hjlqfcbfi08b" target="_blank">Mining Gadgets</a>** ###  
-* End date has been extended from Mon Dec 20 2021 to Thu Jan 20 2022  
 * Actor Feature Team added 17 days of work  
   
 ![](https://robertsspaceindustries.com/media/rnipumtc6906ir/source/Mining_gadget.jpg)  
 <sup>Release 3.17</sup>  
 
-### **MISC Hull A** ###  
+* Vehicle Content - US added 28 days of work  
 *Sun Jun 27 2021 => Thu Mar 17 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/i7j6aonq4inm9" target="_blank">MISC Hull A</a>** ###  
-* Vehicle Content - US added 28 days of work  
   
 ![](https://robertsspaceindustries.com/media/o166pcqzmxrhzr/source/Hull_A_1_v002_compflat.jpg)  
 <sup>Release 3.17</sup>  
 
-### **Miscellaneous Support** ###  
+* End date has been extended from Wed Sep 28 2022 to Fri Dec 30 2022  
 *Thu Dec 31 2020 => Fri Dec 30 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qvviufr1cqczy" target="_blank">Miscellaneous Support</a>** ###  
-* End date has been extended from Wed Sep 28 2022 to Fri Dec 30 2022  
 * Actor Feature Team added 93 days of work  
 * Vehicle Experience Team added 28 days of work  
 * Actor Tech Team added 42 days of work  
@@ -429,87 +388,74 @@ x1 Engineering dev previously completed all available tasks
 * Planet Content Team added 26 days of work  
 * Lighting Team added 39 days of work  
   
-### **NPC Tracker Service** ###  
+* End date has been extended from Mon Jan 17 2022 to Mon Feb 28 2022  
 *Sun Jan 31 2021 => Mon Feb 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/zk3a0tp8t54q7" target="_blank">NPC Tracker Service</a>** ###  
-* End date has been extended from Mon Jan 17 2022 to Mon Feb 28 2022  
 * Systemic Services and Tools Team added 31 days of work  
   
-### **Nyx System, Planet, and Mission Setup** ###  
-*Mon Mar 29 2021 => Mon Jun 21 2021*  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ocwdl38o5v7ad" target="_blank">Nyx System, Planet, and Mission Setup</a>** ###  
 * End date has moved earlier (time allocation removal(s) likely)  
  from Thu Jun 30 2022 to Mon Jun 21 2021  
+*Mon Mar 29 2021 => Mon Jun 21 2021*  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ocwdl38o5v7ad" target="_blank">Nyx System, Planet, and Mission Setup</a>** ###  
 * EU Sandbox 1 freed up 133 days of work  
   
-### **Origin X1** ###  
+* End date has been extended from Thu Jul 07 2022 to Thu Jul 14 2022  
 *Sun Jan 30 2022 => Thu Jul 14 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xz7mai18yr9xs" target="_blank">Origin X1</a>** ###  
-* End date has been extended from Thu Jul 07 2022 to Thu Jul 14 2022  
 * Vehicle Content - EU added 7 days of work  
   
-### **Outpost Homestead - Independent & Outlaw** ###  
+* End date has been extended from Mon Mar 28 2022 to Tue Sep 06 2022  
 *Mon Jan 04 2021 => Tue Sep 06 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2l41u7q012cwc" target="_blank">Outpost Homestead - Independent & Outlaw</a>** ###  
-* End date has been extended from Mon Mar 28 2022 to Tue Sep 06 2022  
 * EU Sandbox 1 added 39 days of work  
   
-### **Outpost Theme Variants** ###  
+* End date has been extended from Thu Jun 30 2022 to Tue Dec 20 2022  
 *Thu Apr 01 2021 => Tue Dec 20 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3z2lkiq68ztfo" target="_blank">Outpost Theme Variants</a>** ###  
-* End date has been extended from Thu Jun 30 2022 to Tue Dec 20 2022  
 * EU Sandbox 1 added 133 days of work  
   
-### **Persistent Hangars** ###  
+* End date has been extended from Thu Aug 25 2022 to Thu Nov 17 2022  
 *Sun May 09 2021 => Thu Nov 17 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/x8mdafa7ky5dn" target="_blank">Persistent Hangars</a>** ###  
-* End date has been extended from Thu Aug 25 2022 to Thu Nov 17 2022  
 * US PU Gameplay Feature Team added 53 days of work  
   
-### **Persistent Streaming and Server Meshing** ###  
+* End date has been extended from Wed Sep 28 2022 to Fri Dec 30 2022  
 *Thu Dec 31 2020 => Fri Dec 30 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/22qmiobcit64m" target="_blank">Persistent Streaming and Server Meshing</a>** ###  
-* End date has been extended from Wed Sep 28 2022 to Fri Dec 30 2022  
 * UI Feature Team added 39 days of work  
 * Network Team added 93 days of work  
 * Persistent Tech Team added 93 days of work  
   
-### **Pyro Space Stations** ###  
+* End date has been extended from Wed Sep 28 2022 to Tue Dec 06 2022  
 *Thu Apr 01 2021 => Tue Dec 06 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ze5g3do3lijlm" target="_blank">Pyro Space Stations</a>** ###  
-* End date has been extended from Wed Sep 28 2022 to Tue Dec 06 2022  
 * EU Landing Zone Team added 56 days of work  
 * Location Concept Art added 13 days of work  
   
-### **Pyro Spacescaping** ###  
+* End date has been extended from Thu Nov 25 2021 to Mon Jan 31 2022  
 *Mon Jan 04 2021 => Mon Jan 31 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/af4grpmlcjtmf" target="_blank">Pyro Spacescaping</a>** ###  
-* End date has been extended from Thu Nov 25 2021 to Mon Jan 31 2022  
 * EU Sandbox 1 added 28 days of work  
   
-### **Quantum Simulation** ###  
+* End date has been extended from Wed Sep 28 2022 to Thu Dec 15 2022  
 *Thu Dec 31 2020 => Thu Dec 15 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/5jx5bc18cdok9" target="_blank">Quantum Simulation</a>** ###  
-* End date has been extended from Wed Sep 28 2022 to Thu Dec 15 2022  
 * Systemic Services and Tools Team added 78 days of work  
   
-### **Quantum Travel Experience** ###  
+* End date has moved closer from Mon Mar 14 2022 to Mon Feb 28 2022  
 *Wed Jul 21 2021 => Mon Feb 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ffao511sfca0t" target="_blank">Quantum Travel Experience</a>** ###  
-* End date has moved closer from Mon Mar 14 2022 to Mon Feb 28 2022  
 * Vehicle Experience Team added 1 days of work  
   
-### **Resource Management** ###  
+* End date has been extended from Wed Sep 28 2022 to Tue Dec 20 2022  
 *Mon Jan 04 2021 => Tue Dec 20 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/by4bc1er7iesh" target="_blank">Resource Management</a>** ###  
-* End date has been extended from Wed Sep 28 2022 to Tue Dec 20 2022  
 * EU PU Gameplay Feature Team added 54 days of work  
 * Vehicle Feature Team was assigned, adding 42 days of work  
   
-### **Salvage T0** ###  
+* End date has been extended from Sun Apr 03 2022 to Thu Apr 14 2022  
 *Mon Apr 19 2021 => Thu Apr 14 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/cex1wivftqaw6" target="_blank">Salvage T0</a>** ###  
-* End date has been extended from Sun Apr 03 2022 to Thu Apr 14 2022  
 * Actor Feature Team was assigned, revealing 45 days of work  
 * Vehicle Feature Team added 17 days of work  
 * Weapon Feature Team added 0 days of work  
@@ -525,74 +471,63 @@ to 'Hull stripping and repair of ships'
 ![](https://robertsspaceindustries.com/media/ydhforz0nhexyr/source/DRAK_Vulture_Promo_JunkYard_AA01_Grade01-Squashed.jpg)  
 <sup>Release 3.18</sup>  
 
-### **Server Streaming** ###  
+* End date has been extended from Mon Feb 14 2022 to Mon Mar 14 2022  
 *Mon Jan 03 2022 => Mon Mar 14 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lxjcm8gtyvjqf" target="_blank">Server Streaming</a>** ###  
-* End date has been extended from Mon Feb 14 2022 to Mon Mar 14 2022  
 * Network Team added 3 days of work  
   
-### **Ship CPU** ###  
-*Wed Jan 20 2021 => Tue Feb 02 2021*  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/k344glls3rfaq" target="_blank">Ship CPU</a>** ###  
 * End date has moved earlier (time allocation removal(s) likely)  
  from Wed Sep 28 2022 to Tue Feb 02 2021  
+*Wed Jan 20 2021 => Tue Feb 02 2021*  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/k344glls3rfaq" target="_blank">Ship CPU</a>** ###  
 * Vehicle Experience Team freed up 192 days of work  
   
-### **Ship to Ship Refueling** ###  
+* End date has been extended from Mon Feb 14 2022 to Mon Mar 28 2022  
 *Tue Mar 02 2021 => Mon Mar 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/q6m1tl7dwqpa9" target="_blank">Ship to Ship Refueling</a>** ###  
-* End date has been extended from Mon Feb 14 2022 to Mon Mar 28 2022  
 * EU PU Gameplay Feature Team added 3 days of work  
   
 ![](https://robertsspaceindustries.com/media/6mrlwmqskp9tlr/source/Starfarer_HR_ext_b.jpg)  
 <sup>Release 3.17</sup>  
 
-### **SQ42 - Vehicle Support** ###  
+* End date has been extended from Wed Aug 17 2022 to Sat Oct 15 2022  
 *Sun Jan 10 2021 => Sat Oct 15 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/w489uig8qdbov" target="_blank">SQ42 - Vehicle Support</a>** ###  
-* End date has been extended from Wed Aug 17 2022 to Sat Oct 15 2022  
 * Vehicle Content - US added 59 days of work  
   
-### **Terrain Snow Displacement** ###  
+* End date has been extended from Tue Jun 21 2022 to Mon Dec 05 2022  
 *Wed Apr 13 2022 => Mon Dec 05 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/edlxjdl06zdqg" target="_blank">Terrain Snow Displacement</a>** ###  
-* End date has been extended from Tue Jun 21 2022 to Mon Dec 05 2022  
 * Planet Tech Team added 52 days of work  
   
-### **Third Person Camera V2** ###  
+* End date has moved closer from Mon Jan 31 2022 to Tue Jun 22 2021  
 *Wed May 12 2021 => Tue Jun 22 2021*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/517006b11ycpl" target="_blank">Third Person Camera V2</a>** ###  
-* End date has moved closer from Mon Jan 31 2022 to Tue Jun 22 2021  
 * Vehicle Experience Team freed up 13 days of work  
   
-### **Turret Usability Improvements** ###  
+* End date has been extended from Thu Jun 23 2022 to Wed Sep 28 2022  
 *Fri Apr 15 2022 => Wed Sep 28 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/99mqtbmwqkbnh" target="_blank">Turret Usability Improvements</a>** ###  
-* End date has been extended from Thu Jun 23 2022 to Wed Sep 28 2022  
 * Vehicle Experience Team added 68 days of work  
   
-### **Unannounced (Unannounced Vehicle)** ###  
+* Vehicle Experience Team added 13 days of work  
 *Sun Jul 04 2021 => Thu Jun 23 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gxiq4mofoiisf" target="_blank">Unannounced (Unannounced Vehicle)</a>** ###  
-* Vehicle Experience Team added 13 days of work  
 * Audio was assigned, adding 25 days of work  
   
-### **Unannounced (Unannounced Vehicle)** ###  
+* End date has been extended from Thu May 12 2022 to Thu Jun 16 2022  
 *Sun Feb 13 2022 => Thu Jun 16 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3k8zwsazgvmcp" target="_blank">Unannounced (Unannounced Vehicle)</a>** ###  
-* End date has been extended from Thu May 12 2022 to Thu Jun 16 2022  
 * Vehicle Content - EU added 35 days of work  
   
-### **Unannounced (Unannounced Vehicle)** ###  
-*Sun Oct 31 2021 => Thu Feb 03 2022*  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/sit96ssmluwzy" target="_blank">Unannounced (Unannounced Vehicle)</a>** ###  
 * End date has moved earlier (time allocation removal(s) likely)  
  from Thu Sep 22 2022 to Thu Feb 03 2022  
+*Sun Oct 31 2021 => Thu Feb 03 2022*  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/sit96ssmluwzy" target="_blank">Unannounced (Unannounced Vehicle)</a>** ###  
   
-### **Unannounced (Unannounced Content)** ###  
+* End date has been extended from Thu Jun 30 2022 to Tue Dec 20 2022  
 *Thu Apr 01 2021 => Tue Dec 20 2022*  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a3eyxpw13z8vp" target="_blank">Unannounced (Unannounced Content)</a>** ###  
-* End date has been extended from Thu Jun 30 2022 to Tue Dec 20 2022  
 * Title has been updated from "Unannounced" to "Cave Archetypes"  
 * Description has been updated from  
 "Unannounced Content"  
