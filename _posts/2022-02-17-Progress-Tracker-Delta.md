@@ -1,11 +1,11 @@
 ---  
 layout: post  
-title: "Progress Report Delta - 2022-02-17"  
+title: "Progress Tracker Delta - 2022-02-17"  
 date: 2022-02-17  
-categories: Teams  
+categories: Delta  
 ---  
   
-# Progress Report Delta #  
+# Progress Tracker Delta #  
 ### 440 deliverables listed | Sun Feb 13 2022 => Thu Feb 17 2022 ###  
 There were 65 modifications, 2 removals, and 11 additions in this update.  
   
