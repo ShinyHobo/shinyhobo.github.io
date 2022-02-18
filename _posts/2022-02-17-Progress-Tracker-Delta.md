@@ -13,7 +13,7 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
 
 There are currently 162 scheduled deliverables.  
   
-The top fifteen highest, currently scheduled tasks are (in man-days):    
+The top fifteen highest, currently scheduled tasks are (in estimated man-days):    
 * 8740 - Pyro Space Stations  
 * 7423 - Theaters of War - Miscellaneous Support  
 * 7235 - Miscellaneous Support  
