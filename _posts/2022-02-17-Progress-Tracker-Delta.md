@@ -11,24 +11,24 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
   
 ---  
 
-There are currently 162 scheduled deliverables.  
+There are currently 166 scheduled deliverables.  
   
 The top fifteen highest, currently scheduled tasks are (in estimated man-days):    
-* 8740 - Pyro Space Stations  
-* 7423 - Theaters of War - Miscellaneous Support  
-* 7235 - Miscellaneous Support  
-* 7031 - Building Interiors  
-* 6672 - Bug Fixing & Tech Debt  
-* 6357 - Derelict Spaceships - Points of Interest  
-* 5217 - Persistent Streaming and Server Meshing  
-* 4101 - Outpost Homestead - Independent & Outlaw  
-* 3096 - Outpost Theme Variants  
-* 2479 - Cave Archetypes  
-* 1333 - Quantum Simulation  
-* 1156 - Login Flow  
-* 1030 - Chapter 01  
-* 907 - Chapter 26  
-* 872 - Character Work  
+* 2913 - Pyro Space Stations  
+* 2474 - Theaters of War - Miscellaneous Support  
+* 2472 - Miscellaneous Support  
+* 2344 - Building Interiors  
+* 2240 - Bug Fixing & Tech Debt  
+* 2119 - Derelict Spaceships - Points of Interest  
+* 1774 - Persistent Streaming and Server Meshing  
+* 1374 - Outpost Homestead - Independent & Outlaw  
+* 1032 - Outpost Theme Variants  
+* 826 - Cave Archetypes  
+* 444 - Quantum Simulation  
+* 385 - Login Flow  
+* 355 - Chapter 01  
+* 315 - Chapter 26  
+* 300 - Character Work  
   
 The top fifteen highest, currently scheduled tasks are (in assigned devs):    
 * 32 - Character Work  
@@ -41,11 +41,11 @@ The top fifteen highest, currently scheduled tasks are (in assigned devs):
 * 11 - Outpost Theme Variants  
 * 10 - Theaters of War - Miscellaneous Support  
 * 10 - Persistent Hangars  
-* 9 - Outpost Homestead - Independent & Outlaw  
+* 10 - Frontier Clothing  
 * 9 - Jump Points  
 * 9 - Salvage T0  
-* 9 - Frontier Clothing  
 * 8 - Chapter 12  
+* 8 - MISC Hull A  
   
 ---  
 
