@@ -14,30 +14,30 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
 There are currently 162 scheduled deliverables.  
   
 The top fifteen highest, currently scheduled tasks are (in man-days):    
-* 12714 - Pyro Space Stations  
-* 11830 - Theaters of War - Miscellaneous Support  
-* 10017 - Building Interiors  
-* 9440 - Derelict Spaceships - Points of Interest  
-* 7652 - Miscellaneous Support  
-* 7203 - Bug Fixing & Tech Debt  
-* 5941 - Outpost Homestead - Independent & Outlaw  
-* 5313 - Persistent Streaming and Server Meshing  
-* 4308 - Outpost Theme Variants  
-* 3685 - Cave Archetypes  
+* 8740 - Pyro Space Stations  
+* 7423 - Theaters of War - Miscellaneous Support  
+* 7235 - Miscellaneous Support  
+* 7031 - Building Interiors  
+* 6672 - Bug Fixing & Tech Debt  
+* 6357 - Derelict Spaceships - Points of Interest  
+* 5217 - Persistent Streaming and Server Meshing  
+* 4101 - Outpost Homestead - Independent & Outlaw  
+* 3096 - Outpost Theme Variants  
+* 2479 - Cave Archetypes  
 * 1333 - Quantum Simulation  
-* 1332 - Chapter 01  
-* 1264 - Login Flow  
-* 945 - Chapter 12  
-* 917 - Character Work  
+* 1156 - Login Flow  
+* 1030 - Chapter 01  
+* 907 - Chapter 26  
+* 872 - Character Work  
   
 The top fifteen highest, currently scheduled tasks are (in assigned devs):    
 * 32 - Character Work  
 * 18 - Bug Fixing & Tech Debt  
 * 14 - Archon  
 * 13 - Chapter 26  
+* 11 - Miscellaneous Support  
 * 11 - Building Interiors  
 * 11 - Derelict Spaceships - Points of Interest  
-* 11 - Miscellaneous Support  
 * 11 - Outpost Theme Variants  
 * 10 - Theaters of War - Miscellaneous Support  
 * 10 - Persistent Hangars  
