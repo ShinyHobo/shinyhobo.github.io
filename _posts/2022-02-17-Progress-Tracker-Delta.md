@@ -1,7 +1,7 @@
 ---  
 layout: post  
-title: "Progress Tracker Delta - 2022-02-18"  
-date: 2022-02-18  
+title: "Progress Tracker Delta - 2022-02-17"  
+date: 2022-02-17  
 categories: Delta  
 ---  
   
