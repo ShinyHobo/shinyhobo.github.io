@@ -12,7 +12,7 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
 ---  
 
 ## [2] deliverable(s) *removed*: ##  
-### **Long Distance Probing** ###  
+### **Long Distance Probing** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Last scheduled from Tue Feb 01 2022 to Mon Feb 28 2022*  
 This feature will allow players to launch quantum-traveling probes that can detect signatures at
 extreme ranges far beyond the reach of ship scanners. The signatures can ultimately be used to
@@ -20,7 +20,7 @@ identify point-of-interest and plan quantum travel.
   
 * The following team(s) have been freed up: Systemic Services and Tools Team  
   
-### **Unannounced** ###  
+### **Unannounced** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Last scheduled from Sun Apr 24 2022 to Thu Jun 23 2022*  
 Unannounced Vehicle  
   
@@ -29,7 +29,7 @@ Unannounced Vehicle
 ---  
 
 ## [11] deliverable(s) *added*: ##  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/24jt38flf0toi" target="_blank">Distortion Propagation</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/24jt38flf0toi" target="_blank">Distortion Propagation</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Thu Nov 10 2022 => Fri Dec 30 2022*  
 Further work on this damage type to allow correct propagation into systems. This makes the location
 of impact much more important, as powered items closer to the impact will begin to suffer more
@@ -40,7 +40,7 @@ The following team(s) were assigned:
 * Weapon Feature Team will begin work Thu Nov 10 2022  
 x1 Engineering dev with 3 tasks (104% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a80a7ger61zjn" target="_blank">Entity Properties Plugin</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a80a7ger61zjn" target="_blank">Entity Properties Plugin</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Mon Jan 03 2022 => Mon Mar 14 2022*  
 Improving entity property handling to easily adjust properties for multiple entities at the same
 time, decreasing iteration time for designers. This is a major upgrade to the old way of handling
@@ -50,7 +50,7 @@ The following team(s) were assigned:
 * Editor Team began work Mon Jan 03 2022  
 x1 Engineering dev with 2 tasks (128% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/06evjumayvc15" target="_blank">Lorville Cityscape</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/06evjumayvc15" target="_blank">Lorville Cityscape</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Mon Jan 03 2022 => Thu Jun 30 2022*  
 Rework the Lorville skyline to better fit the scale of the city and its distinctive buildings.  
   
@@ -58,7 +58,7 @@ The following team(s) were assigned:
 * Location Concept Art began work Mon Jan 03 2022  
 x2 Art dev with 10 tasks (63% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gwt6g2pmm280t" target="_blank">Physics - Ropes Simulation</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gwt6g2pmm280t" target="_blank">Physics - Ropes Simulation</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Mon Sep 27 2021 => Sun Nov 28 2021*  
 Extend the simulation algorithm of ropes to support ropes interacting with pulleys, and improve
 general stability to enable the development of new gameplay mechanics.  
@@ -67,7 +67,7 @@ The following team(s) were assigned:
 * Physics Team began work Mon Sep 27 2021  
 x1 Engineering dev previously completed all available tasks  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/0exqdhuy7395i" target="_blank">Room Depressurization</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/0exqdhuy7395i" target="_blank">Room Depressurization</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Jul 07 2022 => Tue Dec 20 2022*  
 Creating the ability for players to increase or decrease the atmospheric pressure in a
 defined/closed room.  
@@ -76,7 +76,7 @@ The following team(s) were assigned:
 * EU PU Gameplay Feature Team will begin work Thu Jul 07 2022  
 x1 Engineering dev with 10 tasks (130% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/zwtuu7anoftpl" target="_blank">RSI Apollo</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/zwtuu7anoftpl" target="_blank">RSI Apollo</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Aug 04 2022 => Fri Dec 30 2022*  
 Building, implementing, and balancing RSI's medical craft, the Apollo, as a game-ready vehicle.  
   
@@ -84,7 +84,7 @@ The following team(s) were assigned:
 * Vehicle Content - US will begin work Thu Aug 04 2022  
 x3 Art dev with 20 tasks (40% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/d4esq1kn1wb97" target="_blank">Satellites - Points of Interest</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/d4esq1kn1wb97" target="_blank">Satellites - Points of Interest</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Sun Mar 27 2022 => Fri Dec 30 2022*  
 Populate the game universe with explorable satellite locations that serve as points of interest for
 players.   
@@ -93,7 +93,7 @@ The following team(s) were assigned:
 * Location Concept Art will begin work Sun Mar 27 2022  
 x2 Art dev with 30 tasks (61% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vmd72lt7f8e2i" target="_blank">Tumbril Ranger</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vmd72lt7f8e2i" target="_blank">Tumbril Ranger</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Fri May 13 2022 => Fri Dec 30 2022*  
 Building, implementing, and balancing Tumbril Landsystems' two-wheeled bike, the Ranger, as a
 game-ready vehicle.  
@@ -104,7 +104,7 @@ x1 Engineering dev with 8 tasks (129% load)
 * Vehicle Content - US will begin work Sun Jun 12 2022  
 x1 Art dev with 13 tasks (126% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/li9p49pz4ayr2" target="_blank">Unannounced</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/li9p49pz4ayr2" target="_blank">Unannounced</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Sun Apr 24 2022 => Thu Sep 22 2022*  
 Unannounced Vehicle  
   
@@ -112,7 +112,7 @@ The following team(s) were assigned:
 * Vehicle Content - EU will begin work Sun Apr 24 2022  
 x5 Art dev with 54 tasks (83% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8165duvvvh9zn" target="_blank">Underground Facilities</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8165duvvvh9zn" target="_blank">Underground Facilities</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Mon Jan 03 2022 => Thu Jun 30 2022*  
 Adding new underground facilities to the game. Traversable areas offering gameplay opportunities in
 corporate industrial environments.  
@@ -121,7 +121,7 @@ The following team(s) were assigned:
 * Location Concept Art began work Mon Jan 03 2022  
 x4 Art dev with 26 tasks (31% load)  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9276f78qeh2jg" target="_blank">Zone Handling</a>** ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9276f78qeh2jg" target="_blank">Zone Handling</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Mon Jan 03 2022 => Mon Jan 31 2022*  
 Implementing backend solutions to help designers easily define which zone an object should be
 spawned in, to be merged into all existing tools and workflows, with an initial focus on cinematic
