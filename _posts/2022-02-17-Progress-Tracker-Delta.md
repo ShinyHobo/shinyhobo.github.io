@@ -500,7 +500,8 @@ to 'Hull stripping and repair of ships'
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/517006b11ycpl" target="_blank">Third Person Camera V2</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Wed May 12 2021 => Tue Jun 22 2021*  
-* End date has moved closer from Mon Jan 31 2022 to Tue Jun 22 2021  
+* End date has moved earlier (time allocation removal(s) likely)  
+ from Mon Jan 31 2022 to Tue Jun 22 2021  
 * Vehicle Experience Team freed up 13 days of work  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/99mqtbmwqkbnh" target="_blank">Turret Usability Improvements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
