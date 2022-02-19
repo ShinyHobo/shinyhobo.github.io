@@ -12,9 +12,9 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
 ---  
 
 <details><summary><h3>extra analysis (click me)</h3></summary><br/>  
-There are approximately 705 devs (out of ~512, or 138%) with 1031 assignments scheduled to work on
-166 observable deliverables. Of those deliverables, 7% are for SQ42 exclusively, with ~176 devs
-(34%) scheduled for approximately 3284 man-days. 10% of deliverables are shared between both
+There are approximately 473 devs (out of ~512, or 92%) with 1031 assignments scheduled to work on
+166 observable deliverables. Of those deliverables, 7% are for SQ42 exclusively, with ~185 devs
+(36%) scheduled for approximately 3284 man-days. 10% of deliverables are shared between both
 projects. <br/><br/>  
   
 <h3>The top fifteen currently scheduled tasks (in estimated man-days) are:</h3>    
