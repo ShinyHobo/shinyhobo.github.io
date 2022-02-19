@@ -28,7 +28,6 @@
 
         <div class="container main">
             <section id="main_content" class="post">
-                <input type="text" id="input" />
                 {{ content }}
             </section>
         </div>
@@ -43,13 +42,11 @@
         var input = document.getElementById('input');
         input.onkeyup = function () {
             var filter = input.value.toUpperCase();
-            console.log(filter);
             var ol = document.getElementsByClassName('ranked-deliverables');
             for(var oi = 0; oi < ol.length; oi++) {
                 var lis = ol[oi].getElementsByTagName('li');
                 for (var i = 0; i < lis.length; i++) {
                     var name = lis[i].innerText;
-                    console.log(name);
                     if (name.toUpperCase().includes(filter)) 
                         lis[i].style.display = 'list-item';
                     else
