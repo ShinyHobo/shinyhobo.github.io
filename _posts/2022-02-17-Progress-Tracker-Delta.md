@@ -13,9 +13,9 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
 
 <details><summary><h3>tldr; click me</h3></summary><br/>  
 There are approximately 415 devs (out of ~512; 81%) currently working on 166 scheduled, observable
-deliverables.<br/>  
+deliverables.<br/><br/>  
   
-The top fifteen currently scheduled tasks (in estimated man-days) are:<br/>    
+<h3>The top fifteen currently scheduled tasks (in estimated man-days) are:<h3><br/>    
 <ul><li>2913 - Pyro Space Stations</li>  
 <li>2474 - Theaters of War - Miscellaneous Support</li>  
 <li>2472 - Miscellaneous Support</li>  
@@ -32,7 +32,7 @@ The top fifteen currently scheduled tasks (in estimated man-days) are:<br/>
 <li>315 - Chapter 26</li>  
 <li>300 - Character Work</li>  
 </ul>
-<br/>The top fifteen currently scheduled tasks (in assigned devs) are:<br/>    
+<br/><h3>The top fifteen currently scheduled tasks (in assigned devs) are:</h3><br/>    
 <ul><li>32 - Character Work</li>  
 <li>18 - Bug Fixing & Tech Debt</li>  
 <li>14 - Archon</li>  
