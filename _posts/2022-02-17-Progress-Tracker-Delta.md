@@ -5,31 +5,32 @@ date: 2022-02-17
 categories: Delta  
 ---  
   
-<details><summary>tldr (click me)</summary><p>  # Progress Tracker Delta #  
-### 440 deliverables listed | Sun Feb 13 2022 => Sat Feb 17 2022 ###  
+# Progress Tracker Delta #  
+### 440 deliverables listed | Sun Feb 13 2022 => Thu Feb 17 2022 ###  
 There were 65 modifications, 2 removals, and 11 additions in this update.  
   
 ---  
 
-There are approximately 411 devs (out of ~512; 80%) currently working on 162 scheduled, observable
+<details><summary>tldr (click me)</summary><p>  
+There are approximately 415 devs (out of ~512; 81%) currently working on 166 scheduled, observable
 deliverables.  
   
 The top fifteen currently scheduled tasks (in estimated man-days) are:    
 * 2913 - Pyro Space Stations  
 * 2474 - Theaters of War - Miscellaneous Support  
-* 2412 - Miscellaneous Support  
+* 2472 - Miscellaneous Support  
 * 2344 - Building Interiors  
-* 2224 - Bug Fixing & Tech Debt  
+* 2240 - Bug Fixing & Tech Debt  
 * 2119 - Derelict Spaceships - Points of Interest  
-* 1739 - Persistent Streaming and Server Meshing  
-* 1367 - Outpost Homestead - Independent & Outlaw  
+* 1774 - Persistent Streaming and Server Meshing  
+* 1374 - Outpost Homestead - Independent & Outlaw  
 * 1032 - Outpost Theme Variants  
 * 826 - Cave Archetypes  
 * 444 - Quantum Simulation  
 * 385 - Login Flow  
-* 343 - Chapter 01  
-* 302 - Chapter 26  
-* 291 - Character Work  
+* 355 - Chapter 01  
+* 315 - Chapter 26  
+* 300 - Character Work  
   
 The top fifteen currently scheduled tasks (in assigned devs) are :    
 * 32 - Character Work  
@@ -42,11 +43,11 @@ The top fifteen currently scheduled tasks (in assigned devs) are :
 * 11 - Outpost Theme Variants  
 * 10 - Theaters of War - Miscellaneous Support  
 * 10 - Persistent Hangars  
-* 9 - Outpost Homestead - Independent & Outlaw  
+* 10 - Frontier Clothing  
 * 9 - Jump Points  
 * 9 - Salvage T0  
-* 9 - Frontier Clothing  
 * 8 - Chapter 12  
+* 8 - MISC Hull A  
 </p></details>  
 ---  
 
@@ -188,7 +189,7 @@ x1 Art dev with 3 tasks (104% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xffyseweue5kz" target="_blank">Atmospheric Pressure Damage</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Mon Jun 21 2021 => Tue May 24 2022*  
 * End date has been extended from Mon Feb 28 2022 to Tue May 24 2022  
-* EU PU Gameplay Feature Team freed up 10 days of work  
+* EU PU Gameplay Feature Team freed up 12 days of work  
 x1 Engineering dev with 3 tasks (82% => 93% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/wgncoopr3uw8f" target="_blank">Banu Merchantman</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
@@ -233,9 +234,9 @@ x4 Engineering devs with 42 tasks (62% => 64% load)
 x4 Engineering devs with 39 tasks (28% load)  
 x4 Design devs with 36 tasks (27% => 28% load)  
 x3 Art devs with 24 tasks (42% => 38% load)  
-* Network Team freed up 24 days of work  
+* Network Team freed up 26 days of work  
 x2 Engineering devs with 3 tasks (34% => 46% load)  
-* Actor Tech Team added 41 days of work  
+* Actor Tech Team added 43 days of work  
 x2 Engineering devs with 30 tasks (40% => 39% load)  
 * EU Landing Zone Team added 27 days of work  
 x15 Art devs with 104 tasks (5% => 6% load)  
@@ -249,13 +250,13 @@ x2 Engineering devs with 3 tasks (42% => 47% load)
 * MTL Sandbox 1 added 69 days of work  
 x4 Design devs with 71 tasks (6% => 7% load)  
 x10 Art devs with 149 tasks (2% => 3% load)  
-* Location Concept Art added 243 days of work  
+* Location Concept Art added 241 days of work  
 x7 Art devs with 75 tasks (17% => 14% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/42e91zsr4xs2f" target="_blank">Cargo System Refactor</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Sun Jan 03 2021 => Thu Jun 02 2022*  
 * Actor Feature Team added 31 days of work  
-* Props Team added 1 days of work  
+* Props Team added 3 days of work  
 x2 Art devs with 9 tasks (100% load)  
   
 ![](https://robertsspaceindustries.com/media/bu2rlurxhhh4gr/source/Titan_10.jpg)  
@@ -264,14 +265,14 @@ x2 Art devs with 9 tasks (100% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/p6q8plpm8dovk" target="_blank">Chapter 01</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 * End date has been extended from Fri Jan 14 2022 to Thu Mar 31 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x3 Animation devs with 44 tasks (18% => 12% load)  
 x1 Design dev with 15 tasks (17% => 38% load)  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x1 Design dev with 24 tasks (46% => 50% load)  
-* SQ42 Level Design 2 - Flight added 50 days of work  
+* SQ42 Level Design 2 - Flight added 48 days of work  
 x2 => 5 Design devs with 32 tasks (27% => 12% load)  
-* SQ42 Level Design 3 - Social added 71 days of work  
+* SQ42 Level Design 3 - Social added 69 days of work  
 x3 Design devs with 27 tasks (15% => 16% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4g1yehlr65pfm" target="_blank">Chapter 02</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
@@ -289,7 +290,7 @@ x1 Design dev with 2 tasks (76% => 69% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8t07kw90qvhf0" target="_blank">Chapter 04</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Mon Mar 28 2022*  
 * End date has been extended from Sun Jan 30 2022 to Mon Mar 28 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x3 Animation devs with 23 tasks (13% => 7% load)  
 x2 Design devs with 30 tasks (12% => 19% load)  
 * SQ42 Level Design 3 - Social added 45 days of work  
@@ -298,7 +299,7 @@ x1 Design dev with 14 tasks (49% => 51% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ase8e8mmixff4" target="_blank">Chapter 05</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Mon Mar 28 2022*  
 * End date has been extended from Thu Dec 30 2021 to Mon Mar 28 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x2 Design devs with 31 tasks (12% load)  
 x3 Animation devs with 18 tasks (14% load)  
 * SQ42 Level Design 3 - Social added 31 days of work  
@@ -307,26 +308,26 @@ x1 Design dev with 6 tasks (42% => 41% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/55ihw5xes1jpp" target="_blank">Chapter 07</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Tue Jan 05 2021 => Thu Mar 31 2022*  
 * End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x2 Design devs with 31 tasks (12% load)  
 x2 Animation devs with 11 tasks (21% load)  
-* SQ42 Level Design 2 - Flight added 50 days of work  
+* SQ42 Level Design 2 - Flight added 48 days of work  
 x1 => 2 Design devs with 16 tasks (49% => 27% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51lg16ocusxjo" target="_blank">Chapter 09</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Tue Jan 05 2021 => Mon Mar 28 2022*  
 * End date has been extended from Thu Dec 30 2021 to Mon Mar 28 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x2 Design devs with 31 tasks (19% => 12% load)  
 x2 Animation devs with 7 tasks (7% => 21% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/z97whnirtcy29" target="_blank">Chapter 11</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 * End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x2 Design devs with 31 tasks (12% load)  
 x2 Animation devs with 7 tasks (21% load)  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x4 => 5 Design devs with 32 tasks (14% => 12% load)  
 * SQ42 Level Design 2 - Flight added 21 days of work  
 x2 Design devs with 25 tasks (27% => 26% load)  
@@ -334,10 +335,10 @@ x2 Design devs with 25 tasks (27% => 26% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3mwo1tt5tkkl6" target="_blank">Chapter 12</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Tue Jan 05 2021 => Thu Mar 31 2022*  
 * End date has been extended from Sun Feb 27 2022 to Thu Mar 31 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x2 Animation devs with 22 tasks (20% load)  
 x2 Design devs with 28 tasks (11% load)  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x3 Design devs with 32 tasks (17% => 18% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/m4hon3qy5aj7j" target="_blank">Chapter 13</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
@@ -349,7 +350,7 @@ x1 Design dev with 18 tasks (45% => 43% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/muo5mcszz0enx" target="_blank">Chapter 14</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 * End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x2 Design devs with 41 tasks (37% => 36% load)  
 * SQ42 Level Design 2 - Flight added 69 days of work  
 x1 => 5 Design devs with 33 tasks (40% => 15% load)  
@@ -365,28 +366,28 @@ x1 => 2 Design devs with 4 tasks (68% => 32% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4sbmlw2c4by8m" target="_blank">Chapter 18</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 * End date has been extended from Sun Feb 27 2022 to Thu Mar 31 2022  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x4 Design devs with 39 tasks (13% => 14% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oj3oi90mrslpv" target="_blank">Chapter 19</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 * End date has been extended from Mon Mar 14 2022 to Thu Mar 31 2022  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x3 Design devs with 29 tasks (16% => 17% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51czsbt2ajcs1" target="_blank">Chapter 20</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Tue Jan 05 2021 => Thu Mar 31 2022*  
 * End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x2 Animation devs with 20 tasks (19% load)  
 x2 Design devs with 28 tasks (11% => 12% load)  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x2 Design devs with 22 tasks (16% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kfhortybw0xo5" target="_blank">Chapter 21</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Sun May 30 2021 => Mon Mar 28 2022*  
 * End date has been extended from Mon Mar 14 2022 to Mon Mar 28 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x1 Design dev with 4 tasks (12% => 9% load)  
 x1 Animation dev with 12 tasks (36% => 38% load)  
 * SQ42 Level Design 3 - Social added 13 days of work  
@@ -395,25 +396,25 @@ x2 Design devs with 10 tasks (17% => 18% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/y1b9hiipoykw3" target="_blank">Chapter 22</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 * End date has been extended from Thu Dec 30 2021 to Thu Mar 31 2022  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x5 => 6 Design devs with 49 tasks (16% => 13% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7cnbz3e3830yf" target="_blank">Chapter 23</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Fri Apr 30 2021 => Mon Mar 28 2022*  
 * End date has been extended from Mon Mar 14 2022 to Mon Mar 28 2022  
-* Cinematics Team added 50 days of work  
+* Cinematics Team added 48 days of work  
 x1 Design dev with 8 tasks (40% => 41% load)  
 x2 Animation devs with 8 tasks (9% => 7% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9pyp286qji194" target="_blank">Chapter 26</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Thu Dec 31 2020 => Thu Mar 31 2022*  
 * End date has been extended from Mon Mar 28 2022 to Thu Mar 31 2022  
-* SQ42 Level Design 1 - FPS added 50 days of work  
+* SQ42 Level Design 1 - FPS added 48 days of work  
 x4 => 5 Design devs with 54 tasks (19% => 16% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4y0iw4tc02r1u" target="_blank">Commodity Kiosk</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Sun Jan 17 2021 => Thu Apr 07 2022*  
-* Systemic Services and Tools Team was assigned, revealing 17 days of work  
+* Systemic Services and Tools Team was assigned, revealing 15 days of work  
 x1 Engineering dev with 2 tasks (83% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/tqg3c7qk5spp8" target="_blank">Cutting T2</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
@@ -454,10 +455,10 @@ x1 => 2 Engineering devs with 9 tasks (75% => 32% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/33474a7cs0v1j" target="_blank">Hacking T0</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Sun Jan 03 2021 => Tue Jul 26 2022*  
 * End date has been extended from Thu Apr 21 2022 to Tue Jul 26 2022  
-* EU Sandbox 1 freed up 62 days of work  
+* EU Sandbox 1 freed up 64 days of work  
 x2 Art devs with 2 tasks (2% => 38% load)  
 x1 => 2 Design devs with 2 tasks (2% => 64% load)  
-* UI Tech Team was assigned, revealing 5 days of work  
+* UI Tech Team was assigned, revealing 3 days of work  
 x1 Engineering dev with 5 tasks (174% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kv4g4bc7qr6zt" target="_blank">Jump Point Spacescaping</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
@@ -514,7 +515,7 @@ x2 Engineering devs with 15 tasks (99% => 96% load)
 
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/i7j6aonq4inm9" target="_blank">MISC Hull A</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Sun Jun 27 2021 => Thu Mar 17 2022*  
-* Vehicle Content - US added 27 days of work  
+* Vehicle Content - US added 29 days of work  
 x3 Tech Content devs with 5 tasks (51% => 29% load)  
   
 ![](https://robertsspaceindustries.com/media/o166pcqzmxrhzr/source/Hull_A_1_v002_compflat.jpg)  
@@ -531,7 +532,7 @@ x2 => 1 Engineering dev with 47 tasks (58% => 82% load)
 * Vehicle Experience Team added 28 days of work  
 x4 Design devs with 25 tasks (22% load)  
 x1 Engineering dev with 8 tasks (109% => 91% load)  
-* Actor Tech Team added 41 days of work  
+* Actor Tech Team added 43 days of work  
 x5 Engineering devs with 119 tasks (16% => 15% load)  
 * Planet Tech Team added 24 days of work  
 x3 => 5 Engineering devs with 13 tasks (29% => 16% load)  
@@ -540,20 +541,20 @@ x5 Design devs with 214 tasks (20% load)
 x1 Engineering dev with 3 tasks (128% load)  
 * Planet Content Team added 26 days of work  
 x8 => 9 Art devs with 41 tasks (12% load)  
-* Lighting Team added 38 days of work  
+* Lighting Team added 40 days of work  
 x7 Art devs with 62 tasks (16% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/zk3a0tp8t54q7" target="_blank">NPC Tracker Service</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Sun Jan 31 2021 => Mon Feb 28 2022*  
 * End date has been extended from Mon Jan 17 2022 to Mon Feb 28 2022  
-* Systemic Services and Tools Team added 32 days of work  
+* Systemic Services and Tools Team added 30 days of work  
 x1 Engineering dev with 11 tasks (70% => 67% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ocwdl38o5v7ad" target="_blank">Nyx System, Planet, and Mission Setup</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Mon Mar 29 2021 => Mon Jun 21 2021*  
 * End date has moved earlier (time allocation removal(s) or priority up likely)  
  from Thu Jun 30 2022 to Mon Jun 21 2021  
-* EU Sandbox 1 freed up 132 days of work  
+* EU Sandbox 1 freed up 134 days of work  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xz7mai18yr9xs" target="_blank">Origin X1</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Sun Jan 30 2022 => Thu Jul 14 2022*  
@@ -565,14 +566,14 @@ x1 Art dev with 22 tasks (167% => 255% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2l41u7q012cwc" target="_blank">Outpost Homestead - Independent & Outlaw</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Mon Jan 04 2021 => Tue Sep 06 2022*  
 * End date has been extended from Mon Mar 28 2022 to Tue Sep 06 2022  
-* EU Sandbox 1 added 38 days of work  
+* EU Sandbox 1 added 40 days of work  
 x4 Design devs with 49 tasks (14% => 9% load)  
 x9 => 10 Art devs with 136 tasks (7% => 3% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3z2lkiq68ztfo" target="_blank">Outpost Theme Variants</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Thu Apr 01 2021 => Tue Dec 20 2022*  
 * End date has been extended from Thu Jun 30 2022 to Tue Dec 20 2022  
-* EU Sandbox 1 added 132 days of work  
+* EU Sandbox 1 added 134 days of work  
 x4 Design devs with 36 tasks (2% => 7% load)  
 x8 => 7 Art devs with 54 tasks (1% => 5% load)  
   
@@ -635,7 +636,7 @@ x2 Engineering devs with 6 tasks (46% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/cex1wivftqaw6" target="_blank">Salvage T0</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *Mon Apr 19 2021 => Thu Apr 14 2022*  
 * End date has been extended from Sun Apr 03 2022 to Thu Apr 14 2022  
-* Actor Feature Team was assigned, revealing 46 days of work  
+* Actor Feature Team was assigned, revealing 44 days of work  
 x1 Design dev with 5 tasks (30% load)  
 * Vehicle Feature Team added 17 days of work  
 x1 Engineering dev with 4 tasks (75% => 68% load)  
@@ -656,7 +657,7 @@ to 'Hull stripping and repair of ships'
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lxjcm8gtyvjqf" target="_blank">Server Streaming</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Mon Jan 03 2022 => Mon Mar 14 2022*  
 * End date has been extended from Mon Feb 14 2022 to Mon Mar 14 2022  
-* Network Team added 4 days of work  
+* Network Team added 2 days of work  
 x1 => 2 Engineering devs with 6 tasks (74% => 37% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/k344glls3rfaq" target="_blank">Ship CPU</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
@@ -669,7 +670,7 @@ x1 Design dev with 1 tasks (64% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/q6m1tl7dwqpa9" target="_blank">Ship to Ship Refueling</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Tue Mar 02 2021 => Mon Mar 28 2022*  
 * End date has been extended from Mon Feb 14 2022 to Mon Mar 28 2022  
-* EU PU Gameplay Feature Team added 4 days of work  
+* EU PU Gameplay Feature Team added 2 days of work  
 x2 Design devs with 2 tasks (32% load)  
 x1 Engineering dev with 2 tasks (61% => 36% load)  
   
