@@ -28,6 +28,7 @@
 
         <div class="container main">
             <section id="main_content" class="post">
+                <form><input type="text" name="search" value="" id="id_search" placeholder="Search on that table" autofocus /></form>
                 {{ content }}
             </section>
         </div>
@@ -38,4 +39,7 @@
         </nav>
     </footer>
   </body>
+    <script type="text/javascript" src="http://perso.crans.org/besson/_static/jquery.js"></script>
+    <script type="text/javascript" src="http://perso.crans.org/besson/_static/jquery.quicksearch.min.js"></script>
+    <script type="text/javascript" defer async>$('input#id_search').quicksearch('section ol li');</script>
 </html>
