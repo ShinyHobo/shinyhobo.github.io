@@ -5,7 +5,7 @@ date: 2022-02-17
 categories: Delta  
 ---  
   
-<details><summary>tldr (click me)</summary><p># Progress Tracker Delta #  
+<details><summary>tldr (click me)</summary><p>  # Progress Tracker Delta #  
 ### 440 deliverables listed | Sun Feb 13 2022 => Sat Feb 17 2022 ###  
 There were 65 modifications, 2 removals, and 11 additions in this update.  
   
