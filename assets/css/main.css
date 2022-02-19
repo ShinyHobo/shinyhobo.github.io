@@ -60,7 +60,7 @@ details > p {
     text-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(181 232 83 / 10%), 0 0 10px rgb(181 232 83 / 10%);
 }
 
-.post h3 span img, .post section details ul li span img {
+.post h3 span img, section.post details ul li span img {
     height: 25px;
     vertical-align: middle;
 }
