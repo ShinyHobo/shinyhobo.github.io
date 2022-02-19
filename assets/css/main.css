@@ -69,6 +69,10 @@ details > p {
     margin-top: 10px;
 }
 
+.post ol li {
+    margin-left: 10px;
+}
+
 .ranked-deliverables {
     max-height: 525px;
     overflow-y: auto;
