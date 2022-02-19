@@ -49,7 +49,8 @@
                 var lis = ol[oi].getElementsByTagName('li');
                 for (var i = 0; i < lis.length; i++) {
                     var name = lis[i].innerText;
-                    if (name.toUpperCase().indexOf(filter) == 0) 
+                    console.log(name);
+                    if (name.toUpperCase().includes(filter)) 
                         lis[i].style.display = 'list-item';
                     else
                         lis[i].style.display = 'none';
