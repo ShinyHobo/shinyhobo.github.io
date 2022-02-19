@@ -12,10 +12,10 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
 ---  
 
 <details><summary><h3>extra analysis (click me)</h3></summary><br/>  
-There are approximately 415 devs (out of ~512, or 81%) with 588 assignments scheduled to work on 166
-observable deliverables. Of those deliverables, 7% are for SQ42 exclusively, with ~138 devs (27%)
-scheduled for approximately 3284 man-days. 10% of deliverables are shared between both projects.
-<br/><br/>  
+There are approximately 705 devs (out of ~512, or 138%) with 1031 assignments scheduled to work on
+166 observable deliverables. Of those deliverables, 7% are for SQ42 exclusively, with ~176 devs
+(34%) scheduled for approximately 3284 man-days. 10% of deliverables are shared between both
+projects. <br/><br/>  
   
 <h3>The top fifteen currently scheduled tasks (in estimated man-days) are:</h3>    
 <ul><li>2913 - Pyro Space Stations <span><img
@@ -52,39 +52,38 @@ src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_W
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 </ul>
 <br/><h3>The top fifteen currently scheduled tasks (in assigned devs) are:</h3>    
-<ul><li>32 - Character Work <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>18 - Bug Fixing & Tech Debt <span><img
+<ul><li>178 - Bug Fixing & Tech Debt <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>101 - Miscellaneous Support <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>44 - Character Work <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>32 - Outpost Homestead - Independent & Outlaw <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>29 - Persistent Streaming and Server Meshing <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>28 - Pyro Space Stations <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>21 - Building Interiors <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>14 - Banu Merchantman <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>14 - Archon <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>13 - Chapter 01 <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>13 - Chapter 26 <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>11 - Miscellaneous Support <span><img
+<li>13 - Salvage T0 <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>11 - Building Interiors <span><img
+<li>13 - MISC Hull A <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>11 - Derelict Spaceships - Points of Interest <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>11 - Outpost Theme Variants <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>10 - Theaters of War - Miscellaneous Support <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>10 - Persistent Hangars <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>10 - Frontier Clothing <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>9 - Jump Points <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+<li>12 - Chapter 12 <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>9 - Salvage T0 <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>8 - Chapter 12 <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>8 - MISC Hull A <span><img
+<li>12 - Unannounced <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 </ul></details>  
 ---  
