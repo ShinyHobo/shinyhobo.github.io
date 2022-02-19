@@ -11,9 +11,9 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
   
 ---  
 
-<details><summary><h3>tldr; click me</h3></summary><br/>  
-There are approximately 415 devs (out of ~512; 81%) currently working on 166 scheduled, observable
-deliverables.<br/><br/>  
+<details><summary><h3>extra analysis (click me)</h3></summary><br/>  
+There are approximately 415 devs (out of ~512, or 81%) with 588 assignments scheduled to work on 166
+observable deliverables.<br/><br/>  
   
 <h3>The top fifteen currently scheduled tasks (in estimated man-days) are:</h3>    
 <ul><li>2913 - Pyro Space Stations</li>  
