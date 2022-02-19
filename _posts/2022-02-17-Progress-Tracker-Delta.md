@@ -11,7 +11,7 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
   
 ---  
 
-<details><summary><h2>tldr;</h2></summary><br/>  
+<details><summary><h3>tldr; click me</h3></summary><br/>  
 There are approximately 415 devs (out of ~512; 81%) currently working on 166 scheduled, observable
 deliverables.<br/>  
   
@@ -31,7 +31,7 @@ The top fifteen currently scheduled tasks (in estimated man-days) are:<br/>
 <li>355 - Chapter 01</li>  
 <li>315 - Chapter 26</li>  
 <li>300 - Character Work</li>  
-</ul>  
+</ul>
 <br/>The top fifteen currently scheduled tasks (in assigned devs) are:<br/>    
 <ul><li>32 - Character Work</li>  
 <li>18 - Bug Fixing & Tech Debt</li>  
