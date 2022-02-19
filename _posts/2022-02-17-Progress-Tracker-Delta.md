@@ -18,38 +18,74 @@ scheduled for approximately 3284 man-days. 10% of deliverables are shared betwee
 <br/><br/>  
   
 <h3>The top fifteen currently scheduled tasks (in estimated man-days) are:</h3>    
-<ul><li>2913 - Pyro Space Stations</li>  
-<li>2474 - Theaters of War - Miscellaneous Support</li>  
-<li>2472 - Miscellaneous Support</li>  
-<li>2344 - Building Interiors</li>  
-<li>2240 - Bug Fixing & Tech Debt</li>  
-<li>2119 - Derelict Spaceships - Points of Interest</li>  
-<li>1774 - Persistent Streaming and Server Meshing</li>  
-<li>1374 - Outpost Homestead - Independent & Outlaw</li>  
-<li>1032 - Outpost Theme Variants</li>  
-<li>826 - Cave Archetypes</li>  
-<li>444 - Quantum Simulation</li>  
-<li>385 - Login Flow</li>  
-<li>355 - Chapter 01</li>  
-<li>315 - Chapter 26</li>  
-<li>300 - Character Work</li>  
+<ul><li>2913 - Pyro Space Stations <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2474 - Theaters of War - Miscellaneous Support <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2472 - Miscellaneous Support <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>2344 - Building Interiors <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2240 - Bug Fixing & Tech Debt <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>2119 - Derelict Spaceships - Points of Interest <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1774 - Persistent Streaming and Server Meshing <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1374 - Outpost Homestead - Independent & Outlaw <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1032 - Outpost Theme Variants <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>826 - Cave Archetypes <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>444 - Quantum Simulation <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>385 - Login Flow <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>355 - Chapter 01 <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>315 - Chapter 26 <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>300 - Character Work <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 </ul>
 <br/><h3>The top fifteen currently scheduled tasks (in assigned devs) are:</h3>    
-<ul><li>32 - Character Work</li>  
-<li>18 - Bug Fixing & Tech Debt</li>  
-<li>14 - Archon</li>  
-<li>13 - Chapter 26</li>  
-<li>11 - Miscellaneous Support</li>  
-<li>11 - Building Interiors</li>  
-<li>11 - Derelict Spaceships - Points of Interest</li>  
-<li>11 - Outpost Theme Variants</li>  
-<li>10 - Theaters of War - Miscellaneous Support</li>  
-<li>10 - Persistent Hangars</li>  
-<li>10 - Frontier Clothing</li>  
-<li>9 - Jump Points</li>  
-<li>9 - Salvage T0</li>  
-<li>8 - Chapter 12</li>  
-<li>8 - MISC Hull A</li>  
+<ul><li>32 - Character Work <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>18 - Bug Fixing & Tech Debt <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>14 - Archon <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>13 - Chapter 26 <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>11 - Miscellaneous Support <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>11 - Building Interiors <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>11 - Derelict Spaceships - Points of Interest <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>11 - Outpost Theme Variants <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>10 - Theaters of War - Miscellaneous Support <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>10 - Persistent Hangars <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>10 - Frontier Clothing <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>9 - Jump Points <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>9 - Salvage T0 <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>8 - Chapter 12 <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>8 - MISC Hull A <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 </ul></details>  
 ---  
 
