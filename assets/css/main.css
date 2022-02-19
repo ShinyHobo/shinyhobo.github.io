@@ -68,3 +68,8 @@ details > p {
 .post li {
     margin-top: 10px;
 }
+
+.ranked-deliverables {
+    max-height: 525px;
+    overflow-y: auto;
+}
