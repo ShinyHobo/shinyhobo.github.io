@@ -90,10 +90,10 @@ src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_W
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>136 - Satellites - Points of Interest (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>135 - Chemline (7% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>135 - Player Interaction Experience T2 - Visor HUD & Helmet (67% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>135 - Chemline (7% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>130 - Archon (full-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
@@ -110,19 +110,19 @@ src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_W
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>98 - Chapter 18 (73% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>97 - RaStar (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>97 - SQ42 - Vehicle Support (full-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>97 - Chapter 05 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>97 - Chapter 09 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>97 - SQ42 - Vehicle Support (full-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>97 - RaStar (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>95 - Cargo System Refactor  (46% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>93 - Dynamic Events (56% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>93 - RSI Apollo (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>93 - Dynamic Events (56% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>92 - Tumbril Ranger (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
@@ -142,10 +142,10 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>83 - Chapter 21 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>82 - Hacking T0 (12% part-time) <span><img
+<li>82 - Cutting T2 (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>82 - Cutting T2 (full-time) <span><img
+<li>82 - Hacking T0 (12% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>80 - Chapter 23 (100% part-time) <span><img
@@ -158,37 +158,37 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>72 - Unannounced (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>71 - Chapter 15 (91% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>71 - Unannounced (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>71 - Chapter 15 (91% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>69 - Enemy Characters (full-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>69 - Weapon Misfire & Wear (22% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>66 - Terrain Snow Displacement  (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>66 - Drake Vulture (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>58 - Chapter 19 (73% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>66 - Terrain Snow Displacement  (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>58 - Space Mines (67% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>58 - FPS Devices T1 (67% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>58 - Chapter 19 (73% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>57 - Gen12 - Renderer T1 (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>55 - Frontier Clothing (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>55 - Mag Stripping/Refill (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>55 - Personal Inventory (50% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>55 - Mag Stripping/Refill (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>55 - Frontier Clothing (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>53 - Lean Over Cover (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>51 - Pyro System, Planet, and Mission Setup (full-time) <span><img
@@ -198,27 +198,25 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>45 - Commodity Kiosk (29% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>44 - Unannounced (70% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>44 - Chapter 06 (77% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>44 - Datacore Deserializer  (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>44 - Ecosystem Enhancements (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>44 - Lorville Cityscape (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>43 - MISC Hull C (25% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+<li>44 - Unannounced (70% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>44 - Chapter 06 (77% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>43 - Virtual AI Service (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>43 - Room Depressurization (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>36 - Look IK Architecture Refactor (40% part-time) <span><img
+<li>43 - MISC Hull C (25% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>35 - Chapter 22 (17% part-time) <span><img
+<li>36 - Look IK Architecture Refactor (40% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>35 - Dynamic Population  (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
@@ -227,14 +225,16 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>35 - NPC Tracker Service (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>33 - Breakers Yard (full-time) <span><img
+<li>35 - Chapter 22 (17% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>33 - Player Interaction Experience T0 - Hints & Interactions (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>32 - Player Reflection (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>33 - Breakers Yard (full-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>32 - Server Streaming (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>32 - Player Reflection (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>29 - Probability Volume Encounter Density Refactor (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
@@ -242,30 +242,30 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>27 - Roads (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>26 - Ship to Ship Refueling (75% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>26 - Services Distributed Load Testing System (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>26 - Underwater Rendering/Caustics (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>26 - Chapter 08 (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>26 - Chapter 10 (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>26 - Error Reporting & Crash Handling (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>26 - Greycat Industrial Cydnus Mining Droid (full-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>26 - Spacescaping (full-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>26 - Ship to Ship Refueling (75% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>26 - Chapter 08 (100% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>26 - Chapter 10 (100% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>24 - Fire Hazard (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>23 - Quantum Travel Experience (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>22 - Flak Ammunition (33% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>22 - Replication Layer Entity Authority (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>22 - Flak Ammunition (33% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>21 - Lorville - Hospital Interior Location (46% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
@@ -334,12 +334,12 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>15 - Greycat Industrial Salvage Backpack (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>14 - Jump Point Spacescaping            (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>14 - Weapon Handling T2 (50% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>14 - Long Term Persistence Enhancements (50% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>14 - Jump Point Spacescaping            (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>13 - MISC Odyssey (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
@@ -372,6 +372,8 @@ src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_W
 <li>7 - Greycat Industrial Salvage Tool (50% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>5 - Origin 600i Gold Standard (100% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>5 - AI - Usable System V2 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>5 - Civilian NPC Movement Improvements (100% part-time) <span><img
@@ -382,13 +384,11 @@ src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_W
 <li>5 - VisArea Improvements (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>5 - Origin 600i Gold Standard (100% part-time) <span><img
+<li>4 - Atmospheric Pressure Damage (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>4 - Greycat Industrial Tractor Tool (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>4 - Atmospheric Pressure Damage (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>3 - Greycat PTV Gold Standard (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>3 - MISC Hull D (full-time) <span><img
@@ -413,130 +413,148 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>21 - Building Interiors (20% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>14 - Banu Merchantman (11% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>14 - Archon (full-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>13 - Chapter 01 (48% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>14 - Banu Merchantman (11% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>13 - Chapter 26 (full-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>13 - Salvage T0 (35% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>13 - MISC Hull A (14% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>12 - Chapter 12 (79% part-time) <span><img
+<li>13 - Salvage T0 (35% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>13 - Chapter 01 (48% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>12 - Unannounced (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>12 - Chapter 12 (79% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>12 - Chapter 15 (91% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>11 - Derelict Spaceships - Points of Interest (21% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>11 - Outpost Theme Variants (9% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>11 - Jump Points (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>10 - Theaters of War - Miscellaneous Support (56% part-time) <span><img
+<li>11 - Outpost Theme Variants (9% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>10 - Persistent Hangars (24% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>10 - RSI Scorpius (full-time) <span><img
+<li>11 - Derelict Spaceships - Points of Interest (21% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>10 - Frontier Clothing (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>9 - Login Flow (23% part-time) <span><img
+<li>10 - RSI Scorpius (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>9 - Hacking T0 (12% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>10 - Persistent Hangars (24% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>10 - Theaters of War - Miscellaneous Support (56% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>9 - Gen12 - Renderer T1 (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>9 - Hacking T0 (12% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>9 - Login Flow (23% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>9 - Chapter 06 (77% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>8 - Drake Vulture (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>8 - Drake Corsair (4% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>8 - Chapter 18 (73% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>8 - Chapter 19 (73% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>8 - Chapter 21 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>8 - Chapter 23 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>8 - Drake Vulture (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>8 - Chapter 19 (73% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>7 - Chapter 14 (full-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>7 - Chapter 11 (38% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>7 - Chemline (7% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>7 - Cargo System Refactor  (46% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>7 - Commodity Kiosk (29% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>7 - Chapter 11 (38% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>7 - Cargo System Refactor  (46% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>7 - Chapter 08 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>7 - Chapter 10 (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>6 - Resource Management (43% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>6 - Chapter 20 (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>6 - Chapter 04 (80% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>6 - MFD Rework (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>6 - Enemy Characters (full-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>6 - Chapter 22 (17% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>6 - Replication Layer Entity Authority (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>5 - Quantum Simulation (full-time) <span><img
+<li>6 - Chapter 22 (17% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>6 - Resource Management (43% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>6 - Chapter 04 (80% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>6 - Chapter 20 (100% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>5 - Argo SRV (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>5 - HEX (5% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>5 - FPS Radar / Scanning (33% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>5 - Unannounced (full-time) <span><img
+<li>5 - Atlas (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>5 - Error Reporting & Crash Handling (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>5 - Healing T0 / Actor Status T1 (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>5 - Atlas (full-time) <span><img
+<li>5 - Quantum Simulation (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>4 - Cave Archetypes (17% part-time) <span><img
+<li>5 - Unannounced (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>4 - Actor Status T2 (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>4 - Chapter 07 (43% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>4 - EVA T2 (71% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>4 - Underground Facilities (full-time) <span><img
+<li>5 - HEX (5% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>4 - Zero G Push & Pull (70% part-time) <span><img
+<li>5 - FPS Radar / Scanning (33% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>4 - Pyro System, Planet, and Mission Setup (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>4 - Actor Status T2 (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>4 - Underground Facilities (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>4 - Cave Archetypes (17% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>4 - MISC Hull C (25% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>4 - Chapter 07 (43% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>4 - Lorville - Hospital Interior Location (46% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>4 - Zero G Push & Pull (70% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>4 - EVA T2 (71% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>3 - DGS Mesh Node (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>3 - XenoThreat Armor (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>3 - DNA Head Textures Update (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>3 - RSI Apollo (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>3 - SQ42 - Vehicle Support (full-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>3 - Unannounced (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>3 - Fire Extinguisher (29% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>3 - Unannounced (43% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>3 - Player Interaction Experience T1 - Lockers & Inventory (46% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
@@ -544,172 +562,151 @@ src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_W
 <li>3 - Player Interaction Experience T2 - Visor HUD & Helmet (67% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>3 - SQ42 - Vehicle Support (full-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>3 - RSI Apollo (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>3 - Unannounced (43% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>3 - Unannounced (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>3 - Ship to Ship Refueling (75% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>3 - XenoThreat Armor (full-time) <span><img
+<li>2 - Dynamic Population  (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>3 - DGS Mesh Node (full-time) <span><img
+<li>2 - Services Distributed Load Testing System (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>3 - Fire Extinguisher (29% part-time) <span><img
+<li>2 - MISC Odyssey (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - NPC Scheduler Service (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Player Interaction Experience T0 - Hints & Interactions (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>3 - DNA Head Textures Update (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Life Support T0 (55% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Satellites - Points of Interest (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Chapter 05 (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Chapter 09 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>2 - RaStar (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Dynamic Events (56% part-time) <span><img
+<li>2 - AI - Untrained Combat (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>2 - Breakers Yard (full-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>2 - Greycat Industrial Salvage Backpack (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Improved OC Workflow (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>2 - Lean Over Cover (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Player Item Shard Transition (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Bombs (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Jump Point Spacescaping            (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Lorville Cityscape (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Quantum Travel Experience (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Satellites - Points of Interest (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Server Streaming (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>2 - Tumbril Ranger (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>2 - Turret Usability Improvements (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>2 - Look IK Architecture Refactor (40% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>2 - Origin X1 (43% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Space Mines (67% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>2 - Personal Inventory (50% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Lean Over Cover (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Unannounced (70% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Lorville Cityscape (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Look IK Architecture Refactor (40% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Dynamic Population  (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Breakers Yard (full-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Player Interaction Experience T0 - Hints & Interactions (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Player Reflection (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Server Streaming (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Services Distributed Load Testing System (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Fire Hazard (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Quantum Travel Experience (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - NPC Scheduler Service (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - AI - Untrained Combat (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Improved OC Workflow (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Player Item Shard Transition (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Greycat Industrial Salvage Backpack (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>2 - Weapon Handling T2 (50% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>2 - Jump Point Spacescaping            (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - MISC Odyssey (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>2 - Bombs (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>2 - Greycat Industrial Salvage Tool (50% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>2 - Life Support T0 (55% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Dynamic Events (56% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Space Mines (67% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Unannounced (70% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>2 - Player Reflection (100% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>2 - ECUS Improvements (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Cutting T2 (full-time) <span><img
+<li>2 - Fire Hazard (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Destructible Environments (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Bounty Hunter V2 (8% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Weapon Misfire & Wear (22% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+<li>2 - Chapter 05 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Terrain Snow Displacement  (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - FPS Devices T1 (67% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+<li>2 - Chapter 09 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Mag Stripping/Refill (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Charge/Drain T0 (33% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Datacore Deserializer  (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Ecosystem Enhancements (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Virtual AI Service (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Room Depressurization (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Move Planet to Compute (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - NPC Tracker Service (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Probability Volume Encounter Density Refactor (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Mission Manager App (full-time) <span><img
+<li>1 - Unified Login Queue (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Roads (full-time) <span><img
+<li>1 - ATC System Rewrite (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Underwater Rendering/Caustics (full-time) <span><img
+<li>1 - Datacore Deserializer  (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Greycat Industrial Cydnus Mining Droid (full-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Spacescaping (full-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Flak Ammunition (33% part-time) <span><img
+<li>1 - Greycat PTV Gold Standard (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - MISC Hull D (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - MISC Hull E (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Unannounced (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - RSI Orion (full-time) <span><img
+<li>1 - Virtual AI Service (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Unannounced (full-time) <span><img
+<li>1 - Destructible Environments (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - ATC System Rewrite (full-time) <span><img
+<li>1 - Ecosystem Enhancements (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Lava Tech (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Move Planet to Compute (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Roads (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - RSI Orion (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Shield Emitters (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Unannounced (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Underwater Rendering/Caustics (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - AI - Arcade Machine (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Animatable Gunner Helmet (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>1 - Asset Reference Database (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - DGS Crash Recovery (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Enemy Ships (full-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Greycat Industrial Cydnus Mining Droid (full-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Hospital Surgeon (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Levski - Hospital Interior Location (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Mission Manager App (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Modular Shaders (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Name Resolving API (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Spacescaping (full-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>1 - StarWords Improvements (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
@@ -717,11 +714,45 @@ src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_W
 <li>1 - Subsumption Editor Integration (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Chapter 13 (100% part-time) <span><img
+<li>1 - Atmospheric Pressure Damage (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Cutting T2 (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>1 - Distortion Propagation (full-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Entity Properties Plugin (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Lockable Containers (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Mag Stripping/Refill (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - NPC Tracker Service (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Room Depressurization (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Terrain Snow Displacement  (full-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Bounty Hunter V2 (8% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Weapon Misfire & Wear (22% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Charge/Drain T0 (33% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Flak Ammunition (33% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - Long Term Persistence Enhancements (50% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - FPS Devices T1 (67% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Origin 600i Gold Standard (100% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Disarray Ammunition (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Incendiary Ammunition (100% part-time) <span><img
@@ -729,50 +760,19 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 <li>1 - Plasma Ammunition (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Unified Login Queue (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Animatable Gunner Helmet (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - DGS Crash Recovery (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Long Term Persistence Enhancements (50% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Enemy Ships (full-time) <span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Levski - Hospital Interior Location (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Modular Shaders (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Lockable Containers (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Name Resolving API (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Entity Properties Plugin (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Hospital Surgeon (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - AI - Usable System V2 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Civilian NPC Movement Improvements (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - VisArea Improvements (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
-src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Origin 600i Gold Standard (100% part-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Greycat Industrial Tractor Tool (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-<li>1 - Atmospheric Pressure Damage (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - Greycat PTV Gold Standard (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
-<li>1 - MISC Hull D (full-time) <span><img
-src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+<li>1 - VisArea Improvements (100% part-time) <span><img
+src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>1 - Chapter 03 (100% part-time) <span><img
+src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+<li>1 - Chapter 13 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 </ol></details>  
 ---  
