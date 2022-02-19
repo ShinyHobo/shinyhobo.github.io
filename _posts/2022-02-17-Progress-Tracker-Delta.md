@@ -11,7 +11,7 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
   
 ---  
 
-<details><summary>tldr (click me)</summary><p><br/>  
+<details><summary><h2>tldr;</h2></summary><br/>  
 There are approximately 415 devs (out of ~512; 81%) currently working on 166 scheduled, observable
 deliverables.<br/>  
   
@@ -48,7 +48,7 @@ The top fifteen currently scheduled tasks (in estimated man-days) are:<br/>
 <li>9 - Salvage T0</li>  
 <li>8 - Chapter 12</li>  
 <li>8 - MISC Hull A</li>  
-</ul></p></details>  
+</ul></details>  
 ---  
 
 ## [2] deliverable(s) *removed*: ##  
