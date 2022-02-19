@@ -43,9 +43,10 @@
         var input = document.getElementById('input');
         input.onkeyup = function () {
             var filter = input.value.toUpperCase();
-            var lis = document.getElementsByTagName('li');
+            var ol = document.getElementsByClassName('ranked-deliverables');
+            var lis = ol.getElementsByTagName('li');
             for (var i = 0; i < lis.length; i++) {
-                var name = lis[i].getElementsByClassName('name')[0].innerHTML;
+                var name = lis[i].innerHTML;
                 if (name.toUpperCase().indexOf(filter) == 0) 
                     lis[i].style.display = 'list-item';
                 else
