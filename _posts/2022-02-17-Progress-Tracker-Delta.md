@@ -11,44 +11,44 @@ There were 65 modifications, 2 removals, and 11 additions in this update.
   
 ---  
 
-<details><summary>tldr (click me)</summary><p>  
+<details><summary>tldr (click me)</summary><p><br/>  
 There are approximately 415 devs (out of ~512; 81%) currently working on 166 scheduled, observable
-deliverables.  
+deliverables.</br>  
   
-The top fifteen currently scheduled tasks (in estimated man-days) are:    
-* 2913 - Pyro Space Stations  
-* 2474 - Theaters of War - Miscellaneous Support  
-* 2472 - Miscellaneous Support  
-* 2344 - Building Interiors  
-* 2240 - Bug Fixing & Tech Debt  
-* 2119 - Derelict Spaceships - Points of Interest  
-* 1774 - Persistent Streaming and Server Meshing  
-* 1374 - Outpost Homestead - Independent & Outlaw  
-* 1032 - Outpost Theme Variants  
-* 826 - Cave Archetypes  
-* 444 - Quantum Simulation  
-* 385 - Login Flow  
-* 355 - Chapter 01  
-* 315 - Chapter 26  
-* 300 - Character Work  
-  
-The top fifteen currently scheduled tasks (in assigned devs) are :    
-* 32 - Character Work  
-* 18 - Bug Fixing & Tech Debt  
-* 14 - Archon  
-* 13 - Chapter 26  
-* 11 - Miscellaneous Support  
-* 11 - Building Interiors  
-* 11 - Derelict Spaceships - Points of Interest  
-* 11 - Outpost Theme Variants  
-* 10 - Theaters of War - Miscellaneous Support  
-* 10 - Persistent Hangars  
-* 10 - Frontier Clothing  
-* 9 - Jump Points  
-* 9 - Salvage T0  
-* 8 - Chapter 12  
-* 8 - MISC Hull A  
-</p></details>  
+The top fifteen currently scheduled tasks (in estimated man-days) are:</br>    
+<ul><li>2913 - Pyro Space Stations</li>  
+<li>2474 - Theaters of War - Miscellaneous Support</li>  
+<li>2472 - Miscellaneous Support</li>  
+<li>2344 - Building Interiors</li>  
+<li>2240 - Bug Fixing & Tech Debt</li>  
+<li>2119 - Derelict Spaceships - Points of Interest</li>  
+<li>1774 - Persistent Streaming and Server Meshing</li>  
+<li>1374 - Outpost Homestead - Independent & Outlaw</li>  
+<li>1032 - Outpost Theme Variants</li>  
+<li>826 - Cave Archetypes</li>  
+<li>444 - Quantum Simulation</li>  
+<li>385 - Login Flow</li>  
+<li>355 - Chapter 01</li>  
+<li>315 - Chapter 26</li>  
+<li>300 - Character Work</li>  
+</ul>  
+</br>The top fifteen currently scheduled tasks (in assigned devs) are:</br>    
+<ul><li>32 - Character Work</li>  
+<li>18 - Bug Fixing & Tech Debt</li>  
+<li>14 - Archon</li>  
+<li>13 - Chapter 26</li>  
+<li>11 - Miscellaneous Support</li>  
+<li>11 - Building Interiors</li>  
+<li>11 - Derelict Spaceships - Points of Interest</li>  
+<li>11 - Outpost Theme Variants</li>  
+<li>10 - Theaters of War - Miscellaneous Support</li>  
+<li>10 - Persistent Hangars</li>  
+<li>10 - Frontier Clothing</li>  
+<li>9 - Jump Points</li>  
+<li>9 - Salvage T0</li>  
+<li>8 - Chapter 12</li>  
+<li>8 - MISC Hull A</li>  
+</ul></p></details>  
 ---  
 
 ## [2] deliverable(s) *removed*: ##  
