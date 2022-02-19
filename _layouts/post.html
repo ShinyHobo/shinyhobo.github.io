@@ -46,8 +46,8 @@
             console.log('up');
             var filter = input.value.toUpperCase();
             var ol = document.getElementsByClassName('ranked-deliverables');
-            ol.forEach(l => {
-                var lis = l.getElementsByTagName('li');
+            for(var oi = 0; oi < ol.length; oi++) {
+                var lis = ol[oi].getElementsByTagName('li');
                 for (var i = 0; i < lis.length; i++) {
                     var name = lis[i].innerHTML;
                     if (name.toUpperCase().indexOf(filter) == 0) 
