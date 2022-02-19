@@ -18,7 +18,7 @@ There are approximately 473 devs (out of ~512, or 92%) with 1031 assignments sch
 projects. <br/><br/>  
   
 <h3>The top currently scheduled tasks (in estimated man-days) are:</h3>    
-<ul class="ranked-deliverables"><li>2913 - Pyro Space Stations (17% part-time) <span><img
+<ol class="ranked-deliverables"><li>2913 - Pyro Space Stations (17% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>2474 - Theaters of War - Miscellaneous Support (56% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
@@ -395,9 +395,9 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>3 - Chapter 03 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-</ul>
+</ol>
 <br/><h3>The top currently scheduled tasks (in assigned devs) are:</h3>    
-<ul class="ranked-deliverables"><li>178 - Bug Fixing & Tech Debt (16% part-time) <span><img
+<ol class="ranked-deliverables"><li>178 - Bug Fixing & Tech Debt (16% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
 <li>101 - Miscellaneous Support (11% part-time) <span><img
@@ -774,7 +774,7 @@ src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>1 - Chapter 03 (100% part-time) <span><img
 src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-</ul></details>  
+</ol></details>  
 ---  
 
 ## [2] deliverable(s) *removed*: ##  
