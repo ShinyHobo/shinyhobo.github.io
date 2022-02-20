@@ -40,7 +40,7 @@
   </body>
   <script  type="text/javascript">
         var input = document.getElementById('top-deliverables-filter');
-        input.addEventListener('keydown', function (event) {
+        input.addEventListener('keyup', function (event) {
             console.log(event);
             var filter = input.value.toUpperCase();
             console.log(filter);
@@ -49,7 +49,6 @@
                 var lis = ol[oi].getElementsByTagName('li');
                 for (var i = 0; i < lis.length; i++) {
                     var name = lis[i].innerText;
-                    console.log(name);
                     if (name.toUpperCase().includes(filter)) {
                         lis[i].style.visibility = "visible";
                         lis[i].style.height = "auto";
