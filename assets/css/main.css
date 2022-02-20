@@ -77,3 +77,8 @@ details > p {
     max-height: 525px;
     overflow-y: auto;
 }
+
+.top-deliverables-filter {
+    width: 100%;
+    margin-bottom: 15px;
+}

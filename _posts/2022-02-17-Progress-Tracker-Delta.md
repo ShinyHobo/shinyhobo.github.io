@@ -17,7 +17,7 @@ There are approximately 473 devs (out of ~512, or 92%) with 1031 assignments sch
 (36%) scheduled for approximately 3284 man-days. 10% of deliverables are shared between both
 projects. <br/><br/>  
   
-<input type="text" id="input" placeholder="Filter deliverables"/><h3>The top currently scheduled tasks (in estimated man-days) are:</h3>    
+<input type="text" id="top-deliverables-filter" placeholder="Filter deliverables"/><h3>The top currently scheduled tasks (in estimated man-days) are:</h3>    
 <ol class="ranked-deliverables"><li>2913 - Pyro Space Stations (17% part-time) <span><img
 src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 <li>2474 - Theaters of War - Miscellaneous Support (56% part-time) <span><img

@@ -39,8 +39,8 @@
     </footer>
   </body>
   <script  type="text/javascript">
-        var input = document.getElementById('input');
-        input.onkeyup = function () {
+        var input = document.getElementById('top-deliverables-filter');
+        input.onkeydown = function () {
             var filter = input.value.toUpperCase();
             var ol = document.getElementsByClassName('ranked-deliverables');
             for(var oi = 0; oi < ol.length; oi++) {
