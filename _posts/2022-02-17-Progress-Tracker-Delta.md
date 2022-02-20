@@ -18,8 +18,24 @@ There are approximately 473 devs (out of ~512, or 92%) with 1031 assignments sch
 projects. <br/><br/>  
   
   
-On average, the schedule has expanded 26 days. 9 deliverables were not extended.  
-<input type="text" id="top-deliverables-filter" placeholder="Filter deliverables"/><h3>The top currently scheduled tasks (in estimated man-days) are:</h3>    
+On average, the schedule has expanded 26 days. 16 deliverables were not extended:  
+<ul><li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/50p1qccyij9ay' target="_blank">Aciedo Station</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/n0img5kuja3d5' target="_blank">AI - Landing Improvements</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/j8gi3ozzvt6jv' target="_blank">AI - Navigation Links - Ladders/Ledge Grab</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4g1yehlr65pfm' target="_blank">Chapter 02</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a9rux14dc5wdj' target="_blank">Chapter 17</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lgp176y28996t' target="_blank">Consolidated Outland HoverQuad</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3e6fj659xnhe8' target="_blank">Entity Stow/Destroy</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7g69emu0c1uab' target="_blank">Female Player Head</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/odesb8z97letv' target="_blank">Hybrid Service</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lz0inyoyefgtn' target="_blank">Map and Radar System Rework</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/o2gbepnwbc37r' target="_blank">Military Multi-Tool</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/tnhtmlaoa2qq2' target="_blank">Outlaw Medical Outfits</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hqjlw4d34ph63' target="_blank">Reputation V2</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8kheqq3ulsd3y' target="_blank">Shops and Patrons</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/sit96ssmluwzy' target="_blank">Unannounced Vehicle</a></li>
+<li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kylxmpnx1gdcb' target="_blank">Vending Machine Utilization T0</a></li>
+</ul><input type="text" id="top-deliverables-filter" placeholder="Filter deliverables"/><h3>The top currently scheduled tasks (in estimated man-days) are:</h3>    
 <ol class="ranked-deliverables"><li>2913 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ze5g3do3lijlm' target="_blank">Pyro Space Stations</a> (17% part-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>2474 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4t3bk1ob5zbo8' target="_blank">Theaters of War - Miscellaneous Support</a> (56% part-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>2472 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qvviufr1cqczy' target="_blank">Miscellaneous Support</a> (11% part-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
