@@ -48,7 +48,7 @@
             for(var oi = 0; oi < ol.length; oi++) {
                 var lis = ol[oi].getElementsByTagName('li');
                 for (var i = 0; i < lis.length; i++) {
-                    var name = lis[i].innerText;
+                    var name = lis[i].textContent;
                     if (name.toUpperCase().includes(filter)) {
                         lis[i].style.visibility = "visible";
                         lis[i].style.height = "auto";
