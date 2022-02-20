@@ -40,7 +40,7 @@
   </body>
   <script  type="text/javascript">
         var input = document.getElementById('top-deliverables-filter');
-        input.onkeydown = function () {
+        input.addEventListener('keydown', function (event) {
             var filter = input.value.toUpperCase();
             var ol = document.getElementsByClassName('ranked-deliverables');
             for(var oi = 0; oi < ol.length; oi++) {
@@ -58,6 +58,6 @@
                     }
                 }
             }
-        }
+        });
   </script>
 </html>
