@@ -78,7 +78,7 @@ details > p {
     overflow-y: auto;
 }
 
-.top-deliverables-filter {
+#top-deliverables-filter {
     width: 100%;
     margin-bottom: 15px;
 }
