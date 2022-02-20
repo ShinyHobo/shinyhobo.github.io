@@ -18,7 +18,7 @@ There are approximately 473 devs (out of ~512, or 92%) with 1031 assignments sch
 projects. <br/><br/>  
   
   
-On average, the schedule has expanded 26 days. 16 deliverables were not extended:  
+On average, the schedule has expanded by 26 days. 16 deliverables were not extended:  
 <ul><li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/50p1qccyij9ay' target="_blank">Aciedo Station</a></li>
 <li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/n0img5kuja3d5' target="_blank">AI - Landing Improvements</a></li>
 <li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/j8gi3ozzvt6jv' target="_blank">AI - Navigation Links - Ladders/Ledge Grab</a></li>
