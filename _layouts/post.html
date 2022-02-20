@@ -50,11 +50,11 @@
                     if (name.toUpperCase().includes(filter)) {
                         lis[i].style.visibility = "visible";
                         lis[i].style.height = "auto";
-                        lis[i].style['margin-top'] = "10px";
+                        lis[i].style.position = "relative";
                     } else {
                         lis[i].style.visibility = "hidden";
                         lis[i].style.height = "0px";
-                        lis[i].style['margin-top'] = "0";
+                        lis[i].style.position = "absolute";
                     }
                 }
             }
