@@ -68,6 +68,10 @@ details > p {
     margin-top: 10px;
 }
 
+.post summary ul {
+    margin: 0;
+}
+
 .post ol li {
     margin-left: 10px;
 }
