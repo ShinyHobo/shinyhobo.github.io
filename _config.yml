@@ -2,6 +2,9 @@ theme: jekyll-theme-hacker
 markdown: kramdown
 title: ShinyTracker
 description: Lists and displays detected changes on the RSI "Progress Tracker"
+url: "https://shinyhobo.github.io"
+plugins:
+  - jekyll-sitemap
 defaults:
   - scope:
       path: "data"
