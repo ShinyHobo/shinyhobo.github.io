@@ -5,6 +5,7 @@ date: 2022-02-21
 categories: Teams  
 ---  
   
+# Scheduled Deliverables #  
 ## There are currently 107 scheduled deliverables being worked on by 46 teams ##  
 ---  
 ### This report lists the actively assigned deliverables and the associated teams, along with the number of developers assigned to each time period. Deliverable time allocations are often staggered over their total lifespan and have multiple devs in the same department working in parallel, but their allocations are obviously not going to be equal. For a better look at this, clicking the team name (or one of the completion dates listed below it) will display a rendering of the current waterfall chart iteration. This chart provides an overview of the schedule breakdown of each team in week long segments. <br/><br/> The load calculation is an approximation based on the sum of the part-time and full-time tasks (averaged at 80 hours to complete a piece) divided by the team capacity (with a focus factor of 60%) over the given time period. Without exact hourly estimates for each task, a more accurate assessment doesn't seem likely, so interpret the load as a given dev group's general utilization on a deliverable. ###  
