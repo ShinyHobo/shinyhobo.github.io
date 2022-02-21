@@ -826,25 +826,25 @@ categories: Teams
 2x Engineering devs working on 7 tasks (12% load) thru Thu Jun 30 2022<br/>
 </li></ul>
 </summary><p>~~==============|===========~~~~~~============~~~~~~~~..................................................<br>~~==============|===========~~~~~~============~~~~~~~~..................................................<br>~~==============|=====~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..................................................</p></details>  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/39qcnginjtfsz" target="_blank">Unannounced</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/39qcnginjtfsz" target="_blank">Unannounced Vehicle</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Vehicle Content - EU <br/>
 2x Art devs working on 15 tasks (118% load) thru Thu Apr 21 2022<br/>
 1x Design dev working on 17 tasks (129% load) thru Thu Jun 02 2022<br/>
 </li></ul>
 </summary><p>....============|=================......................................................................<br>............====|=============================..........................................................</p></details>  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gxiq4mofoiisf" target="_blank">Unannounced</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gxiq4mofoiisf" target="_blank">Unannounced Vehicle</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Vehicle Content - EU <br/>
 3x Design devs working on 21 tasks (79% load) thru Thu Jun 02 2022<br/>
 1x Art dev working on 18 tasks (237% load) thru Thu May 05 2022<br/>
 </li></ul>
 </summary><p>....~~~~==~~~~==|~~~~~~~~~============~~~~~~~~..........................................................<br>..==============|=====================..................................................................</p></details>  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3k8zwsazgvmcp" target="_blank">Unannounced</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3k8zwsazgvmcp" target="_blank">Unannounced Vehicle</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Vehicle Content - EU <br/>
 2x Art devs working on 6 tasks (118% load) thru Thu Mar 24 2022<br/>
 1x Design dev working on 4 tasks (233% load) thru Thu Mar 10 2022<br/>
 </li></ul>
 </summary><p>..............==|=========..======================......................................................<br>..............==|=====..................................................................................</p></details>  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/yiz4x7c98ly70" target="_blank">Unannounced</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/yiz4x7c98ly70" target="_blank">Unannounced Vehicle</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Vehicle Content - EU <br/>
 1x Art dev working on 13 tasks (237% load) thru Thu Mar 31 2022<br/>
 1x Design dev working on 17 tasks (129% load) thru Thu Jun 02 2022<br/>
