@@ -18,53 +18,53 @@ scheduled for approximately 1943 man-days. 30% of deliverables are shared betwee
 <br/><br/>  
   
 Below are the time breakdowns for each team:  
-<ul><li>Actor Feature Team | 35% part-time with 158 task(s) scheduled, 48% of which are for SQ42</li>  
-<li>Actor Tech Team | 37% part-time with 35 task(s) scheduled, 40% of which are for SQ42</li>  
-<li>AI Content Team | 27% part-time with 30 task(s) scheduled, 56% of which are for SQ42</li>  
-<li>AI Tech and Feature Team | 34% part-time with 70 task(s) scheduled, 54% of which are for SQ42</li>  
-<li>Audio | 5% part-time with 66 task(s) scheduled, 33% of which are for SQ42</li>  
-<li>Character Tech Art | full-time with 7 task(s) scheduled, all of which are for SQ42</li>  
-<li>Cinematics Team | 96% part-time with 338 task(s) scheduled, all of which are for SQ42</li>  
-<li>Editor Team | full-time with 15 task(s) scheduled, 50% of which are for SQ42</li>  
-<li>Engine Team | 50% part-time with 34 task(s) scheduled, 50% of which are for SQ42</li>  
-<li>EU Landing Zone Team | 94% part-time with 64 task(s) scheduled, 33% of which are for SQ42</li>  
-<li>EU Sandbox 1 | 77% part-time with 60 task(s) scheduled, 25% of which are for SQ42</li>  
-<li>Facial Animation | full-time with 8 task(s) scheduled, all of which are for SQ42</li>  
-<li>Firesprite Team | 53% part-time with 38 task(s) scheduled, all of which are for SC</li>  
-<li>Game Services Team | 14% part-time with 14 task(s) scheduled, all of which are for SC</li>  
-<li>Gameplay Story | 66% part-time with 41 task(s) scheduled, 80% of which are for SQ42</li>  
-<li>Graphics Team | 22% part-time with 41 task(s) scheduled, 50% of which are for SQ42</li>  
-<li>Lighting Team | full-time with 22 task(s) scheduled, 25% of which are for SQ42</li>  
-<li>Location Concept Art | full-time with 16 task(s) scheduled, all of which are for SC</li>  
-<li>Mission Feature Team | 29% part-time with 56 task(s) scheduled, all of which are for SC</li>  
-<li>Motion Capture Team | full-time with 4 task(s) scheduled, 50% of which are for SQ42</li>  
-<li>MTL Sandbox 1 | 78% part-time with 55 task(s) scheduled, all of which are for SC</li>  
-<li>Narrative | 86% part-time with 21 task(s) scheduled, 45% of which are for SQ42</li>  
-<li>Network Team | full-time with 24 task(s) scheduled, 17% of which are for SQ42</li>  
-<li>Persistent Tech Team | 11% part-time with 27 task(s) scheduled, 20% of which are for SQ42</li>  
-<li>Physics Team | full-time with 13 task(s) scheduled, 43% of which are for SQ42</li>  
-<li>Planet Content Team | 90% part-time with 10 task(s) scheduled, all of which are for SC</li>  
-<li>Planet Tech Team | full-time with 22 task(s) scheduled, 20% of which are for SQ42</li>  
-<li>Props Team | full-time with 30 task(s) scheduled, 50% of which are for SQ42</li>  
-<li>SC Character Art | full-time with 28 task(s) scheduled, all of which are for SC</li>  
-<li>SQ42 Art | 4% part-time with 171 task(s) scheduled, 88% of which are for SQ42</li>  
-<li>SQ42 Character Art | 6% part-time with 47 task(s) scheduled, 75% of which are for SQ42</li>  
-<li>SQ42 Level Design 1 - FPS | 24% part-time with 152 task(s) scheduled, all of which are for SQ42</li>  
-<li>SQ42 Level Design 2 - Flight | 25% part-time with 36 task(s) scheduled, all of which are for SQ42</li>  
-<li>SQ42 Level Design 3 - Social | 61% part-time with 28 task(s) scheduled, all of which are for SQ42</li>  
-<li>Systemic Services and Tools Team | 9% part-time with 46 task(s) scheduled, 20% of which are for SQ42</li>  
-<li>Tech Animation Team | 35% part-time with 20 task(s) scheduled, 60% of which are for SQ42</li>  
-<li>Tools Team | full-time with 27 task(s) scheduled, 50% of which are for SQ42</li>  
-<li>UI Tech Team | full-time with 6 task(s) scheduled, 50% of which are for SQ42</li>  
-<li>US PU Gameplay Feature Team | 64% part-time with 28 task(s) scheduled, 38% of which are for SQ42</li>  
-<li>Vehicle Content - EU | 24% part-time with 185 task(s) scheduled, 7% of which are for SQ42</li>  
-<li>Vehicle Content - US | full-time with 29 task(s) scheduled, 17% of which are for SQ42</li>  
-<li>Vehicle Experience Team | full-time with 10 task(s) scheduled, 20% of which are for SQ42</li>  
-<li>Vehicle Feature Team | full-time with 9 task(s) scheduled, 50% of which are for SQ42</li>  
-<li>Vehicle Tech Team | 38% part-time with 47 task(s) scheduled, 38% of which are for SQ42</li>  
-<li>VFX Team | 52% part-time with 21 task(s) scheduled, 44% of which are for SQ42</li>  
-<li>Weapon Content Team | full-time with 15 task(s) scheduled, 40% of which are for SQ42</li>  
-<li>Weapon Feature Team | 15% part-time with 55 task(s) scheduled, 50% of which are for SQ42</li>  
+<ul><li>Actor Feature Team</br>35% part-time with 158 task(s) scheduled, 48% of which are for SQ42</li>  
+<li>Actor Tech Team</br>37% part-time with 35 task(s) scheduled, 40% of which are for SQ42</li>  
+<li>AI Content Team</br>27% part-time with 30 task(s) scheduled, 56% of which are for SQ42</li>  
+<li>AI Tech and Feature Team</br>34% part-time with 70 task(s) scheduled, 54% of which are for SQ42</li>  
+<li>Audio</br>5% part-time with 66 task(s) scheduled, 33% of which are for SQ42</li>  
+<li>Character Tech Art</br>full-time with 7 task(s) scheduled, all of which are for SQ42</li>  
+<li>Cinematics Team</br>96% part-time with 338 task(s) scheduled, all of which are for SQ42</li>  
+<li>Editor Team</br>full-time with 15 task(s) scheduled, 50% of which are for SQ42</li>  
+<li>Engine Team</br>50% part-time with 34 task(s) scheduled, 50% of which are for SQ42</li>  
+<li>EU Landing Zone Team</br>94% part-time with 64 task(s) scheduled, 33% of which are for SQ42</li>  
+<li>EU Sandbox 1</br>77% part-time with 60 task(s) scheduled, 25% of which are for SQ42</li>  
+<li>Facial Animation</br>full-time with 8 task(s) scheduled, all of which are for SQ42</li>  
+<li>Firesprite Team</br>53% part-time with 38 task(s) scheduled, all of which are for SC</li>  
+<li>Game Services Team</br>14% part-time with 14 task(s) scheduled, all of which are for SC</li>  
+<li>Gameplay Story</br>66% part-time with 41 task(s) scheduled, 80% of which are for SQ42</li>  
+<li>Graphics Team</br>22% part-time with 41 task(s) scheduled, 50% of which are for SQ42</li>  
+<li>Lighting Team</br>full-time with 22 task(s) scheduled, 25% of which are for SQ42</li>  
+<li>Location Concept Art</br>full-time with 16 task(s) scheduled, all of which are for SC</li>  
+<li>Mission Feature Team</br>29% part-time with 56 task(s) scheduled, all of which are for SC</li>  
+<li>Motion Capture Team</br>full-time with 4 task(s) scheduled, 50% of which are for SQ42</li>  
+<li>MTL Sandbox 1</br>78% part-time with 55 task(s) scheduled, all of which are for SC</li>  
+<li>Narrative</br>86% part-time with 21 task(s) scheduled, 45% of which are for SQ42</li>  
+<li>Network Team</br>full-time with 24 task(s) scheduled, 17% of which are for SQ42</li>  
+<li>Persistent Tech Team</br>11% part-time with 27 task(s) scheduled, 20% of which are for SQ42</li>  
+<li>Physics Team</br>full-time with 13 task(s) scheduled, 43% of which are for SQ42</li>  
+<li>Planet Content Team</br>90% part-time with 10 task(s) scheduled, all of which are for SC</li>  
+<li>Planet Tech Team</br>full-time with 22 task(s) scheduled, 20% of which are for SQ42</li>  
+<li>Props Team</br>full-time with 30 task(s) scheduled, 50% of which are for SQ42</li>  
+<li>SC Character Art</br>full-time with 28 task(s) scheduled, all of which are for SC</li>  
+<li>SQ42 Art</br>4% part-time with 171 task(s) scheduled, 88% of which are for SQ42</li>  
+<li>SQ42 Character Art</br>6% part-time with 47 task(s) scheduled, 75% of which are for SQ42</li>  
+<li>SQ42 Level Design 1 - FPS</br>24% part-time with 152 task(s) scheduled, all of which are for SQ42</li>  
+<li>SQ42 Level Design 2 - Flight</br>25% part-time with 36 task(s) scheduled, all of which are for SQ42</li>  
+<li>SQ42 Level Design 3 - Social</br>61% part-time with 28 task(s) scheduled, all of which are for SQ42</li>  
+<li>Systemic Services and Tools Team</br>9% part-time with 46 task(s) scheduled, 20% of which are for SQ42</li>  
+<li>Tech Animation Team</br>35% part-time with 20 task(s) scheduled, 60% of which are for SQ42</li>  
+<li>Tools Team</br>full-time with 27 task(s) scheduled, 50% of which are for SQ42</li>  
+<li>UI Tech Team</br>full-time with 6 task(s) scheduled, 50% of which are for SQ42</li>  
+<li>US PU Gameplay Feature Team</br>64% part-time with 28 task(s) scheduled, 38% of which are for SQ42</li>  
+<li>Vehicle Content - EU</br>24% part-time with 185 task(s) scheduled, 7% of which are for SQ42</li>  
+<li>Vehicle Content - US</br>full-time with 29 task(s) scheduled, 17% of which are for SQ42</li>  
+<li>Vehicle Experience Team</br>full-time with 10 task(s) scheduled, 20% of which are for SQ42</li>  
+<li>Vehicle Feature Team</br>full-time with 9 task(s) scheduled, 50% of which are for SQ42</li>  
+<li>Vehicle Tech Team</br>38% part-time with 47 task(s) scheduled, 38% of which are for SQ42</li>  
+<li>VFX Team</br>52% part-time with 21 task(s) scheduled, 44% of which are for SQ42</li>  
+<li>Weapon Content Team</br>full-time with 15 task(s) scheduled, 40% of which are for SQ42</li>  
+<li>Weapon Feature Team</br>15% part-time with 55 task(s) scheduled, 50% of which are for SQ42</li>  
 </ul></details>---  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/pat1gv0usevez" target="_blank">AI - Arcade Machine</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
