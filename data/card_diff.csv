@@ -162,35 +162,35 @@ id|tid|title|description|category|release_id|release_title|updateDate|addedDate|
 161||New Asteroids - Stanton System|Adding additional asteroid variations to the Stanton System|Locations|41|3.13|1620256600000|1644732000000|/media/kcfhqamchsvdor/source/NewStantonAsteroids.jpg
 162|862|Rest Stops: Space Station Clinics|Clinic interior located in the various rest stops|Locations|42|3.15|1629503284000|1644732000000|/media/g2588sztcov80r/source/SpaceClinics.png
 163|872|Updates - Broken Moon Map|Improvements to the Broken Moon map|Gameplay|42|3.15|1629850280000|1644732000000|/media/hsr5aipjlg0lvr/source/Brokenmoon.jpg
-164||New Asteroids - Stanton System|Adding additional asteroid variations to the Stanton System|Locations||||1645257810095|/media/kcfhqamchsvdor/source/NewStantonAsteroids.jpg
-165|600|Zero-G Push & Pull|Zero-g traversal without EVA, using the player's hands|Gameplay||||1645257810095|/media/adu7gey36fcner/source/NotSignedOff_Zero_G_PushAndPull_Closer.jpg
-166|816|Player Interaction Experience|The Player Interaction Experience (PIE) represents complimentary features and systems related to the player|Gameplay||||1645257810095|/media/n36ltr2k2u778r/source/2cddcd75-66a4-4480-9260-Dd62da8a90f3.jpg
-167|824|FPS Radar & Scanning|Implementing radar and scanning for players on foot|Gameplay||||1645257810095|/media/1bbvxnmy29xetr/source/Radar_concept.png
-168|828|Actor Feature - EVA T2|Further improves the EVA experience following the transition to IFCS|Gameplay||||1645257810095|/media/0yhz5zfi833nbr/source/4Mike_EVA.jpg
-169|853|Hangar Manager App|New mobiGlas app that emulates the functionality of ASOP terminals|Gameplay||||1645257810095|/media/cjuhkmzb433jzr/source/HangarManager.jpg
-170|874|Doctor, Nurse AI Behaviors|Adding more realistic behaviors and reactions for Doctors and Nurses|AI|42|3.15|1637128599000|1645257810095|/media/2zga7nu74hs3mr/source/Medical.jpg
-171|864|Area 18 Hospital|Hospital interior located in the Area 18 landing zone|Locations|44|3.16|1644993021000|1645257810095|/media/6jonz01d8bnmbr/source/Area18.png
-172|869|Asset Manager mobiGlas App |Adding the Asset Manager mobiGlas App to help players manage their belongings|Gameplay|42|3.15|1637128650000|1645257810095|/media/9pip04rt4e7j1r/source/Niknax.png
-173|808|Bombs|Players will have the ability to drop powerful bombs on targets from ships in atmosphere|Gameplay|42|3.15|1637128706000|1645257810095|/media/z4lsu1gi1ixaqr/source/CRUS_Starlifter_Promo_MOAB_SM01_PJ01_Grade-Squashed.jpg
-174|894|Consolidated Outland HoverQuad|All tasks required for the implementation of the Consolidated Outland HoverQuad.|Ships and Vehicles|44|3.16|1644992976000|1645257810095|/media/cgq5o25doq4idr/source/CNOUHQ.png
-175|803|Crusader A2 Hercules Starlifter|All tasks required for the implementation of the Crusader A2 Hercules Starlifter gunship|Ships and Vehicles|42|3.15|1637128715000|1645257810095|/media/naejanws37upmr/source/A2.jpg
-176|881|Derelict Spaceships - Points of Interest|Derelict spaceships scattered on planets|Locations|44|3.16|1644993012000|1645257810095|/media/e179qlgzk73cpr/source/Derelicts.png
-177|885|DNA Head Textures Update|Art updates for DNA archetype heads|Characters|46|3.17|1644993041000|1645257810095|/media/e3omos8kevwb3r/source/Dnaroadmap.png
-178|893|Drake Cutlass Steel|All tasks required for the implementation of the Cutlass Steel dropship.|Ships and Vehicles|44|3.16|1643253632000|1645257810095|https://media.robertsspaceindustries.com/5fivkm20fcrca/source.jpg
-179|884|Gravlev Physics Rework|A significant upgrade of gravlev handling and physics|Gameplay|44|3.16|1644993001000|1645257810095|/media/g2qv2toyodxhdr/source/Gravlev.jpg
-180|863|GrimHex Clinic|Clinic interior located in the GrimHex landing zone|Locations|42|3.15|1637128658000|1645257810095|/media/2sr835w1tl6y0r/source/GrimHex.png
-181|871|Infiltrate and Defend Missions|Infiltrate and Defend missions using existing locations|Gameplay|42|3.15|1637128607000|1645257810095|/media/xkbcthxpc6zvcr/source/Mission.jpg
-182|865|Lorville Hospital: Maria Pure of Heart|Hospital interior located in the Lorville landing zone|Locations|46|3.17|1644993049000|1645257810095|/media/5qhq6xrt0pqzcr/source/MPoH.png
-183|880|Mining Gadgets|Implementing new gadgets that can be placed on a ship-mineable rock that makes the rock easier to mine.|Gameplay|46|3.17|1644993045000|1645257810095|/media/rnipumtc6906ir/source/Mining_gadget.jpg
-184|835|Greycat Multi-tool Healing Attachment|Creation and implementation of the new multi-tool healing attachment|Weapons and Items|42|3.15|1637128690000|1645257810095|/media/2rm87o48ex8ivr/source/GRIN-Multi-Tool-Healing-Attachment.png
-185|839|Greycat Multi-tool Salvage Attachment|Creation and implementation of the new multi-tool salvage attachment|Weapons and Items|49|3.18|1635884581000|1645257810095|/media/uue9tms74ojfwr/source/GRIN-Multi-Tool-Salvage-Attachment.jpg
-186|860|New Babbage Hospital|Hospital interior located in the New Babbage landing zone|Locations|42|3.15|1637128670000|1645257810095|/media/i9ylrlbegochfr/source/NewBabb.png
-187|861|Orison Hospital|Hospital interior located in the Orison landing zone|Locations|42|3.15|1637128667000|1645257810095|/media/oqognk8zqh41qr/source/Orison.png
-188|819|Actor Feature - Personal Inventory|Implements the Personal Inventory for all usable and storable items. |Gameplay|42|3.15|1637128698000|1645257810095|/media/1dei6jsy0thefr/source/Backpack_Hurston-1-Min.jpg
-189|888|Salvage - Hull Stripping|Hull stripping and repair of ships|Gameplay|49|3.18|1644998971000|1645257810095|/media/ydhforz0nhexyr/source/DRAK_Vulture_Promo_JunkYard_AA01_Grade01-Squashed.jpg
-190|886|Selling Items To Shops|"Adding the ""Sell"" screen to item kiosks and converting them to Building Blocks Tech"|Gameplay|46|3.17|1644993034000|1645257810095|/media/698aej48szuzjr/source/Kiosks.jpg
-191|798|New Asteroids - Stanton System|Adding additional asteroid variations to the Stanton System|Locations|41|3.13|1620256600000|1645257810095|/media/kcfhqamchsvdor/source/NewStantonAsteroids.jpg
-192|856|Power Management v2|Integration of the capacitor system and rebalance of all connected systems to accommodate|Gameplay|43|3.14|1628666620000|1645257810095|/media/ggbvy2uyyzycjr/source/CapRM.jpg
-193|882|Ship to Ship Refueling|Implementing refueling capability to specifically equipped ships|Gameplay|46|3.17|1644993038000|1645257810095|/media/6mrlwmqskp9tlr/source/Starfarer_HR_ext_b.jpg
-194|862|Rest Stops: Space Station Clinics|Clinic interior located in the various rest stops|Locations|42|3.15|1637128663000|1645257810095|/media/g2588sztcov80r/source/SpaceClinics.png
-195|872|Updates - Broken Moon Map|Improvements to the Broken Moon map|Gameplay|42|3.15|1637128603000|1645257810095|/media/hsr5aipjlg0lvr/source/Brokenmoon.jpg
+164||New Asteroids - Stanton System|Adding additional asteroid variations to the Stanton System|Locations||||1645086651000|/media/kcfhqamchsvdor/source/NewStantonAsteroids.jpg
+165|600|Zero-G Push & Pull|Zero-g traversal without EVA, using the player's hands|Gameplay||||1645086651000|/media/adu7gey36fcner/source/NotSignedOff_Zero_G_PushAndPull_Closer.jpg
+166|816|Player Interaction Experience|The Player Interaction Experience (PIE) represents complimentary features and systems related to the player|Gameplay||||1645086651000|/media/n36ltr2k2u778r/source/2cddcd75-66a4-4480-9260-Dd62da8a90f3.jpg
+167|824|FPS Radar & Scanning|Implementing radar and scanning for players on foot|Gameplay||||1645086651000|/media/1bbvxnmy29xetr/source/Radar_concept.png
+168|828|Actor Feature - EVA T2|Further improves the EVA experience following the transition to IFCS|Gameplay||||1645086651000|/media/0yhz5zfi833nbr/source/4Mike_EVA.jpg
+169|853|Hangar Manager App|New mobiGlas app that emulates the functionality of ASOP terminals|Gameplay||||1645086651000|/media/cjuhkmzb433jzr/source/HangarManager.jpg
+170|874|Doctor, Nurse AI Behaviors|Adding more realistic behaviors and reactions for Doctors and Nurses|AI|42|3.15|1637128599000|1645086651000|/media/2zga7nu74hs3mr/source/Medical.jpg
+171|864|Area 18 Hospital|Hospital interior located in the Area 18 landing zone|Locations|44|3.16|1644993021000|1645086651000|/media/6jonz01d8bnmbr/source/Area18.png
+172|869|Asset Manager mobiGlas App |Adding the Asset Manager mobiGlas App to help players manage their belongings|Gameplay|42|3.15|1637128650000|1645086651000|/media/9pip04rt4e7j1r/source/Niknax.png
+173|808|Bombs|Players will have the ability to drop powerful bombs on targets from ships in atmosphere|Gameplay|42|3.15|1637128706000|1645086651000|/media/z4lsu1gi1ixaqr/source/CRUS_Starlifter_Promo_MOAB_SM01_PJ01_Grade-Squashed.jpg
+174|894|Consolidated Outland HoverQuad|All tasks required for the implementation of the Consolidated Outland HoverQuad.|Ships and Vehicles|44|3.16|1644992976000|1645086651000|/media/cgq5o25doq4idr/source/CNOUHQ.png
+175|803|Crusader A2 Hercules Starlifter|All tasks required for the implementation of the Crusader A2 Hercules Starlifter gunship|Ships and Vehicles|42|3.15|1637128715000|1645086651000|/media/naejanws37upmr/source/A2.jpg
+176|881|Derelict Spaceships - Points of Interest|Derelict spaceships scattered on planets|Locations|44|3.16|1644993012000|1645086651000|/media/e179qlgzk73cpr/source/Derelicts.png
+177|885|DNA Head Textures Update|Art updates for DNA archetype heads|Characters|46|3.17|1644993041000|1645086651000|/media/e3omos8kevwb3r/source/Dnaroadmap.png
+178|893|Drake Cutlass Steel|All tasks required for the implementation of the Cutlass Steel dropship.|Ships and Vehicles|44|3.16|1643253632000|1645086651000|https://media.robertsspaceindustries.com/5fivkm20fcrca/source.jpg
+179|884|Gravlev Physics Rework|A significant upgrade of gravlev handling and physics|Gameplay|44|3.16|1644993001000|1645086651000|/media/g2qv2toyodxhdr/source/Gravlev.jpg
+180|863|GrimHex Clinic|Clinic interior located in the GrimHex landing zone|Locations|42|3.15|1637128658000|1645086651000|/media/2sr835w1tl6y0r/source/GrimHex.png
+181|871|Infiltrate and Defend Missions|Infiltrate and Defend missions using existing locations|Gameplay|42|3.15|1637128607000|1645086651000|/media/xkbcthxpc6zvcr/source/Mission.jpg
+182|865|Lorville Hospital: Maria Pure of Heart|Hospital interior located in the Lorville landing zone|Locations|46|3.17|1644993049000|1645086651000|/media/5qhq6xrt0pqzcr/source/MPoH.png
+183|880|Mining Gadgets|Implementing new gadgets that can be placed on a ship-mineable rock that makes the rock easier to mine.|Gameplay|46|3.17|1644993045000|1645086651000|/media/rnipumtc6906ir/source/Mining_gadget.jpg
+184|835|Greycat Multi-tool Healing Attachment|Creation and implementation of the new multi-tool healing attachment|Weapons and Items|42|3.15|1637128690000|1645086651000|/media/2rm87o48ex8ivr/source/GRIN-Multi-Tool-Healing-Attachment.png
+185|839|Greycat Multi-tool Salvage Attachment|Creation and implementation of the new multi-tool salvage attachment|Weapons and Items|49|3.18|1635884581000|1645086651000|/media/uue9tms74ojfwr/source/GRIN-Multi-Tool-Salvage-Attachment.jpg
+186|860|New Babbage Hospital|Hospital interior located in the New Babbage landing zone|Locations|42|3.15|1637128670000|1645086651000|/media/i9ylrlbegochfr/source/NewBabb.png
+187|861|Orison Hospital|Hospital interior located in the Orison landing zone|Locations|42|3.15|1637128667000|1645086651000|/media/oqognk8zqh41qr/source/Orison.png
+188|819|Actor Feature - Personal Inventory|Implements the Personal Inventory for all usable and storable items. |Gameplay|42|3.15|1637128698000|1645086651000|/media/1dei6jsy0thefr/source/Backpack_Hurston-1-Min.jpg
+189|888|Salvage - Hull Stripping|Hull stripping and repair of ships|Gameplay|49|3.18|1644998971000|1645086651000|/media/ydhforz0nhexyr/source/DRAK_Vulture_Promo_JunkYard_AA01_Grade01-Squashed.jpg
+190|886|Selling Items To Shops|"Adding the ""Sell"" screen to item kiosks and converting them to Building Blocks Tech"|Gameplay|46|3.17|1644993034000|1645086651000|/media/698aej48szuzjr/source/Kiosks.jpg
+191|798|New Asteroids - Stanton System|Adding additional asteroid variations to the Stanton System|Locations|41|3.13|1620256600000|1645086651000|/media/kcfhqamchsvdor/source/NewStantonAsteroids.jpg
+192|856|Power Management v2|Integration of the capacitor system and rebalance of all connected systems to accommodate|Gameplay|43|3.14|1628666620000|1645086651000|/media/ggbvy2uyyzycjr/source/CapRM.jpg
+193|882|Ship to Ship Refueling|Implementing refueling capability to specifically equipped ships|Gameplay|46|3.17|1644993038000|1645086651000|/media/6mrlwmqskp9tlr/source/Starfarer_HR_ext_b.jpg
+194|862|Rest Stops: Space Station Clinics|Clinic interior located in the various rest stops|Locations|42|3.15|1637128663000|1645086651000|/media/g2588sztcov80r/source/SpaceClinics.png
+195|872|Updates - Broken Moon Map|Improvements to the Broken Moon map|Gameplay|42|3.15|1637128603000|1645086651000|/media/hsr5aipjlg0lvr/source/Brokenmoon.jpg
