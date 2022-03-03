@@ -124,3 +124,9 @@ details > p {
 .PageNavigation .next {
     text-align: right;
 }
+
+#donate-button-container {
+    display: inline-block;
+    top: 9px;
+    position: relative;
+}
