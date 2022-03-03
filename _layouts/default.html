@@ -23,6 +23,21 @@
                     <h2>RSI "Progress Tracker" Delta Reports</h2>
                 </a>
                 <a href="https://github.com/ShinyHobo" class="btn btn-github" target="_blank"><span class="icon"></span>by ShinyHobo</a>
+                <div id="donate-button-container">
+                    <div id="donate-button"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                    PayPal.Donation.Button({
+                    env:'production',
+                    hosted_button_id:'C32CA4A5PLSQY',
+                    image: {
+                    src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+                    alt:'Donate with PayPal button',
+                    title:'PayPal - The safer, easier way to pay online!',
+                    }
+                    }).render('#donate-button');
+                    </script>
+                </div>
             </div>
         </header>
 
