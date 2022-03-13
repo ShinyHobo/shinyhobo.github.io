@@ -818,7 +818,8 @@ Below are the time breakdowns for each team:
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vv4ufswireni7" target="_blank">Zero G Push & Pull</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 <details><summary><ul><li>Actor Feature Team <br/>
 2x Animation devs working on 13 tasks (29% load) thru 2022-07-07<br/>
-</li></ul></summary><p>..~~~~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~................................................</p></details>  <br/>
+</li></ul></summary><p>..~~~~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~................................................</p></details>---  
+  <br/>
 ## The following deliverables are scheduled to begin (or continue) work within two weeks ##  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hi69ph71prcji" target="_blank">Destructible Environments</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
