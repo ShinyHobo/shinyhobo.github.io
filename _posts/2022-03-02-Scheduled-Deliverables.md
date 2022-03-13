@@ -18,7 +18,54 @@ observable deliverables. Of those deliverables, 26% are for SQ42 exclusively, wi
 scheduled for approximately 1943 man-days. 30% of deliverables are shared between both projects.
 <br/><br/>  
   
-Below are the time breakdowns for each team:  
+23 deliverable(s) are not currently scheduled to continue work after this sprint:  
+<ul>  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oks76s96dlad7" target="_blank">AI - Usable System V2</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3qtun6myee2l1" target="_blank">Asset Reference Database</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7kfxh3qa8d1ez" target="_blank">Bombs</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/m4hon3qy5aj7j" target="_blank">Chapter 13</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/5e910uh0mj6wd" target="_blank">Civilian NPC Movement Improvements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a80a7ger61zjn" target="_blank">Entity Properties Plugin</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/i2s2fvuo8p6xd" target="_blank">Fire Hazard</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/umxifhs2llfbq" target="_blank">Gen12 - Renderer T1</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/l39pxgahv3gp4" target="_blank">Greycat Industrial Salvage Tool</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/00jqyqkggtben" target="_blank">Greycat Industrial Tractor Tool</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4vh8phhjp40tc" target="_blank">Healing T0 / Actor Status T1</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/5l4jv3rwpqhoi" target="_blank">Improved OC Workflow</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/b294s1h2u5fda" target="_blank">Lava Tech</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/33blaeu69e6k3" target="_blank">Levski - Hospital Interior Location</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/praf33dqb5eqb" target="_blank">Lorville - Hospital Interior Location</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9ektw7aujkbtd" target="_blank">Modular Shaders</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/s4smhgp8uw58x" target="_blank">Physical Damage & Breakability</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gwt6g2pmm280t" target="_blank">Physics - Ropes Simulation</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3kaqteyntc63o" target="_blank">Player Item Shard Transition</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lxjcm8gtyvjqf" target="_blank">Server Streaming</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/76q2pncnt94b4" target="_blank">Shield Emitters</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vtqbog4iy9vrg" target="_blank">StarWords Improvements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+  
+<li> **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/5kcik2skwxklu" target="_blank">Wheeled Vehicle Physics Improvements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+</ul>Below are the time breakdowns for each team:  
 <ul><li>Actor Feature Team<br/>35% part-time with 158 task(s) scheduled, 48% of which are for SQ42</li>  
 <li>Actor Tech Team<br/>37% part-time with 35 task(s) scheduled, 40% of which are for SQ42</li>  
 <li>AI Content Team<br/>27% part-time with 30 task(s) scheduled, 56% of which are for SQ42</li>  
