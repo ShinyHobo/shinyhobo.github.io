@@ -827,7 +827,7 @@ Below are the time breakdowns for each team:
 ## The following deliverables are scheduled to begin (or continue) work within two weeks ##  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hi69ph71prcji" target="_blank">Destructible Environments</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
-#### (Starting soon!)s ####  
+#### (Starting soon!) ####  
 <details><summary><ul><li>Planet Tech Team <br/>
 1x Engineering dev will work on 8 tasks (136% load) starting 2022-03-15 thru 2022-06-21<br/>
 </li></ul></summary><p>..................|...=============================...=========.........................................</p></details>  
@@ -836,7 +836,7 @@ Below are the time breakdowns for each team:
 3x Art devs will work on 3 tasks (152% load) starting 2022-03-13 thru 2022-03-24<br/>
 </li></ul></summary><p>..................|...====..............................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/c87hpglg8ueoy" target="_blank">Ecosystem Enhancements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
-#### (Starting soon!)s ####  
+#### (Starting soon!) ####  
 <details><summary><ul><li>Planet Tech Team <br/>
 1x Engineering dev will work on 2 tasks (256% load) starting 2022-03-15 thru 2022-03-28<br/>
 </li></ul></summary><p>..................|...=====...........................=========...=========.............................</p></details>  
@@ -857,7 +857,7 @@ Below are the time breakdowns for each team:
 2x Design devs will work on 2 tasks (64% load) starting 2022-03-15 thru 2022-03-28<br/>
 </li></ul></summary><p>..~~~~~~~~~~~~~~~~|...~~~~~.............................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qly72broqh4wm" target="_blank">Underwater Rendering/Caustics</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
-#### (Starting soon!)s ####  
+#### (Starting soon!) ####  
 <details><summary><ul><li>Planet Tech Team <br/>
 1x Engineering dev will work on 2 tasks (256% load) starting 2022-03-15 thru 2022-03-28<br/>
 </li></ul></summary><p>..................|...=====...........=========.........................................................</p></details>
