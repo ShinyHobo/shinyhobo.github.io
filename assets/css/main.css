@@ -130,3 +130,7 @@ details > p {
     top: 9px;
     position: relative;
 }
+
+#scheduled-deliverables {
+    margin: 0;
+}
