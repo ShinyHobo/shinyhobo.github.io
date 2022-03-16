@@ -7,19 +7,19 @@ categories: Teams
   
 # Scheduled Deliverables #  
 #### as of 2022-03-16 ####  
-## There are currently 81 scheduled deliverables being worked on by 47 teams ##  
+## There are currently 80 scheduled deliverables being worked on by 47 teams ##  
 ### 17 deliverables are scheduled to begin work by 8 team(s) within two weeks ###  
 ---  
 This report lists the actively assigned deliverables and the associated teams, along with the number of developers assigned to each time period. Deliverable time allocations are often staggered over their total lifespan and have multiple devs in the same department working in parallel, but their allocations are obviously not going to be equal. For a better look at this, clicking the team name (or one of the completion dates listed below it) will display a rendering of the current waterfall chart iteration. This chart provides an overview of the schedule breakdown of each team in week long segments. <br/><br/> The timeslots you see on the RSI website are actually fragmented into many smaller sections, usually two week sprints. I do my best to combine relevant timespans by looking for overlaps (4 days currently). If a team says they end earlier than you expect, it means that there is some sizeable period of time between then and the next time they start working on the deliverable again. <br/><br/> The load calculation is an approximation based on the sum of the part-time and full-time tasks (averaged at 80 hours to complete a piece) divided by the team capacity (with a focus factor of 60%) over the given time period. Without exact hourly estimates for each task, a more accurate assessment doesn't seem likely, so interpret the load as a given dev group's general utilization on a deliverable.  
   
 ---  
 <details><summary><h3>extra analysis (click me)</h3></summary><br/>  
-There are approximately 355 devs (out of ~512, or 69%) with 769 assignments scheduled to work on 81
-observable deliverables. Of those deliverables, 32% are for SQ42 exclusively, with ~149 devs (29%)
-scheduled for approximately 1524 man-days. 22% of deliverables are shared between both projects.
+There are approximately 354 devs (out of ~512, or 69%) with 768 assignments scheduled to work on 80
+observable deliverables. Of those deliverables, 33% are for SQ42 exclusively, with ~149 devs (29%)
+scheduled for approximately 1524 man-days. 23% of deliverables are shared between both projects.
 <br/><br/>  
   
-45 deliverable(s) are not currently scheduled to continue work after this sprint:  
+44 deliverable(s) are not currently scheduled to continue work after this sprint:  
 <ul>  
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/pat1gv0usevez" target="_blank">AI - Arcade Machine</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
@@ -74,8 +74,6 @@ scheduled for approximately 1524 man-days. 22% of deliverables are shared betwee
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xcm71052agqrb" target="_blank">Character Work</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/zm9vtrkqpl9lr" target="_blank">Chemline</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-  
-<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hi69ph71prcji" target="_blank">Destructible Environments</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/u3qj6egndvw8g" target="_blank">DGS Crash Recovery</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
@@ -138,7 +136,7 @@ scheduled for approximately 1524 man-days. 22% of deliverables are shared betwee
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/cmj5hpo87rv45" target="_blank">Persistent Tech Team</a><br/>11% part-time with 27 task(s) scheduled, all of which are for SC</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/nzki3zatwmu9w" target="_blank">Physics Team</a><br/>full-time with 5 task(s) scheduled, 50% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/msjiokoz2cv5w" target="_blank">Planet Content Team</a><br/>50% part-time with 4 task(s) scheduled, 50% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/b1bv5kl5qm0ca" target="_blank">Planet Tech Team</a><br/>full-time with 34 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/b1bv5kl5qm0ca" target="_blank">Planet Tech Team</a><br/>full-time with 25 task(s) scheduled, all of which are for SC</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/hbctmqa7u4350" target="_blank">Props Team</a><br/>full-time with 45 task(s) scheduled, 29% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/padrvbv3z0xf9" target="_blank">SC Character Art</a><br/>full-time with 36 task(s) scheduled, 25% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/zyhb2x096wk4c" target="_blank">SQ42 Art</a><br/>4% part-time with 193 task(s) scheduled, 88% of which are for SQ42</li>  
@@ -463,12 +461,6 @@ scheduled for approximately 1524 man-days. 22% of deliverables are shared betwee
 8x Art devs working on 12 tasks (4% load) thru 2022-06-02<br/>
 4x Design devs working on 8 tasks (5% load) thru 2022-06-02<br/>
 </li></ul></summary><p>.~~~~~~~~~~~~~~~~~~~~~|.~~~~~~~~~~============........======================..======================....<br>.~~~~~~~~~~~~~~~~~~~~~|.~~~~~~~~~~============........======================..======================....</p></details>  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hi69ph71prcji" target="_blank">Destructible Environments</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
-#### (Recently started!) ####  
-#### (Scheduled work ending soon!) ####  
-<details><summary><ul><li>Planet Tech Team <br/>
-1x Engineering dev working on 9 tasks (153% load) thru 2022-06-21<br/>
-</li></ul></summary><p>......................|============================...=========.........................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/u3qj6egndvw8g" target="_blank">DGS Crash Recovery</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Recently started!) ####  
 #### (Scheduled work ending soon!) ####  

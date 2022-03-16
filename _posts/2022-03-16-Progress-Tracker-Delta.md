@@ -6,19 +6,19 @@ categories: Delta
 ---  
   
 # Progress Tracker Delta #  
-### 447 deliverables listed | 2022-03-02 => 2022-03-16 ###  
-There were 24 modifications, 2 removals, and 5 additions (with 1 returning) in this update.  
+### 446 deliverables listed | 2022-03-02 => 2022-03-16 ###  
+There were 23 modifications, 3 removals, and 5 additions (with 1 returning) in this update.  
   
 ---  
 
 <details><summary><h3>extra analysis (click me)</h3></summary><br/>  
-There are approximately 428 devs (out of ~512, or 84%) with 920 assignments scheduled to work on 145
+There are approximately 428 devs (out of ~512, or 84%) with 919 assignments scheduled to work on 144
 observable deliverables. Of those deliverables, 6% are for SQ42 exclusively, with ~152 devs (30%)
 scheduled for approximately 1595 man-days. 8% of deliverables are shared between both projects.
 <br/><br/>  
   
   
-On average, the schedule has expanded by 5 days. 23 deliverables were not extended:  
+On average, the schedule has expanded by 6 days. 23 deliverables were not extended:  
 <ul><li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oks76s96dlad7' target="_blank">AI - Usable System V2</a></li>
 <li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3qtun6myee2l1' target="_blank">Asset Reference Database</a></li>
 <li><a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7kfxh3qa8d1ez' target="_blank">Bombs</a></li>
@@ -90,7 +90,6 @@ On average, the schedule has expanded by 5 days. 23 deliverables were not extend
 <li>123 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7zotfdn3ln8v7' target="_blank">Rescue/Transport Mission</a> (33% part-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>121 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/p6q8plpm8dovk' target="_blank">Chapter 01</a> (33% part-time) <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
 <li>119 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jj824sq4y1hu5' target="_blank">RaStar</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
-<li>117 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hi69ph71prcji' target="_blank">Destructible Environments</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>113 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9pyp286qji194' target="_blank">Chapter 26</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
 <li>111 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/sit96ssmluwzy' target="_blank">Unannounced Vehicle</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>110 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/39qcnginjtfsz' target="_blank">Unannounced Vehicle</a> (46% part-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
@@ -312,7 +311,6 @@ On average, the schedule has expanded by 5 days. 23 deliverables were not extend
 <li>1 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ffao511sfca0t' target="_blank">Quantum Travel Experience</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>1 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hqjlw4d34ph63' target="_blank">Reputation V2</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
 <li>1 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/le5xpn8yt0qjx' target="_blank">Crusader Genesis Starliner</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
-<li>1 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hi69ph71prcji' target="_blank">Destructible Environments</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>1 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7ruthnrbdma5s' target="_blank">Drake Vulture</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>1 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/c87hpglg8ueoy' target="_blank">Ecosystem Enhancements</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>1 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4wuv7qxgl18i5' target="_blank">Foliage Shader</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
@@ -338,7 +336,16 @@ On average, the schedule has expanded by 5 days. 23 deliverables were not extend
 </ol></details>  
 ---  
 
-## [2] deliverable(s) *removed*: ##  
+## [3] deliverable(s) *removed*: ##  
+### **Destructible Environments** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+*Last scheduled from 2022-03-15 to 2022-08-02*  
+This feature will allow individual pieces of foliage to be destroyed, and this can also be used to
+populate a destruction map to record data about ecosystem destruction.  
+  
+The following team(s) have been freed up:  
+* Planet Tech Team  
+x1 Engineering dev had 18 tasks  
+  
 ### **Terrain Snow Displacement** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *Last scheduled from 2022-04-13 to 2022-12-05*  
 Implementing the tech required for impressions in the snow when a person or vehicle impacts/travels
@@ -410,7 +417,7 @@ x3 Art devs with 5 tasks (45% load)
   
 ---  
 
-## [24] deliverable(s) *updated*: ##  
+## [23] deliverable(s) *updated*: ##  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oouhlnscv4cqu" target="_blank">Bug Fixing & Tech Debt</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *2020-12-31 => 2023-01-03*  
 * Vehicle Content - US freed up 25 days of work  
@@ -431,10 +438,6 @@ x4 Art devs with 7 tasks (2% load)
 * US PU Gameplay Feature Team added 22 days of work  
 x3 Art devs with 34 tasks (28% => 29% load)  
 x3 Design devs with 24 tasks (24% => 25% load)  
-  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hi69ph71prcji" target="_blank">Destructible Environments</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
-*2022-03-15 => 2022-03-28*  
-* End date has moved closer from Tue Aug 02 2022 to Mon Mar 28 2022  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/eutanhjsikw9s" target="_blank">Drake Corsair</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *2021-04-11 => 2022-08-17*  
@@ -558,5 +561,5 @@ x1 Art dev with 9 tasks (278% => 176% load)
 x1 Art dev with 3 tasks (13% load)  
 x3 Design devs with 9 tasks (3% load)  
   
-## [420] deliverable(s) *unchanged* ##  
+## [421] deliverable(s) *unchanged* ##  
 
