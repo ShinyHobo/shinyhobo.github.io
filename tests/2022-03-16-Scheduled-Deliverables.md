@@ -262,6 +262,9 @@ scheduled for approximately 1068 man-days. 23% of deliverables are shared betwee
 <details><summary><ul><li>UI Feature Team <br/>
 3x Engineering devs will work on 3 tasks (152% load) starting 2022-03-20 thru 2022-03-31<br/>
 </li></ul></summary><p>......................|.====............................................................................</p></details>  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+9x Engineering devs will work on 2 tasks (26% load) starting 2022-03-31 thru 2022-04-14<br/>
+</li></ul></summary><p>..=================...|...======......................======..................======....................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/rm4sptqkc0xlx" target="_blank">Building Interiors</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>MTL Sandbox 1 <br/>
 10x Art devs working on 18 tasks (4% load) thru 2022-06-02<br/>
@@ -719,6 +722,9 @@ scheduled for approximately 1068 man-days. 23% of deliverables are shared betwee
 <details><summary><ul><li>VFX Team <br/>
 1x Art dev working on 2 tasks (167% load) thru 2022-04-03<br/>
 </li></ul></summary><p>......................|======...........................................................................</p></details>  
+<details><summary><ul><li>Vehicle Experience Team <br/>
+1x Engineering dev will work on 2 tasks (119% load) starting 2022-03-31 thru 2022-04-28<br/>
+</li></ul></summary><p>..............========|...==========....................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/cex1wivftqaw6" target="_blank">Salvage T0</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 <details><summary><ul><li>Actor Feature Team <br/>
 1x Design dev working on 7 tasks (67% load) thru 2022-03-31<br/>
@@ -852,6 +858,9 @@ scheduled for approximately 1068 man-days. 23% of deliverables are shared betwee
 2x Engineering devs will work on 5 tasks (74% load) starting 2022-03-29 thru 2022-05-24<br/>
 2x Design devs will work on 5 tasks (37% load) starting 2022-03-29 thru 2022-05-24<br/>
 </li></ul></summary><p>..........~~~~~~~~~...|...=================...=====...==================..=====================...=====.<br>......................|...~~~~~~~~~~~~~~~~~...~~~~~...~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~~...~~~~~.</p></details>  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+2x Engineering devs will work on 4 tasks (79% load) starting 2022-03-31 thru 2022-05-12<br/>
+</li></ul></summary><p>......................|...==============................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lin9fgady6gbm" target="_blank">Roads</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Planet Tech Team <br/>
 1x Engineering dev will work on 2 tasks (238% load) starting 2022-03-29 thru 2022-04-12<br/>
