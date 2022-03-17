@@ -8,11 +8,11 @@ html, body {
 }
 
 .main {
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 #wrap {
-    min-height: 100%;
+    min-height: 80%;
 }
 
 footer {
@@ -135,4 +135,8 @@ details > p {
     font-size: 30px !important;
     color: #b5e853 !important;
     margin: 0;
+}
+
+#referral-code {
+    color: #b5e853;
 }
