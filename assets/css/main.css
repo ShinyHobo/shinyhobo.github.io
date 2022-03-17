@@ -134,3 +134,7 @@ details > p {
 #scheduled-deliverables {
     margin: 0;
 }
+
+#shinytracker-header {
+    font-size: 30px;
+}

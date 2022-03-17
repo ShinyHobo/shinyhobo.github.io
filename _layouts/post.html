@@ -19,7 +19,7 @@
         <header>
             <div class="container">
                 <a id="a-title" href="{{ '/' | relative_url }}">
-                    <h1>ShinyTracker</h1>
+                    <h2 id="shinytracker-header">ShinyTracker</h2>
                     <h2>RSI "Progress Tracker" Delta Reports</h2>
                 </a>
                 <a href="https://github.com/ShinyHobo" class="btn btn-github" target="_blank"><span class="icon"></span>by ShinyHobo</a>
@@ -31,7 +31,7 @@
                     env:'production',
                     hosted_button_id:'C32CA4A5PLSQY',
                     image: {
-                    src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+                    src:'{{ site.url }}/assets/images/btn_donate_LG.png',
                     alt:'Donate with PayPal button',
                     title:'Buy me a coffee?',
                     }
