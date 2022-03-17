@@ -1,18 +1,19 @@
+name: jekyll-cd
+
 on:
   push:
-  pull_request:
-    types: [opened, synchronize]
+    branches:
+      - main
+
 jobs:
   build:
+
     runs-on: ubuntu-latest
-    name: script/cibuild
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
+      - name: 🛎 Check out master
+        uses: actions/checkout@master
         with:
-          ruby-version: 2.7
-          bundler-cache: true
-      - name: build
-        run: script/bootstrap
-      - name: test
-        run: script/cibuild
+          fetch-depth: 1
+      - name: 🧪 Build and deploy
+        uses: victoriadrake/jekyll-cd@master
