@@ -8,23 +8,19 @@ categories: Teams
 # Scheduled Deliverables #  
 #### as of 2022-03-16 ####  
 ## There are currently 80 scheduled deliverables being worked on by 47 teams ##  
-### 17 deliverables are scheduled to begin work by 8 team(s) within two weeks ###  
+### 16 deliverables are scheduled to begin work by 8 team(s) within two weeks ###  
 ---  
 This report lists the actively assigned deliverables and the associated teams, along with the number of developers assigned to each time period. Deliverable time allocations are often staggered over their total lifespan and have multiple devs in the same department working in parallel, but their allocations are obviously not going to be equal. For a better look at this, clicking the team name (or one of the completion dates listed below it) will display a rendering of the current waterfall chart iteration. This chart provides an overview of the schedule breakdown of each team in week long segments. <br/><br/> The timeslots you see on the RSI website are actually fragmented into many smaller sections, usually two week sprints. I do my best to combine relevant timespans by looking for overlaps (4 days currently). If a team says they end earlier than you expect, it means that there is some sizeable period of time between then and the next time they start working on the deliverable again. <br/><br/> The load calculation is an approximation based on the sum of the part-time and full-time tasks (averaged at 80 hours to complete a piece) divided by the team capacity (with a focus factor of 60%) over the given time period. Without exact hourly estimates for each task, a more accurate assessment doesn't seem likely, so interpret the load as a given dev group's general utilization on a deliverable.  
   
 ---  
 <details><summary><h3>extra analysis (click me)</h3></summary><br/>  
-There are approximately 354 devs (out of ~512, or 69%) with 768 assignments scheduled to work on 80
-observable deliverables. Of those deliverables, 33% are for SQ42 exclusively, with ~149 devs (29%)
-scheduled for approximately 1524 man-days. 23% of deliverables are shared between both projects.
+There are approximately 351 devs (out of ~512, or 69%) with 757 assignments scheduled to work on 80
+observable deliverables. Of those deliverables, 33% are for SQ42 exclusively, with ~142 devs (28%)
+scheduled for approximately 1472 man-days. 19% of deliverables are shared between both projects.
 <br/><br/>  
   
-44 deliverable(s) are not currently scheduled to continue work after this sprint:  
+43 deliverable(s) are not currently scheduled to continue work after this sprint:  
 <ul>  
-<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/pat1gv0usevez" target="_blank">AI - Arcade Machine</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-  
-<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/bku4rtuqkyftw" target="_blank">AI - Untrained Combat</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-  
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/1plpc2394ak3w" target="_blank">Animatable Gunner Helmet</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/pzk7ai0l3hjmf" target="_blank">Archon</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
@@ -85,6 +81,8 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
   
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2cz6a6347gm0x" target="_blank">Enemy Characters</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2p5u3dszua62u" target="_blank">Error Reporting & Crash Handling</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2kvs8yv2ssyjg" target="_blank">Fire Extinguisher</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/47hp2kkju0ane" target="_blank">FPS Radar / Scanning</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
@@ -101,19 +99,17 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
   
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ypdsnugtnelf1" target="_blank">Personal Inventory</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/d5hvkczg4fc7b" target="_blank">Services Distributed Load Testing System</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
+  
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/q6m1tl7dwqpa9" target="_blank">Ship to Ship Refueling</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jhlaz7kakp9bo" target="_blank">Spacescaping</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/rkh3xiao4v6sx" target="_blank">Subsumption Editor Integration</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
-  
 <li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/at2xk9vxc0j5r" target="_blank">XenoThreat Armor</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
 </ul>Below are the time breakdowns for each team:  
-<ul><li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/g42qg07ipfday" target="_blank">Actor Feature Team</a><br/>35% part-time with 174 task(s) scheduled, 48% of which are for SQ42</li>  
+<ul><li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/g42qg07ipfday" target="_blank">Actor Feature Team</a><br/>34% part-time with 172 task(s) scheduled, 48% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/z2r7zwow0njfh" target="_blank">Actor Tech Team</a><br/>38% part-time with 39 task(s) scheduled, 40% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9qk0teoycf5xa" target="_blank">AI Content Team</a><br/>22% part-time with 45 task(s) scheduled, 60% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/a4comxhvpvdaf" target="_blank">AI Tech and Feature Team</a><br/>19% part-time with 43 task(s) scheduled, 50% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/jxk6osokiouob" target="_blank">Audio</a><br/>full-time with 34 task(s) scheduled, 20% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/jxk6osokiouob" target="_blank">Audio</a><br/>full-time with 20 task(s) scheduled, 20% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/xmosla0i10dy4" target="_blank">Character Tech Art</a><br/>full-time with 8 task(s) scheduled, all of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/bogq4vdhraflg" target="_blank">Cinematics Team</a><br/>95% part-time with 366 task(s) scheduled, all of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/2qw186xhy18sd" target="_blank">Editor Team</a><br/>full-time with 25 task(s) scheduled, 50% of which are for SQ42</li>  
@@ -124,10 +120,11 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/absfklqqs43gy" target="_blank">EU Sandbox 2</a><br/>71% part-time with 7 task(s) scheduled, all of which are for SC</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/stscs5ff3gmxy" target="_blank">Facial Animation</a><br/>full-time with 10 task(s) scheduled, all of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/hymehspflw5ye" target="_blank">Firesprite Team</a><br/>56% part-time with 41 task(s) scheduled, all of which are for SC</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/soxl33eqdynuo" target="_blank">Game Services Team</a><br/>13% part-time with 15 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/soxl33eqdynuo" target="_blank">Game Services Team</a><br/>6% part-time with 50 task(s) scheduled, all of which are for SC</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/6slwetmdmc2m8" target="_blank">Gameplay Story</a><br/>76% part-time with 63 task(s) scheduled, 83% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9552ppfm6wczk" target="_blank">Graphics Team</a><br/>17% part-time with 48 task(s) scheduled, 50% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/7wjwi2iq0wf54" target="_blank">Lighting Team</a><br/>full-time with 9 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/fgi85wwny6mwp" target="_blank">Live Tools Team</a><br/>6% part-time with 32 task(s) scheduled, all of which are for SC</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/t8wzceqnrm88s" target="_blank">Mission Feature Team</a><br/>30% part-time with 67 task(s) scheduled, all of which are for SC</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/szcqa08sykgl6" target="_blank">Motion Capture Team</a><br/>full-time with 12 task(s) scheduled, all of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/xv3nkukqwzdm0" target="_blank">MTL Sandbox 1</a><br/>71% part-time with 31 task(s) scheduled, all of which are for SC</li>  
@@ -136,9 +133,9 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/cmj5hpo87rv45" target="_blank">Persistent Tech Team</a><br/>11% part-time with 27 task(s) scheduled, all of which are for SC</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/nzki3zatwmu9w" target="_blank">Physics Team</a><br/>full-time with 5 task(s) scheduled, 50% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/msjiokoz2cv5w" target="_blank">Planet Content Team</a><br/>50% part-time with 4 task(s) scheduled, 50% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/b1bv5kl5qm0ca" target="_blank">Planet Tech Team</a><br/>full-time with 25 task(s) scheduled, all of which are for SC</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/hbctmqa7u4350" target="_blank">Props Team</a><br/>full-time with 45 task(s) scheduled, 29% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/padrvbv3z0xf9" target="_blank">SC Character Art</a><br/>full-time with 36 task(s) scheduled, 25% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/b1bv5kl5qm0ca" target="_blank">Planet Tech Team</a><br/>full-time with 23 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/hbctmqa7u4350" target="_blank">Props Team</a><br/>full-time with 41 task(s) scheduled, 29% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/padrvbv3z0xf9" target="_blank">SC Character Art</a><br/>full-time with 33 task(s) scheduled, 25% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/zyhb2x096wk4c" target="_blank">SQ42 Art</a><br/>4% part-time with 193 task(s) scheduled, 88% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/1fei9yfycrwbv" target="_blank">SQ42 Character Art</a><br/>7% part-time with 55 task(s) scheduled, 75% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/ctcsz78jsnxb8" target="_blank">SQ42 Level Design 1 - FPS</a><br/>25% part-time with 165 task(s) scheduled, all of which are for SQ42</li>  
@@ -148,27 +145,17 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9q953d4kfdhy2" target="_blank">Tech Animation Team</a><br/>35% part-time with 23 task(s) scheduled, 60% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/5yq74kdtsv1th" target="_blank">Tools Team</a><br/>full-time with 22 task(s) scheduled, 50% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/79daoxmystzeo" target="_blank">UI Tech Team</a><br/>full-time with 7 task(s) scheduled, 50% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/1vmcmadlzs4kr" target="_blank">US PU Gameplay Feature Team</a><br/>66% part-time with 32 task(s) scheduled, 43% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/0dis7eb2ffkpp" target="_blank">Vehicle Content - EU</a><br/>23% part-time with 199 task(s) scheduled, 7% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/1vmcmadlzs4kr" target="_blank">US PU Gameplay Feature Team</a><br/>54% part-time with 28 task(s) scheduled, 43% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/0dis7eb2ffkpp" target="_blank">Vehicle Content - EU</a><br/>23% part-time with 189 task(s) scheduled, 7% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/66pea06128cew" target="_blank">Vehicle Content - US</a><br/>full-time with 21 task(s) scheduled, 29% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/2q5jteyitmheb" target="_blank">Vehicle Experience Team</a><br/>full-time with 14 task(s) scheduled, 50% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/fk4qm3ld6pg6g" target="_blank">Vehicle Feature Team</a><br/>full-time with 9 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/fk4qm3ld6pg6g" target="_blank">Vehicle Feature Team</a><br/>full-time with 8 task(s) scheduled, 50% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/gb9bwn63bvxwx" target="_blank">Vehicle Tech Team</a><br/>38% part-time with 55 task(s) scheduled, 38% of which are for SQ42</li>  
-<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/w4zc1htlkkp63" target="_blank">VFX Team</a><br/>41% part-time with 22 task(s) scheduled, 44% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/w4zc1htlkkp63" target="_blank">VFX Team</a><br/>39% part-time with 18 task(s) scheduled, 44% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/dwczuhei6sq2t" target="_blank">Weapon Content Team</a><br/>full-time with 16 task(s) scheduled, 33% of which are for SQ42</li>  
 <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/ulj3xssay6wus" target="_blank">Weapon Feature Team</a><br/>13% part-time with 61 task(s) scheduled, 50% of which are for SQ42</li>  
 </ul></details>---  
   
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/pat1gv0usevez" target="_blank">AI - Arcade Machine</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
-#### (Scheduled work ending soon!) ####  
-<details><summary><ul><li>AI Content Team <br/>
-1x Animation dev working on 5 tasks (309% load) thru 2022-03-16<br/>
-</li></ul></summary><p>..........~~~~~~......|.................................................................................<br>..............========|=................................................................................</p></details>  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/bku4rtuqkyftw" target="_blank">AI - Untrained Combat</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
-#### (Scheduled work ending soon!) ####  
-<details><summary><ul><li>AI Tech and Feature Team <br/>
-2x Animation devs working on 6 tasks (122% load) thru 2022-03-16<br/>
-</li></ul></summary><p>..........============|=................................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/1plpc2394ak3w" target="_blank">Animatable Gunner Helmet</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
 <details><summary><ul><li>SQ42 Character Art <br/>
@@ -207,9 +194,6 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 <details><summary><ul><li>Actor Tech Team <br/>
 2x Engineering devs working on 14 tasks (63% load) thru 2022-07-07<br/>
 </li></ul></summary><p>..====================|=================================................................................</p></details>  
-<details><summary><ul><li>AI Tech and Feature Team <br/>
-10x Engineering devs working on 21 tasks (127% load) thru 2022-03-16<br/>
-</li></ul></summary><p>..............====~~~~|~................................................................................</p></details>  
 <details><summary><ul><li>Editor Team <br/>
 4x Engineering devs working on 16 tasks (513% load) thru 2022-03-28<br/>
 </li></ul></summary><p>..........=====.......|====.............................................................................</p></details>  
@@ -275,13 +259,13 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 </li></ul></summary><p>......................|...================================================================================</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/42e91zsr4xs2f" target="_blank">Cargo System Refactor</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Props Team <br/>
-2x Art devs working on 7 tasks (449% load) thru 2022-03-26<br/>
-</li></ul></summary><p>..........========....|=====............................................................................</p></details>  
+2x Art devs working on 3 tasks (192% load) thru 2022-03-26<br/>
+</li></ul></summary><p>..............====....|=====............................................................................</p></details>  
 <details><summary><ul><li>US PU Gameplay Feature Team <br/>
-3x Engineering devs working on 16 tasks (35% load) thru 2022-06-02<br/>
+3x Engineering devs working on 12 tasks (31% load) thru 2022-06-02<br/>
 2x Design devs will work on 3 tasks (32% load) starting 2022-03-27 thru 2022-05-05<br/>
-2x Art devs will work on 5 tasks (75% load) starting 2022-03-27 thru 2022-05-05<br/>
-</li></ul></summary><p>......................|...~~~~~~~~~~~~..................................................................<br>......................|...~~~~========..................................................................<br>..~~~~~~~~========~~~~|~~~~~~~~~~~~~~~~~~~~~~~..........................................................</p></details>  
+2x Art devs will work on 3 tasks (53% load) starting 2022-03-27 thru 2022-05-05<br/>
+</li></ul></summary><p>......................|...~~~~~~~~~~~~..................................................................<br>..~~~~~~~~========~~~~|~~~~~~~========~~~~~~~~..........................................................<br>......................|...============..................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a3eyxpw13z8vp" target="_blank">Cave Archetypes</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>EU Sandbox 2 <br/>
 4x Art devs working on 3 tasks (2% load) thru 2022-04-07<br/>
@@ -432,10 +416,6 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 </li></ul></summary><p>.=====================|=====............................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xcm71052agqrb" target="_blank">Character Work</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-<details><summary><ul><li>AI Content Team <br/>
-3x Design devs working on 8 tasks (342% load) thru 2022-03-16<br/>
-4x Animation devs working on 8 tasks (48% load) thru 2022-03-16<br/>
-</li></ul></summary><p>..................====|=................................................................................<br>..====================|=................................................................................</p></details>  
 <details><summary><ul><li>Character Tech Art <br/>
 2x Tech Content devs working on 8 tasks (100% load) thru 2022-03-24<br/>
 </li></ul></summary><p>......================|===..............................................................................</p></details>  
@@ -475,7 +455,7 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8y2u9zjn9r2rk" target="_blank">DNA Head Textures Update</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
 <details><summary><ul><li>SC Character Art <br/>
-3x Art devs working on 4 tasks (202% load) thru 2022-03-24<br/>
+3x Art devs working on 1 task (51% load) thru 2022-03-24<br/>
 </li></ul></summary><p>......................|===..............................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/eutanhjsikw9s" target="_blank">Drake Corsair</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Vehicle Content - US <br/>
@@ -485,7 +465,7 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7ruthnrbdma5s" target="_blank">Drake Vulture</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
 <details><summary><ul><li>Audio <br/>
-1x Audio dev working on 7 tasks (467% load) thru 2022-03-31<br/>
+1x Audio dev working on 4 tasks (267% load) thru 2022-03-31<br/>
 </li></ul></summary><p>....................==|=====............................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8ngiz6vlycmn8" target="_blank">Dynamic Events</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Mission Feature Team <br/>
@@ -498,13 +478,18 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/c87hpglg8ueoy" target="_blank">Ecosystem Enhancements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Recently started!) ####  
 <details><summary><ul><li>Planet Tech Team <br/>
-1x Engineering dev working on 9 tasks (153% load) thru 2022-06-21<br/>
+1x Engineering dev working on 7 tasks (119% load) thru 2022-06-21<br/>
 </li></ul></summary><p>......................|============================...=========...=========...=============.............</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2cz6a6347gm0x" target="_blank">Enemy Characters</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
 <details><summary><ul><li>SQ42 Character Art <br/>
 4x Art devs working on 9 tasks (46% load) thru 2022-03-24<br/>
 </li></ul></summary><p>..====================|===..............................................................................</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2p5u3dszua62u" target="_blank">Error Reporting & Crash Handling</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+#### (Scheduled work ending soon!) ####  
+<details><summary><ul><li>Live Tools Team <br/>
+5x Engineering devs working on 9 tasks (36% load) thru 2022-03-29<br/>
+</li></ul></summary><p>..====================|====.............................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/79gdor1nyks3d" target="_blank">EVA T2</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 <details><summary><ul><li>Actor Feature Team <br/>
 2x Animation devs working on 17 tasks (38% load) thru 2022-07-07<br/>
@@ -566,6 +551,13 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 1x Engineering dev working on 4 tasks (119% load) thru 2022-05-10<br/>
 1x Design dev working on 5 tasks (60% load) thru 2022-05-24<br/>
 </li></ul></summary><p>..=================...|================...............==================..=====================...=====.<br>..~~~~~~~~~~~~~~~~~...|~~~~~~~~~~~~~~~~~~~~...~~~~~...~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~~...~~~~~.</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/i1pvj7xr6yodu" target="_blank">Login Flow</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Game Services Team <br/>
+7x Engineering devs working on 35 tasks (46% load) thru 2022-06-30<br/>
+</li></ul></summary><p>..====================|~~~~~~~========================..................................................</p></details>  
+<details><summary><ul><li>Live Tools Team <br/>
+2x Engineering devs working on 14 tasks (67% load) thru 2022-06-30<br/>
+</li></ul></summary><p>......================|~~~~~~~========================..................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xyrgrfj4awzt9" target="_blank">Long Term Persistence Enhancements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Recently started!) ####  
 #### (Scheduled work ending soon!) ####  
@@ -592,14 +584,6 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 <details><summary><ul><li>Actor Tech Team <br/>
 5x Engineering devs working on 17 tasks (17% load) thru 2022-07-07<br/>
 </li></ul></summary><p>..~~~~~~~~~~~~~~~~~~~~|=====~~~~~~~~~~~~~~~~~~~~~~~~~~~~................................................</p></details>  
-<details><summary><ul><li>AI Content Team <br/>
-2x Tech Content devs working on 12 tasks (85% load) thru 2022-03-16<br/>
-2x Animation devs working on 8 tasks (513% load) thru 2022-03-16<br/>
-1x Design dev working on 4 tasks (513% load) thru 2022-03-16<br/>
-</li></ul></summary><p>..~~~~~~~~~~~~~~~~~~~~|~................................................................................<br>..................====|=................................................................................<br>..................====|=................................................................................</p></details>  
-<details><summary><ul><li>AI Tech and Feature Team <br/>
-1x Tech Content dev working on 8 tasks (109% load) thru 2022-03-16<br/>
-</li></ul></summary><p>..~~~~~~~~====~~~~~~~~|~................................................................................</p></details>  
 <details><summary><ul><li>Editor Team <br/>
 1x Design dev working on 9 tasks (179% load) thru 2022-03-28<br/>
 </li></ul></summary><p>..====================|====.............................................................................</p></details>  
@@ -641,8 +625,8 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 </li></ul></summary><p>..====================|=========================~~~~~~~~~~================================================<br>......................|...........................................==============........................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xz7mai18yr9xs" target="_blank">Origin X1</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Vehicle Content - EU <br/>
-1x Design dev working on 7 tasks (150% load) thru 2022-03-24<br/>
-1x Art dev working on 9 tasks (283% load) thru 2022-03-24<br/>
+1x Design dev working on 6 tasks (128% load) thru 2022-03-24<br/>
+1x Art dev working on 8 tasks (252% load) thru 2022-03-24<br/>
 </li></ul></summary><p>..............~~~~~~~~|~~~..~~~~~~~~~~..~~~~~~~~~~......................................................<br>..........============|===..========================..======............................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2l41u7q012cwc" target="_blank">Outpost Homestead - Independent & Outlaw</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>EU Sandbox 1 <br/>
@@ -664,6 +648,9 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 <details><summary><ul><li>Actor Tech Team <br/>
 1x Engineering dev working on 8 tasks (153% load) thru 2022-03-31<br/>
 </li></ul></summary><p>..====================|=====............................................................................</p></details>  
+<details><summary><ul><li>Game Services Team <br/>
+10x Engineering devs working on 15 tasks (13% load) thru 2022-06-30<br/>
+</li></ul></summary><p>..====================|~~~~~~~==================================================........................</p></details>  
 <details><summary><ul><li>Mission Feature Team <br/>
 3x Engineering devs working on 16 tasks (34% load) thru 2022-06-16<br/>
 </li></ul></summary><p>.~====================|===~~~~~~~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~~~~~============================</p></details>  
@@ -714,33 +701,38 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 </li></ul></summary><p>.~~~~~~~~~~~~~~~~~~.~~|~~~~.~~~~~~========..............................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7taofwzl35i1p" target="_blank">RSI Scorpius</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Audio <br/>
-1x Audio dev working on 9 tasks (385% load) thru 2022-03-31<br/>
+1x Audio dev working on 6 tasks (256% load) thru 2022-03-31<br/>
 </li></ul></summary><p>................======|=====............................................................................</p></details>  
 <details><summary><ul><li>Vehicle Content - EU <br/>
-4x Art devs working on 20 tasks (95% load) thru 2022-03-31<br/>
+4x Art devs working on 16 tasks (76% load) thru 2022-03-31<br/>
 </li></ul></summary><p>..====================|=====............................................................................<br>..================....|.....========....................................................................</p></details>  
 <details><summary><ul><li>VFX Team <br/>
-1x Art dev working on 3 tasks (250% load) thru 2022-04-03<br/>
+1x Art dev working on 1 task (83% load) thru 2022-04-03<br/>
 </li></ul></summary><p>......................|======...........................................................................</p></details>  
 <details><summary><ul><li>Vehicle Experience Team <br/>
-1x Engineering dev will work on 3 tasks (179% load) starting 2022-03-31 thru 2022-04-28<br/>
+1x Engineering dev will work on 2 tasks (119% load) starting 2022-03-31 thru 2022-04-28<br/>
 </li></ul></summary><p>..............========|...==========....................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/cex1wivftqaw6" target="_blank">Salvage T0</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 <details><summary><ul><li>Actor Feature Team <br/>
-1x Design dev working on 8 tasks (77% load) thru 2022-03-31<br/>
+1x Design dev working on 6 tasks (57% load) thru 2022-03-31<br/>
 </li></ul></summary><p>..~~~~~~~~~~~~~~~~~~~~|~~~~~............................................................................</p></details>  
 <details><summary><ul><li>Audio <br/>
-2x Audio devs working on 12 tasks (313% load) thru 2022-03-31<br/>
+2x Audio devs working on 6 tasks (156% load) thru 2022-03-31<br/>
 </li></ul></summary><p>..................====|=====............................................................................</p></details>  
 <details><summary><ul><li>Vehicle Feature Team <br/>
-1x Engineering dev working on 5 tasks (144% load) thru 2022-04-14<br/>
+1x Engineering dev working on 4 tasks (115% load) thru 2022-04-14<br/>
 </li></ul></summary><p>..............========|=========........................................................................</p></details>  
 <details><summary><ul><li>VFX Team <br/>
-1x Engineering dev working on 6 tasks (60% load) thru 2022-04-03<br/>
+1x Engineering dev working on 4 tasks (40% load) thru 2022-04-03<br/>
 </li></ul></summary><p>....==================|.................................................................................<br>....~~~~~~~~~~~~~~~~~~|~~~~~~...........................................................................</p></details>  
 <details><summary><ul><li>EU PU Gameplay Feature Team <br/>
 1x Engineering dev will work on 4 tasks (119% load) starting 2022-03-29 thru 2022-05-24<br/>
 </li></ul></summary><p>......................|...=================...=====.....................................................</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/d5hvkczg4fc7b" target="_blank">Services Distributed Load Testing System</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+#### (Scheduled work ending soon!) ####  
+<details><summary><ul><li>Live Tools Team <br/>
+2x Engineering devs working on 9 tasks (89% load) thru 2022-03-29<br/>
+</li></ul></summary><p>..====================|====.............................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/q6m1tl7dwqpa9" target="_blank">Ship to Ship Refueling</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
 <details><summary><ul><li>EU PU Gameplay Feature Team <br/>
@@ -751,11 +743,6 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 <details><summary><ul><li>SQ42 Art <br/>
 1x Art dev working on 21 tasks (129% load) thru 2022-03-28<br/>
 </li></ul></summary><p>.=====================|====.............................................................................</p></details>  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/rkh3xiao4v6sx" target="_blank">Subsumption Editor Integration</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
-#### (Scheduled work ending soon!) ####  
-<details><summary><ul><li>AI Tech and Feature Team <br/>
-1x Engineering dev working on 8 tasks (193% load) thru 2022-03-16<br/>
-</li></ul></summary><p>..====================|=................................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4t3bk1ob5zbo8" target="_blank">Theaters of War - Miscellaneous Support</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Firesprite Team <br/>
 4x Design devs working on 16 tasks (10% load) thru 2022-06-30<br/>
@@ -764,16 +751,16 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 </li></ul></summary><p>.~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~~~====================..................................................<br>.~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~~~====================..................................................<br>.~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~~~====================..................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/39qcnginjtfsz" target="_blank">Unannounced Vehicle</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Vehicle Content - EU <br/>
-1x Design dev working on 18 tasks (129% load) thru 2022-06-02<br/>
-2x Art devs working on 16 tasks (131% load) thru 2022-04-21<br/>
-</li></ul></summary><p>............~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~..........................................................<br>....==================|===========......................................................................</p></details>  
+2x Art devs working on 15 tasks (123% load) thru 2022-04-21<br/>
+1x Design dev working on 17 tasks (122% load) thru 2022-06-02<br/>
+</li></ul></summary><p>....==================|===========......................................................................<br>............~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~..........................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gxiq4mofoiisf" target="_blank">Unannounced Vehicle</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Audio <br/>
-1x Audio dev working on 6 tasks (400% load) thru 2022-03-31<br/>
+1x Audio dev working on 4 tasks (267% load) thru 2022-03-31<br/>
 </li></ul></summary><p>....................==|=====............................................................................</p></details>  
 <details><summary><ul><li>Vehicle Content - EU <br/>
-1x Art dev working on 19 tasks (257% load) thru 2022-05-05<br/>
-3x Design devs working on 22 tasks (85% load) thru 2022-06-02<br/>
+1x Art dev working on 18 tasks (244% load) thru 2022-05-05<br/>
+3x Design devs working on 21 tasks (81% load) thru 2022-06-02<br/>
 </li></ul></summary><p>..====================|===============..................................................................<br>....==================|=======================..........................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3k8zwsazgvmcp" target="_blank">Unannounced Vehicle</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Vehicle Content - EU <br/>
@@ -790,7 +777,7 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 3x Design devs working on 3 tasks (2% load) thru 2022-04-07<br/>
 </li></ul></summary><p>.=====================|=======......................=====...................=====.......................<br>.~~~~~~~~~~~~~~~~~~~~~|~~~~~~~......................=====...................=====.......................</p></details>  
 <details><summary><ul><li>Location Concept Art <br/>
-4x Art devs will work on 14 tasks (61% load) starting 2022-03-27 thru 2022-06-30<br/>
+4x Art devs will work on 8 tasks (35% load) starting 2022-03-27 thru 2022-06-30<br/>
 </li></ul></summary><p>..====================|...============================..................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qly72broqh4wm" target="_blank">Underwater Rendering/Caustics</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Recently started!) ####  
@@ -815,8 +802,8 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 </li></ul></summary><p>......=========...====|...~~~~================........================........========..................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4y0iw4tc02r1u" target="_blank">Commodity Kiosk</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>US PU Gameplay Feature Team <br/>
-3x Art devs will work on 7 tasks (46% load) starting 2022-03-27 thru 2022-06-02<br/>
-</li></ul></summary><p>..=================...|...~~~~================..........................................................</p></details>  
+3x Art devs will work on 5 tasks (37% load) starting 2022-03-27 thru 2022-06-02<br/>
+</li></ul></summary><p>..=================...|...====================..........................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7gn65uaicgfru" target="_blank">Datacore Deserializer</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Starting soon!) ####  
 <details><summary><ul><li>Systemic Services and Tools Team <br/>
@@ -846,7 +833,7 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 </li></ul></summary><p>......................|...=====.......=====...=====.....................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/06evjumayvc15" target="_blank">Lorville Cityscape</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Location Concept Art <br/>
-2x Art devs will work on 8 tasks (70% load) starting 2022-03-27 thru 2022-06-30<br/>
+2x Art devs will work on 6 tasks (53% load) starting 2022-03-27 thru 2022-06-30<br/>
 </li></ul></summary><p>..=====...============|...============================..................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/amfnzbir75lb4" target="_blank">MISC Hull C</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 <details><summary><ul><li>US PU Gameplay Feature Team <br/>
@@ -854,7 +841,7 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 </li></ul></summary><p>......................|...~~~~================..........................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3ecdcrvcqeqnk" target="_blank">Move Planet to Compute</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 <details><summary><ul><li>Planet Tech Team <br/>
-1x Engineering dev will work on 5 tasks (198% load) starting 2022-03-29 thru 2022-05-10<br/>
+1x Engineering dev will work on 3 tasks (119% load) starting 2022-03-29 thru 2022-05-10<br/>
 </li></ul></summary><p>..............========|...=============.................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/x8mdafa7ky5dn" target="_blank">Persistent Hangars</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>US PU Gameplay Feature Team <br/>
@@ -877,11 +864,6 @@ scheduled for approximately 1524 man-days. 23% of deliverables are shared betwee
 <details><summary><ul><li>Vehicle Feature Team <br/>
 2x Engineering devs will work on 6 tasks (119% load) starting 2022-03-31 thru 2022-05-12<br/>
 </li></ul></summary><p>......................|...==============................................................................</p></details>  
-### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lin9fgady6gbm" target="_blank">Roads</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
-#### (Scheduled work ending soon!) ####  
-<details><summary><ul><li>Planet Tech Team <br/>
-1x Engineering dev will work on 2 tasks (238% load) starting 2022-03-29 thru 2022-04-12<br/>
-</li></ul></summary><p>......================|...=====.........................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/d4esq1kn1wb97" target="_blank">Satellites - Points of Interest</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Starting soon!) ####  
 <details><summary><ul><li>Location Concept Art <br/>
