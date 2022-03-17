@@ -194,3 +194,4 @@ id|tid|title|description|category|release_id|release_title|updateDate|addedDate|
 193|882|Ship to Ship Refueling|Implementing refueling capability to specifically equipped ships|Gameplay|46|3.17|1644993038000|1645086651000|/media/6mrlwmqskp9tlr/source/Starfarer_HR_ext_b.jpg
 194|862|Rest Stops: Space Station Clinics|Clinic interior located in the various rest stops|Locations|42|3.15|1637128663000|1645086651000|/media/g2588sztcov80r/source/SpaceClinics.png
 195|872|Updates - Broken Moon Map|Improvements to the Broken Moon map|Gameplay|42|3.15|1637128603000|1645086651000|/media/hsr5aipjlg0lvr/source/Brokenmoon.jpg
+196|747|Ocean Shader Improvements|New shader features to improve the realism of oceans|Core Tech|38|3.10|1596845833000|1647482730292|/media/mog9k98p1hpmbr/source/Ocean_updates.jpg
