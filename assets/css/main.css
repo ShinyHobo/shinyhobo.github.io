@@ -136,3 +136,8 @@ details > p {
     color: #b5e853 !important;
     margin: 0;
 }
+
+.posts {
+    float: left;
+    margin-right: 20px;
+}
