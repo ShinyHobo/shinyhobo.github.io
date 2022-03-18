@@ -21,13 +21,3 @@
     {% endfor %}
   </ul>
 </div>
-<div id="teams2" class="posts">
-  <h4>Scheduled Deliverable Reports</h4>
-  <ul>
-    {% for post in site.categories['Teams'] %}
-      <li>
-        <a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
