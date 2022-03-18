@@ -146,3 +146,11 @@ details > p {
     max-width: 800px;
     margin: auto;
 }
+
+.index-post-desc {
+    max-width: 400px;
+}
+
+.posts h3 {
+    margin: 0;
+}
