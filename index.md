@@ -3,7 +3,7 @@
 <h3>There are currently two reports being run biweekly. For those interested, I have included an Extra Analysis section laying out some more detailed information at the beginning of each report.</h3>
 <div class="posts-list">
   <div id="deltas" class="posts">
-    <h3>Progress Tracker Delta Reports</h3>
+    <h3>Progress Tracker Delta Report</h3>
     <h4 class="index-post-desc">Analyzes and lists changes from the previous iteration of the Progress Tracker</h4>
     <ul>
       {% for post in site.categories['Delta'] %}
@@ -14,7 +14,7 @@
     </ul>
   </div>
   <div id="teams" class="posts">
-    <h3>Scheduled Deliverable Reports</h3>
+    <h3>Scheduled Deliverable Report</h3>
     <h4 class="index-post-desc">Looks at the currently (and soon to be) scheduled deliverables and the work associated with them.</h4>
     <ul>
       {% for post in site.categories['Teams'] %}
