@@ -14,7 +14,7 @@
     </ul>
   </div>
   <div id="teams" class="posts">
-    <h3>Scheduled Deliverable Report</h3>
+    <h3>Scheduled Deliverables Report</h3>
     <h4 class="index-post-desc">Looks at the currently (and soon to be) scheduled deliverables and the work associated with them.</h4>
     <ul>
       {% for post in site.categories['Teams'] %}
