@@ -4,7 +4,7 @@
 <div class="posts-list">
   <div id="deltas" class="posts">
     <h3>Progress Tracker Delta Report</h3>
-    <h4 class="index-post-desc">Analyzes and lists changes from the previous iteration of the Progress Tracker</h4>
+    <p class="index-post-desc">Analyzes and lists changes from the previous iteration of the Progress Tracker</p>
     <ul>
       {% for post in site.categories['Delta'] %}
         <li>
@@ -15,7 +15,7 @@
   </div>
   <div id="teams" class="posts">
     <h3>Scheduled Deliverables Report</h3>
-    <h4 class="index-post-desc">Looks at the currently (and soon to be) scheduled deliverables and the work associated with them.</h4>
+    <p class="index-post-desc">Looks at the currently (and soon to be) scheduled deliverables and the work associated with them.</p>
     <ul>
       {% for post in site.categories['Teams'] %}
         <li>
