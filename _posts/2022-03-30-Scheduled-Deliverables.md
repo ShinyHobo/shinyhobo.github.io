@@ -115,7 +115,6 @@ scheduled for approximately 499 man-days. 22% of deliverables are shared between
 6x Design devs working on 10 tasks (82% load) thru 2022-03-31<br/>
 17x Art devs working on 12 tasks (294% load) thru 2022-03-31<br/>
 ↳ will continue 2022-04-10 with 17x Art devs<br/>
-17x Art devs will work on 3 tasks (74% load) starting 2022-04-10 thru 2022-04-14<br/>
 </li></ul></summary><p>..................========|=............==============......................====........................<br>..........................|=..==..........============......................====..............========..</p></details>  
 <details><summary><ul><li>Weapon Feature Team <br/>
 2x Engineering devs working on 5 tasks (154% load) thru 2022-03-31<br/>
@@ -392,7 +391,7 @@ scheduled for approximately 499 man-days. 22% of deliverables are shared between
 <details><summary><ul><li>Actor Feature Team <br/>
 1x Animation dev working on 6 tasks (244% load) thru 2022-03-31<br/>
 1x Design dev will work on 15 tasks (70% load) starting 2022-04-03 thru 2022-09-28<br/>
-</li></ul></summary><p>..........................|.............========~~~~~~~~~~==========....................................<br>..........................|.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~........................<br>..............============|=............................................................................</p></details>  
+</li></ul></summary><p>..........................|.............========~~~~~~~~~~==========....................................<br>..............============|=............................................................................</p></details>  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/l3tnv27jd4kzp" target="_blank">Probability Volume Encounter Density Refactor</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary><ul><li>Systemic Services and Tools Team <br/>
 1x Engineering dev working on 4 tasks (180% load) thru 2022-05-05<br/>
