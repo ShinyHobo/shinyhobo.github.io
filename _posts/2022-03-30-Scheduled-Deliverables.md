@@ -114,7 +114,7 @@ scheduled for approximately 499 man-days. 22% of deliverables are shared between
 <details><summary><ul><li>Vehicle Content - EU <br/>
 6x Design devs working on 10 tasks (82% load) thru 2022-03-31<br/>
 17x Art devs working on 12 tasks (294% load) thru 2022-03-31<br/>
-↳ will continue 2022-04-10 with 17x Art devs<br/>
+↳ will continue 2022-04-10 with 17x devs<br/>
 </li></ul></summary><p>..................========|=............==============......................====........................<br>..........................|=..==..........============......................====..............========..</p></details>  
 <details><summary><ul><li>Weapon Feature Team <br/>
 2x Engineering devs working on 5 tasks (154% load) thru 2022-03-31<br/>
