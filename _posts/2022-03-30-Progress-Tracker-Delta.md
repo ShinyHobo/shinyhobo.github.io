@@ -303,7 +303,7 @@ x1 Engineering dev previously completed all available tasks
 ## [5] deliverable(s) *updated*: ##  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/10cbpfgpt5w5k" target="_blank">Character Creator</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 *2021-08-15 => 2022-02-15*  
-* End date has been extended from Thu Nov 11 2021 to Tue Feb 15 2022  
+* End date has been extended from 2021-11-11 to 2022-02-15  
 * SQ42 Feature Team added 42 days of work  
 x1 Engineering dev with 7 tasks (93% => 61% load)  
   
@@ -314,13 +314,13 @@ x2 Engineering devs with 26 tasks (55% => 38% load)
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/d4esq1kn1wb97" target="_blank">Satellites - Points of Interest</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *2022-04-24 => 2022-12-30*  
-* Start date has been pushed back from Sun Mar 27 2022 to Sun Apr 24 2022  
+* Start date has been pushed back from 2022-12-30 to 2022-12-30  
 * Location Concept Art freed up 28 days of work  
 x2 Art devs with 28 tasks (51% => 39% load)  
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/zojrooozmn197" target="_blank">Selling</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *2021-04-25 => 2022-03-24*  
-* End date has been extended from Mon Jan 31 2022 to Thu Mar 24 2022  
+* End date has been extended from 2022-01-31 to 2022-03-24  
 * Mission Feature Team added 25 days of work  
 x1 Engineering dev with 7 tasks (97% => 83% load)  
   
