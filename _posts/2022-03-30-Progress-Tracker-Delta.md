@@ -314,7 +314,7 @@ x2 Engineering devs with 26 tasks (55% => 38% load)
   
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/d4esq1kn1wb97" target="_blank">Satellites - Points of Interest</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *2022-04-24 => 2022-12-30*  
-* Start date has been pushed back from 2022-12-30 to 2022-12-30  
+* Start date has been pushed back from 2022-03-27 to 2022-04-24  
 * Location Concept Art freed up 28 days of work  
 x2 Art devs with 28 tasks (51% => 39% load)  
   
