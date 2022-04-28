@@ -156,3 +156,7 @@ details > p {
     margin: 0;
     text-decoration: underline;
 }
+
+.wrap .floatingchat-container {
+    width: 213px;
+}
