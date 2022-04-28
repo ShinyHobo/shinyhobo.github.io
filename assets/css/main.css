@@ -157,6 +157,6 @@ details > p {
     text-decoration: underline;
 }
 
-.floatingchat-container {
-    width: 220px !important;
+.floatingchat-container, .floatingchat-container-mobi {
+    width: 212px !important;
 }
