@@ -23,21 +23,15 @@
                     <h2>RSI "Progress Tracker" Delta Reports</h2>
                 </a>
                 <a href="https://github.com/ShinyHobo" class="btn btn-github" target="_blank"><span class="icon"></span>by ShinyHobo</a>
-                <div id="donate-button-container">
-                    <div id="donate-button"></div>
-                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-                    <script>
-                    PayPal.Donation.Button({
-                    env:'production',
-                    hosted_button_id:'C32CA4A5PLSQY',
-                    image: {
-                    src:'{{ site.url }}/assets/images/btn_donate_LG.png',
-                    alt:'Donate with PayPal button',
-                    title:'Buy me a coffee?',
-                    }
-                    }).render('#donate-button');
-                    </script>
-                </div>
+                <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+                <script>
+                kofiWidgetOverlay.draw('shinyhobo', {
+                    'type': 'floating-chat',
+                    'floating-chat.donateButton.text': 'Buy me a coffee?',
+                    'floating-chat.donateButton.background-color': '#5cb85c',
+                    'floating-chat.donateButton.text-color': '#fff'
+                });
+                </script>
             </div>
         </header>
 
