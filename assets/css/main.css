@@ -163,4 +163,10 @@ details > p {
 
 .container a.kofi-button {
     min-width: auto;
+    border-radius: 20px;
+}
+
+.container a.kofi-button .kofitext {
+    vertical-align: super;
+    line-height: 30px !important;
 }
