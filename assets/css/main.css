@@ -171,3 +171,9 @@ details > p {
     vertical-align: super;
     line-height: 30px !important;
 }
+
+.container .kofitext {
+    content: url(/assets/images/delta-favicon.png);
+    width: 20px !important;
+    height: 20px !important;
+}
