@@ -164,6 +164,7 @@ details > p {
 .container a.kofi-button {
     min-width: auto;
     border-radius: 20px;
+    height: 30px;
 }
 
 .container a.kofi-button .kofitext {
