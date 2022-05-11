@@ -160,3 +160,7 @@ details > p {
 .floatingchat-container, .floatingchat-container-mobi {
     width: 212px !important;
 }
+
+.container a.kofi-button {
+    min-width: auto;
+}
