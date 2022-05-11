@@ -172,7 +172,7 @@ details > p {
     line-height: 30px !important;
 }
 
-.container .kofitext {
+.container .kofitext img {
     content: url(/assets/images/delta-favicon.png);
     width: 20px !important;
     height: 20px !important;
