@@ -407,15 +407,17 @@ x1 Engineering dev with 6 tasks (88% => 127% load)
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/dr04u5pqwd9eh" target="_blank">Additional Stanton Lagrange Points</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *2021-04-01 => 2022-05-19*  
   
-* Added to the 3.17 release window:  
-"Adding new lagrange points around microTech and ArcCorp"  
+* Added to the 3.17 release window  
 ![](https://robertsspaceindustries.com/media/xetn2ojoxc6lwr/source/Lagrange2.png)  
+<sup>"Adding new lagrange points around microTech and ArcCorp"</sup>  
+
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3awo94sem3ynx" target="_blank">AI - Planetary Navigation</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *2021-05-06 => 2022-04-28*  
   
-* Added to the 3.17 release window:  
-"System that allows NPCs to move on the planetary surface."  
+* Added to the 3.17 release window  
 ![](https://robertsspaceindustries.com/media/tk8yk46r0f0nwr/source/Planetary.jpg)  
+<sup>"System that allows NPCs to move on the planetary surface."</sup>  
+
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lvcve6b4y96vn" target="_blank">Anvil Legionnaire</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *2021-10-31 => 2023-02-23*  
 * End date has been extended from 2022-12-15 to 2023-02-23  
