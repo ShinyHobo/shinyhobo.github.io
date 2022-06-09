@@ -408,6 +408,7 @@ x1 Engineering dev with 6 tasks (88% => 127% load)
 *2021-04-01 => 2022-05-19*  
   
 * Added to the 3.17 release window  
+  
 ![](https://robertsspaceindustries.com/media/xetn2ojoxc6lwr/source/Lagrange2.png)  
 <sup>"Adding new lagrange points around microTech and ArcCorp"</sup>  
 
@@ -415,6 +416,7 @@ x1 Engineering dev with 6 tasks (88% => 127% load)
 *2021-05-06 => 2022-04-28*  
   
 * Added to the 3.17 release window  
+  
 ![](https://robertsspaceindustries.com/media/tk8yk46r0f0nwr/source/Planetary.jpg)  
 <sup>"System that allows NPCs to move on the planetary surface."</sup>  
 
