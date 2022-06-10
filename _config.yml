@@ -6,7 +6,6 @@ description: Lists and displays detected changes on the RSI "Progress Tracker"
 ### Build settings
 
 url: https://shinyhobo.github.io
-baseurl: /shinytracker2
 
 theme: jekyll-theme-hacker
 markdown: kramdown
