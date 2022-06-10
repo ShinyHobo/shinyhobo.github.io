@@ -1,0 +1,197 @@
+html, body {
+    height: 100%
+}
+
+#wrap header h1:before {
+    content: none;
+    font-size: 24px;
+}
+
+.main {
+    padding-bottom: 50px;
+}
+
+#wrap {
+    min-height: 80%;
+}
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    clear: both;
+}
+
+details > summary {
+    list-style: none;
+    cursor: pointer;
+    margin-left: 1px;
+}
+
+details > summary::marker {
+    display: none;
+}
+
+details > p {
+    font-size: .8em;
+}
+
+.post p {
+    margin-top: 0;
+}
+
+.post h3 {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.post [id^="removed-from-release-roadmap"] {
+    color: darkturquoise;
+}
+
+.post strong a {
+    color: #b5e853;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(181 232 83 / 10%), 0 0 10px rgb(181 232 83 / 10%);
+}
+
+.post h3 span img, .post details li span img {
+    height: 25px;
+    vertical-align: middle;
+    width: auto;
+}
+
+.post li {
+    margin-top: 10px;
+}
+
+.post summary ul {
+    margin: 0;
+}
+
+.post ol li {
+    margin-left: 10px;
+}
+
+.ranked-deliverables {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+#top-deliverables-filter {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.PageNavigation {
+    font-size: 14px;
+    display: block;
+    width: auto;
+    overflow: hidden;
+}
+
+.PageNavigation a {
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 1em 0;
+}
+
+.PageNavigation .next {
+    text-align: right;
+}
+
+#donate-button-container {
+    display: inline-block;
+    top: 12px;
+    position: relative;
+}
+
+#scheduled-deliverables {
+    margin: 0; 
+}
+
+#shinytracker-header {
+    font-size: 30px !important;
+    color: #b5e853 !important;
+    margin: 0;
+}
+
+.posts {
+    float: left;
+    margin-right: 20px;
+}
+
+.posts-list {
+    max-width: 840px;
+    margin: auto;
+}
+
+.index-post-desc {
+    max-width: 400px;
+    margin-top: 0;
+}
+
+.posts h3 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.floatingchat-container, .floatingchat-container-mobi {
+    width: 212px !important;
+}
+
+.container a.kofi-button {
+    min-width: auto;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.container a.kofi-button .kofitext {
+    vertical-align: super;
+    line-height: 30px !important;
+}
+
+.container .kofitext .kofiimg {
+    content: url(/assets/images/delta-favicon.png);
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.post p img {
+    width: 100%;
+}
+
+.category-link {
+    color: #b5e853;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.pager .next, .pager .previous {
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+    font-size: 20px;
+}
