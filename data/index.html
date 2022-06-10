@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Data
+regenerate: true
 ---
 
 <h2>Biweekly delta data dumps are accessible below:</h2>
@@ -9,7 +10,7 @@ title: Data
 {% assign data_files = site.static_files | where: "csv", true %}
 {% for data_file in data_files %}
   <li>
-    <a href="{{ data_file.path }}">{{ data_file.name }}</a>
+    <a href="{{ data_file.path | relative_url }}">{{ data_file.name }}</a>
   </li>
 {% endfor %}
 </ul>
@@ -18,7 +19,7 @@ title: Data
   {% assign data_files = site.static_files | where: "json", true | reverse %}
   {% for data_file in data_files %}
     <li>
-      <a download="{{ data_file.name }}" href="{{ data_file.path }}">{{ data_file.name }}</a>
+      <a download="{{ data_file.name }}" href="{{ data_file.path | relative_url }}">{{ data_file.name }}</a>
     </li>
   {% endfor %}
   </ul>

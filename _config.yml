@@ -1,10 +1,18 @@
-theme: jekyll-theme-hacker
-markdown: kramdown
+### Site metadata
+
 title: ShinyTracker
 description: Lists and displays detected changes on the RSI "Progress Tracker"
-url: "https://shinyhobo.github.io"
-plugins:
-  - jekyll-sitemap
+
+### Build settings
+
+url: https://shinyhobo.github.io
+baseurl: /shinytracker2
+
+theme: jekyll-theme-hacker
+markdown: kramdown
+
+incremental: false
+
 defaults:
   - scope:
       path: "data"
@@ -14,3 +22,33 @@ defaults:
       path: "snapshots"
     values:
       json: true
+  - scope:
+      path: "*.md"
+    values:
+      layout: page
+
+exclude:
+  - docs/
+  - Makefile
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+plugins:
+  - jekyll-sitemap
+
+gems:
+  - jekyll-paginate-v2
+
+#permalink: /:year/:month/:day/:title.html
+
+pagination:
+  enabled: true
+  per_page: 10
+  offset: 0
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  

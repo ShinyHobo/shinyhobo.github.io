@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div>
+  {{ content }}
+
+  <ul>
+    {% for post in paginator.posts %}
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  {% if paginator.total_pages > 1 %}
+  <ul class="pager">
+    {% if paginator.next_page %}
+      <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older Posts</a>
+      </li>
+      {% endif %}
+      {% if paginator.previous_page %}
+      <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts &rarr;</a>
+      </li>
+      {% endif %}
+  </ul>
+  {% endif %}
+</div>

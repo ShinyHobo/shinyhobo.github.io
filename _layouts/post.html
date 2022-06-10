@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
-
-{% seo %}
+	{% seo %}
   </head>
 
   <body>
@@ -40,10 +39,10 @@
         <div class="container main">
             <div class="PageNavigation">
                 {% if page.previous.url %}
-                  <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+                  <a class="prev" href="{{page.previous.url | relative_url }}">&laquo; {{page.previous.title}}</a>
                 {% endif %}
                 {% if page.next.url %}
-                  <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+                  <a class="next" href="{{page.next.url | relative_url }}">{{page.next.title}} &raquo;</a>
                 {% endif %}
             </div>
             <section id="main_content" class="post">
@@ -51,10 +50,10 @@
             </section>
             <div class="PageNavigation">
                 {% if page.previous.url %}
-                  <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+                  <a class="prev" href="{{page.previous.url | relative_url }}">&laquo; {{page.previous.title}}</a>
                 {% endif %}
                 {% if page.next.url %}
-                  <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+                  <a class="next" href="{{page.next.url | relative_url }}">{{page.next.title}} &raquo;</a>
                 {% endif %}
             </div>
         </div>
