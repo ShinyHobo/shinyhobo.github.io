@@ -19,11 +19,6 @@ layout: default
           <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older Posts</a>
       </li>
       {% endif %}
-      {% if paginator.page_trail %}
-        {% for trail in paginator.page_trail %}
-          <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' | remove: "index.html" }}" class='{% if page.url == trail.path %}current{% endif %}'>{{ trail.num }}</a>
-        {% endfor %}
-      {% endif %}
       {% if paginator.previous_page %}
       <li class="previous">
           <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts &rarr;</a>
