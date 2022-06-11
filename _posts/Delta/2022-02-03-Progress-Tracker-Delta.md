@@ -8,7 +8,9 @@ categories: Delta
 # Progress Tracker Delta #  
 ### 431 deliverables listed | Wed Dec 15 2021 => Fri Feb 03 2022 ###  
 There were 89 modifications, 4 removals, and 15 additions (with 2 returning) in this update.  
-  
+
+<content>
+
 ---  
 
 ## [4] deliverable(s) *removed*: ##  
@@ -568,3 +570,4 @@ game-ready vehicle."
   
 ## [331] deliverable(s) *unchanged* ##  
 
+</content>
