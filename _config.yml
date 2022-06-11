@@ -53,4 +53,7 @@ pagination:
   trail: 
     before: 5
     after: 5
-  
+
+feed:
+  post_limit: 2
+  excerpt_only: true
