@@ -1,6 +1,7 @@
 ---  
 layout: post  
 title: "Scheduled Deliverables - 2022-02-21"  
+excerpt: "There are currently 107 scheduled deliverables being worked on by 46 teams"  
 date: 2022-02-21  
 categories: Teams  
 ---  

@@ -1,6 +1,7 @@
 ---  
 layout: post  
 title: "Scheduled Deliverables - 2022-05-11"  
+excerpt: "There are currently 102 scheduled deliverables being worked on by 45 teams | 20 deliverables are scheduled to begin work by 13 team(s) within two weeks"  
 date: 2022-05-11  
 categories: Teams  
 ---  
