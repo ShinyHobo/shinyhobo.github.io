@@ -9,9 +9,6 @@ categories: Teams
 #### as of 2022-03-30 ####  
 ## There are currently 64 scheduled deliverables being worked on by 27 teams ##  
 ### 13 deliverables are scheduled to begin work by 6 team(s) within two weeks ###  
-
-<content>
-
 ---  
 This report lists the actively assigned deliverables and the associated teams, along with the number of developers assigned to each time period. Deliverable time allocations are often staggered over their total lifespan and have multiple devs in the same department working in parallel, but their allocations are obviously not going to be equal. For a better look at this, clicking the team name (or one of the completion dates listed below it) will display a rendering of the current waterfall chart iteration. This chart provides an overview of the schedule breakdown of each team in week long segments. <br/><br/> The timeslots you see on the RSI website are actually fragmented into many smaller sections, usually two week sprints. I do my best to combine relevant timespans by looking for overlaps (4 days currently). If a team says they end earlier than you expect, it means that there is some sizeable period of time between then and the next time they start working on the deliverable again. <br/><br/> The load calculation is an approximation based on the sum of the part-time and full-time tasks (averaged at 80 hours to complete a piece) divided by the team capacity (with a focus factor of 60%) over the given time period. Without exact hourly estimates for each task, a more accurate assessment doesn't seem likely, so interpret the load as a given dev group's general utilization on a deliverable.  
   
@@ -560,4 +557,3 @@ scheduled for approximately 499 man-days. 22% of deliverables are shared between
 <details><summary><ul><li>Weapon Feature Team <br/>
 1x Engineering dev will work on 12 tasks (135% load) starting 2022-04-03 thru 2022-08-17<br/>
 </li></ul></summary><p>..........................|.====================~~~~~~~~~~==========....................................</p></details>
-</content>

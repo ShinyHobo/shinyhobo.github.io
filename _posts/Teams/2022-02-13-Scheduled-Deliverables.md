@@ -6,9 +6,6 @@ categories: Teams
 ---  
   
 ## There are currently 92 scheduled deliverables being worked on by 39 teams ##  
-
-<content>
-
 ---  
 This report lists the actively assigned deliverables and the associated teams, along with the number of developers assigned to each time period. Deliverable time allocations are often staggered over their total lifespan and have multiple devs in the same department working in parallel, but their allocations are obviously not going to be equal. For a better look at this, clicking the team name (or one of the completion dates listed below it) will display a rendering of the current waterfall chart iteration. This chart provides an overview of the schedule breakdown of each team in week long segments.<br/><br/>The load calculation is an approximation based on the sum of the part-time and full-time tasks (averaged at 80 hours to complete a piece) divided by the team capacity (with a focus factor of 60%) over the given time period. Without exact hourly estimates for each task, a more accurate assessment doesn't seem likely, so interpret the load as a given dev group's general utilization on a deliverable.  
 
@@ -398,4 +395,3 @@ This report lists the actively assigned deliverables and the associated teams, a
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vv4ufswireni7" target="_blank">Zero G Push & Pull</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 <details><summary>Actor Feature Team   
 <ul></ul><ul><li>2x Animation devs working on 18 tasks (81% load) thru Thu Jul 07 2022</li></ul></summary><p>..~~~~========|=============~~~~~~~~~~~~~~~~~~~~~~~~~~~~................................................</p></details>
-</content>
