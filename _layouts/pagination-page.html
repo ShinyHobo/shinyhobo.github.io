@@ -7,7 +7,7 @@ layout: default
   <ul>
     {% for post in paginator.posts %}
       <li>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.date | date: "%b %-d, %Y" }}</a>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }}</a>
       </li>
     {% endfor %}
   </ul>
@@ -18,6 +18,11 @@ layout: default
       <li class="next">
           <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older Posts</a>
       </li>
+      {% endif %}
+      {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+          <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' | remove: "index.html" }}" class='{% if page.url == trail.path %}current{% endif %}'>{{ trail.num }}</a>
+        {% endfor %}
       {% endif %}
       {% if paginator.previous_page %}
       <li class="previous">
