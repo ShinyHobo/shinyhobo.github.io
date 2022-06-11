@@ -7,7 +7,7 @@ layout: default
   <ul>
     {% for post in paginator.posts %}
       <li>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.date | date: "%b %-d, %Y" }}</a>
       </li>
     {% endfor %}
   </ul>
