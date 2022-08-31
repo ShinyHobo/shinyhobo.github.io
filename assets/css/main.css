@@ -201,3 +201,7 @@ details > p {
     margin-right: 15px;
     font-size: 20px;
 }
+
+.container .btn-container {
+    min-width: auto;
+}
