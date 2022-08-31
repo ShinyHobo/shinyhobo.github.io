@@ -181,8 +181,9 @@ details > p {
 
 .container #rss-feed .feed-icon {
     content: url(/assets/images/feed-icon.svg);
-    width: 20px !important;
-    height: 20px !important;
+    height: 21px;
+    top: 9px;
+    position: relative;
 }
 
 .post p img {
