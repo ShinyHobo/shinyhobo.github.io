@@ -179,6 +179,12 @@ details > p {
     height: 20px !important;
 }
 
+.container #rss-feed .feed-icon {
+    content: url(/assets/images/feed-icon.svg);
+    width: 20px !important;
+    height: 20px !important;
+}
+
 .post p img {
     width: 100%;
 }
