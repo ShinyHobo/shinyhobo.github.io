@@ -204,18 +204,22 @@ details > p {
     min-width: auto;
 }
 
-#main-content h1 {
+#main_content h1 {
     text-shadow: none;
 }
 
-#main-content h2 {
+#main_content h2 {
     text-shadow: none;
 }
 
-#main-content h3 {
+#main_content h3 {
     text-shadow: none;
 }
 
-#main-content h4 {
+#main_content h4 {
+    text-shadow: none;
+}
+
+#main_content a {
     text-shadow: none;
 }
