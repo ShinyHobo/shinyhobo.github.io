@@ -6,15 +6,15 @@ categories: Delta
 ---  
   
 # Progress Tracker Delta #  
-### 477 deliverables listed | 2022-08-17 => 2022-09-14 ###  
-There were 62 modifications, 2 removals, and 1 additions in this update. Please note that not all
-removals are intentional; there is currently a bug with how time is entered on the Progress Tracker
-that can cause deliverables to disappear.  
+### 478 deliverables listed | 2022-08-17 => 2022-09-14 ###  
+There were 62 modifications, 2 removals, and 2 additions (with 1 returning) in this update. Please
+note that not all removals are intentional; there is currently a bug with how time is entered on the
+Progress Tracker that can cause deliverables to disappear.  
   
 ---  
 
 <details><summary><h3>extra analysis (click me)</h3></summary><br/>  
-There are approximately 435 devs (out of ~512, or 85%) with 920 assignments scheduled to work on 128
+There are approximately 437 devs (out of ~512, or 85%) with 923 assignments scheduled to work on 129
 observable deliverables. Of those deliverables, 6% are for SQ42 exclusively, with ~214 devs (42%)
 scheduled for approximately 3247 man-days. 8% of deliverables are shared between both projects.
 <br/><br/>  
@@ -81,6 +81,7 @@ On average, the schedule has expanded by 40 days. 22 deliverables were not exten
 <li>121 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/z0d9djfl79n7m' target="_blank">Player/Machine Physical Interaction</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
 <li>120 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/1a48n9j8i12dw' target="_blank">RSI Lynx</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>115 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3fbborm2578lc' target="_blank">Life Support T0</a> (97% part-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
+<li>113 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/e3y2wymo7mt9g' target="_blank">Aopoa San'tok.yāi</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>113 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qrpp0jelcpx8y' target="_blank">Chapter 06</a> (79% part-time) <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
 <li>113 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51czsbt2ajcs1' target="_blank">Chapter 20</a> (79% part-time) <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
 <li>108 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/mpn4648rn5dke' target="_blank">Actor Status T2</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
@@ -236,6 +237,7 @@ On average, the schedule has expanded by 40 days. 22 deliverables were not exten
 <li>3 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/mbe91phrh1c12' target="_blank">DGS Mesh Node</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>3 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/47hp2kkju0ane' target="_blank">FPS Radar / Scanning</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
 <li>3 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7zotfdn3ln8v7' target="_blank">Rescue/Transport Mission</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
+<li>3 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/e3y2wymo7mt9g' target="_blank">Aopoa San'tok.yāi</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>3 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/l79nce8ptl09x' target="_blank">Asteroid Facilities</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>3 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xz7mai18yr9xs' target="_blank">Origin X1</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>
 <li>3 - <a href='https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/z0d9djfl79n7m' target="_blank">Player/Machine Physical Interaction</a> (full-time) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>
@@ -327,7 +329,16 @@ x2 Art devs had 10 tasks
   
 ---  
 
-## [1] deliverable(s) *added*: ##  
+## [2] deliverable(s) *added*: ##  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/e3y2wymo7mt9g" target="_blank">Aopoa San'tok.yāi</a>** (returning!) <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+*2023-01-02 => 2023-06-23*  
+Building, balancing, and implementing Aopoa's medium fighter, the San'tok.yāi, into the game.  
+  
+The following team(s) were assigned:  
+* Vehicle Content - US will begin work 2023-01-02  
+x1 Design dev with 12 tasks (160% load)  
+x2 Art devs with 20 tasks (78% load)  
+  
 ### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2fetvytj8dwvm" target="_blank">ship 32</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 *2023-02-26 => 2023-06-15*  
 Unannounced Vehicle  
