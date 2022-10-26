@@ -829,7 +829,7 @@ x2 => 3 Audio devs with 3 tasks (96% => 31% load)
 * VFX Team added 42 days of work  
 x1 => 2 Art devs with 3 tasks (25% load)  
   
-* Release Release_title has been changed from  
+* Release version has been changed from  
 '3.18'  
 to '3.17'  
   
