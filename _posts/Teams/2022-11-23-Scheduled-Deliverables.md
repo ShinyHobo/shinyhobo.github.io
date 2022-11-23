@@ -1,932 +1,934 @@
+---  
+layout: post  
+title: "Scheduled Deliverables - 2022-11-23"  
+date: 2022-11-23  
+categories: Teams  
+excerpt: "There are currently 83 scheduled deliverables being worked on by 43 teams"  
+---  
+  
 # Scheduled Deliverables #  
 #### as of 2022-11-23 ####  
 ## There are currently 83 scheduled deliverables being worked on by 43 teams ##  
 ### 10 deliverables are scheduled to begin work by 8 team(s) within two weeks ###  
 ---  
-This report lists the actively assigned deliverables and the associated teams, along with the number
-of developers assigned to each time period. Deliverable time allocations are often staggered over
-their total lifespan and have multiple devs in the same department working in parallel, but their
-allocations are obviously not going to be equal.  
-  
-The load calculation is an approximation based on the sum of the part-time and full-time tasks
-(averaged at 80 hours to complete a piece) divided by the team capacity (with a focus factor of 60%)
-over the given time period. Without exact hourly estimates for each task, a more accurate assessment
-doesn't seem likely, so interpret the load as a given dev group's general utilization on a
-deliverable.
+This report lists the actively assigned deliverables and the associated teams, along with the number of developers assigned to each time period. Deliverable time allocations are often staggered over their total lifespan and have multiple devs in the same department working in parallel, but their allocations are obviously not going to be equal. For a better look at this, clicking the team name (or one of the completion dates listed below it) will display a rendering of the current waterfall chart iteration. This chart provides an overview of the schedule breakdown of each team in week long segments. <br/><br/> The timeslots you see on the RSI website are actually fragmented into many smaller sections, usually two week sprints. I do my best to combine relevant timespans by looking for overlaps (4 days currently). If a team says they end earlier than you expect, it means that there is some sizeable period of time between then and the next time they start working on the deliverable again. <br/><br/> The load calculation is an approximation based on the sum of the part-time and full-time tasks (averaged at 80 hours to complete a piece) divided by the team capacity (with a focus factor of 60%) over the given time period. Without exact hourly estimates for each task, a more accurate assessment doesn't seem likely, so interpret the load as a given dev group's general utilization on a deliverable.  
   
 ---  
+<details><summary><h3>extra analysis (click me)</h3></summary><br/>  
 There are approximately 428 devs (out of ~512, or 84%) with 906 assignments scheduled to work on 83
 observable deliverables. Of those deliverables, 35% are for SQ42 exclusively, with ~348 devs (68%)
-scheduled for approximately 5083 man-days. 29% of deliverables are shared between both projects.   
+scheduled for approximately 5083 man-days. 29% of deliverables are shared between both projects.
+<br/><br/>  
   
 27 deliverable(s) are not currently scheduled to continue work after this sprint:  
+<ul>  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/50p1qccyij9ay" target="_blank">Aciedo Station</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Aciedo Station [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/z0rd9q38qg54a" target="_blank">Anvil C8R Pisces</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
-*  Anvil C8R Pisces [SC]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/w4ebx3qij8arw" target="_blank">AR and Map Marker System Rework</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  AR and Map Marker System Rework [SC, SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/pzk7ai0l3hjmf" target="_blank">Archon</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Archon [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7kfxh3qa8d1ez" target="_blank">Bombs</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
-*  Bombs [SC]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/fs947h4k8zqb3" target="_blank">Chapter 03</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 03 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qrpp0jelcpx8y" target="_blank">Chapter 06</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 06 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/aoa32y9xrqhd3" target="_blank">Chapter 08</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 08 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51lg16ocusxjo" target="_blank">Chapter 09</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 09 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8lu3osgro9jz1" target="_blank">Chapter 10</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 10 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/x9clnqkpeqnf4" target="_blank">Chapter 15</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 15 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51czsbt2ajcs1" target="_blank">Chapter 20</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 20 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7cnbz3e3830yf" target="_blank">Chapter 23</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 23 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vel8t7l1cg3vr" target="_blank">Chapter 25</a> <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Chapter 25 [SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kte875wgl8xdk" target="_blank">Charge/Drain T0</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Charge/Drain T0 [SC, SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/umxifhs2llfbq" target="_blank">Gen12 - Renderer T1</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Gen12 - Renderer T1 [SC, SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/u8i05h9g7ae4f" target="_blank">Ladders T1</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Ladders T1 [SC, SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7oe0cti41a788" target="_blank">New Missions - Orison</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
-*  New Missions - Orison [SC]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xctrxlu0xmq63" target="_blank">Ocean Shader Improvements</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
-*  Ocean Shader Improvements [SC]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/s4smhgp8uw58x" target="_blank">Physical Damage & Breakability</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Physical Damage & Breakability [SC, SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gwt6g2pmm280t" target="_blank">Physics - Ropes Simulation</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Physics - Ropes Simulation [SC, SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jj824sq4y1hu5" target="_blank">RaStar</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
-*  RaStar [SC]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/k344glls3rfaq" target="_blank">Ship CPU</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Ship CPU [SC, SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/dml7u9nzr72wt" target="_blank">Stanton Fashion Clothing</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
-*  Stanton Fashion Clothing [SC]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/rkh3xiao4v6sx" target="_blank">Subsumption Editor Integration</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
   
-*  Subsumption Editor Integration [SC, SQ42]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oo8l74xh4us4a" target="_blank">Unannounced Vehicle</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span></li>  
   
-*  Unannounced Vehicle [SC]  
+<li> <a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8aqh4ff6y5aqi" target="_blank">Unified Itemports - FPS</a> <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span></li>  
+</ul>Below are the time breakdowns for each team:  
+<ul><li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/g42qg07ipfday" target="_blank">Actor Feature Team</a><br/>5% part-time with 127 task(s) scheduled, 53% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/z2r7zwow0njfh" target="_blank">Actor Tech Team</a><br/>full-time with 27 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9qk0teoycf5xa" target="_blank">AI Content Team</a><br/>22% part-time with 58 task(s) scheduled, 86% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/a4comxhvpvdaf" target="_blank">AI Tech and Feature Team</a><br/>16% part-time with 51 task(s) scheduled, 64% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/kqnyb06fwbaxc" target="_blank">Arena Commander Feature Team</a><br/>12% part-time with 75 task(s) scheduled, 33% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/jxk6osokiouob" target="_blank">Audio</a><br/>full-time with 40 task(s) scheduled, 33% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/xmosla0i10dy4" target="_blank">Character Tech Art</a><br/>full-time with 39 task(s) scheduled, 57% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/bogq4vdhraflg" target="_blank">Cinematics Team</a><br/>90% part-time with 42 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/2qw186xhy18sd" target="_blank">Editor Team</a><br/>full-time with 16 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/ultsmh449frny" target="_blank">Engine Team</a><br/>full-time with 16 task(s) scheduled, 33% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/4r8ew6seu5vei" target="_blank">EU Landing Zone 2</a><br/>100% part-time with 5 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/psjorovrqeepa" target="_blank">EU Sandbox 1</a><br/>full-time with 18 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/stscs5ff3gmxy" target="_blank">Facial Animation</a><br/>full-time with 26 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/soxl33eqdynuo" target="_blank">Game Services Team</a><br/>36% part-time with 33 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/6slwetmdmc2m8" target="_blank">Gameplay Story</a><br/>98% part-time with 62 task(s) scheduled, 88% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9552ppfm6wczk" target="_blank">Graphics Team</a><br/>full-time with 17 task(s) scheduled, 40% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/fgi85wwny6mwp" target="_blank">Live Tools Team</a><br/>71% part-time with 70 task(s) scheduled, 33% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9o6ftwfqbfml1" target="_blank">Location Concept Art</a><br/>full-time with 50 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/t8wzceqnrm88s" target="_blank">Mission Feature Team</a><br/>11% part-time with 37 task(s) scheduled, 25% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/szcqa08sykgl6" target="_blank">Motion Capture Team</a><br/>7% part-time with 29 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/xv3nkukqwzdm0" target="_blank">MTL Sandbox 1</a><br/>full-time with 48 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/dqdbdlj2iad9e" target="_blank">Narrative</a><br/>38% part-time with 24 task(s) scheduled, 63% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/nex7tlvh4gdti" target="_blank">Network Team</a><br/>full-time with 13 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/cmj5hpo87rv45" target="_blank">Persistent Tech Team</a><br/>full-time with 17 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/nzki3zatwmu9w" target="_blank">Physics Team</a><br/>full-time with 15 task(s) scheduled, 40% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/b1bv5kl5qm0ca" target="_blank">Planet Tech Team</a><br/>full-time with 6 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/padrvbv3z0xf9" target="_blank">SC Character Art</a><br/>full-time with 23 task(s) scheduled, all of which are for SC</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/zyhb2x096wk4c" target="_blank">SQ42 Art</a><br/>18% part-time with 143 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/1fei9yfycrwbv" target="_blank">SQ42 Character Art</a><br/>full-time with 33 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/ctcsz78jsnxb8" target="_blank">SQ42 Level Design 1 - FPS</a><br/>full-time with 29 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/ebcdgb9puy0kj" target="_blank">SQ42 Level Design 2 - Flight</a><br/>full-time with 29 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/7h1ocb0gfz9z1" target="_blank">SQ42 Level Design 3 - Social</a><br/>22% part-time with 18 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/2rwdmge78jqol" target="_blank">SQ42 UI Feature Team</a><br/>full-time with 36 task(s) scheduled, 55% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/urttcb0h24pw4" target="_blank">Systemic Services and Tools Team</a><br/>full-time with 41 task(s) scheduled, 25% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/9q953d4kfdhy2" target="_blank">Tech Animation Team</a><br/>42% part-time with 43 task(s) scheduled, all of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/5yq74kdtsv1th" target="_blank">Tools Team</a><br/>full-time with 26 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/79daoxmystzeo" target="_blank">UI Tech Team</a><br/>full-time with 9 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/1vmcmadlzs4kr" target="_blank">US PU Gameplay Feature Team</a><br/>26% part-time with 19 task(s) scheduled, 50% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/0dis7eb2ffkpp" target="_blank">Vehicle Content - EU</a><br/>full-time with 162 task(s) scheduled, 20% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/66pea06128cew" target="_blank">Vehicle Content - US</a><br/>16% part-time with 61 task(s) scheduled, 60% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/fk4qm3ld6pg6g" target="_blank">Vehicle Feature Team</a><br/>full-time with 60 task(s) scheduled, 33% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/w4zc1htlkkp63" target="_blank">VFX Team</a><br/>full-time with 36 task(s) scheduled, 40% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/dwczuhei6sq2t" target="_blank">Weapon Content Team</a><br/>full-time with 25 task(s) scheduled, 40% of which are for SQ42</li>  
+<li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams/ulj3xssay6wus" target="_blank">Weapon Feature Team</a><br/>7% part-time with 59 task(s) scheduled, 50% of which are for SQ42</li>  
+</ul></details>---  
   
-*  Unified Itemports - FPS [SC, SQ42]  
-Below are the time breakdowns for each team:  
-* Actor Feature Team | 5% part-time with 127 task(s) scheduled, 53% of which are for SQ42  
-* Actor Tech Team | full-time with 27 task(s) scheduled, 50% of which are for SQ42  
-* AI Content Team | 22% part-time with 58 task(s) scheduled, 86% of which are for SQ42  
-* AI Tech and Feature Team | 16% part-time with 51 task(s) scheduled, 64% of which are for SQ42  
-* Arena Commander Feature Team | 12% part-time with 75 task(s) scheduled, 33% of which are for SQ42  
-* Audio | full-time with 40 task(s) scheduled, 33% of which are for SQ42  
-* Character Tech Art | full-time with 39 task(s) scheduled, 57% of which are for SQ42  
-* Cinematics Team | 90% part-time with 42 task(s) scheduled, all of which are for SQ42  
-* Editor Team | full-time with 16 task(s) scheduled, 50% of which are for SQ42  
-* Engine Team | full-time with 16 task(s) scheduled, 33% of which are for SQ42  
-* EU Landing Zone 2 | 100% part-time with 5 task(s) scheduled, 50% of which are for SQ42  
-* EU Sandbox 1 | full-time with 18 task(s) scheduled, 50% of which are for SQ42  
-* Facial Animation | full-time with 26 task(s) scheduled, all of which are for SQ42  
-* Game Services Team | 36% part-time with 33 task(s) scheduled, all of which are for SC  
-* Gameplay Story | 98% part-time with 62 task(s) scheduled, 88% of which are for SQ42  
-* Graphics Team | full-time with 17 task(s) scheduled, 40% of which are for SQ42  
-* Live Tools Team | 71% part-time with 70 task(s) scheduled, 33% of which are for SQ42  
-* Location Concept Art | full-time with 50 task(s) scheduled, all of which are for SC  
-* Mission Feature Team | 11% part-time with 37 task(s) scheduled, 25% of which are for SQ42  
-* Motion Capture Team | 7% part-time with 29 task(s) scheduled, all of which are for SQ42  
-* MTL Sandbox 1 | full-time with 48 task(s) scheduled, all of which are for SC  
-* Narrative | 38% part-time with 24 task(s) scheduled, 63% of which are for SQ42  
-* Network Team | full-time with 13 task(s) scheduled, all of which are for SC  
-* Persistent Tech Team | full-time with 17 task(s) scheduled, all of which are for SC  
-* Physics Team | full-time with 15 task(s) scheduled, 40% of which are for SQ42  
-* Planet Tech Team | full-time with 6 task(s) scheduled, all of which are for SC  
-* SC Character Art | full-time with 23 task(s) scheduled, all of which are for SC  
-* SQ42 Art | 18% part-time with 143 task(s) scheduled, all of which are for SQ42  
-* SQ42 Character Art | full-time with 33 task(s) scheduled, all of which are for SQ42  
-* SQ42 Level Design 1 - FPS | full-time with 29 task(s) scheduled, all of which are for SQ42  
-* SQ42 Level Design 2 - Flight | full-time with 29 task(s) scheduled, all of which are for SQ42  
-* SQ42 Level Design 3 - Social | 22% part-time with 18 task(s) scheduled, all of which are for SQ42  
-* SQ42 UI Feature Team | full-time with 36 task(s) scheduled, 55% of which are for SQ42  
-* Systemic Services and Tools Team | full-time with 41 task(s) scheduled, 25% of which are for SQ42  
-* Tech Animation Team | 42% part-time with 43 task(s) scheduled, all of which are for SQ42  
-* Tools Team | full-time with 26 task(s) scheduled, 50% of which are for SQ42  
-* UI Tech Team | full-time with 9 task(s) scheduled, 50% of which are for SQ42  
-* US PU Gameplay Feature Team | 26% part-time with 19 task(s) scheduled, 50% of which are for SQ42  
-* Vehicle Content - EU | full-time with 162 task(s) scheduled, 20% of which are for SQ42  
-* Vehicle Content - US | 16% part-time with 61 task(s) scheduled, 60% of which are for SQ42  
-* Vehicle Feature Team | full-time with 60 task(s) scheduled, 33% of which are for SQ42  
-* VFX Team | full-time with 36 task(s) scheduled, 40% of which are for SQ42  
-* Weapon Content Team | full-time with 25 task(s) scheduled, 40% of which are for SQ42  
-* Weapon Feature Team | 7% part-time with 59 task(s) scheduled, 50% of which are for SQ42  
----  
-  
-### **Aciedo Station** [SQ42] ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/50p1qccyij9ay" target="_blank">Aciedo Station</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* SQ42 Art  
- - 4x Art devs working on 4 tasks (62% load) thru 2022-11-23
-  
-### **Aerodynamic Control Surfaces** [SC] ###  
-* Vehicle Feature Team  
- - 1x Engineering dev working on 9 tasks (214% load) thru 2022-12-08
-  
-### **AI - Untrained Combat** [SC, SQ42] ###  
-* AI Tech and Feature Team  
- - 2x Engineering devs working on 11 tasks (113% load) thru 2022-12-29
-  
-### **AI - Vehicle Perception** [SC, SQ42] ###  
-* AI Tech and Feature Team  
- - 2x Engineering devs working on 7 tasks (87% load) thru 2022-12-15
-  
-### **Anvil C8R Pisces** [SC] ###  
+<details><summary><ul><li>SQ42 Art <br/>
+4x Art devs working on 4 tasks (62% load) thru 2022-11-23<br/>
+</li></ul></summary><p>......................................................................................========|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/wmrdhc8v3u5ng" target="_blank">Aerodynamic Control Surfaces</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+1x Engineering dev working on 9 tasks (214% load) thru 2022-12-08<br/>
+</li></ul></summary><p>..................................................................==========..================|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/bku4rtuqkyftw" target="_blank">AI - Untrained Combat</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>AI Tech and Feature Team <br/>
+2x Engineering devs working on 11 tasks (113% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..................................................................................============|=========<br>..........==============............============................============..................|.........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/5h1neak5nsaji" target="_blank">AI - Vehicle Perception</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>AI Tech and Feature Team <br/>
+2x Engineering devs working on 7 tasks (87% load) thru 2022-12-15<br/>
+</li></ul></summary><p>................................................................================..============|=======..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/z0rd9q38qg54a" target="_blank">Anvil C8R Pisces</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Vehicle Feature Team  
- - 1x Design dev working on 1 task (128% load) thru 2022-11-24
-  
-### **AR and Map Marker System Rework** [SC, SQ42] ###  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+1x Design dev working on 1 task (128% load) thru 2022-11-24<br/>
+</li></ul></summary><p>..........................................................................................====|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/w4ebx3qij8arw" target="_blank">AR and Map Marker System Rework</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* UI Tech Team  
- - 2x Engineering devs working on 3 tasks (227% load) thru 2022-12-01
-  
-### **Archon** [SQ42] ###  
+<details><summary><ul><li>UI Tech Team <br/>
+2x Engineering devs working on 3 tasks (227% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..................................==================....================..............====....|===......</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/pzk7ai0l3hjmf" target="_blank">Archon</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* SQ42 Art  
- - 15x Art devs working on 3 tasks (26% load) thru 2022-11-23
-  
-### **Arena Commander: Classic Race Mode Overhaul** [SC] ###  
-* Arena Commander Feature Team  
- - 1x Design dev working on 14 tasks (131% load) thru 2022-12-22
- - 1x Engineering dev working on 14 tasks (131% load) thru 2022-12-22
-  
-### **Argo SRV** [SC] ###  
-* Vehicle Content - EU  
- - 4x Art devs working on 46 tasks (66% load) thru 2023-02-02
-  
-### **Banu Merchantman** [SC] ###  
-* Vehicle Content - EU  
- - 10x Art devs working on 28 tasks (28% load) thru 2023-03-16
-  
-### **Bombs** [SC] ###  
+<details><summary><ul><li>SQ42 Art <br/>
+15x Art devs working on 3 tasks (26% load) thru 2022-11-23<br/>
+</li></ul></summary><p>.==========================...........================........................==========..====|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/eqzdy1v3dlsya" target="_blank">Arena Commander: Classic Race Mode Overhaul</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Arena Commander Feature Team <br/>
+1x Design dev working on 14 tasks (131% load) thru 2022-12-22<br/>
+1x Engineering dev working on 14 tasks (131% load) thru 2022-12-22<br/>
+</li></ul></summary><p>........................................................====================~~~~~~============|=========<br>........................................................====================~~~~~~============|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jqdwjyvaz1yuy" target="_blank">Argo SRV</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Vehicle Content - EU <br/>
+4x Art devs working on 46 tasks (66% load) thru 2023-02-02<br/>
+</li></ul></summary><p>................................==============================================================|=========<br>................................~~~~~~~~~~~~~~~~~~....======================....==............|.........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/wgncoopr3uw8f" target="_blank">Banu Merchantman</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Vehicle Content - EU <br/>
+10x Art devs working on 28 tasks (28% load) thru 2023-03-16<br/>
+</li></ul></summary><p>..============~~~~~~~~==~~................======~~....~~~~~~~~~~~~~~~~~~~~~~..................|.........<br>..================================================..............................==============|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7kfxh3qa8d1ez" target="_blank">Bombs</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Weapon Content Team  
- - 2x Art devs working on 3 tasks (139% load) thru 2022-12-08
-  
-### **Bounty Hunter V2** [SC] ###  
-* Mission Feature Team  
- - 3x Design devs working on 13 tasks (35% load) thru 2022-12-22
-  
-* EU Landing Zone 2  
- - 2x Art devs will work on 3 tasks (46% load) starting 2022-11-23 thru 2022-12-20
-  
-* Narrative  
- - 2x Design devs will work on 2 tasks (76% load) starting 2022-12-08 thru 2022-12-30
-  
-### **Bug Fixing & Tech Debt** [SC, SQ42] ###  
-* AI Tech and Feature Team  
- - 10x Engineering devs working on 7 tasks (14% load) thru 2022-12-29
-  
-* Arena Commander Feature Team  
- - 2x Design devs working on 20 tasks (60% load) thru 2022-12-22
-  
-* EU Sandbox 1  
- - 6x Design devs working on 6 tasks (128% load) thru 2022-11-29
- - 13x Art devs working on 12 tasks (118% load) thru 2022-11-29
-  
-* Live Tools Team  
- - 4x Engineering devs working on 15 tasks (38% load) thru 2022-12-19
-  
-* Mission Feature Team  
- - 4x Engineering devs working on 4 tasks (35% load) thru 2022-12-22
- - 3x Design devs working on 3 tasks (49% load) thru 2022-12-22
-  
-* Tools Team  
- - 5x Engineering devs working on 7 tasks (29% load) thru 2022-12-29
-  
-* US PU Gameplay Feature Team  
- - 5x Engineering devs working on 9 tasks (68% load) thru 2022-12-22
- - 5x Design devs working on 7 tasks (73% load) thru 2022-12-22
- - 4x Art devs working on 3 tasks (39% load) thru 2022-12-22
-  
-* Engine Team  
- - 5x Engineering devs will work on 11 tasks (147% load) starting 2022-12-04 thru 2022-12-29
-  
-* EU Landing Zone 1  
- - 15x Art devs will work on 17 tasks (62% load) starting 2022-12-07 thru 2023-01-03
- - 5x Design devs will work on 5 tasks (62% load) starting 2022-12-07 thru 2023-01-03
-  
-* Graphics Team  
- - 10x Engineering devs will work on 20 tasks (167% load) starting 2022-12-05 thru 2022-12-25
- - 2x Tech Content devs will work on 4 tasks (167% load) starting 2022-12-05 thru 2022-12-25
-  
-* Physics Team  
- - 4x Engineering devs will work on 6 tasks (125% load) starting 2022-12-05 thru 2022-12-25
-  
-* Systemic Services and Tools Team  
- - 6x Engineering devs will work on 10 tasks (253% load) starting 2022-12-04 thru 2022-12-15
-  
-* Weapon Content Team  
- - 7x Art devs will work on 2 tasks (119% load) starting 2022-11-27 thru 2022-12-01
-  
-### **Building Interiors** [SC] ###  
-* Location Concept Art  
- - 7x Art devs working on 21 tasks (28% load) thru 2022-12-30
-  
-* MTL Sandbox 1  
- - 14x Art devs working on 14 tasks (24% load) thru 2022-12-07
- - 4x Design devs working on 6 tasks (36% load) thru 2022-12-07
-  
-### **Chapter 01** [SQ42] ###  
-* AI Content Team  
- - 3x Design devs working on 6 tasks (58% load) thru 2022-12-01
-  
-* Character Tech Art  
- - 5x Tech Content devs working on 9 tasks (57% load) thru 2022-12-01
-  
-* Narrative  
- - 2x Design devs working on 3 tasks (96% load) thru 2022-11-23
-  
-* SQ42 Character Art  
- - 4x Art devs working on 3 tasks (114% load) thru 2022-12-01
-  
-* SQ42 Level Design 2 - Flight  
- - 7x Design devs working on 11 tasks (19% load) thru 2022-11-23
-  
-* VFX Team  
- - 3x Art devs working on 12 tasks (119% load) thru 2022-11-24
-  
-* SQ42 Art  
- - 12x Art devs will work on 10 tasks (39% load) starting 2022-11-24 thru 2022-12-30
-  
-### **Chapter 02** [SQ42] ###  
-* SQ42 Art  
- - 4x Art devs working on 9 tasks (29% load) thru 2022-12-30
-  
-### **Chapter 03** [SQ42] ###  
+<details><summary><ul><li>Weapon Content Team <br/>
+2x Art devs working on 3 tasks (139% load) thru 2022-12-08<br/>
+</li></ul></summary><p>..............................................................................................|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/sweea1bv8b2f9" target="_blank">Bounty Hunter V2</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Mission Feature Team <br/>
+3x Design devs working on 13 tasks (35% load) thru 2022-12-22<br/>
+</li></ul></summary><p>....................................................====~~~~~~~~~~~~~~~~~~~~==================|=========<br>............................................................................==================|.........</p></details>  
+<details><summary><ul><li>EU Landing Zone 2 <br/>
+2x Art devs will work on 3 tasks (46% load) starting 2022-11-23 thru 2022-12-20<br/>
+</li></ul></summary><p>..............................................................................................|~~~~~~~~.</p></details>  
+<details><summary><ul><li>Narrative <br/>
+2x Design devs will work on 2 tasks (76% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>............................................~~~~....~~~~......................................|...======</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oouhlnscv4cqu" target="_blank">Bug Fixing & Tech Debt</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>AI Tech and Feature Team <br/>
+10x Engineering devs working on 7 tasks (14% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..............====~~~~~~................====~~~~........========....============..============|=========</p></details>  
+<details><summary><ul><li>Arena Commander Feature Team <br/>
+2x Design devs working on 20 tasks (60% load) thru 2022-12-22<br/>
+</li></ul></summary><p>..======================....================================================~~~~~~============|=========<br>..~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~~~~~~~......................................|.........</p></details>  
+<details><summary><ul><li>EU Sandbox 1 <br/>
+6x Design devs working on 6 tasks (128% load) thru 2022-11-29<br/>
+13x Art devs working on 12 tasks (118% load) thru 2022-11-29<br/>
+</li></ul></summary><p>..............~~~~~~~~~...................====..........................=====...............==|==.......<br>..............~~~~~~~~~...................====..........................=====...............==|==.......</p></details>  
+<details><summary><ul><li>Live Tools Team <br/>
+4x Engineering devs working on 15 tasks (38% load) thru 2022-12-19<br/>
+</li></ul></summary><p>..........................====================================================================|========.</p></details>  
+<details><summary><ul><li>Mission Feature Team <br/>
+4x Engineering devs working on 4 tasks (35% load) thru 2022-12-22<br/>
+3x Design devs working on 3 tasks (49% load) thru 2022-12-22<br/>
+</li></ul></summary><p>............................................................==================..........======|=========<br>............................................................................................==|=========</p></details>  
+<details><summary><ul><li>Tools Team <br/>
+5x Engineering devs working on 7 tasks (29% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..============================================~~~~~~~~~~~~=====================...============|=========</p></details>  
+<details><summary><ul><li>US PU Gameplay Feature Team <br/>
+5x Engineering devs working on 9 tasks (68% load) thru 2022-12-22<br/>
+5x Design devs working on 7 tasks (73% load) thru 2022-12-22<br/>
+4x Art devs working on 3 tasks (39% load) thru 2022-12-22<br/>
+</li></ul></summary><p>..................~~~~~~~~~...................====....................~~~~~~~~................|~~~~~~~~~<br>..............========~~~~~...................====....................========................|=========<br>..................====~~~~~...................====....................========................|=========</p></details>  
+<details><summary><ul><li>Engine Team <br/>
+5x Engineering devs will work on 11 tasks (147% load) starting 2022-12-04 thru 2022-12-29<br/>
+</li></ul></summary><p>.~================~~~~~~~~~.================~~~~~~~~~~~~~~=====================...............|...======</p></details>  
+<details><summary><ul><li>EU Landing Zone 1 <br/>
+15x Art devs will work on 17 tasks (62% load) starting 2022-12-07 thru 2023-01-03<br/>
+5x Design devs will work on 5 tasks (62% load) starting 2022-12-07 thru 2023-01-03<br/>
+</li></ul></summary><p>..............~~~~~~~~~...................====........................======..................|...======<br>..............~~~~~~~~~...................====........................======..................|...======</p></details>  
+<details><summary><ul><li>Graphics Team <br/>
+10x Engineering devs will work on 20 tasks (167% load) starting 2022-12-05 thru 2022-12-25<br/>
+2x Tech Content devs will work on 4 tasks (167% load) starting 2022-12-05 thru 2022-12-25<br/>
+</li></ul></summary><p>....................=======...................========................=========...............|...======<br>....................~~~~~~~...................========................=========...............|...======</p></details>  
+<details><summary><ul><li>Physics Team <br/>
+4x Engineering devs will work on 6 tasks (125% load) starting 2022-12-05 thru 2022-12-25<br/>
+</li></ul></summary><p>..====================================================..................========..............|...======</p></details>  
+<details><summary><ul><li>Systemic Services and Tools Team <br/>
+6x Engineering devs will work on 10 tasks (253% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>..................=========...................====....................==========..............|...====..</p></details>  
+<details><summary><ul><li>Weapon Content Team <br/>
+7x Art devs will work on 2 tasks (119% load) starting 2022-11-27 thru 2022-12-01<br/>
+</li></ul></summary><p>..==......====............................~~..............==..................................|.==......</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/rm4sptqkc0xlx" target="_blank">Building Interiors</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Location Concept Art <br/>
+7x Art devs working on 21 tasks (28% load) thru 2022-12-30<br/>
+</li></ul></summary><p>......................................========================================================|=========</p></details>  
+<details><summary><ul><li>MTL Sandbox 1 <br/>
+14x Art devs working on 14 tasks (24% load) thru 2022-12-07<br/>
+4x Design devs working on 6 tasks (36% load) thru 2022-12-07<br/>
+</li></ul></summary><p>.~~~~~~~~~~~~~~~~~~~~~~.~~~~~~~~~~============........======================..================|=====....<br>..~~~~~~~~~~~~~~~~~~~~~...............................======================..================|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/p6q8plpm8dovk" target="_blank">Chapter 01</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>AI Content Team <br/>
+3x Design devs working on 6 tasks (58% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..................................................................................========~~~~|===......</p></details>  
+<details><summary><ul><li>Character Tech Art <br/>
+5x Tech Content devs working on 9 tasks (57% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..................................................................============....============|===......</p></details>  
+<details><summary><ul><li>Narrative <br/>
+2x Design devs working on 3 tasks (96% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..............................................................................======......~~~~|~........</p></details>  
+<details><summary><ul><li>SQ42 Character Art <br/>
+4x Art devs working on 3 tasks (114% load) thru 2022-12-01<br/>
+</li></ul></summary><p>......................................................========================....========....|===......</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+7x Design devs working on 11 tasks (19% load) thru 2022-11-23<br/>
+</li></ul></summary><p>.=====================~~~~~~~~======================..========================================|=........</p></details>  
+<details><summary><ul><li>VFX Team <br/>
+3x Art devs working on 12 tasks (119% load) thru 2022-11-24<br/>
+</li></ul></summary><p>..............................................................................================|=........</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+12x Art devs will work on 10 tasks (39% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>..................................................................==============..............|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4g1yehlr65pfm" target="_blank">Chapter 02</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>SQ42 Art <br/>
+4x Art devs working on 9 tasks (29% load) thru 2022-12-30<br/>
+</li></ul></summary><p>......................................................==========================......~~~~~~~~|===~~~~~~</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/fs947h4k8zqb3" target="_blank">Chapter 03</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* SQ42 Character Art  
- - 1x Art dev working on 3 tasks (455% load) thru 2022-12-01
-  
-### **Chapter 04** [SQ42] ###  
-* AI Content Team  
- - 4x Design devs working on 13 tasks (81% load) thru 2022-12-15
-  
-* AI Tech and Feature Team  
- - 1x Engineering dev working on 6 tasks (189% load) thru 2022-12-15
-  
-* SQ42 Character Art  
- - 3x Art devs working on 5 tasks (71% load) thru 2022-12-15
-  
-* SQ42 Level Design 3 - Social  
- - 2x Design devs working on 2 tasks (31% load) thru 2022-11-23
-  
-### **Chapter 05** [SQ42] ###  
-* Character Tech Art  
- - 2x Tech Content devs working on 6 tasks (455% load) thru 2022-12-01
-  
-* SQ42 Art  
- - 7x Art devs working on 17 tasks (30% load) thru 2022-12-30
-  
-* SQ42 Character Art  
- - 4x Art devs working on 10 tasks (62% load) thru 2022-12-15
-  
-* SQ42 Level Design 2 - Flight  
- - 6x Design devs working on 2 tasks (21% load) thru 2022-11-23
-  
-* Tech Animation Team  
- - 4x Tech Content devs working on 10 tasks (39% load) thru 2022-12-22
-  
-### **Chapter 06** [SQ42] ###  
+<details><summary><ul><li>SQ42 Character Art <br/>
+1x Art dev working on 3 tasks (455% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..............................................................................................|===......</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8t07kw90qvhf0" target="_blank">Chapter 04</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>AI Content Team <br/>
+4x Design devs working on 13 tasks (81% load) thru 2022-12-15<br/>
+</li></ul></summary><p>........................................................~~~~~~~~~~~~..............============|=======..</p></details>  
+<details><summary><ul><li>AI Tech and Feature Team <br/>
+1x Engineering dev working on 6 tasks (189% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................................................========|=======..</p></details>  
+<details><summary><ul><li>SQ42 Character Art <br/>
+3x Art devs working on 5 tasks (71% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................========....============............====|=======..</p></details>  
+<details><summary><ul><li>SQ42 Level Design 3 - Social <br/>
+2x Design devs working on 2 tasks (31% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..==============..............................................................~~~~~~..~~~~~~~~|~........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ase8e8mmixff4" target="_blank">Chapter 05</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Character Tech Art <br/>
+2x Tech Content devs working on 6 tasks (455% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..........................................................========............................|===......</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+7x Art devs working on 17 tasks (30% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..................................................................============================|=========</p></details>  
+<details><summary><ul><li>SQ42 Character Art <br/>
+4x Art devs working on 10 tasks (62% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................========================....============|=======..</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+6x Design devs working on 2 tasks (21% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..............................................................................======..========|=........</p></details>  
+<details><summary><ul><li>Tech Animation Team <br/>
+4x Tech Content devs working on 10 tasks (39% load) thru 2022-12-22<br/>
+</li></ul></summary><p>..................................................................................~~~~~~~~~~~~|~~~======</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qrpp0jelcpx8y" target="_blank">Chapter 06</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* SQ42 UI Feature Team  
- - 3x Art devs working on 4 tasks (89% load) thru 2022-12-01
-  
-### **Chapter 07** [SQ42] ###  
-* Narrative  
- - 2x Design devs working on 3 tasks (96% load) thru 2022-11-23
-  
-* SQ42 Level Design 2 - Flight  
- - 4x Design devs working on 6 tasks (27% load) thru 2022-12-30
-  
-* SQ42 Art  
- - 3x Art devs will work on 6 tasks (152% load) starting 2022-12-08 thru 2022-12-30
-  
-### **Chapter 08** [SQ42] ###  
+<details><summary><ul><li>SQ42 UI Feature Team <br/>
+3x Art devs working on 4 tasks (89% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..........................................................................................====|===......</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/55ihw5xes1jpp" target="_blank">Chapter 07</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Narrative <br/>
+2x Design devs working on 3 tasks (96% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..............................................................................~~~~~~......~~~~|~........</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+4x Design devs working on 6 tasks (27% load) thru 2022-12-30<br/>
+</li></ul></summary><p>.~~~~~~~..============~~~~~~..................................................================|=========</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+3x Art devs will work on 6 tasks (152% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>......................................................................................======..|...======</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/aoa32y9xrqhd3" target="_blank">Chapter 08</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* SQ42 Level Design 3 - Social  
- - 3x Design devs working on 2 tasks (41% load) thru 2022-12-07
-  
-### **Chapter 09** [SQ42] ###  
+<details><summary><ul><li>SQ42 Level Design 3 - Social <br/>
+3x Design devs working on 2 tasks (41% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................................................~~~~~~~~~~..====|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51lg16ocusxjo" target="_blank">Chapter 09</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Narrative  
- - 4x Design devs working on 5 tasks (51% load) thru 2022-12-07
-  
-* SQ42 Level Design 2 - Flight  
- - 3x Design devs working on 4 tasks (40% load) thru 2022-11-23
-  
-* VFX Team  
- - 1x Art dev working on 4 tasks (247% load) thru 2022-11-24
-  
-### **Chapter 10** [SQ42] ###  
+<details><summary><ul><li>Narrative <br/>
+4x Design devs working on 5 tasks (51% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................................................~~~~~~..========|=====....</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+3x Design devs working on 4 tasks (40% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..............................................................................================|=........</p></details>  
+<details><summary><ul><li>VFX Team <br/>
+1x Art dev working on 4 tasks (247% load) thru 2022-11-24<br/>
+</li></ul></summary><p>......................................................................................========|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8lu3osgro9jz1" target="_blank">Chapter 10</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* SQ42 Level Design 1 - FPS  
- - 1x Design dev working on 2 tasks (123% load) thru 2022-12-07
-  
-### **Chapter 11** [SQ42] ###  
-* SQ42 Character Art  
- - 1x Art dev working on 1 task (152% load) thru 2022-12-01
-  
-* Character Tech Art  
- - 1x Tech Content dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15
-  
-* Gameplay Story  
- - 5x Animation devs will work on 1 task (13% load) starting 2022-11-24 thru 2022-12-07
-  
-* Narrative  
- - 2x Design devs will work on 1 task (64% load) starting 2022-11-24 thru 2022-12-07
-  
-* SQ42 Level Design 2 - Flight  
- - 3x Design devs will work on 2 tasks (31% load) starting 2022-11-24 thru 2022-12-30
-  
-### **Chapter 12** [SQ42] ###  
-* AI Content Team  
- - 3x Design devs working on 5 tasks (71% load) thru 2022-12-15
-  
-* Character Tech Art  
- - 3x Tech Content devs working on 6 tasks (63% load) thru 2022-12-15
-  
-* Motion Capture Team  
- - 1x Animation dev will work on 3 tasks (227% load) starting 2022-12-08 thru 2022-12-30
-  
-* Tech Animation Team  
- - 1x Tech Content dev will work on 3 tasks (385% load) starting 2022-11-25 thru 2022-12-08
-  
-### **Chapter 14** [SQ42] ###  
-* SQ42 Art  
- - 11x Art devs working on 41 tasks (35% load) thru 2022-12-30
-  
-* SQ42 Character Art  
- - 1x Art dev working on 5 tasks (214% load) thru 2022-12-15
-  
-* Narrative  
- - 2x Design devs will work on 3 tasks (114% load) starting 2022-12-08 thru 2022-12-30
-  
-* SQ42 Level Design 1 - FPS  
- - 7x Design devs will work on 2 tasks (13% load) starting 2022-11-24 thru 2022-12-30
-  
-### **Chapter 15** [SQ42] ###  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+1x Design dev working on 2 tasks (123% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..........................................................................................====|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/z97whnirtcy29" target="_blank">Chapter 11</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>SQ42 Character Art <br/>
+1x Art dev working on 1 task (152% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..............................................................................................|===......</p></details>  
+<details><summary><ul><li>Character Tech Art <br/>
+1x Tech Content dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>..............................................................................................|...====..</p></details>  
+<details><summary><ul><li>Gameplay Story <br/>
+5x Animation devs will work on 1 task (13% load) starting 2022-11-24 thru 2022-12-07<br/>
+</li></ul></summary><p>..........................~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..................................|~~~~~....</p></details>  
+<details><summary><ul><li>Narrative <br/>
+2x Design devs will work on 1 task (64% load) starting 2022-11-24 thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................................................~~~~~~..........|=====....</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+3x Design devs will work on 2 tasks (31% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>.~~~~~~~......................................................................................|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3mwo1tt5tkkl6" target="_blank">Chapter 12</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>AI Content Team <br/>
+3x Design devs working on 5 tasks (71% load) thru 2022-12-15<br/>
+</li></ul></summary><p>........................................................~~~~~~~~~~~~========..............====|=======..<br>........................................................................====..................|.........</p></details>  
+<details><summary><ul><li>Character Tech Art <br/>
+3x Tech Content devs working on 6 tasks (63% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................................................========|=======..</p></details>  
+<details><summary><ul><li>Motion Capture Team <br/>
+1x Animation dev will work on 3 tasks (227% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................................|...======</p></details>  
+<details><summary><ul><li>Tech Animation Team <br/>
+1x Tech Content dev will work on 3 tasks (385% load) starting 2022-11-25 thru 2022-12-08<br/>
+</li></ul></summary><p>..............................................................................................|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/muo5mcszz0enx" target="_blank">Chapter 14</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>SQ42 Art <br/>
+11x Art devs working on 41 tasks (35% load) thru 2022-12-30<br/>
+</li></ul></summary><p>......................................................========================================|=========<br>..........................========....................==========================..............|.........</p></details>  
+<details><summary><ul><li>SQ42 Character Art <br/>
+1x Art dev working on 5 tasks (214% load) thru 2022-12-15<br/>
+</li></ul></summary><p>..........................................................................................====|=======..</p></details>  
+<details><summary><ul><li>Narrative <br/>
+2x Design devs will work on 3 tasks (114% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>................................====..........................................................|...======</p></details>  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+7x Design devs will work on 2 tasks (13% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>.=====================~~~~~~~~==================================================..............|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/x9clnqkpeqnf4" target="_blank">Chapter 15</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Cinematics Team  
- - 3x Animation devs working on 6 tasks (31% load) thru 2022-12-01
-  
-* Gameplay Story  
- - 5x Animation devs working on 6 tasks (18% load) thru 2022-12-07
-  
-* SQ42 Level Design 3 - Social  
- - 3x Design devs working on 2 tasks (41% load) thru 2022-12-07
-  
-### **Chapter 16** [SQ42] ###  
-* Cinematics Team  
- - 2x Animation devs working on 1 task (38% load) thru 2022-12-01
-  
-* SQ42 Level Design 1 - FPS  
- - 2x Design devs will work on 1 task (38% load) starting 2022-12-08 thru 2022-12-30
-  
-* SQ42 Level Design 2 - Flight  
- - 2x Design devs will work on 1 task (38% load) starting 2022-12-08 thru 2022-12-30
-  
-### **Chapter 17** [SQ42] ###  
-* Cinematics Team  
- - 1x Animation dev working on 3 tasks (227% load) thru 2022-12-01
-  
-* SQ42 Art  
- - 2x Art devs working on 14 tasks (66% load) thru 2022-12-30
-  
-* SQ42 UI Feature Team  
- - 2x Art devs working on 5 tasks (107% load) thru 2022-12-01
-  
-* SQ42 Level Design 1 - FPS  
- - 1x Design dev will work on 1 task (76% load) starting 2022-12-08 thru 2022-12-30
-  
-### **Chapter 18** [SQ42] ###  
-* SQ42 Art  
- - 4x Art devs working on 17 tasks (77% load) thru 2022-12-30
-  
-* SQ42 Level Design 1 - FPS  
- - 4x Design devs working on 5 tasks (30% load) thru 2022-12-07
-  
-* SQ42 Level Design 2 - Flight  
- - 2x Design devs working on 3 tasks (61% load) thru 2022-11-23
-  
-* Character Tech Art  
- - 1x Tech Content dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15
-  
-### **Chapter 19** [SQ42] ###  
-* Gameplay Story  
- - 5x Animation devs working on 11 tasks (12% load) thru 2022-12-07
-  
-* SQ42 Art  
- - 6x Art devs working on 6 tasks (20% load) thru 2022-12-30
-  
-* SQ42 Level Design 1 - FPS  
- - 5x Design devs working on 9 tasks (25% load) thru 2022-12-30
-  
-* SQ42 Level Design 2 - Flight  
- - 1x Design dev working on 3 tasks (122% load) thru 2022-11-23
-  
-* Tech Animation Team  
- - 1x Tech Content dev working on 1 task (64% load) thru 2022-11-24
-  
-* VFX Team  
- - 1x Art dev working on 2 tasks (123% load) thru 2022-11-24
-  
-* Character Tech Art  
- - 1x Tech Content dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15
-  
-### **Chapter 20** [SQ42] ###  
+<details><summary><ul><li>Cinematics Team <br/>
+3x Animation devs working on 6 tasks (31% load) thru 2022-12-01<br/>
+</li></ul></summary><p>.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~|~~~......<br>.~~~~~~~~~~~~~~~~~~~~~~~~~~.......................................................~~~~........|.........</p></details>  
+<details><summary><ul><li>Gameplay Story <br/>
+5x Animation devs working on 6 tasks (18% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..............~~~~~...~~~~~~..............~~~~~~~~~~~~............................~~~~~~~~~~~~|~~~~~....</p></details>  
+<details><summary><ul><li>SQ42 Level Design 3 - Social <br/>
+3x Design devs working on 2 tasks (41% load) thru 2022-12-07<br/>
+</li></ul></summary><p>......~~~~~~~~==========..................................................................====|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/i8g9fwso33dsp" target="_blank">Chapter 16</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Cinematics Team <br/>
+2x Animation devs working on 1 task (38% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..................................................................................~~~~........|.........<br>..................................................................................~~~~........|~~~......</p></details>  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+2x Design devs will work on 1 task (38% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................................|...======</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+2x Design devs will work on 1 task (38% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................................|...======</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a9rux14dc5wdj" target="_blank">Chapter 17</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Cinematics Team <br/>
+1x Animation dev working on 3 tasks (227% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..............................................................................................|~~~......</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+2x Art devs working on 14 tasks (66% load) thru 2022-12-30<br/>
+</li></ul></summary><p>......................................................========================================|=========</p></details>  
+<details><summary><ul><li>SQ42 UI Feature Team <br/>
+2x Art devs working on 5 tasks (107% load) thru 2022-12-01<br/>
+</li></ul></summary><p>......................................................................................========|===......</p></details>  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+1x Design dev will work on 1 task (76% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>..==========..................................................................................|...======</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/4sbmlw2c4by8m" target="_blank">Chapter 18</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>SQ42 Art <br/>
+4x Art devs working on 17 tasks (77% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................================|=========</p></details>  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+4x Design devs working on 5 tasks (30% load) thru 2022-12-07<br/>
+</li></ul></summary><p>.~====~~~~~~~~~~~~~~~~~~~~~~..................................................================|=====....</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+2x Design devs working on 3 tasks (61% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..................................................................................============|=........</p></details>  
+<details><summary><ul><li>Character Tech Art <br/>
+1x Tech Content dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>..............................................................................................|...====..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oj3oi90mrslpv" target="_blank">Chapter 19</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Gameplay Story <br/>
+5x Animation devs working on 11 tasks (12% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..................~~~~~.......~~~~~~~~........~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~....<br>..................................~~~~........................................................|.........</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+6x Art devs working on 6 tasks (20% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..................................................................~~~~==========......~~~~~~~~|=========</p></details>  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+5x Design devs working on 9 tasks (25% load) thru 2022-12-30<br/>
+</li></ul></summary><p>......~~~~~~~~~~~~~~~~~~~~~~..............============................========================|=========</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+1x Design dev working on 3 tasks (122% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..................................................................................============|=........</p></details>  
+<details><summary><ul><li>Tech Animation Team <br/>
+1x Tech Content dev working on 1 task (64% load) thru 2022-11-24<br/>
+</li></ul></summary><p>..........................................................................................~~~~|~........</p></details>  
+<details><summary><ul><li>VFX Team <br/>
+1x Art dev working on 2 tasks (123% load) thru 2022-11-24<br/>
+</li></ul></summary><p>......................................................................................========|=........</p></details>  
+<details><summary><ul><li>Character Tech Art <br/>
+1x Tech Content dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>..............................................................................................|...====..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/51czsbt2ajcs1" target="_blank">Chapter 20</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Cinematics Team  
- - 3x Animation devs working on 9 tasks (47% load) thru 2022-12-01
- - 3x Design devs working on 6 tasks (37% load) thru 2022-12-01
-  
-* Gameplay Story  
- - 4x Animation devs working on 13 tasks (18% load) thru 2022-12-07
-  
-* SQ42 Level Design 1 - FPS  
- - 5x Design devs working on 5 tasks (24% load) thru 2022-12-07
-  
-* SQ42 Level Design 3 - Social  
- - 1x Design dev working on 3 tasks (81% load) thru 2022-12-07
-  
-### **Chapter 21** [SQ42] ###  
-* AI Content Team  
- - 3x Design devs working on 6 tasks (58% load) thru 2022-12-15
-  
-* SQ42 Art  
- - 2x Art devs working on 7 tasks (108% load) thru 2022-11-23
-  
-* SQ42 UI Feature Team  
- - 1x Art dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15
-  
-### **Chapter 22** [SQ42] ###  
-* Cinematics Team  
- - 2x Animation devs working on 5 tasks (39% load) thru 2022-12-01
-  
-* Gameplay Story  
- - 4x Animation devs working on 5 tasks (25% load) thru 2022-12-07
-  
-* SQ42 Art  
- - 2x Art devs working on 5 tasks (65% load) thru 2022-12-30
-  
-* SQ42 Level Design 1 - FPS  
- - 10x Design devs working on 8 tasks (11% load) thru 2022-12-30
-  
-* SQ42 Character Art  
- - 1x Art dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15
-  
-* SQ42 Level Design 2 - Flight  
- - 2x Design devs will work on 2 tasks (46% load) starting 2022-11-24 thru 2022-12-30
-  
-### **Chapter 23** [SQ42] ###  
+<details><summary><ul><li>Cinematics Team <br/>
+3x Animation devs working on 9 tasks (47% load) thru 2022-12-01<br/>
+3x Design devs working on 6 tasks (37% load) thru 2022-12-01<br/>
+</li></ul></summary><p>.~~~~~~~~~~~~~~~~~~~~~~~~~~.......................................................~~~~~~~~~~~~|~~~......<br>.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~~~........~~~~~~~~====|~~~......</p></details>  
+<details><summary><ul><li>Gameplay Story <br/>
+4x Animation devs working on 13 tasks (18% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~....</p></details>  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+5x Design devs working on 5 tasks (24% load) thru 2022-12-07<br/>
+</li></ul></summary><p>......~~~~~~~~~~~~~~~~~~~~~~..................................................================|=====....</p></details>  
+<details><summary><ul><li>SQ42 Level Design 3 - Social <br/>
+1x Design dev working on 3 tasks (81% load) thru 2022-12-07<br/>
+</li></ul></summary><p>......................................................................................~~~~~~~~|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kfhortybw0xo5" target="_blank">Chapter 21</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>AI Content Team <br/>
+3x Design devs working on 6 tasks (58% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................................................====~~~~|=======..</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+2x Art devs working on 7 tasks (108% load) thru 2022-11-23<br/>
+</li></ul></summary><p>......................................................................................~~~~~~~~|~........</p></details>  
+<details><summary><ul><li>SQ42 UI Feature Team <br/>
+1x Art dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>..............................................................................................|...====..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/y1b9hiipoykw3" target="_blank">Chapter 22</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Cinematics Team <br/>
+2x Animation devs working on 5 tasks (39% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..................................................................................~~~~~~~~~~~~|~~~......</p></details>  
+<details><summary><ul><li>Gameplay Story <br/>
+4x Animation devs working on 5 tasks (25% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................~~~~~~~~................................~~~~~~~~|~~~~~....</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+2x Art devs working on 5 tasks (65% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................==============..|.........<br>......................................................................................========|=========</p></details>  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+10x Design devs working on 8 tasks (11% load) thru 2022-12-30<br/>
+</li></ul></summary><p>......================~~~~~~..............============................========================|=========</p></details>  
+<details><summary><ul><li>SQ42 Character Art <br/>
+1x Art dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>..................................................................................====........|...====..</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+2x Design devs will work on 2 tasks (46% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................................|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7cnbz3e3830yf" target="_blank">Chapter 23</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Cinematics Team  
- - 4x Animation devs working on 3 tasks (57% load) thru 2022-12-01
- - 2x Design devs working on 3 tasks (114% load) thru 2022-12-01
-  
-* Gameplay Story  
- - 5x Animation devs working on 11 tasks (45% load) thru 2022-12-07
-  
-* SQ42 Art  
- - 2x Art devs working on 7 tasks (108% load) thru 2022-11-23
-  
-* SQ42 Level Design 3 - Social  
- - 2x Design devs working on 5 tasks (60% load) thru 2022-12-07
-  
-* Narrative  
- - 1x Design dev will work on 3 tasks (385% load) starting 2022-11-24 thru 2022-12-07
-  
-### **Chapter 25** [SQ42] ###  
+<details><summary><ul><li>Cinematics Team <br/>
+4x Animation devs working on 3 tasks (57% load) thru 2022-12-01<br/>
+2x Design devs working on 3 tasks (114% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..........................~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~..............|~~~......<br>.~~~~~~~~~~~~~~~~~~~~~~~~~~...................................................................|~~~......</p></details>  
+<details><summary><ul><li>Gameplay Story <br/>
+5x Animation devs working on 11 tasks (45% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..................~~~~~.......~~~~~~~~........~~~~~~~~~~~~~~..........................~~~~~~~~|~~~~~....<br>..................................~~~~........................................................|.........</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+2x Art devs working on 7 tasks (108% load) thru 2022-11-23<br/>
+</li></ul></summary><p>......................................................................................~~~~~~~~|~........</p></details>  
+<details><summary><ul><li>SQ42 Level Design 3 - Social <br/>
+2x Design devs working on 5 tasks (60% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................................................================|=====....</p></details>  
+<details><summary><ul><li>Narrative <br/>
+1x Design dev will work on 3 tasks (385% load) starting 2022-11-24 thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................................................................|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vel8t7l1cg3vr" target="_blank">Chapter 25</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Gameplay Story  
- - 4x Animation devs working on 3 tasks (48% load) thru 2022-11-23
-  
-* SQ42 Level Design 3 - Social  
- - 1x Design dev working on 4 tasks (121% load) thru 2022-11-23
-  
-### **Chapter 26** [SQ42] ###  
-* Cinematics Team  
- - 2x Animation devs working on 3 tasks (50% load) thru 2022-12-01
-  
-* Narrative  
- - 1x Design dev working on 1 task (128% load) thru 2022-11-23
-  
-* SQ42 Character Art  
- - 4x Art devs working on 6 tasks (47% load) thru 2022-12-15
-  
-* Gameplay Story  
- - 4x Animation devs will work on 2 tasks (32% load) starting 2022-11-24 thru 2022-12-07
-  
-* SQ42 Level Design 1 - FPS  
- - 9x Design devs will work on 2 tasks (10% load) starting 2022-11-24 thru 2022-12-30
-  
-* SQ42 Level Design 3 - Social  
- - 1x Design dev will work on 1 task (128% load) starting 2022-11-24 thru 2022-12-07
-  
-### **Chapter 27** [SQ42] ###  
-* Cinematics Team  
- - 1x Design dev working on 3 tasks (455% load) thru 2022-12-01
-  
-* Narrative  
- - 1x Design dev will work on 3 tasks (227% load) starting 2022-12-08 thru 2022-12-30
-  
-* SQ42 Level Design 2 - Flight  
- - 3x Design devs will work on 2 tasks (31% load) starting 2022-11-24 thru 2022-12-30
-  
-### **Character Work** [SQ42] ###  
-* Actor Feature Team  
- - 1x Engineering dev working on 6 tasks (109% load) thru 2022-12-30
-  
-* AI Content Team  
- - 6x Animation devs working on 17 tasks (58% load) thru 2022-12-29
-  
-* AI Tech and Feature Team  
- - 1x Design dev working on 8 tasks (82% load) thru 2022-12-29
- - 4x Engineering devs working on 6 tasks (47% load) thru 2022-12-15
-  
-* Facial Animation  
- - 9x Animation devs working on 26 tasks (52% load) thru 2022-12-30
-  
-* Motion Capture Team  
- - 9x Animation devs working on 29 tasks (38% load) thru 2022-12-30
-  
-* Tech Animation Team  
- - 11x Tech Content devs working on 32 tasks (49% load) thru 2022-12-22
-  
-### **Charge/Drain T0** [SC, SQ42] ###  
+<details><summary><ul><li>Gameplay Story <br/>
+4x Animation devs working on 3 tasks (48% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..............................................................................~~~~~~~~~~..~~~~|~........</p></details>  
+<details><summary><ul><li>SQ42 Level Design 3 - Social <br/>
+1x Design dev working on 4 tasks (121% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..............................................................................================|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/9pyp286qji194" target="_blank">Chapter 26</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Cinematics Team <br/>
+2x Animation devs working on 3 tasks (50% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..........................................................................................~~~~|~~~......</p></details>  
+<details><summary><ul><li>Narrative <br/>
+1x Design dev working on 1 task (128% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..........................................................................................====|=........</p></details>  
+<details><summary><ul><li>SQ42 Character Art <br/>
+4x Art devs working on 6 tasks (47% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................................========........========|=======..</p></details>  
+<details><summary><ul><li>Gameplay Story <br/>
+4x Animation devs will work on 2 tasks (32% load) starting 2022-11-24 thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................................................................|~~~~~....</p></details>  
+<details><summary><ul><li>SQ42 Level Design 1 - FPS <br/>
+9x Design devs will work on 2 tasks (10% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>.===========================..............============................==========..............|=========</p></details>  
+<details><summary><ul><li>SQ42 Level Design 3 - Social <br/>
+1x Design dev will work on 1 task (128% load) starting 2022-11-24 thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................................................................|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qajtops3o8khz" target="_blank">Chapter 27</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Cinematics Team <br/>
+1x Design dev working on 3 tasks (455% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..............................................................................................|===......</p></details>  
+<details><summary><ul><li>Narrative <br/>
+1x Design dev will work on 3 tasks (227% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................................|...======</p></details>  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+3x Design devs will work on 2 tasks (31% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................................|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xcm71052agqrb" target="_blank">Character Work</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Actor Feature Team <br/>
+1x Engineering dev working on 6 tasks (109% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................==========......================|=========<br>..................................................................................==========..|.........</p></details>  
+<details><summary><ul><li>AI Content Team <br/>
+6x Animation devs working on 17 tasks (58% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..======================....====================........================..........============|=========<br>..................======....................====..............................................|.........</p></details>  
+<details><summary><ul><li>AI Tech and Feature Team <br/>
+1x Design dev working on 8 tasks (82% load) thru 2022-12-29<br/>
+4x Engineering devs working on 6 tasks (47% load) thru 2022-12-15<br/>
+</li></ul></summary><p>..==========................========....................========..............................|.........<br>..................................................................................~~~~~~~~~~~~|~~~~~~~~~<br>..~~~~========~~~~~~........~~~~========~~~~............============..................========|=======..</p></details>  
+<details><summary><ul><li>Facial Animation <br/>
+9x Animation devs working on 26 tasks (52% load) thru 2022-12-30<br/>
+</li></ul></summary><p>....==========================================~~~~~~~~~~======================================|=========</p></details>  
+<details><summary><ul><li>Motion Capture Team <br/>
+9x Animation devs working on 29 tasks (38% load) thru 2022-12-30<br/>
+</li></ul></summary><p>......=========.......====~~~~~~~~~~~~~~~~........................========~~~~~~~~============|=========</p></details>  
+<details><summary><ul><li>Tech Animation Team <br/>
+11x Tech Content devs working on 32 tasks (49% load) thru 2022-12-22<br/>
+</li></ul></summary><p>..........~~~~~~~~~~~~~~~~~...~~~~=====...~~~~========~~~~~~~~=============...================|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kte875wgl8xdk" target="_blank">Charge/Drain T0</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Weapon Feature Team  
- - 2x Engineering devs working on 11 tasks (95% load) thru 2022-11-23
-  
-### **Crusader Spirit** [SC] ###  
-* Vehicle Content - EU  
- - 5x Art devs working on 12 tasks (54% load) thru 2022-12-15
- - 1x Design dev working on 8 tasks (290% load) thru 2022-12-15
-  
-### **Cutting T2** [SC, SQ42] ###  
-* Weapon Feature Team  
- - 1x Engineering dev working on 10 tasks (181% load) thru 2022-12-30
-  
-### **Derelict Spaceships - Points of Interest** [SC] ###  
-* Audio  
- - 4x Audio devs working on 3 tasks (69% load) thru 2022-12-01
-  
-* MTL Sandbox 1  
- - 4x Design devs working on 7 tasks (42% load) thru 2022-12-07
- - 8x Art devs working on 11 tasks (33% load) thru 2022-12-07
-  
-### **Dynamic Events** [SC] ###  
-* Mission Feature Team  
- - 4x Engineering devs working on 7 tasks (32% load) thru 2022-12-22
-  
-### **Entity Properties Plugin** [SC, SQ42] ###  
-* Editor Team  
- - 1x Engineering dev working on 4 tasks (267% load) thru 2022-12-15
-  
-### **EVA T2** [SC, SQ42] ###  
-* Actor Tech Team  
- - 2x Engineering devs working on 8 tasks (82% load) thru 2022-12-29
-  
-### **Flak Ammunition** [SC] ###  
-* Weapon Content Team  
- - 1x Art dev working on 3 tasks (1250% load) thru 2022-11-24
-↳ will continue 2022-12-04 with 1x dev
-  
-### **Freight Elevators** [SC] ###  
-* Audio  
- - 1x Audio dev working on 4 tasks (370% load) thru 2022-12-01
-  
-### **Frontier Clothing** [SC] ###  
-* Character Tech Art  
- - 5x Tech Content devs working on 8 tasks (68% load) thru 2022-12-15
-  
-* SC Character Art  
- - 15x Art devs working on 23 tasks (32% load) thru 2022-12-29
-  
-### **Gen12 - Renderer T1** [SC, SQ42] ###  
+<details><summary><ul><li>Weapon Feature Team <br/>
+2x Engineering devs working on 11 tasks (95% load) thru 2022-11-23<br/>
+</li></ul></summary><p>........................................========~~~~~~~~..........============================|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/sybli4wmd90ap" target="_blank">Crusader Spirit</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Vehicle Content - EU <br/>
+5x Art devs working on 12 tasks (54% load) thru 2022-12-15<br/>
+1x Design dev working on 8 tasks (290% load) thru 2022-12-15<br/>
+</li></ul></summary><p>................................................................................==============|=======..<br>........................................................................................======|=======..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/tqg3c7qk5spp8" target="_blank">Cutting T2</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Weapon Feature Team <br/>
+1x Engineering dev working on 10 tasks (181% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................================|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gc9nco1v95l85" target="_blank">Derelict Spaceships - Points of Interest</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Audio <br/>
+4x Audio devs working on 3 tasks (69% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..............................~~~~~~~~~~~~~~~~~~~~~~~~~~~~==......==========................==|===..====</p></details>  
+<details><summary><ul><li>MTL Sandbox 1 <br/>
+4x Design devs working on 7 tasks (42% load) thru 2022-12-07<br/>
+8x Art devs working on 11 tasks (33% load) thru 2022-12-07<br/>
+</li></ul></summary><p>.~~~~~~~~~~~~~~~~~~~~~~.~~~~~~~~~~============........======================..================|=====....<br>.~~~~~~~~~~~~~~~~~~~~~~.~~~~~~~~~~============........======================..================|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8ngiz6vlycmn8" target="_blank">Dynamic Events</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Mission Feature Team <br/>
+4x Engineering devs working on 7 tasks (32% load) thru 2022-12-22<br/>
+</li></ul></summary><p>..========================..................................................==================|=========<br>..================================================..~~~~~~~~~~~~~~~~~~~~~~~~~~................|...======</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a80a7ger61zjn" target="_blank">Entity Properties Plugin</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Editor Team <br/>
+1x Engineering dev working on 4 tasks (267% load) thru 2022-12-15<br/>
+</li></ul></summary><p>..=========...=========...............========~~~~~~~~~~~~=====...=========.......========....|=======..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/79gdor1nyks3d" target="_blank">EVA T2</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Actor Tech Team <br/>
+2x Engineering devs working on 8 tasks (82% load) thru 2022-12-29<br/>
+</li></ul></summary><p>............................====================~~~~~~~~~~====================....============|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/hmhfouy6flk5j" target="_blank">Flak Ammunition</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Weapon Content Team <br/>
+1x Art dev working on 3 tasks (1250% load) thru 2022-11-24<br/>
+↳ will continue 2022-12-04 with 1x dev<br/>
+</li></ul></summary><p>..............................................................................................|=..==....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/a2buehbroa0q0" target="_blank">Freight Elevators</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Audio <br/>
+1x Audio dev working on 4 tasks (370% load) thru 2022-12-01<br/>
+</li></ul></summary><p>............................................................................................==|===..====</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/prpau2wq3ovrp" target="_blank">Frontier Clothing</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Character Tech Art <br/>
+5x Tech Content devs working on 8 tasks (68% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................========............========....========....====....====|=======..</p></details>  
+<details><summary><ul><li>SC Character Art <br/>
+15x Art devs working on 23 tasks (32% load) thru 2022-12-29<br/>
+</li></ul></summary><p>.=================================================....========================....============|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/umxifhs2llfbq" target="_blank">Gen12 - Renderer T1</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Engine Team  
- - 4x Engineering devs working on 11 tasks (86% load) thru 2022-12-01
-  
-* Graphics Team  
- - 7x Engineering devs working on 10 tasks (38% load) thru 2022-12-04
-  
-### **HEX** [SC] ###  
-* Live Tools Team  
- - 5x Engineering devs working on 55 tasks (61% load) thru 2022-12-19
-  
-### **Ladders T1** [SC, SQ42] ###  
+<details><summary><ul><li>Engine Team <br/>
+4x Engineering devs working on 11 tasks (86% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..=================.........================..........~~~~=============...........============|===......</p></details>  
+<details><summary><ul><li>Graphics Team <br/>
+7x Engineering devs working on 10 tasks (38% load) thru 2022-12-04<br/>
+</li></ul></summary><p>..===================.....======================....====================........==============|====.....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/netoco7ydk073" target="_blank">HEX</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Live Tools Team <br/>
+5x Engineering devs working on 55 tasks (61% load) thru 2022-12-19<br/>
+</li></ul></summary><p>..=====================...~~~~========================~~~~~~~~~~~~~~~~~~~~~~~~~~~~============|========.</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/u8i05h9g7ae4f" target="_blank">Ladders T1</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Actor Feature Team  
- - 3x Animation devs working on 5 tasks (214% load) thru 2022-11-23
-  
-### **Lorville Cityscape** [SC] ###  
-* MTL Sandbox 1  
- - 4x Art devs working on 10 tasks (60% load) thru 2022-12-07
-  
-* VFX Team  
- - 1x Art dev working on 3 tasks (385% load) thru 2022-11-24
-  
-### **Map and Radar System Rework** [SC, SQ42] ###  
-* Graphics Team  
- - 1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04
-  
-* SQ42 UI Feature Team  
- - 3x Engineering devs working on 10 tasks (83% load) thru 2022-12-15
- - 3x Art devs will work on 3 tasks (152% load) starting 2022-12-04 thru 2022-12-15
-  
-### **MFD Rework** [SC, SQ42] ###  
-* Vehicle Feature Team  
- - 8x Engineering devs working on 9 tasks (27% load) thru 2022-12-08
-  
-### **MISC Hull C** [SC, SQ42] ###  
-* Vehicle Content - EU  
- - 2x Design devs working on 14 tasks (174% load) thru 2022-12-15
-  
-### **Miscellaneous Support** [SC, SQ42] ###  
-* Actor Feature Team  
- - 3x Design devs working on 29 tasks (43% load) thru 2022-12-30
- - 2x Engineering devs working on 26 tasks (58% load) thru 2022-12-30
- - 4x Animation devs working on 29 tasks (32% load) thru 2022-12-30
-  
-* Actor Tech Team  
- - 5x Engineering devs working on 11 tasks (45% load) thru 2022-12-29
-  
-* AI Content Team  
- - 2x Tech Content devs working on 11 tasks (57% load) thru 2022-12-29
-  
-* Arena Commander Feature Team  
- - 3x Engineering devs working on 27 tasks (41% load) thru 2022-12-22
-  
-* Audio  
- - 6x Audio devs working on 14 tasks (65% load) thru 2022-12-01
-  
-* Editor Team  
- - 1x Design dev working on 8 tasks (165% load) thru 2022-12-29
- - 3x Engineering devs working on 4 tasks (89% load) thru 2022-12-15
-  
-* Gameplay Story  
- - 1x Tech Content dev working on 13 tasks (76% load) thru 2022-12-07
-  
-* Narrative  
- - 1x Design dev working on 8 tasks (145% load) thru 2022-12-30
-  
-* SQ42 UI Feature Team  
- - 3x Engineering devs working on 5 tasks (71% load) thru 2022-12-29
-  
-* Systemic Services and Tools Team  
- - 4x Engineering devs working on 7 tasks (45% load) thru 2022-12-03
-  
-* Tools Team  
- - 2x Engineering devs working on 8 tasks (82% load) thru 2022-12-29
-  
-* UI Tech Team  
- - 4x Engineering devs working on 6 tasks (47% load) thru 2022-12-01
-  
-* VFX Team  
- - 2x Tech Content devs working on 3 tasks (192% load) thru 2022-11-24
-  
-* Weapon Content Team  
- - 4x Art devs working on 5 tasks (116% load) thru 2022-12-08
-  
-* Weapon Feature Team  
- - 5x Design devs working on 38 tasks (33% load) thru 2022-12-30
- - 2x Engineering devs will work on 3 tasks (114% load) starting 2022-12-08 thru 2022-12-30
-  
-### **New Missions - Orison** [SC] ###  
+<details><summary><ul><li>Actor Feature Team <br/>
+3x Animation devs working on 5 tasks (214% load) thru 2022-11-23<br/>
+</li></ul></summary><p>............................====================~~~~~~~~~~======================..........====|=........<br>..............................................................======..........==========......|.........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/06evjumayvc15" target="_blank">Lorville Cityscape</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>MTL Sandbox 1 <br/>
+4x Art devs working on 10 tasks (60% load) thru 2022-12-07<br/>
+</li></ul></summary><p>......................................................======================..================|=====....</p></details>  
+<details><summary><ul><li>VFX Team <br/>
+1x Art dev working on 3 tasks (385% load) thru 2022-11-24<br/>
+</li></ul></summary><p>..........................................................................................====|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/lz0inyoyefgtn" target="_blank">Map and Radar System Rework</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Graphics Team <br/>
+1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04<br/>
+</li></ul></summary><p>................................................................========........==============|====.....</p></details>  
+<details><summary><ul><li>SQ42 UI Feature Team <br/>
+3x Engineering devs working on 10 tasks (83% load) thru 2022-12-15<br/>
+3x Art devs will work on 3 tasks (152% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>..............................==============================================......============|=======..<br>..........................................==============....========..................====....|...====..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/x238xrlu46brf" target="_blank">MFD Rework</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+8x Engineering devs working on 9 tasks (27% load) thru 2022-12-08<br/>
+</li></ul></summary><p>......................................................======================..================|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/amfnzbir75lb4" target="_blank">MISC Hull C</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Vehicle Content - EU <br/>
+2x Design devs working on 14 tasks (174% load) thru 2022-12-15<br/>
+</li></ul></summary><p>..........................................................================....==..............|.........<br>..............................~~~~~~~~~~~~~~~~~~~~................................============|=======..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/qvviufr1cqczy" target="_blank">Miscellaneous Support</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Actor Feature Team <br/>
+3x Design devs working on 29 tasks (43% load) thru 2022-12-30<br/>
+2x Engineering devs working on 26 tasks (58% load) thru 2022-12-30<br/>
+4x Animation devs working on 29 tasks (32% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..==============================================~~~~~~~~~~====================================|=========<br>..==============================================~~~~~~~~~~====================================|=========<br>..==============================================~~~~~~~~~~====================================|=========<br>..==========================..................................................................|.........</p></details>  
+<details><summary><ul><li>Actor Tech Team <br/>
+5x Engineering devs working on 11 tasks (45% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..~~~~~~~~~~~~~~~~~~~~======~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~====================....============|=========</p></details>  
+<details><summary><ul><li>AI Content Team <br/>
+2x Tech Content devs working on 11 tasks (57% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..~~~~~~~~~~~~~~~~~~~~~~....~~~~~~~~~~~~~~~~~~~~........~~~~~~~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~|~~~~~~~~~<br>..................======....................====..............................................|.........</p></details>  
+<details><summary><ul><li>Arena Commander Feature Team <br/>
+3x Engineering devs working on 27 tasks (41% load) thru 2022-12-22<br/>
+</li></ul></summary><p>........................================================......................................|.........<br>....====================~~~~================================================~~~~~~============|=========</p></details>  
+<details><summary><ul><li>Audio <br/>
+6x Audio devs working on 14 tasks (65% load) thru 2022-12-01<br/>
+</li></ul></summary><p>................................................................................==============|===..====</p></details>  
+<details><summary><ul><li>Editor Team <br/>
+1x Design dev working on 8 tasks (165% load) thru 2022-12-29<br/>
+3x Engineering devs working on 4 tasks (89% load) thru 2022-12-15<br/>
+</li></ul></summary><p>..============================================~~~~~~~~~~~~=====================...============|=========<br>......................................................~~~~=====...=========.......========....|=======..</p></details>  
+<details><summary><ul><li>Gameplay Story <br/>
+1x Tech Content dev working on 13 tasks (76% load) thru 2022-12-07<br/>
+</li></ul></summary><p>.=====.===============~~~~~~..====........====~~~~~~~~~~~~~~~~~~~~~~~~~~~~====~~~~~~~~~~~~~~~~|~~~~~....</p></details>  
+<details><summary><ul><li>Narrative <br/>
+1x Design dev working on 8 tasks (145% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................================|=========</p></details>  
+<details><summary><ul><li>SQ42 UI Feature Team <br/>
+3x Engineering devs working on 5 tasks (71% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..............................................................................................|=========<br>........................................................................========..............|.......==</p></details>  
+<details><summary><ul><li>Systemic Services and Tools Team <br/>
+4x Engineering devs working on 7 tasks (45% load) thru 2022-12-03<br/>
+</li></ul></summary><p>..............................................................................================|=====....</p></details>  
+<details><summary><ul><li>Tools Team <br/>
+2x Engineering devs working on 8 tasks (82% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..============================================~~~~~~~~~~~~=====================...============|=========</p></details>  
+<details><summary><ul><li>UI Tech Team <br/>
+4x Engineering devs working on 6 tasks (47% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..............................==========================................====......============|===......</p></details>  
+<details><summary><ul><li>VFX Team <br/>
+2x Tech Content devs working on 3 tasks (192% load) thru 2022-11-24<br/>
+</li></ul></summary><p>......................~~~~~~=================.................................==========..====|=........</p></details>  
+<details><summary><ul><li>Weapon Content Team <br/>
+4x Art devs working on 5 tasks (116% load) thru 2022-12-08<br/>
+</li></ul></summary><p>................==............................................................................|=====....<br>................==............................................................................|.........</p></details>  
+<details><summary><ul><li>Weapon Feature Team <br/>
+5x Design devs working on 38 tasks (33% load) thru 2022-12-30<br/>
+2x Engineering devs will work on 3 tasks (114% load) starting 2022-12-08 thru 2022-12-30<br/>
+</li></ul></summary><p>..==============================================~~~~~~~~~~====================================|=========<br>..........................................................................======..............|...======</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7oe0cti41a788" target="_blank">New Missions - Orison</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Narrative  
- - 1x Design dev working on 1 task (128% load) thru 2022-11-23
-  
-### **Ocean Shader Improvements** [SC] ###  
+<details><summary><ul><li>Narrative <br/>
+1x Design dev working on 1 task (128% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..........................................................................................====|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/xctrxlu0xmq63" target="_blank">Ocean Shader Improvements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Graphics Team  
- - 1x Engineering dev working on 2 tasks (81% load) thru 2022-12-04
-  
-* Planet Tech Team  
- - 2x Engineering devs working on 6 tasks (72% load) thru 2022-12-07
-  
-* VFX Team  
- - 2x Engineering devs working on 3 tasks (93% load) thru 2022-11-24
-  
-### **Outpost Homestead - Independent & Outlaw** [SC] ###  
-* VFX Team  
- - 1x Art dev working on 3 tasks (385% load) thru 2022-11-24
-  
-* EU Sandbox 1  
- - 12x Art devs will work on 15 tasks (104% load) starting 2022-11-30 thru 2022-12-20
-  
-### **Persistent Streaming and Server Meshing** [SC] ###  
-* Engine Team  
- - 1x Engineering dev working on 5 tasks (157% load) thru 2022-12-01
-  
-* Game Services Team  
- - 10x Engineering devs working on 33 tasks (26% load) thru 2022-12-29
-  
-* Mission Feature Team  
- - 3x Engineering devs working on 4 tasks (46% load) thru 2022-12-22
-  
-* Network Team  
- - 9x Engineering devs working on 13 tasks (14% load) thru 2022-12-30
-  
-* Persistent Tech Team  
- - 4x Engineering devs working on 17 tasks (40% load) thru 2022-12-30
-  
-* Systemic Services and Tools Team  
- - 3x Engineering devs working on 3 tasks (62% load) thru 2022-12-03
-  
-* Vehicle Feature Team  
- - 5x Engineering devs working on 14 tasks (30% load) thru 2022-12-08
-  
-### **Physical Damage & Breakability** [SC, SQ42] ###  
+<details><summary><ul><li>Graphics Team <br/>
+1x Engineering dev working on 2 tasks (81% load) thru 2022-12-04<br/>
+</li></ul></summary><p>......................................................................................========|====.....</p></details>  
+<details><summary><ul><li>Planet Tech Team <br/>
+2x Engineering devs working on 6 tasks (72% load) thru 2022-12-07<br/>
+</li></ul></summary><p>..........................................=========...=====================...================|=====....</p></details>  
+<details><summary><ul><li>VFX Team <br/>
+2x Engineering devs working on 3 tasks (93% load) thru 2022-11-24<br/>
+</li></ul></summary><p>......................................................................................========|=........<br>......................................................................................======..|.........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/2l41u7q012cwc" target="_blank">Outpost Homestead - Independent & Outlaw</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>VFX Team <br/>
+1x Art dev working on 3 tasks (385% load) thru 2022-11-24<br/>
+</li></ul></summary><p>..........................................................................................====|=........</p></details>  
+<details><summary><ul><li>EU Sandbox 1 <br/>
+12x Art devs will work on 15 tasks (104% load) starting 2022-11-30 thru 2022-12-20<br/>
+</li></ul></summary><p>.~~~~~~~~~~~~~~.~~~~~~~~~~~.~~~~~~========....===========================...=================.|.=======.</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/22qmiobcit64m" target="_blank">Persistent Streaming and Server Meshing</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Engine Team <br/>
+1x Engineering dev working on 5 tasks (157% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..................................................................................============|===......</p></details>  
+<details><summary><ul><li>Game Services Team <br/>
+10x Engineering devs working on 33 tasks (26% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..====================~~~~~~~~================================================~~~~~~~~~~~~~~~~|~~~~~~~~~</p></details>  
+<details><summary><ul><li>Mission Feature Team <br/>
+3x Engineering devs working on 4 tasks (46% load) thru 2022-12-22<br/>
+</li></ul></summary><p>.~========================~~~~~~~~~~~~~~~~~~~~~~~~......................................======|=========</p></details>  
+<details><summary><ul><li>Network Team <br/>
+9x Engineering devs working on 13 tasks (14% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..=====.......============....................================================================|=========</p></details>  
+<details><summary><ul><li>Persistent Tech Team <br/>
+4x Engineering devs working on 17 tasks (40% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..====================~~~~~~~~================================================================|=========</p></details>  
+<details><summary><ul><li>Systemic Services and Tools Team <br/>
+3x Engineering devs working on 3 tasks (62% load) thru 2022-12-03<br/>
+</li></ul></summary><p>..........................................................................................====|=====....</p></details>  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+5x Engineering devs working on 14 tasks (30% load) thru 2022-12-08<br/>
+</li></ul></summary><p>......................................==============..========================================|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/s4smhgp8uw58x" target="_blank">Physical Damage & Breakability</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Physics Team  
- - 3x Engineering devs working on 5 tasks (44% load) thru 2022-12-04
-  
-### **Physics - Ropes Simulation** [SC, SQ42] ###  
+<details><summary><ul><li>Physics Team <br/>
+3x Engineering devs working on 5 tasks (44% load) thru 2022-12-04<br/>
+</li></ul></summary><p>..===================.....======================....======================......==============|====.....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/gwt6g2pmm280t" target="_blank">Physics - Ropes Simulation</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Physics Team  
- - 1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04
-  
-### **Player Interaction Experience T2 - Visor HUD & Helmet** [SC, SQ42] ###  
-* SQ42 UI Feature Team  
- - 1x Engineering dev working on 6 tasks (189% load) thru 2022-12-15
- - 1x Art dev working on 3 tasks (455% load) thru 2022-12-01
- - 1x Design dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15
-  
-### **Player/Machine Physical Interaction** [SC, SQ42] ###  
-* Actor Feature Team  
- - 1x Engineering dev working on 6 tasks (109% load) thru 2022-12-30
- - 1x Animation dev working on 8 tasks (145% load) thru 2022-12-30
-  
-### **Prone T1** [SC, SQ42] ###  
-* Actor Feature Team  
- - 1x Engineering dev working on 8 tasks (145% load) thru 2022-12-30
- - 1x Animation dev working on 10 tasks (181% load) thru 2022-12-30
-  
-### **Pyro System, Planet, and Mission Setup** [SC] ###  
-* Audio  
- - 4x Audio devs working on 8 tasks (72% load) thru 2022-12-01
-  
-### **Quantum Simulation** [SC] ###  
-* Systemic Services and Tools Team  
- - 5x Engineering devs working on 31 tasks (64% load) thru 2022-12-15
-  
-### **Quantum Travel Experience** [SC] ###  
-* Physics Team  
- - 1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04
-  
-* SQ42 UI Feature Team  
- - 1x Design dev working on 3 tasks (455% load) thru 2022-12-01
-  
-* Vehicle Feature Team  
- - 3x Engineering devs working on 7 tasks (56% load) thru 2022-12-08
-  
-### **RaStar** [SC] ###  
+<details><summary><ul><li>Physics Team <br/>
+1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04<br/>
+</li></ul></summary><p>..===================.....======================....======================......==============|====.....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/kkx43s3k54tnp" target="_blank">Player Interaction Experience T2 - Visor HUD & Helmet</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>SQ42 UI Feature Team <br/>
+1x Engineering dev working on 6 tasks (189% load) thru 2022-12-15<br/>
+1x Art dev working on 3 tasks (455% load) thru 2022-12-01<br/>
+1x Design dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................................................========|=======..<br>..............................................................................................|===......<br>......................................................................................====....|...====..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/z0d9djfl79n7m" target="_blank">Player/Machine Physical Interaction</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Actor Feature Team <br/>
+1x Engineering dev working on 6 tasks (109% load) thru 2022-12-30<br/>
+1x Animation dev working on 8 tasks (145% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................================|=========<br>..............................................................................================|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/x6m8bn2v0ea9a" target="_blank">Prone T1</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Actor Feature Team <br/>
+1x Engineering dev working on 8 tasks (145% load) thru 2022-12-30<br/>
+1x Animation dev working on 10 tasks (181% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................================|=========<br>..............................................................................================|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/zyh810y2atgf6" target="_blank">Pyro System, Planet, and Mission Setup</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Audio <br/>
+4x Audio devs working on 8 tasks (72% load) thru 2022-12-01<br/>
+</li></ul></summary><p>....................................................................======..........==========|===......</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/5jx5bc18cdok9" target="_blank">Quantum Simulation</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Systemic Services and Tools Team <br/>
+5x Engineering devs working on 31 tasks (64% load) thru 2022-12-15<br/>
+</li></ul></summary><p>.=================================================....========================================|=======..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/ffao511sfca0t" target="_blank">Quantum Travel Experience</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Physics Team <br/>
+1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04<br/>
+</li></ul></summary><p>................................................................................==============|====.....</p></details>  
+<details><summary><ul><li>SQ42 UI Feature Team <br/>
+1x Design dev working on 3 tasks (455% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..............................................................................................|===......</p></details>  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+3x Engineering devs working on 7 tasks (56% load) thru 2022-12-08<br/>
+</li></ul></summary><p>......................................==============..======================..================|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jj824sq4y1hu5" target="_blank">RaStar</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* VFX Team  
- - 1x Art dev working on 3 tasks (385% load) thru 2022-11-24
-  
-### **Resource Management** [SC] ###  
-* Narrative  
- - 1x Design dev working on 3 tasks (192% load) thru 2022-11-23
-  
-* Vehicle Content - EU  
- - 5x Art devs working on 13 tasks (59% load) thru 2022-12-15
-  
-* Vehicle Content - US  
- - 1x Design dev working on 8 tasks (150% load) thru 2022-12-30
- - 1x Art dev working on 10 tasks (152% load) thru 2023-01-20
-  
-* EU PU Gameplay Feature Team  
- - 2x Design devs will work on 3 tasks (96% load) starting 2022-12-07 thru 2022-12-20
- - 2x Engineering devs will work on 3 tasks (192% load) starting 2022-12-07 thru 2022-12-20
-  
-### **RSI Lynx** [SC] ###  
-* Vehicle Content - EU  
- - 3x Art devs working on 12 tasks (126% load) thru 2022-12-15
- - 1x Design dev working on 11 tasks (399% load) thru 2022-12-15
-  
-### **Satellites - Points of Interest** [SC] ###  
-* Location Concept Art  
- - 2x Art devs working on 29 tasks (263% load) thru 2022-12-30
-  
-### **Ship CPU** [SC, SQ42] ###  
+<details><summary><ul><li>VFX Team <br/>
+1x Art dev working on 3 tasks (385% load) thru 2022-11-24<br/>
+</li></ul></summary><p>..........................................................................................====|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/by4bc1er7iesh" target="_blank">Resource Management</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Narrative <br/>
+1x Design dev working on 3 tasks (192% load) thru 2022-11-23<br/>
+</li></ul></summary><p>..........................................................................................~~~~|~........</p></details>  
+<details><summary><ul><li>Vehicle Content - EU <br/>
+5x Art devs working on 13 tasks (59% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................==============............==============|=======..</p></details>  
+<details><summary><ul><li>Vehicle Content - US <br/>
+1x Design dev working on 8 tasks (150% load) thru 2022-12-30<br/>
+1x Art dev working on 10 tasks (152% load) thru 2023-01-20<br/>
+</li></ul></summary><p>................................................................................==============|=========<br>........................................................................................~~~~~~|.........<br>................................................................................==============|=========</p></details>  
+<details><summary><ul><li>EU PU Gameplay Feature Team <br/>
+2x Design devs will work on 3 tasks (96% load) starting 2022-12-07 thru 2022-12-20<br/>
+2x Engineering devs will work on 3 tasks (192% load) starting 2022-12-07 thru 2022-12-20<br/>
+</li></ul></summary><p>..........................~~~~~~~~~~~~~~~~~...~~~~~...~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~|...~~~~~.<br>..........~~~~~~~~~.......=========================...========================================|...=====.</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/1a48n9j8i12dw" target="_blank">RSI Lynx</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Vehicle Content - EU <br/>
+3x Art devs working on 12 tasks (126% load) thru 2022-12-15<br/>
+1x Design dev working on 11 tasks (399% load) thru 2022-12-15<br/>
+</li></ul></summary><p>......................................................................................========|=======..<br>........................................................................................======|=======..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/d4esq1kn1wb97" target="_blank">Satellites - Points of Interest</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Location Concept Art <br/>
+2x Art devs working on 29 tasks (263% load) thru 2022-12-30<br/>
+</li></ul></summary><p>......................................================........................================|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/k344glls3rfaq" target="_blank">Ship CPU</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Vehicle Feature Team  
- - 1x Engineering dev working on 7 tasks (285% load) thru 2022-12-08
-  
-### **SQ42 - Vehicle Support** [SQ42] ###  
-* Audio  
- - 3x Audio devs working on 11 tasks (102% load) thru 2022-12-01
-  
-* SQ42 Art  
- - 1x Cinematics dev working on 5 tasks (167% load) thru 2022-12-30
- - 1x Art dev working on 8 tasks (145% load) thru 2022-12-30
-  
-* Vehicle Content - EU  
- - 3x Design devs working on 18 tasks (149% load) thru 2022-12-08
-  
-* Vehicle Content - US  
- - 3x Tech Content devs working on 12 tasks (71% load) thru 2022-12-10
- - 1x Design dev working on 14 tasks (141% load) thru 2023-03-17
- - 2x Art devs working on 17 tasks (85% load) thru 2023-03-17
-  
-* Vehicle Feature Team  
- - 9x Engineering devs working on 13 tasks (34% load) thru 2022-12-08
-  
-* Weapon Content Team  
- - 5x Art devs working on 14 tasks (120% load) thru 2022-12-22
-  
-### **Stanton Fashion Clothing** [SC] ###  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+1x Engineering dev working on 7 tasks (285% load) thru 2022-12-08<br/>
+</li></ul></summary><p>......................................................................................========|=====....</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/w489uig8qdbov" target="_blank">SQ42 - Vehicle Support</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Audio <br/>
+3x Audio devs working on 11 tasks (102% load) thru 2022-12-01<br/>
+</li></ul></summary><p>................................................................................==============|===..====</p></details>  
+<details><summary><ul><li>SQ42 Art <br/>
+1x Cinematics dev working on 5 tasks (167% load) thru 2022-12-30<br/>
+1x Art dev working on 8 tasks (145% load) thru 2022-12-30<br/>
+</li></ul></summary><p>..........................................................................................====|=========<br>..............................................................................================|=========</p></details>  
+<details><summary><ul><li>Vehicle Content - EU <br/>
+3x Design devs working on 18 tasks (149% load) thru 2022-12-08<br/>
+</li></ul></summary><p>......................................................====================......==============|=====....<br>..............................................................................................|.........</p></details>  
+<details><summary><ul><li>Vehicle Content - US <br/>
+3x Tech Content devs working on 12 tasks (71% load) thru 2022-12-10<br/>
+1x Design dev working on 14 tasks (141% load) thru 2023-03-17<br/>
+2x Art devs working on 17 tasks (85% load) thru 2023-03-17<br/>
+</li></ul></summary><p>................................====................................................~~~~~~~~==|=======..<br>................................................................................==============|=========<br>................................................................................==============|=========</p></details>  
+<details><summary><ul><li>Vehicle Feature Team <br/>
+9x Engineering devs working on 13 tasks (34% load) thru 2022-12-08<br/>
+</li></ul></summary><p>..............................................................................................|.........<br>..........................======......======..................................================|=====....</p></details>  
+<details><summary><ul><li>Weapon Content Team <br/>
+5x Art devs working on 14 tasks (120% load) thru 2022-12-22<br/>
+</li></ul></summary><p>........................................................................====........======..==|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/dml7u9nzr72wt" target="_blank">Stanton Fashion Clothing</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Character Tech Art  
- - 1x Tech Content dev working on 3 tasks (455% load) thru 2022-12-01
-  
-### **StarWords Improvements** [SC, SQ42] ###  
-* Tools Team  
- - 2x Engineering devs working on 11 tasks (113% load) thru 2022-12-29
-  
-### **Subsumption Editor Integration** [SC, SQ42] ###  
+<details><summary><ul><li>Character Tech Art <br/>
+1x Tech Content dev working on 3 tasks (455% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..........................................................................====....====........|===......</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vtqbog4iy9vrg" target="_blank">StarWords Improvements</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Tools Team <br/>
+2x Engineering devs working on 11 tasks (113% load) thru 2022-12-29<br/>
+</li></ul></summary><p>..=========...=========...=========...========~~~~~~~~~~~~~...=========...=====...============|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/rkh3xiao4v6sx" target="_blank">Subsumption Editor Integration</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* AI Tech and Feature Team  
- - 1x Engineering dev working on 6 tasks (189% load) thru 2022-12-01
-  
-### **Time Trial Race Missions** [SC] ###  
-* Mission Feature Team  
- - 1x Design dev working on 6 tasks (111% load) thru 2022-12-22
-  
-### **Unannounced Vehicle** [SC] ###  
+<details><summary><ul><li>AI Tech and Feature Team <br/>
+1x Engineering dev working on 6 tasks (189% load) thru 2022-12-01<br/>
+</li></ul></summary><p>..======================....====================........====================......============|===......</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jiojaync0rsca" target="_blank">Time Trial Race Missions</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>Mission Feature Team <br/>
+1x Design dev working on 6 tasks (111% load) thru 2022-12-22<br/>
+</li></ul></summary><p>............................................................................==================|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/oo8l74xh4us4a" target="_blank">Unannounced Vehicle</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* VFX Team  
- - 2x Art devs working on 3 tasks (192% load) thru 2022-11-24
-  
-### **Unified Itemports - FPS** [SC, SQ42] ###  
+<details><summary><ul><li>VFX Team <br/>
+2x Art devs working on 3 tasks (192% load) thru 2022-11-24<br/>
+</li></ul></summary><p>........................................................=====.............................====|=........</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/8aqh4ff6y5aqi" target="_blank">Unified Itemports - FPS</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Character Tech Art  
- - 5x Tech Content devs working on 7 tasks (93% load) thru 2022-12-01
-  
-### **Zero G Push & Pull** [SC, SQ42] ###  
-* Actor Tech Team  
- - 1x Engineering dev working on 8 tasks (165% load) thru 2022-12-29
----
+<details><summary><ul><li>Character Tech Art <br/>
+5x Tech Content devs working on 7 tasks (93% load) thru 2022-12-01<br/>
+</li></ul></summary><p>......................................................====....========....................====|===......</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/vv4ufswireni7" target="_blank">Zero G Push & Pull</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Actor Tech Team <br/>
+1x Engineering dev working on 8 tasks (165% load) thru 2022-12-29<br/>
+</li></ul></summary><p>......................................................========================....============|=========</p></details>---
   
 ## The following deliverables are scheduled to begin (or continue) work within two weeks ##  
   
-### **Artificial Gravity** [SC] ###  
-* EU PU Gameplay Feature Team  
- - 1x Engineering dev will work on 3 tasks (192% load) starting 2022-12-07 thru 2022-12-20
- - 1x Design dev will work on 3 tasks (385% load) starting 2022-12-07 thru 2022-12-20
-  
-* Narrative  
- - 1x Design dev will work on 4 tasks (93% load) starting 2022-11-24 thru 2022-12-30
-  
-### **Asteroid Facilities** [SC] ###  
-* EU Sandbox 1  
- - 3x Art devs will work on 5 tasks (139% load) starting 2022-11-30 thru 2022-12-20
-  
-### **Chapter 24** [SQ42] ###  
-* SQ42 Level Design 2 - Flight  
- - 2x Design devs will work on 2 tasks (46% load) starting 2022-11-24 thru 2022-12-30
-  
-### **Chapter 28** [SQ42] ###  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/b8kyh0tbwttgw" target="_blank">Artificial Gravity</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>EU PU Gameplay Feature Team <br/>
+1x Engineering dev will work on 3 tasks (192% load) starting 2022-12-07 thru 2022-12-20<br/>
+1x Design dev will work on 3 tasks (385% load) starting 2022-12-07 thru 2022-12-20<br/>
+</li></ul></summary><p>..............................................................................~~~~~~~~~~~~~~~~|...~~~~~.<br>..............................................................................================|...=====.</p></details>  
+<details><summary><ul><li>Narrative <br/>
+1x Design dev will work on 4 tasks (93% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................................|~~~~~~~~~</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/l79nce8ptl09x" target="_blank">Asteroid Facilities</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>EU Sandbox 1 <br/>
+3x Art devs will work on 5 tasks (139% load) starting 2022-11-30 thru 2022-12-20<br/>
+</li></ul></summary><p>....................................................=====================...........=========.|.=======.</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/remmqkmi3p4vg" target="_blank">Chapter 24</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>SQ42 Level Design 2 - Flight <br/>
+2x Design devs will work on 2 tasks (46% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>..............................................................................................|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jlfrhimtfm1zr" target="_blank">Chapter 28</a>** <span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Starting soon!) ####  
-* SQ42 Character Art  
- - 1x Art dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15
-  
-### **FS-Tech-Anim - Asset Integration** [SC, SQ42] ###  
-* Tech Animation Team  
- - 7x Tech Content devs will work on 4 tasks (35% load) starting 2022-11-25 thru 2022-12-22
-  
-### **Life Support T0** [SC] ###  
-* EU PU Gameplay Feature Team  
- - 1x Design dev will work on 5 tasks (321% load) starting 2022-12-07 thru 2022-12-20
- - 1x Engineering dev will work on 5 tasks (321% load) starting 2022-12-07 thru 2022-12-20
-  
-### **New Player Experience** [SC] ###  
-* EU Landing Zone 2  
- - 1x Art dev will work on 2 tasks (256% load) starting 2022-12-07 thru 2022-12-20
-  
-* Narrative  
- - 1x Design dev will work on 3 tasks (69% load) starting 2022-11-24 thru 2022-12-30
-  
-### **Outpost Theme Variants** [SC] ###  
-* EU Sandbox 1  
- - 4x Design devs will work on 15 tasks (313% load) starting 2022-11-30 thru 2022-12-20
-  
-### **Vehicle Tractor Beams** [SC] ###  
-* EU PU Gameplay Feature Team  
- - 2x Engineering devs will work on 2 tasks (128% load) starting 2022-12-07 thru 2022-12-20
-  
-### **VOLT Parallax** [SC, SQ42] ###  
+<details><summary><ul><li>SQ42 Character Art <br/>
+1x Art dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15<br/>
+</li></ul></summary><p>..............................................................................................|...====..</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/px688o5p3fmxv" target="_blank">FS-Tech-Anim - Asset Integration</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
+<details><summary><ul><li>Tech Animation Team <br/>
+7x Tech Content devs will work on 4 tasks (35% load) starting 2022-11-25 thru 2022-12-22<br/>
+</li></ul></summary><p>..=========...................=====...=====.......=====...........=========...................|=========</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3fbborm2578lc" target="_blank">Life Support T0</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>EU PU Gameplay Feature Team <br/>
+1x Design dev will work on 5 tasks (321% load) starting 2022-12-07 thru 2022-12-20<br/>
+1x Engineering dev will work on 5 tasks (321% load) starting 2022-12-07 thru 2022-12-20<br/>
+</li></ul></summary><p>..~~~~~~~~~~~~~~~~~...~~~~~~~~~~~~~~~~~~~~~...~~~~~...~~~~~~~~~~~~~~~~~~..~~~~~~~~~~~~~~~~~~~~|...~~~~~.<br>..=================...=================...............==================..~~~~~~~~~~~~~~~~~~~~|...~~~~~.</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/jrm109p0rwap7" target="_blank">New Player Experience</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>EU Landing Zone 2 <br/>
+1x Art dev will work on 2 tasks (256% load) starting 2022-12-07 thru 2022-12-20<br/>
+</li></ul></summary><p>..............................................................................................|...=====.</p></details>  
+<details><summary><ul><li>Narrative <br/>
+1x Design dev will work on 3 tasks (69% load) starting 2022-11-24 thru 2022-12-30<br/>
+</li></ul></summary><p>........................................................====================......==========..|~~~~~~~~~</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/3z2lkiq68ztfo" target="_blank">Outpost Theme Variants</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>EU Sandbox 1 <br/>
+4x Design devs will work on 15 tasks (313% load) starting 2022-11-30 thru 2022-12-20<br/>
+</li></ul></summary><p>.~~~~~~~~~~~~~~.~~~~~~~~~~~~~~~~~~========....=======.......................=================.|.=======.</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/yvfcgaa1ann7x" target="_blank">Vehicle Tractor Beams</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span> ###  
+<details><summary><ul><li>EU PU Gameplay Feature Team <br/>
+2x Engineering devs will work on 2 tasks (128% load) starting 2022-12-07 thru 2022-12-20<br/>
+</li></ul></summary><p>..............................................................................................|...=====.</p></details>  
+### **<a href="https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/7jvz5lbeikyrt" target="_blank">VOLT Parallax</a>** <span><img src="https://robertsspaceindustries.com/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"/></span><span><img src="https://robertsspaceindustries.com/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png"/></span> ###  
 #### (Scheduled work ending soon!) ####  
-* Narrative  
- - 1x Design dev will work on 3 tasks (385% load) starting 2022-11-24 thru 2022-12-07
+<details><summary><ul><li>Narrative <br/>
+1x Design dev will work on 3 tasks (385% load) starting 2022-11-24 thru 2022-12-07<br/>
+</li></ul></summary><p>..............................................................................................|=====....</p></details>
