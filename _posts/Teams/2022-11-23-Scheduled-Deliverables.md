@@ -1,0 +1,932 @@
+# Scheduled Deliverables #  
+#### as of 2022-11-23 ####  
+## There are currently 83 scheduled deliverables being worked on by 43 teams ##  
+### 10 deliverables are scheduled to begin work by 8 team(s) within two weeks ###  
+---  
+This report lists the actively assigned deliverables and the associated teams, along with the number
+of developers assigned to each time period. Deliverable time allocations are often staggered over
+their total lifespan and have multiple devs in the same department working in parallel, but their
+allocations are obviously not going to be equal.  
+  
+The load calculation is an approximation based on the sum of the part-time and full-time tasks
+(averaged at 80 hours to complete a piece) divided by the team capacity (with a focus factor of 60%)
+over the given time period. Without exact hourly estimates for each task, a more accurate assessment
+doesn't seem likely, so interpret the load as a given dev group's general utilization on a
+deliverable.
+  
+---  
+There are approximately 428 devs (out of ~512, or 84%) with 906 assignments scheduled to work on 83
+observable deliverables. Of those deliverables, 35% are for SQ42 exclusively, with ~348 devs (68%)
+scheduled for approximately 5083 man-days. 29% of deliverables are shared between both projects.   
+  
+27 deliverable(s) are not currently scheduled to continue work after this sprint:  
+  
+*  Aciedo Station [SQ42]  
+  
+*  Anvil C8R Pisces [SC]  
+  
+*  AR and Map Marker System Rework [SC, SQ42]  
+  
+*  Archon [SQ42]  
+  
+*  Bombs [SC]  
+  
+*  Chapter 03 [SQ42]  
+  
+*  Chapter 06 [SQ42]  
+  
+*  Chapter 08 [SQ42]  
+  
+*  Chapter 09 [SQ42]  
+  
+*  Chapter 10 [SQ42]  
+  
+*  Chapter 15 [SQ42]  
+  
+*  Chapter 20 [SQ42]  
+  
+*  Chapter 23 [SQ42]  
+  
+*  Chapter 25 [SQ42]  
+  
+*  Charge/Drain T0 [SC, SQ42]  
+  
+*  Gen12 - Renderer T1 [SC, SQ42]  
+  
+*  Ladders T1 [SC, SQ42]  
+  
+*  New Missions - Orison [SC]  
+  
+*  Ocean Shader Improvements [SC]  
+  
+*  Physical Damage & Breakability [SC, SQ42]  
+  
+*  Physics - Ropes Simulation [SC, SQ42]  
+  
+*  RaStar [SC]  
+  
+*  Ship CPU [SC, SQ42]  
+  
+*  Stanton Fashion Clothing [SC]  
+  
+*  Subsumption Editor Integration [SC, SQ42]  
+  
+*  Unannounced Vehicle [SC]  
+  
+*  Unified Itemports - FPS [SC, SQ42]  
+Below are the time breakdowns for each team:  
+* Actor Feature Team | 5% part-time with 127 task(s) scheduled, 53% of which are for SQ42  
+* Actor Tech Team | full-time with 27 task(s) scheduled, 50% of which are for SQ42  
+* AI Content Team | 22% part-time with 58 task(s) scheduled, 86% of which are for SQ42  
+* AI Tech and Feature Team | 16% part-time with 51 task(s) scheduled, 64% of which are for SQ42  
+* Arena Commander Feature Team | 12% part-time with 75 task(s) scheduled, 33% of which are for SQ42  
+* Audio | full-time with 40 task(s) scheduled, 33% of which are for SQ42  
+* Character Tech Art | full-time with 39 task(s) scheduled, 57% of which are for SQ42  
+* Cinematics Team | 90% part-time with 42 task(s) scheduled, all of which are for SQ42  
+* Editor Team | full-time with 16 task(s) scheduled, 50% of which are for SQ42  
+* Engine Team | full-time with 16 task(s) scheduled, 33% of which are for SQ42  
+* EU Landing Zone 2 | 100% part-time with 5 task(s) scheduled, 50% of which are for SQ42  
+* EU Sandbox 1 | full-time with 18 task(s) scheduled, 50% of which are for SQ42  
+* Facial Animation | full-time with 26 task(s) scheduled, all of which are for SQ42  
+* Game Services Team | 36% part-time with 33 task(s) scheduled, all of which are for SC  
+* Gameplay Story | 98% part-time with 62 task(s) scheduled, 88% of which are for SQ42  
+* Graphics Team | full-time with 17 task(s) scheduled, 40% of which are for SQ42  
+* Live Tools Team | 71% part-time with 70 task(s) scheduled, 33% of which are for SQ42  
+* Location Concept Art | full-time with 50 task(s) scheduled, all of which are for SC  
+* Mission Feature Team | 11% part-time with 37 task(s) scheduled, 25% of which are for SQ42  
+* Motion Capture Team | 7% part-time with 29 task(s) scheduled, all of which are for SQ42  
+* MTL Sandbox 1 | full-time with 48 task(s) scheduled, all of which are for SC  
+* Narrative | 38% part-time with 24 task(s) scheduled, 63% of which are for SQ42  
+* Network Team | full-time with 13 task(s) scheduled, all of which are for SC  
+* Persistent Tech Team | full-time with 17 task(s) scheduled, all of which are for SC  
+* Physics Team | full-time with 15 task(s) scheduled, 40% of which are for SQ42  
+* Planet Tech Team | full-time with 6 task(s) scheduled, all of which are for SC  
+* SC Character Art | full-time with 23 task(s) scheduled, all of which are for SC  
+* SQ42 Art | 18% part-time with 143 task(s) scheduled, all of which are for SQ42  
+* SQ42 Character Art | full-time with 33 task(s) scheduled, all of which are for SQ42  
+* SQ42 Level Design 1 - FPS | full-time with 29 task(s) scheduled, all of which are for SQ42  
+* SQ42 Level Design 2 - Flight | full-time with 29 task(s) scheduled, all of which are for SQ42  
+* SQ42 Level Design 3 - Social | 22% part-time with 18 task(s) scheduled, all of which are for SQ42  
+* SQ42 UI Feature Team | full-time with 36 task(s) scheduled, 55% of which are for SQ42  
+* Systemic Services and Tools Team | full-time with 41 task(s) scheduled, 25% of which are for SQ42  
+* Tech Animation Team | 42% part-time with 43 task(s) scheduled, all of which are for SQ42  
+* Tools Team | full-time with 26 task(s) scheduled, 50% of which are for SQ42  
+* UI Tech Team | full-time with 9 task(s) scheduled, 50% of which are for SQ42  
+* US PU Gameplay Feature Team | 26% part-time with 19 task(s) scheduled, 50% of which are for SQ42  
+* Vehicle Content - EU | full-time with 162 task(s) scheduled, 20% of which are for SQ42  
+* Vehicle Content - US | 16% part-time with 61 task(s) scheduled, 60% of which are for SQ42  
+* Vehicle Feature Team | full-time with 60 task(s) scheduled, 33% of which are for SQ42  
+* VFX Team | full-time with 36 task(s) scheduled, 40% of which are for SQ42  
+* Weapon Content Team | full-time with 25 task(s) scheduled, 40% of which are for SQ42  
+* Weapon Feature Team | 7% part-time with 59 task(s) scheduled, 50% of which are for SQ42  
+---  
+  
+### **Aciedo Station** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* SQ42 Art  
+ - 4x Art devs working on 4 tasks (62% load) thru 2022-11-23
+  
+### **Aerodynamic Control Surfaces** [SC] ###  
+* Vehicle Feature Team  
+ - 1x Engineering dev working on 9 tasks (214% load) thru 2022-12-08
+  
+### **AI - Untrained Combat** [SC, SQ42] ###  
+* AI Tech and Feature Team  
+ - 2x Engineering devs working on 11 tasks (113% load) thru 2022-12-29
+  
+### **AI - Vehicle Perception** [SC, SQ42] ###  
+* AI Tech and Feature Team  
+ - 2x Engineering devs working on 7 tasks (87% load) thru 2022-12-15
+  
+### **Anvil C8R Pisces** [SC] ###  
+#### (Scheduled work ending soon!) ####  
+* Vehicle Feature Team  
+ - 1x Design dev working on 1 task (128% load) thru 2022-11-24
+  
+### **AR and Map Marker System Rework** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* UI Tech Team  
+ - 2x Engineering devs working on 3 tasks (227% load) thru 2022-12-01
+  
+### **Archon** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* SQ42 Art  
+ - 15x Art devs working on 3 tasks (26% load) thru 2022-11-23
+  
+### **Arena Commander: Classic Race Mode Overhaul** [SC] ###  
+* Arena Commander Feature Team  
+ - 1x Design dev working on 14 tasks (131% load) thru 2022-12-22
+ - 1x Engineering dev working on 14 tasks (131% load) thru 2022-12-22
+  
+### **Argo SRV** [SC] ###  
+* Vehicle Content - EU  
+ - 4x Art devs working on 46 tasks (66% load) thru 2023-02-02
+  
+### **Banu Merchantman** [SC] ###  
+* Vehicle Content - EU  
+ - 10x Art devs working on 28 tasks (28% load) thru 2023-03-16
+  
+### **Bombs** [SC] ###  
+#### (Scheduled work ending soon!) ####  
+* Weapon Content Team  
+ - 2x Art devs working on 3 tasks (139% load) thru 2022-12-08
+  
+### **Bounty Hunter V2** [SC] ###  
+* Mission Feature Team  
+ - 3x Design devs working on 13 tasks (35% load) thru 2022-12-22
+  
+* EU Landing Zone 2  
+ - 2x Art devs will work on 3 tasks (46% load) starting 2022-11-23 thru 2022-12-20
+  
+* Narrative  
+ - 2x Design devs will work on 2 tasks (76% load) starting 2022-12-08 thru 2022-12-30
+  
+### **Bug Fixing & Tech Debt** [SC, SQ42] ###  
+* AI Tech and Feature Team  
+ - 10x Engineering devs working on 7 tasks (14% load) thru 2022-12-29
+  
+* Arena Commander Feature Team  
+ - 2x Design devs working on 20 tasks (60% load) thru 2022-12-22
+  
+* EU Sandbox 1  
+ - 6x Design devs working on 6 tasks (128% load) thru 2022-11-29
+ - 13x Art devs working on 12 tasks (118% load) thru 2022-11-29
+  
+* Live Tools Team  
+ - 4x Engineering devs working on 15 tasks (38% load) thru 2022-12-19
+  
+* Mission Feature Team  
+ - 4x Engineering devs working on 4 tasks (35% load) thru 2022-12-22
+ - 3x Design devs working on 3 tasks (49% load) thru 2022-12-22
+  
+* Tools Team  
+ - 5x Engineering devs working on 7 tasks (29% load) thru 2022-12-29
+  
+* US PU Gameplay Feature Team  
+ - 5x Engineering devs working on 9 tasks (68% load) thru 2022-12-22
+ - 5x Design devs working on 7 tasks (73% load) thru 2022-12-22
+ - 4x Art devs working on 3 tasks (39% load) thru 2022-12-22
+  
+* Engine Team  
+ - 5x Engineering devs will work on 11 tasks (147% load) starting 2022-12-04 thru 2022-12-29
+  
+* EU Landing Zone 1  
+ - 15x Art devs will work on 17 tasks (62% load) starting 2022-12-07 thru 2023-01-03
+ - 5x Design devs will work on 5 tasks (62% load) starting 2022-12-07 thru 2023-01-03
+  
+* Graphics Team  
+ - 10x Engineering devs will work on 20 tasks (167% load) starting 2022-12-05 thru 2022-12-25
+ - 2x Tech Content devs will work on 4 tasks (167% load) starting 2022-12-05 thru 2022-12-25
+  
+* Physics Team  
+ - 4x Engineering devs will work on 6 tasks (125% load) starting 2022-12-05 thru 2022-12-25
+  
+* Systemic Services and Tools Team  
+ - 6x Engineering devs will work on 10 tasks (253% load) starting 2022-12-04 thru 2022-12-15
+  
+* Weapon Content Team  
+ - 7x Art devs will work on 2 tasks (119% load) starting 2022-11-27 thru 2022-12-01
+  
+### **Building Interiors** [SC] ###  
+* Location Concept Art  
+ - 7x Art devs working on 21 tasks (28% load) thru 2022-12-30
+  
+* MTL Sandbox 1  
+ - 14x Art devs working on 14 tasks (24% load) thru 2022-12-07
+ - 4x Design devs working on 6 tasks (36% load) thru 2022-12-07
+  
+### **Chapter 01** [SQ42] ###  
+* AI Content Team  
+ - 3x Design devs working on 6 tasks (58% load) thru 2022-12-01
+  
+* Character Tech Art  
+ - 5x Tech Content devs working on 9 tasks (57% load) thru 2022-12-01
+  
+* Narrative  
+ - 2x Design devs working on 3 tasks (96% load) thru 2022-11-23
+  
+* SQ42 Character Art  
+ - 4x Art devs working on 3 tasks (114% load) thru 2022-12-01
+  
+* SQ42 Level Design 2 - Flight  
+ - 7x Design devs working on 11 tasks (19% load) thru 2022-11-23
+  
+* VFX Team  
+ - 3x Art devs working on 12 tasks (119% load) thru 2022-11-24
+  
+* SQ42 Art  
+ - 12x Art devs will work on 10 tasks (39% load) starting 2022-11-24 thru 2022-12-30
+  
+### **Chapter 02** [SQ42] ###  
+* SQ42 Art  
+ - 4x Art devs working on 9 tasks (29% load) thru 2022-12-30
+  
+### **Chapter 03** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* SQ42 Character Art  
+ - 1x Art dev working on 3 tasks (455% load) thru 2022-12-01
+  
+### **Chapter 04** [SQ42] ###  
+* AI Content Team  
+ - 4x Design devs working on 13 tasks (81% load) thru 2022-12-15
+  
+* AI Tech and Feature Team  
+ - 1x Engineering dev working on 6 tasks (189% load) thru 2022-12-15
+  
+* SQ42 Character Art  
+ - 3x Art devs working on 5 tasks (71% load) thru 2022-12-15
+  
+* SQ42 Level Design 3 - Social  
+ - 2x Design devs working on 2 tasks (31% load) thru 2022-11-23
+  
+### **Chapter 05** [SQ42] ###  
+* Character Tech Art  
+ - 2x Tech Content devs working on 6 tasks (455% load) thru 2022-12-01
+  
+* SQ42 Art  
+ - 7x Art devs working on 17 tasks (30% load) thru 2022-12-30
+  
+* SQ42 Character Art  
+ - 4x Art devs working on 10 tasks (62% load) thru 2022-12-15
+  
+* SQ42 Level Design 2 - Flight  
+ - 6x Design devs working on 2 tasks (21% load) thru 2022-11-23
+  
+* Tech Animation Team  
+ - 4x Tech Content devs working on 10 tasks (39% load) thru 2022-12-22
+  
+### **Chapter 06** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* SQ42 UI Feature Team  
+ - 3x Art devs working on 4 tasks (89% load) thru 2022-12-01
+  
+### **Chapter 07** [SQ42] ###  
+* Narrative  
+ - 2x Design devs working on 3 tasks (96% load) thru 2022-11-23
+  
+* SQ42 Level Design 2 - Flight  
+ - 4x Design devs working on 6 tasks (27% load) thru 2022-12-30
+  
+* SQ42 Art  
+ - 3x Art devs will work on 6 tasks (152% load) starting 2022-12-08 thru 2022-12-30
+  
+### **Chapter 08** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* SQ42 Level Design 3 - Social  
+ - 3x Design devs working on 2 tasks (41% load) thru 2022-12-07
+  
+### **Chapter 09** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Narrative  
+ - 4x Design devs working on 5 tasks (51% load) thru 2022-12-07
+  
+* SQ42 Level Design 2 - Flight  
+ - 3x Design devs working on 4 tasks (40% load) thru 2022-11-23
+  
+* VFX Team  
+ - 1x Art dev working on 4 tasks (247% load) thru 2022-11-24
+  
+### **Chapter 10** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* SQ42 Level Design 1 - FPS  
+ - 1x Design dev working on 2 tasks (123% load) thru 2022-12-07
+  
+### **Chapter 11** [SQ42] ###  
+* SQ42 Character Art  
+ - 1x Art dev working on 1 task (152% load) thru 2022-12-01
+  
+* Character Tech Art  
+ - 1x Tech Content dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15
+  
+* Gameplay Story  
+ - 5x Animation devs will work on 1 task (13% load) starting 2022-11-24 thru 2022-12-07
+  
+* Narrative  
+ - 2x Design devs will work on 1 task (64% load) starting 2022-11-24 thru 2022-12-07
+  
+* SQ42 Level Design 2 - Flight  
+ - 3x Design devs will work on 2 tasks (31% load) starting 2022-11-24 thru 2022-12-30
+  
+### **Chapter 12** [SQ42] ###  
+* AI Content Team  
+ - 3x Design devs working on 5 tasks (71% load) thru 2022-12-15
+  
+* Character Tech Art  
+ - 3x Tech Content devs working on 6 tasks (63% load) thru 2022-12-15
+  
+* Motion Capture Team  
+ - 1x Animation dev will work on 3 tasks (227% load) starting 2022-12-08 thru 2022-12-30
+  
+* Tech Animation Team  
+ - 1x Tech Content dev will work on 3 tasks (385% load) starting 2022-11-25 thru 2022-12-08
+  
+### **Chapter 14** [SQ42] ###  
+* SQ42 Art  
+ - 11x Art devs working on 41 tasks (35% load) thru 2022-12-30
+  
+* SQ42 Character Art  
+ - 1x Art dev working on 5 tasks (214% load) thru 2022-12-15
+  
+* Narrative  
+ - 2x Design devs will work on 3 tasks (114% load) starting 2022-12-08 thru 2022-12-30
+  
+* SQ42 Level Design 1 - FPS  
+ - 7x Design devs will work on 2 tasks (13% load) starting 2022-11-24 thru 2022-12-30
+  
+### **Chapter 15** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Cinematics Team  
+ - 3x Animation devs working on 6 tasks (31% load) thru 2022-12-01
+  
+* Gameplay Story  
+ - 5x Animation devs working on 6 tasks (18% load) thru 2022-12-07
+  
+* SQ42 Level Design 3 - Social  
+ - 3x Design devs working on 2 tasks (41% load) thru 2022-12-07
+  
+### **Chapter 16** [SQ42] ###  
+* Cinematics Team  
+ - 2x Animation devs working on 1 task (38% load) thru 2022-12-01
+  
+* SQ42 Level Design 1 - FPS  
+ - 2x Design devs will work on 1 task (38% load) starting 2022-12-08 thru 2022-12-30
+  
+* SQ42 Level Design 2 - Flight  
+ - 2x Design devs will work on 1 task (38% load) starting 2022-12-08 thru 2022-12-30
+  
+### **Chapter 17** [SQ42] ###  
+* Cinematics Team  
+ - 1x Animation dev working on 3 tasks (227% load) thru 2022-12-01
+  
+* SQ42 Art  
+ - 2x Art devs working on 14 tasks (66% load) thru 2022-12-30
+  
+* SQ42 UI Feature Team  
+ - 2x Art devs working on 5 tasks (107% load) thru 2022-12-01
+  
+* SQ42 Level Design 1 - FPS  
+ - 1x Design dev will work on 1 task (76% load) starting 2022-12-08 thru 2022-12-30
+  
+### **Chapter 18** [SQ42] ###  
+* SQ42 Art  
+ - 4x Art devs working on 17 tasks (77% load) thru 2022-12-30
+  
+* SQ42 Level Design 1 - FPS  
+ - 4x Design devs working on 5 tasks (30% load) thru 2022-12-07
+  
+* SQ42 Level Design 2 - Flight  
+ - 2x Design devs working on 3 tasks (61% load) thru 2022-11-23
+  
+* Character Tech Art  
+ - 1x Tech Content dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15
+  
+### **Chapter 19** [SQ42] ###  
+* Gameplay Story  
+ - 5x Animation devs working on 11 tasks (12% load) thru 2022-12-07
+  
+* SQ42 Art  
+ - 6x Art devs working on 6 tasks (20% load) thru 2022-12-30
+  
+* SQ42 Level Design 1 - FPS  
+ - 5x Design devs working on 9 tasks (25% load) thru 2022-12-30
+  
+* SQ42 Level Design 2 - Flight  
+ - 1x Design dev working on 3 tasks (122% load) thru 2022-11-23
+  
+* Tech Animation Team  
+ - 1x Tech Content dev working on 1 task (64% load) thru 2022-11-24
+  
+* VFX Team  
+ - 1x Art dev working on 2 tasks (123% load) thru 2022-11-24
+  
+* Character Tech Art  
+ - 1x Tech Content dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15
+  
+### **Chapter 20** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Cinematics Team  
+ - 3x Animation devs working on 9 tasks (47% load) thru 2022-12-01
+ - 3x Design devs working on 6 tasks (37% load) thru 2022-12-01
+  
+* Gameplay Story  
+ - 4x Animation devs working on 13 tasks (18% load) thru 2022-12-07
+  
+* SQ42 Level Design 1 - FPS  
+ - 5x Design devs working on 5 tasks (24% load) thru 2022-12-07
+  
+* SQ42 Level Design 3 - Social  
+ - 1x Design dev working on 3 tasks (81% load) thru 2022-12-07
+  
+### **Chapter 21** [SQ42] ###  
+* AI Content Team  
+ - 3x Design devs working on 6 tasks (58% load) thru 2022-12-15
+  
+* SQ42 Art  
+ - 2x Art devs working on 7 tasks (108% load) thru 2022-11-23
+  
+* SQ42 UI Feature Team  
+ - 1x Art dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15
+  
+### **Chapter 22** [SQ42] ###  
+* Cinematics Team  
+ - 2x Animation devs working on 5 tasks (39% load) thru 2022-12-01
+  
+* Gameplay Story  
+ - 4x Animation devs working on 5 tasks (25% load) thru 2022-12-07
+  
+* SQ42 Art  
+ - 2x Art devs working on 5 tasks (65% load) thru 2022-12-30
+  
+* SQ42 Level Design 1 - FPS  
+ - 10x Design devs working on 8 tasks (11% load) thru 2022-12-30
+  
+* SQ42 Character Art  
+ - 1x Art dev will work on 1 task (152% load) starting 2022-12-04 thru 2022-12-15
+  
+* SQ42 Level Design 2 - Flight  
+ - 2x Design devs will work on 2 tasks (46% load) starting 2022-11-24 thru 2022-12-30
+  
+### **Chapter 23** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Cinematics Team  
+ - 4x Animation devs working on 3 tasks (57% load) thru 2022-12-01
+ - 2x Design devs working on 3 tasks (114% load) thru 2022-12-01
+  
+* Gameplay Story  
+ - 5x Animation devs working on 11 tasks (45% load) thru 2022-12-07
+  
+* SQ42 Art  
+ - 2x Art devs working on 7 tasks (108% load) thru 2022-11-23
+  
+* SQ42 Level Design 3 - Social  
+ - 2x Design devs working on 5 tasks (60% load) thru 2022-12-07
+  
+* Narrative  
+ - 1x Design dev will work on 3 tasks (385% load) starting 2022-11-24 thru 2022-12-07
+  
+### **Chapter 25** [SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Gameplay Story  
+ - 4x Animation devs working on 3 tasks (48% load) thru 2022-11-23
+  
+* SQ42 Level Design 3 - Social  
+ - 1x Design dev working on 4 tasks (121% load) thru 2022-11-23
+  
+### **Chapter 26** [SQ42] ###  
+* Cinematics Team  
+ - 2x Animation devs working on 3 tasks (50% load) thru 2022-12-01
+  
+* Narrative  
+ - 1x Design dev working on 1 task (128% load) thru 2022-11-23
+  
+* SQ42 Character Art  
+ - 4x Art devs working on 6 tasks (47% load) thru 2022-12-15
+  
+* Gameplay Story  
+ - 4x Animation devs will work on 2 tasks (32% load) starting 2022-11-24 thru 2022-12-07
+  
+* SQ42 Level Design 1 - FPS  
+ - 9x Design devs will work on 2 tasks (10% load) starting 2022-11-24 thru 2022-12-30
+  
+* SQ42 Level Design 3 - Social  
+ - 1x Design dev will work on 1 task (128% load) starting 2022-11-24 thru 2022-12-07
+  
+### **Chapter 27** [SQ42] ###  
+* Cinematics Team  
+ - 1x Design dev working on 3 tasks (455% load) thru 2022-12-01
+  
+* Narrative  
+ - 1x Design dev will work on 3 tasks (227% load) starting 2022-12-08 thru 2022-12-30
+  
+* SQ42 Level Design 2 - Flight  
+ - 3x Design devs will work on 2 tasks (31% load) starting 2022-11-24 thru 2022-12-30
+  
+### **Character Work** [SQ42] ###  
+* Actor Feature Team  
+ - 1x Engineering dev working on 6 tasks (109% load) thru 2022-12-30
+  
+* AI Content Team  
+ - 6x Animation devs working on 17 tasks (58% load) thru 2022-12-29
+  
+* AI Tech and Feature Team  
+ - 1x Design dev working on 8 tasks (82% load) thru 2022-12-29
+ - 4x Engineering devs working on 6 tasks (47% load) thru 2022-12-15
+  
+* Facial Animation  
+ - 9x Animation devs working on 26 tasks (52% load) thru 2022-12-30
+  
+* Motion Capture Team  
+ - 9x Animation devs working on 29 tasks (38% load) thru 2022-12-30
+  
+* Tech Animation Team  
+ - 11x Tech Content devs working on 32 tasks (49% load) thru 2022-12-22
+  
+### **Charge/Drain T0** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Weapon Feature Team  
+ - 2x Engineering devs working on 11 tasks (95% load) thru 2022-11-23
+  
+### **Crusader Spirit** [SC] ###  
+* Vehicle Content - EU  
+ - 5x Art devs working on 12 tasks (54% load) thru 2022-12-15
+ - 1x Design dev working on 8 tasks (290% load) thru 2022-12-15
+  
+### **Cutting T2** [SC, SQ42] ###  
+* Weapon Feature Team  
+ - 1x Engineering dev working on 10 tasks (181% load) thru 2022-12-30
+  
+### **Derelict Spaceships - Points of Interest** [SC] ###  
+* Audio  
+ - 4x Audio devs working on 3 tasks (69% load) thru 2022-12-01
+  
+* MTL Sandbox 1  
+ - 4x Design devs working on 7 tasks (42% load) thru 2022-12-07
+ - 8x Art devs working on 11 tasks (33% load) thru 2022-12-07
+  
+### **Dynamic Events** [SC] ###  
+* Mission Feature Team  
+ - 4x Engineering devs working on 7 tasks (32% load) thru 2022-12-22
+  
+### **Entity Properties Plugin** [SC, SQ42] ###  
+* Editor Team  
+ - 1x Engineering dev working on 4 tasks (267% load) thru 2022-12-15
+  
+### **EVA T2** [SC, SQ42] ###  
+* Actor Tech Team  
+ - 2x Engineering devs working on 8 tasks (82% load) thru 2022-12-29
+  
+### **Flak Ammunition** [SC] ###  
+* Weapon Content Team  
+ - 1x Art dev working on 3 tasks (1250% load) thru 2022-11-24
+↳ will continue 2022-12-04 with 1x dev
+  
+### **Freight Elevators** [SC] ###  
+* Audio  
+ - 1x Audio dev working on 4 tasks (370% load) thru 2022-12-01
+  
+### **Frontier Clothing** [SC] ###  
+* Character Tech Art  
+ - 5x Tech Content devs working on 8 tasks (68% load) thru 2022-12-15
+  
+* SC Character Art  
+ - 15x Art devs working on 23 tasks (32% load) thru 2022-12-29
+  
+### **Gen12 - Renderer T1** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Engine Team  
+ - 4x Engineering devs working on 11 tasks (86% load) thru 2022-12-01
+  
+* Graphics Team  
+ - 7x Engineering devs working on 10 tasks (38% load) thru 2022-12-04
+  
+### **HEX** [SC] ###  
+* Live Tools Team  
+ - 5x Engineering devs working on 55 tasks (61% load) thru 2022-12-19
+  
+### **Ladders T1** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Actor Feature Team  
+ - 3x Animation devs working on 5 tasks (214% load) thru 2022-11-23
+  
+### **Lorville Cityscape** [SC] ###  
+* MTL Sandbox 1  
+ - 4x Art devs working on 10 tasks (60% load) thru 2022-12-07
+  
+* VFX Team  
+ - 1x Art dev working on 3 tasks (385% load) thru 2022-11-24
+  
+### **Map and Radar System Rework** [SC, SQ42] ###  
+* Graphics Team  
+ - 1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04
+  
+* SQ42 UI Feature Team  
+ - 3x Engineering devs working on 10 tasks (83% load) thru 2022-12-15
+ - 3x Art devs will work on 3 tasks (152% load) starting 2022-12-04 thru 2022-12-15
+  
+### **MFD Rework** [SC, SQ42] ###  
+* Vehicle Feature Team  
+ - 8x Engineering devs working on 9 tasks (27% load) thru 2022-12-08
+  
+### **MISC Hull C** [SC, SQ42] ###  
+* Vehicle Content - EU  
+ - 2x Design devs working on 14 tasks (174% load) thru 2022-12-15
+  
+### **Miscellaneous Support** [SC, SQ42] ###  
+* Actor Feature Team  
+ - 3x Design devs working on 29 tasks (43% load) thru 2022-12-30
+ - 2x Engineering devs working on 26 tasks (58% load) thru 2022-12-30
+ - 4x Animation devs working on 29 tasks (32% load) thru 2022-12-30
+  
+* Actor Tech Team  
+ - 5x Engineering devs working on 11 tasks (45% load) thru 2022-12-29
+  
+* AI Content Team  
+ - 2x Tech Content devs working on 11 tasks (57% load) thru 2022-12-29
+  
+* Arena Commander Feature Team  
+ - 3x Engineering devs working on 27 tasks (41% load) thru 2022-12-22
+  
+* Audio  
+ - 6x Audio devs working on 14 tasks (65% load) thru 2022-12-01
+  
+* Editor Team  
+ - 1x Design dev working on 8 tasks (165% load) thru 2022-12-29
+ - 3x Engineering devs working on 4 tasks (89% load) thru 2022-12-15
+  
+* Gameplay Story  
+ - 1x Tech Content dev working on 13 tasks (76% load) thru 2022-12-07
+  
+* Narrative  
+ - 1x Design dev working on 8 tasks (145% load) thru 2022-12-30
+  
+* SQ42 UI Feature Team  
+ - 3x Engineering devs working on 5 tasks (71% load) thru 2022-12-29
+  
+* Systemic Services and Tools Team  
+ - 4x Engineering devs working on 7 tasks (45% load) thru 2022-12-03
+  
+* Tools Team  
+ - 2x Engineering devs working on 8 tasks (82% load) thru 2022-12-29
+  
+* UI Tech Team  
+ - 4x Engineering devs working on 6 tasks (47% load) thru 2022-12-01
+  
+* VFX Team  
+ - 2x Tech Content devs working on 3 tasks (192% load) thru 2022-11-24
+  
+* Weapon Content Team  
+ - 4x Art devs working on 5 tasks (116% load) thru 2022-12-08
+  
+* Weapon Feature Team  
+ - 5x Design devs working on 38 tasks (33% load) thru 2022-12-30
+ - 2x Engineering devs will work on 3 tasks (114% load) starting 2022-12-08 thru 2022-12-30
+  
+### **New Missions - Orison** [SC] ###  
+#### (Scheduled work ending soon!) ####  
+* Narrative  
+ - 1x Design dev working on 1 task (128% load) thru 2022-11-23
+  
+### **Ocean Shader Improvements** [SC] ###  
+#### (Scheduled work ending soon!) ####  
+* Graphics Team  
+ - 1x Engineering dev working on 2 tasks (81% load) thru 2022-12-04
+  
+* Planet Tech Team  
+ - 2x Engineering devs working on 6 tasks (72% load) thru 2022-12-07
+  
+* VFX Team  
+ - 2x Engineering devs working on 3 tasks (93% load) thru 2022-11-24
+  
+### **Outpost Homestead - Independent & Outlaw** [SC] ###  
+* VFX Team  
+ - 1x Art dev working on 3 tasks (385% load) thru 2022-11-24
+  
+* EU Sandbox 1  
+ - 12x Art devs will work on 15 tasks (104% load) starting 2022-11-30 thru 2022-12-20
+  
+### **Persistent Streaming and Server Meshing** [SC] ###  
+* Engine Team  
+ - 1x Engineering dev working on 5 tasks (157% load) thru 2022-12-01
+  
+* Game Services Team  
+ - 10x Engineering devs working on 33 tasks (26% load) thru 2022-12-29
+  
+* Mission Feature Team  
+ - 3x Engineering devs working on 4 tasks (46% load) thru 2022-12-22
+  
+* Network Team  
+ - 9x Engineering devs working on 13 tasks (14% load) thru 2022-12-30
+  
+* Persistent Tech Team  
+ - 4x Engineering devs working on 17 tasks (40% load) thru 2022-12-30
+  
+* Systemic Services and Tools Team  
+ - 3x Engineering devs working on 3 tasks (62% load) thru 2022-12-03
+  
+* Vehicle Feature Team  
+ - 5x Engineering devs working on 14 tasks (30% load) thru 2022-12-08
+  
+### **Physical Damage & Breakability** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Physics Team  
+ - 3x Engineering devs working on 5 tasks (44% load) thru 2022-12-04
+  
+### **Physics - Ropes Simulation** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Physics Team  
+ - 1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04
+  
+### **Player Interaction Experience T2 - Visor HUD & Helmet** [SC, SQ42] ###  
+* SQ42 UI Feature Team  
+ - 1x Engineering dev working on 6 tasks (189% load) thru 2022-12-15
+ - 1x Art dev working on 3 tasks (455% load) thru 2022-12-01
+ - 1x Design dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15
+  
+### **Player/Machine Physical Interaction** [SC, SQ42] ###  
+* Actor Feature Team  
+ - 1x Engineering dev working on 6 tasks (109% load) thru 2022-12-30
+ - 1x Animation dev working on 8 tasks (145% load) thru 2022-12-30
+  
+### **Prone T1** [SC, SQ42] ###  
+* Actor Feature Team  
+ - 1x Engineering dev working on 8 tasks (145% load) thru 2022-12-30
+ - 1x Animation dev working on 10 tasks (181% load) thru 2022-12-30
+  
+### **Pyro System, Planet, and Mission Setup** [SC] ###  
+* Audio  
+ - 4x Audio devs working on 8 tasks (72% load) thru 2022-12-01
+  
+### **Quantum Simulation** [SC] ###  
+* Systemic Services and Tools Team  
+ - 5x Engineering devs working on 31 tasks (64% load) thru 2022-12-15
+  
+### **Quantum Travel Experience** [SC] ###  
+* Physics Team  
+ - 1x Engineering dev working on 5 tasks (132% load) thru 2022-12-04
+  
+* SQ42 UI Feature Team  
+ - 1x Design dev working on 3 tasks (455% load) thru 2022-12-01
+  
+* Vehicle Feature Team  
+ - 3x Engineering devs working on 7 tasks (56% load) thru 2022-12-08
+  
+### **RaStar** [SC] ###  
+#### (Scheduled work ending soon!) ####  
+* VFX Team  
+ - 1x Art dev working on 3 tasks (385% load) thru 2022-11-24
+  
+### **Resource Management** [SC] ###  
+* Narrative  
+ - 1x Design dev working on 3 tasks (192% load) thru 2022-11-23
+  
+* Vehicle Content - EU  
+ - 5x Art devs working on 13 tasks (59% load) thru 2022-12-15
+  
+* Vehicle Content - US  
+ - 1x Design dev working on 8 tasks (150% load) thru 2022-12-30
+ - 1x Art dev working on 10 tasks (152% load) thru 2023-01-20
+  
+* EU PU Gameplay Feature Team  
+ - 2x Design devs will work on 3 tasks (96% load) starting 2022-12-07 thru 2022-12-20
+ - 2x Engineering devs will work on 3 tasks (192% load) starting 2022-12-07 thru 2022-12-20
+  
+### **RSI Lynx** [SC] ###  
+* Vehicle Content - EU  
+ - 3x Art devs working on 12 tasks (126% load) thru 2022-12-15
+ - 1x Design dev working on 11 tasks (399% load) thru 2022-12-15
+  
+### **Satellites - Points of Interest** [SC] ###  
+* Location Concept Art  
+ - 2x Art devs working on 29 tasks (263% load) thru 2022-12-30
+  
+### **Ship CPU** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Vehicle Feature Team  
+ - 1x Engineering dev working on 7 tasks (285% load) thru 2022-12-08
+  
+### **SQ42 - Vehicle Support** [SQ42] ###  
+* Audio  
+ - 3x Audio devs working on 11 tasks (102% load) thru 2022-12-01
+  
+* SQ42 Art  
+ - 1x Cinematics dev working on 5 tasks (167% load) thru 2022-12-30
+ - 1x Art dev working on 8 tasks (145% load) thru 2022-12-30
+  
+* Vehicle Content - EU  
+ - 3x Design devs working on 18 tasks (149% load) thru 2022-12-08
+  
+* Vehicle Content - US  
+ - 3x Tech Content devs working on 12 tasks (71% load) thru 2022-12-10
+ - 1x Design dev working on 14 tasks (141% load) thru 2023-03-17
+ - 2x Art devs working on 17 tasks (85% load) thru 2023-03-17
+  
+* Vehicle Feature Team  
+ - 9x Engineering devs working on 13 tasks (34% load) thru 2022-12-08
+  
+* Weapon Content Team  
+ - 5x Art devs working on 14 tasks (120% load) thru 2022-12-22
+  
+### **Stanton Fashion Clothing** [SC] ###  
+#### (Scheduled work ending soon!) ####  
+* Character Tech Art  
+ - 1x Tech Content dev working on 3 tasks (455% load) thru 2022-12-01
+  
+### **StarWords Improvements** [SC, SQ42] ###  
+* Tools Team  
+ - 2x Engineering devs working on 11 tasks (113% load) thru 2022-12-29
+  
+### **Subsumption Editor Integration** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* AI Tech and Feature Team  
+ - 1x Engineering dev working on 6 tasks (189% load) thru 2022-12-01
+  
+### **Time Trial Race Missions** [SC] ###  
+* Mission Feature Team  
+ - 1x Design dev working on 6 tasks (111% load) thru 2022-12-22
+  
+### **Unannounced Vehicle** [SC] ###  
+#### (Scheduled work ending soon!) ####  
+* VFX Team  
+ - 2x Art devs working on 3 tasks (192% load) thru 2022-11-24
+  
+### **Unified Itemports - FPS** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Character Tech Art  
+ - 5x Tech Content devs working on 7 tasks (93% load) thru 2022-12-01
+  
+### **Zero G Push & Pull** [SC, SQ42] ###  
+* Actor Tech Team  
+ - 1x Engineering dev working on 8 tasks (165% load) thru 2022-12-29
+---
+  
+## The following deliverables are scheduled to begin (or continue) work within two weeks ##  
+  
+### **Artificial Gravity** [SC] ###  
+* EU PU Gameplay Feature Team  
+ - 1x Engineering dev will work on 3 tasks (192% load) starting 2022-12-07 thru 2022-12-20
+ - 1x Design dev will work on 3 tasks (385% load) starting 2022-12-07 thru 2022-12-20
+  
+* Narrative  
+ - 1x Design dev will work on 4 tasks (93% load) starting 2022-11-24 thru 2022-12-30
+  
+### **Asteroid Facilities** [SC] ###  
+* EU Sandbox 1  
+ - 3x Art devs will work on 5 tasks (139% load) starting 2022-11-30 thru 2022-12-20
+  
+### **Chapter 24** [SQ42] ###  
+* SQ42 Level Design 2 - Flight  
+ - 2x Design devs will work on 2 tasks (46% load) starting 2022-11-24 thru 2022-12-30
+  
+### **Chapter 28** [SQ42] ###  
+#### (Starting soon!) ####  
+* SQ42 Character Art  
+ - 1x Art dev will work on 3 tasks (455% load) starting 2022-12-04 thru 2022-12-15
+  
+### **FS-Tech-Anim - Asset Integration** [SC, SQ42] ###  
+* Tech Animation Team  
+ - 7x Tech Content devs will work on 4 tasks (35% load) starting 2022-11-25 thru 2022-12-22
+  
+### **Life Support T0** [SC] ###  
+* EU PU Gameplay Feature Team  
+ - 1x Design dev will work on 5 tasks (321% load) starting 2022-12-07 thru 2022-12-20
+ - 1x Engineering dev will work on 5 tasks (321% load) starting 2022-12-07 thru 2022-12-20
+  
+### **New Player Experience** [SC] ###  
+* EU Landing Zone 2  
+ - 1x Art dev will work on 2 tasks (256% load) starting 2022-12-07 thru 2022-12-20
+  
+* Narrative  
+ - 1x Design dev will work on 3 tasks (69% load) starting 2022-11-24 thru 2022-12-30
+  
+### **Outpost Theme Variants** [SC] ###  
+* EU Sandbox 1  
+ - 4x Design devs will work on 15 tasks (313% load) starting 2022-11-30 thru 2022-12-20
+  
+### **Vehicle Tractor Beams** [SC] ###  
+* EU PU Gameplay Feature Team  
+ - 2x Engineering devs will work on 2 tasks (128% load) starting 2022-12-07 thru 2022-12-20
+  
+### **VOLT Parallax** [SC, SQ42] ###  
+#### (Scheduled work ending soon!) ####  
+* Narrative  
+ - 1x Design dev will work on 3 tasks (385% load) starting 2022-11-24 thru 2022-12-07
