@@ -9,7 +9,7 @@ regenerate: true
 <sup><a href="{{ '/data' | relative_url}}">(Data)</a></sup>
 <p>There are currently two reports being run biweekly. For those interested, I have included an Extra Analysis section laying out some more detailed information at the beginning of each report.</p>
 <div class="posts-list">
-  <h2 id="no-changes-disclaimer" style="">No changes have been detected for the week of 2022-12-07. Check back next time!</h2>
+  <h2 id="no-changes-disclaimer" style="color: darkturquoise;">No changes have been detected for the week of 2022-12-07. Check back next time!</h2>
   <div id="deltas" class="posts">
     <h3><a class="category-link" href="{{ '/categories/delta/' | relative_url }}" target="_blank">Progress Tracker Delta Report</a></h3>
     <p class="index-post-desc">Analyzes and lists changes from the previous iteration of the Progress Tracker</p>
