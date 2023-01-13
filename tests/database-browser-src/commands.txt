@@ -1,0 +1,14 @@
+// list tables
+SELECT name FROM sqlite_schema WHERE type ='table'
+
+// list available timestamps
+SELECT GROUP_CONCAT(addedDate) FROM (SELECT DISTINCT addedDate FROM deliverable_diff ORDER BY addedDate DESC)
+
+1669230032450
+
+// get closest date before or on entered date
+SELECT addedDate FROM deliverable_diff WHERE addedDate <= 1669230032450 ORDER BY addedDate DESC LIMIT 1
+
+// get list of deliverables (has duplicates)
+SELECT *, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= 1669230032450 GROUP BY uuid ORDER BY addedDate DESC
+
