@@ -1,5 +1,15 @@
 <!DOCTYPE html>
-
-<title>Delta browser</title>
-<script src="bundle.js"></script>
-<div>Loading database browser...</div>
+<html>
+    <head>
+        <title>Delta Browser</title>
+        <script src="bundle.js"></script>
+    </head>
+    <body>
+        <div id="loading">Loading database browser...</div>
+        <div id="terminal" style="text-align: center; display: none;">
+            <textarea type="text" id="query" style="width: 400px; height: 100px;"></textarea><br/>
+            <button id="run">Run</button>
+            <pre><div id="output" style="max-height: 800px; overflow-y: auto; text-align: left;"/></pre>
+        </div>
+    </body>
+</html>
