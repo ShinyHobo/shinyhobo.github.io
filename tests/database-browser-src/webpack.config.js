@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     entry: [
       'webpack-dev-server/client?http://localhost:8080/',
-      "./src/index.ts"
+      "./src"
     ],
     module: {
       rules: [
@@ -18,11 +18,11 @@ module.exports = {
       extensions: [".tsx", ".ts", ".js"],
     },
     output: {
-      filename: "dist/bundle.js"
+      filename: "dist/bundle.js",
+      path: path.resolve(__dirname, "dist")
     },
     devServer: {
       liveReload: true,
       static: "./"
     },
-    devtool: 'source-map',
   };

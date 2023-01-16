@@ -2,16 +2,11 @@
 <html>
     <head>
         <title>Delta Browser</title>
-        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-        <link rel="stylesheet" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}">
-        <script src="dist/bundle.js"></script>
+        <link rel="stylesheet" href="https://shinytracker.app/assets/css/style.css">
+        <link rel="stylesheet" href="https://shinytracker.app/assets/css/main.css">
     </head>
     <body>
-        <div id="loading">Loading database browser...</div>
-        <div id="terminal" style="text-align: center; display: none;">
-            <textarea type="text" id="query" style="width: 400px; height: 100px;"></textarea><br/>
-            <button id="run">Run</button>
-            <pre><div id="output" style="max-height: 700px; overflow-y: auto; text-align: left;"/></pre>
-        </div>
+        <div id="root"></div>
+        <script src="dist/bundle.js"></script>
     </body>
 </html>
