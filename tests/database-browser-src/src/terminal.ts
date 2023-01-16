@@ -1,12 +1,16 @@
-import { WorkerHttpvfs } from "sql.js-httpvfs";
-import { LazyHttpDatabase } from "sql.js-httpvfs/dist/sqlite.worker";
+import { WorkerHttpvfs, SqliteWorker } from "sql.js-httpvfs";
+import { LazyHttpDatabase, SplitFileConfig } from "sql.js-httpvfs/dist/sqlite.worker";
 import * as Comlink from "comlink";
 
 export default class Terminal {
-    db: Comlink.Remote<LazyHttpDatabase>;
+    private db: Comlink.Remote<LazyHttpDatabase>;
+    private worker: SqliteWorker;
+    private dbConfig: SplitFileConfig[];
 
-    constructor(worker: WorkerHttpvfs) {
-        this.db = worker.db;
+    constructor(vfs: WorkerHttpvfs) {
+        this.worker = vfs.worker;
+        this.db = vfs.db;
+        this.dbConfig = vfs.configs;
     }
 
     public run() {
