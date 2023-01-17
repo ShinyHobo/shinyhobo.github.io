@@ -53,7 +53,7 @@ export default class Terminal extends React.Component {
     render() {
         return (
             <div style={{display: "Flex", flexFlow: "column", height: "100%", overflow: "scroll"}}>
-                <div id="terminal" style={{ textAlign: "center", background: "#151515" }}>
+                <div id="terminal" style={{ padding: "15px", background: "#151515" }}>
                     <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
                     <button id="run" onClick={this.RunQuery}>Run</button>
                 </div>
