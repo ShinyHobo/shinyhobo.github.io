@@ -63,7 +63,6 @@ export class UI extends React.Component {
             worker: this.worker,
             configs: this.configs
         };
-        console.log(vfs);
         return (<Terminal {...vfs}/>);
     }
 }

@@ -4,6 +4,7 @@ import { observer } from "mobx-react";
 import { SqliteWorker } from "sql.js-httpvfs";
 import { LazyHttpDatabase, SplitFileConfig } from "sql.js-httpvfs/dist/sqlite.worker";
 import * as Comlink from "comlink";
+import { useVirtualizer } from '@tanstack/react-virtual';
 
 @observer
 export default class Terminal extends React.Component {
@@ -44,9 +45,34 @@ export default class Terminal extends React.Component {
         this.queryOutput = result;
     }
 
+    VirtualizedQueryResultsTable(input: any): JSX.Element {
+        const parentRef = React.useRef();
+
+        const rowVirtualizer = useVirtualizer({
+            count: input.queryOutput.length,
+            getScrollElement: () => parentRef.current ?? null,
+            estimateSize: () => 100,
+        });
+
+        return (
+            <div ref={parentRef as any} >
+                <table style={{ height: `${rowVirtualizer.getTotalSize()}px`, width: '100%', position: 'relative', textAlign: "left", marginTop: 0, flex: "1 1 auto", overflow: "auto" }} >
+                    <tbody>
+                        <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(input.queryOutput[0] ?? []).map(h => (<th key={"header-"+h}>{h}</th>))}</tr>
+                        {rowVirtualizer.getVirtualItems()?.map((virtualItem) => (
+                        <tr style={{boxShadow: "0px 1px #b5e853"}} key={virtualItem.key}>{Object.keys(input.queryOutput[virtualItem.key]).map((key: any) => (
+                            <td key={key + input.queryOutput[virtualItem.key]['id']}>{input.queryOutput[virtualItem.key][key]}</td>
+                            ))}</tr>)
+                        )}
+                    </tbody>
+                </table>
+            </div>
+        );
+    }
+
     render() {
         return (
-            <div style={{display: "Flex", flexFlow: "column", height: "100%", overflow: "scroll"}}>
+            <div style={{display: "Flex", flexFlow: "column", height: "100%"}}>
                 <div id="terminal" style={{ padding: "15px", background: "#151515" }}>
                     <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
                     <button id="run" onClick={this.RunQuery}>Run</button>
@@ -54,14 +80,8 @@ export default class Terminal extends React.Component {
                 <div style={{padding: "10px"}}>{this.stats ? <div>
                     Database stats: fetched {formatBytes(this.stats.totalFetchedBytes)} in{" "}
                     {this.stats.totalRequests} requests (DB size: {formatBytes(this.stats.totalBytes)}){this.stats.rowsReturned !== undefined ? " | " + this.stats.rowsReturned + " rows returned" : ""}
-                  </div> : ""}</div>
-                {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : 
-                <table style={{textAlign: "left", marginTop: 0, flex: "1 1 auto", overflow: "auto"}}>
-                    <tbody>
-                    <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(this.queryOutput[0] ?? []).map(h => (<th key={"header-"+h}>{h}</th>))}</tr>
-                    {this.queryOutput?.map((item: any) => (<tr key={"row-"+item.id}>{Object.keys(item).map((key: any) => (<td key={key + item['id']}>{item[key]}</td>))}</tr>))}
-                    </tbody>
-                </table> }
+                  </div> : ""}</div><br/>
+                {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <this.VirtualizedQueryResultsTable queryOutput={this.queryOutput} />}
             </div>
         );
     }
