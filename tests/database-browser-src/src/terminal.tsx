@@ -13,6 +13,7 @@ export default class Terminal extends React.Component {
 
     @observable queryOutput: any[] = [];//string = "";
     @observable private stats: SqliteStats | null = null;
+    @observable private lastUpdated: number | null = null;
 
     constructor(vfs: any) {
         super(vfs);
@@ -38,16 +39,15 @@ export default class Terminal extends React.Component {
     private async RunQuery() {
         const query = (document.getElementById("query") as HTMLTextAreaElement)?.value;
         console.log(this.db);
-        let resultRaw = [];
+        let result = [];
         try {
-            resultRaw = await this.db?.query(query) as any[];
+            result = await this.db?.query(query) as any[];
         } catch(err: any) {
-            console.log("err", err);
+            console.log(err);
+            result = err.message;
         }
         this.stats = (await this.worker?.getStats()) || null;
-        let something = this.dbConfig;
-        console.log(something);
-        this.queryOutput = resultRaw;
+        this.queryOutput = result;
     }
 
     render() {
@@ -57,10 +57,15 @@ export default class Terminal extends React.Component {
                     <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
                     <button id="run" onClick={this.RunQuery}>Run</button>
                 </div>
+                <div style={{padding: "10px"}}>{this.stats ?<div>
+                    Database stats: fetched {formatBytes(this.stats.totalFetchedBytes)} in{" "}
+                    {this.stats.totalRequests} requests (DB size: {formatBytes(this.stats.totalBytes)})
+                  </div> : ""}</div>
+                {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : 
                 <table style={{textAlign: "left", marginTop: 0, flex: "1 1 auto", overflow: "auto"}}>
                     <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(this.queryOutput[0] ?? []).map(h => (<th>{h}</th>))}</tr>
                     {this.queryOutput?.map((item: any) => (<tr>{Object.keys(item).map((key) => (<td>{item[key]}</td>))}</tr>))}
-                </table>
+                </table> }
             </div>
         );
     }
@@ -72,3 +77,13 @@ type SqliteStats = {
     totalFetchedBytes: number;
     totalRequests: number;
 };
+
+function formatBytes(b: number) {
+    if (b > 1e6) {
+        return (b / 1e6).toFixed(2) + "MB";
+    }
+    if (b > 1e3) {
+        return (b / 1e3).toFixed(2) + "KB";
+    }
+    return b + "B";
+}
