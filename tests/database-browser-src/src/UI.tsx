@@ -44,9 +44,14 @@ export class UI extends React.Component {
             wasmUrl.toString()
         );
 
-        this.worker = vfs.worker;
-        this.db = vfs.db;
-        this.configs = vfs.configs;
+        try {
+            this.worker = vfs.worker;
+            this.db = vfs.db;
+            this.configs = vfs.configs;
+        } catch(err) {
+            this.loadingState = "Failed to connect to database!";
+            return;
+        }
         
         this.loadingState = "";
     }
