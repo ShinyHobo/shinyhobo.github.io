@@ -13,7 +13,7 @@ export class UI extends React.Component {
     private worker: SqliteWorker | null = null;
     private configs: SplitFileConfig[] | null = null;
 
-    @observable loadingState: string = "Loading...";
+    @observable private loadingState: string = "Loading...";
 
     constructor(p: {}) {
         super(p);
