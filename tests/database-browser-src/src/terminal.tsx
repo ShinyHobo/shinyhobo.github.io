@@ -38,14 +38,11 @@ export default class Terminal extends React.Component {
     private async RunQuery() {
         const query = (document.getElementById("query") as HTMLTextAreaElement)?.value;
         console.log(this.db);
-        let result = "";
         let resultRaw = [];
         try {
-            result = JSON.stringify(await this.db?.query(query), null, 2);
             resultRaw = await this.db?.query(query) as any[];
         } catch(err: any) {
             console.log("err", err);
-            result = err.message;
         }
         this.stats = (await this.worker?.getStats()) || null;
         let something = this.dbConfig;
@@ -55,14 +52,13 @@ export default class Terminal extends React.Component {
 
     render() {
         return (
-            <div style={{display: "Flex", flexFlow: "column", height: "100%"}}>
-                <div id="terminal" style={{ textAlign: "center", position: "sticky", top: 0, background: "#151515" }}>
+            <div style={{display: "Flex", flexFlow: "column", height: "100%", overflow: "scroll"}}>
+                <div id="terminal" style={{ textAlign: "center", background: "#151515" }}>
                     <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
                     <button id="run" onClick={this.RunQuery}>Run</button>
                 </div>
-                {/* <pre style={{textAlign: "left", marginTop: 0, flex: "1 1 auto", overflow: "auto"}}><div id="output" style={{maxHeight: "700px", overflow: "auto"}}/>{this.queryOutput}</pre> */}
                 <table style={{textAlign: "left", marginTop: 0, flex: "1 1 auto", overflow: "auto"}}>
-                    <tr>{Object.keys(this.queryOutput[0] ?? []).map(h => (<th>{h}</th>))}</tr>
+                    <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(this.queryOutput[0] ?? []).map(h => (<th>{h}</th>))}</tr>
                     {this.queryOutput?.map((item: any) => (<tr>{Object.keys(item).map((key) => (<td>{item[key]}</td>))}</tr>))}
                 </table>
             </div>
