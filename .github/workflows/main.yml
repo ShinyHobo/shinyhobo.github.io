@@ -40,6 +40,8 @@ jobs:
           mkdir ../database-browser/src
           cp ./src/index.css ../database-browser/src/index.css
           echo "Files moved..."
+          cd ../database-browser
+          sed -i '1s/^/---\n---\n/' index.html
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
