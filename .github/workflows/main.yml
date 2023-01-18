@@ -36,7 +36,7 @@ jobs:
           echo "Moving files to the correct directory..."
           mkdir ../database-browser
           mv -v ./dist/* ../database-browser
-          cp -f index.html ../database-browser/index.html
+          cp -f index.html ../database-browser/index.md
           mkdir ../database-browser/src
           cp ./src/index.css ../database-browser/src/index.css
           echo "Files moved..."
