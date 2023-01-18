@@ -5,6 +5,7 @@ import { SqliteWorker } from "sql.js-httpvfs";
 import { LazyHttpDatabase, SplitFileConfig } from "sql.js-httpvfs/dist/sqlite.worker";
 import * as Comlink from "comlink";
 import { useVirtualizer } from '@tanstack/react-virtual';
+import { useMeasure } from '@react-hookz/web/esm';
 
 @observer
 export default class Terminal extends React.Component {
@@ -93,7 +94,8 @@ export default class Terminal extends React.Component {
 
     render() {
         return (
-            <div style={{height: "100%"}}>
+          <div style={{height: "100%", display: "flex", flexDirection: "column"}}>
+            <div>
                 <div id="terminal" style={{ padding: "15px", background: "#151515" }}>
                     <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
                     <button id="run" onClick={this.RunQuery}>Run</button>
@@ -103,11 +105,73 @@ export default class Terminal extends React.Component {
                     {this.stats.totalRequests} requests (DB size: {formatBytes(this.stats.totalBytes)}){this.stats.rowsReturned !== undefined ? " | " + this.stats.rowsReturned + " rows returned" : ""}
                   </div> : ""}</div><br/>
                 {/* {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <this.VirtualizedQueryResultsTable queryOutput={this.queryOutput} />} */}
-                {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <RowVirtualizerFixed queryOutput={this.queryOutput }/>}
+                {/* {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <RowVirtualizerFixed queryOutput={this.queryOutput }/>} */}
             </div>
+            {typeof this.queryOutput === 'string' || !this.queryOutput.length ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <App queryOutput={this.queryOutput}/>}
+          </div>
         );
     }
 }
+
+function App({queryOutput}: {queryOutput: any[]}) {
+    const parentRef = React.useRef<HTMLDivElement>(null)
+    const [theadSize, theadRef] = useMeasure<HTMLTableSectionElement>()
+  
+    const rowVirtualizer = useVirtualizer({
+      count: queryOutput.length,
+      getScrollElement: () => parentRef.current,
+      estimateSize: React.useCallback(() => 100, []),
+      overscan: 5,
+      paddingStart: theadSize?.height ?? 0,
+      scrollPaddingStart: theadSize?.height ?? 0,
+    })
+  
+    return (
+      <>
+        <div
+          ref={parentRef}
+          className="List"
+          style={{
+            overflow: 'auto',
+            flexGrow: 1
+          }}
+        >
+          <table
+            style={{
+              height: `${rowVirtualizer.getTotalSize()}px`,
+              width: '100%',
+            }}
+          >
+            <thead ref={theadRef}>
+            <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(queryOutput[0] ?? []).map(h => (<th>{h}</th>))}</tr>
+            </thead>
+            <tbody>
+              {rowVirtualizer.getVirtualItems().map((virtualRow) => (
+                <tr
+                  key={virtualRow.index}
+                  className={
+                    virtualRow.index % 2 ? 'ListItemOdd' : 'ListItemEven'
+                  }
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: `${virtualRow.size}px`,
+                    transform: `translateY(${virtualRow.start}px)`,
+                  }}
+                >
+                                          {Object.keys(queryOutput[virtualRow.index]).map((key: any) => (
+                            <td key={key + queryOutput[virtualRow.index]['id']}>{queryOutput[virtualRow.index][key]}</td>
+                            ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    )
+  }
 
 function RowVirtualizerFixed({queryOutput}: {queryOutput: any[]}) {
     if(!queryOutput || !queryOutput.length) {

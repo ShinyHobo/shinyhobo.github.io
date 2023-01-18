@@ -11,6 +11,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@react-hookz/web": "^14.2.2",
     "@tanstack/react-virtual": "^3.0.0-beta.39",
     "lodash": "^4.17.21",
     "mobx-react": "^7.6.0",
