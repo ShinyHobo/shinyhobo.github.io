@@ -92,8 +92,8 @@ function VirtualQueryResultsTable({data}: {data: any[]}): JSX.Element {
   return (
     <>
       {tooLarge ? (<h3 style={{padding: 10}}>Query too large to render. {tooLarge} items have been truncated.</h3>) : (<></>) }
-      <div ref={parentRef} className="List" style={{overflow: "auto", flexGrow: "auto"}}>
-        <table style={{ height: `${rowVirtualizer.getTotalSize()}px`, width: '100%' }}>
+      <div ref={parentRef} className="List" style={{overflow: "auto", direction: 'rtl', scrollbarWidth: "thin"}}>
+        <table style={{ height: `${rowVirtualizer.getTotalSize()}px`, width: '100%', direction: 'ltr' }}>
           <thead ref={theadRef}>
           <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(data[0] ?? []).map(h => (<th key={h} style={{width: calculateColumnWidth(h)}}>{h}</th>))}</tr>
           </thead>
@@ -112,7 +112,7 @@ function VirtualQueryResultsTable({data}: {data: any[]}): JSX.Element {
                 }}
               >
                 {Object.keys(data[virtualRow.index]).map((key: any) => (
-                  <td style={{width: calculateColumnWidth(key)}} key={key + data[virtualRow.index]['id']}>{data[virtualRow.index][key]}</td>
+                  <td style={{width: calculateColumnWidth(key), scrollbarWidth: "thin", wordBreak: "break-word"}} key={key + data[virtualRow.index]['id']}>{data[virtualRow.index][key]}</td>
                 ))}
               </tr>
             ))}
@@ -134,7 +134,7 @@ function calculateColumnWidth(columnName: string) {
     case "description":
     case "thumbnail":
     case "uuid":
-      return 420;
+      return 425;
     case "startDate":
     case "endDate":
     case "addedDate":
