@@ -32,6 +32,8 @@ jobs:
           cd tests/database-browser-src
           ls -al
           npm install
+          .\node_modules\.bin\webpack --mode=development
+          ls -al
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
