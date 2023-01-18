@@ -30,10 +30,9 @@ jobs:
       - name: Build database browser
         run: |
           cd tests/database-browser-src
-          ls -al
           npm install
-          ls -al 
-          .\node_modules\.bin\webpack --mode=development
+          ls -al
+          node --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --env.NODE_ENV=development --progress --config webpack.config.js
           ls -al
 
       - name: Build 🏗
