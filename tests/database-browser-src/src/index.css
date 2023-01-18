@@ -45,6 +45,7 @@ html {
   display: flex;
   flex-direction: row;
   overflow-y: auto;
+  line-height: 23px;
 }
 
 .ListItemEven {
