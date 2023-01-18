@@ -57,7 +57,7 @@ export class UI extends React.Component {
     }
 
     render() {
-        if (this.loadingState) return <div>{this.loadingState}</div>;
+        if (this.loadingState) return <div style={{padding: 10}}>{this.loadingState}</div>;
         const vfs = {
             db: this.db,
             worker: this.worker,

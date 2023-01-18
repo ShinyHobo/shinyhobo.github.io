@@ -7,6 +7,7 @@ import * as Comlink from "comlink";
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { useMeasure } from '@react-hookz/web/esm';
 
+// The query terminal for accessing the database with sqlite commands
 @observer
 export default class Terminal extends React.Component {
     private db: Comlink.Remote<LazyHttpDatabase> | null = null;
@@ -46,112 +47,62 @@ export default class Terminal extends React.Component {
         this.queryOutput = result;
     }
 
-    VirtualizedQueryResultsTable(input: any): JSX.Element {
-        const parentRef = React.useRef();
-
-        if(!input.queryOutput.length) {
-            return (<>done</>)
-        }
-
-        const rowVirtualizer = useVirtualizer({
-            count: input.queryOutput.length,
-            getScrollElement: () => parentRef.current ?? null,
-            estimateSize: () => 100,
-            overscan: 5
-        });
-
-        return (
-            <table 
-                ref={parentRef as any}    
-            style={{
-                height: `200px`,
-                width: `400px`,
-                overflow: 'auto',
-              }} >
-                {/* <thead style={{position: "sticky", top: 0, background: "#151515"}}>
-                    <tr>{Object.keys(input.queryOutput[0] ?? []).map(h => (<th key={"header-"+h}>{h}</th>))}</tr>
-                </thead> */}
-                <tbody style={{
-                    height: `${rowVirtualizer.getTotalSize()}px`,
-                    width: '100%',
-                    position: 'relative',
-                }}>
-                    {rowVirtualizer.getVirtualItems()?.map((virtualRow) => (
-                        <tr key={virtualRow.index} style={{
-                            position: 'absolute',
-                            top: 0,
-                            left: 0,
-                            width: '100%',
-                            height: `${virtualRow.size}px`,
-                            transform: `translateY(${virtualRow.start}px)`,
-                          }}><td>asdf</td></tr>
-                    )
-                    )}
-                </tbody>
-            </table>
-        );
-    }
-
     render() {
         return (
-          <div style={{height: "100%", display: "flex", flexDirection: "column"}}>
+          <div style={{height: "100%", display: "flex", flexDirection: "column", width: "100%"}}>
             <div>
                 <div id="terminal" style={{ padding: "15px", background: "#151515" }}>
                     <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
                     <button id="run" onClick={this.RunQuery}>Run</button>
                 </div>
-                <div style={{padding: "10px"}}>{this.stats ? <div>
-                    Database stats: fetched {formatBytes(this.stats.totalFetchedBytes)} in{" "}
+                <h5 style={{padding: "10px"}}>{this.stats ? <div>
+                    Fetched {formatBytes(this.stats.totalFetchedBytes)} in{" "}
                     {this.stats.totalRequests} requests (DB size: {formatBytes(this.stats.totalBytes)}){this.stats.rowsReturned !== undefined ? " | " + this.stats.rowsReturned + " rows returned" : ""}
-                  </div> : ""}</div><br/>
-                {/* {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <this.VirtualizedQueryResultsTable queryOutput={this.queryOutput} />} */}
-                {/* {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <RowVirtualizerFixed queryOutput={this.queryOutput }/>} */}
+                  </div> : ""}</h5>
             </div>
-            {typeof this.queryOutput === 'string' || !this.queryOutput.length ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <App queryOutput={this.queryOutput}/>}
+            {typeof this.queryOutput === 'string' || !this.queryOutput.length ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <VirtualQueryResultsTable data={this.queryOutput}/>}
           </div>
         );
     }
 }
 
-function App({queryOutput}: {queryOutput: any[]}) {
-    const parentRef = React.useRef<HTMLDivElement>(null)
-    const [theadSize, theadRef] = useMeasure<HTMLTableSectionElement>()
+// Renders the query results as a virtual table
+function VirtualQueryResultsTable({data}: {data: any[]}): JSX.Element {
+  const parentRef = React.useRef<HTMLDivElement>(null);
+  const [theadSize, theadRef] = useMeasure<HTMLTableSectionElement>();
+
+  const rowHeight = 100;
+  const maxSize = 8500000; // firefox stops rendering sometime after this
+  let tooLarge = 0;
+  if(rowHeight * data.length > maxSize) {
+    const truncatedSize = maxSize / rowHeight;
+    tooLarge = data.length - truncatedSize;
+    data = data.slice(0, truncatedSize);
+  }
   
-    const rowVirtualizer = useVirtualizer({
-      count: queryOutput.length,
-      getScrollElement: () => parentRef.current,
-      estimateSize: React.useCallback(() => 100, []),
-      overscan: 5,
-      paddingStart: theadSize?.height ?? 0,
-      scrollPaddingStart: theadSize?.height ?? 0,
-    })
-  
-    return (
-      <>
-        <div
-          ref={parentRef}
-          className="List"
-          style={{
-            overflow: 'auto',
-            flexGrow: 1
-          }}
-        >
-          <table
-            style={{
-              height: `${rowVirtualizer.getTotalSize()}px`,
-              width: '100%',
-            }}
-          >
+  const rowVirtualizer = useVirtualizer({
+    count: data.length,
+    getScrollElement: () => parentRef.current,
+    estimateSize: React.useCallback(() => 100, []),
+    overscan: 5,
+    paddingStart: theadSize?.height ?? 0,
+    scrollPaddingStart: theadSize?.height ?? 0,
+  });
+
+  return (
+    <>
+      {tooLarge ? (<h3 style={{padding: 10}}>Query too large to render. {tooLarge} items have been truncated.</h3>) : (<></>) }
+      <div style={{overflow: "auto", flexGrow: 1, width: "100%"}}>
+        <div ref={parentRef} className="List">
+          <table style={{ height: `${rowVirtualizer.getTotalSize()}px`, width: '100%' }}>
             <thead ref={theadRef}>
-            <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(queryOutput[0] ?? []).map(h => (<th>{h}</th>))}</tr>
+            <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(data[0] ?? []).map(h => (<th key={h} style={{width: calculateColumnWidth(h)}}>{h}</th>))}</tr>
             </thead>
             <tbody>
               {rowVirtualizer.getVirtualItems().map((virtualRow) => (
                 <tr
                   key={virtualRow.index}
-                  className={
-                    virtualRow.index % 2 ? 'ListItemOdd' : 'ListItemEven'
-                  }
+                  className={ virtualRow.index % 2 ? 'ListItemOdd' : 'ListItemEven' }
                   style={{
                     position: 'absolute',
                     top: 0,
@@ -161,67 +112,44 @@ function App({queryOutput}: {queryOutput: any[]}) {
                     transform: `translateY(${virtualRow.start}px)`,
                   }}
                 >
-                                          {Object.keys(queryOutput[virtualRow.index]).map((key: any) => (
-                            <td key={key + queryOutput[virtualRow.index]['id']}>{queryOutput[virtualRow.index][key]}</td>
-                            ))}
+                  {Object.keys(data[virtualRow.index]).map((key: any) => (
+                    <td style={{width: calculateColumnWidth(key)}} key={key + data[virtualRow.index]['id']}>{data[virtualRow.index][key]}</td>
+                  ))}
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-      </>
-    )
-  }
+      </div>
+    </>
+  );
+}
 
-function RowVirtualizerFixed({queryOutput}: {queryOutput: any[]}) {
-    if(!queryOutput || !queryOutput.length) {
-        return (<>nothing</>);
-    }
-    const parentRef = React.useRef() as any;
-    const rowVirtualizer = useVirtualizer({
-      count: queryOutput.length,
-      getScrollElement: () => parentRef.current,
-      estimateSize: () => 35,
-      overscan: 5,
-    })
-  
-    return (
-        <div
-          ref={parentRef}
-          className="List"
-          style={{
-            height: `200px`,
-            width: `400px`,
-            overflow: 'auto',
-          }}
-        >
-          <div
-            style={{
-              height: `${rowVirtualizer.getTotalSize()}px`,
-              width: '100%',
-              position: 'relative',
-            }}
-          >
-            {rowVirtualizer.getVirtualItems().map((virtualRow) => (
-              <div
-                key={virtualRow.index}
-                className={virtualRow.index % 2 ? 'ListItemOdd' : 'ListItemEven'}
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: `${virtualRow.size}px`,
-                  transform: `translateY(${virtualRow.start}px)`,
-                }}
-              >
-                Row {virtualRow.index}
-              </div>
-            ))}
-          </div>
-        </div>
-    )
+// Manually setting column widths
+function calculateColumnWidth(columnName: string) {
+  switch(columnName) {
+    case "id":
+    case "tid":
+      return 60;
+    case "release_id":
+      return 120;
+    case "description":
+    case "thumbnail":
+    case "uuid":
+      return 420;
+    case "startDate":
+    case "endDate":
+    case "addedDate":
+    case "updateDate":
+    case "release_title":
+      return 130;
+    case "partialTime":
+    case "team_id":
+      return 115;
+    default: 
+      return 200;
   }
+}
 
 // The sqlite stats, tracks all requests from init
 type SqliteStats = {

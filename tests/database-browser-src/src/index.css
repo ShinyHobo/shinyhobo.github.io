@@ -2,10 +2,13 @@ html {
     font-family: sans-serif;
     font-size: 14px;
   }
+
+  .List {
+    width: fit-content;
+  }
   
   .List table {
-    background-color: #fff;
-    border: 1px solid #e6e4dc;
+    background-color: #131516;
     max-width: 100%;
     border-collapse: collapse;
   
@@ -18,7 +21,7 @@ html {
   .List thead {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #131516;
   
     position: sticky;
     top: 0;
@@ -38,12 +41,14 @@ html {
   .List th {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: center; */
     overflow-y: auto;
-    width: 180px;
   }
   
   .ListItemEven {
-    background-color: #e6e4dc;
+    background-color: #202324;
+  }
+
+  textarea {
+    color: #d8d4cf;
+    background-color: #222324;
   }
