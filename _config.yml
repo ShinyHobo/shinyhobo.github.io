@@ -27,7 +27,7 @@ defaults:
       layout: page
 
 include:
-  - tests/database-browser
+  - tests/database-browser/index.html
 
 exclude:
   - docs/
