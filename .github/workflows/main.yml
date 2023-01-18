@@ -32,7 +32,7 @@ jobs:
           cd tests/database-browser-src
           npm install
           echo "Building the webpack..."
-          node --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --mode=development --progress --config webpack.config.js
+          node --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --mode=production --progress --config webpack.config.js
           echo "Moving files to the correct directory..."
           mkdir ../database-browser
           mv -v ./dist/* ../database-browser
