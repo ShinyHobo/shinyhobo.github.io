@@ -10,7 +10,7 @@ url: https://shinyhobo.github.io
 theme: jekyll-theme-hacker
 markdown: kramdown
 
-incremental: true
+incremental: false
 
 defaults:
   - scope:
@@ -27,7 +27,7 @@ defaults:
       layout: page
 
 include:
-  - tests/database-browser/index.html
+  - tests/database-browser/index.*
 
 exclude:
   - docs/
@@ -35,7 +35,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - tests/database-browser-src
+  - tests/database-browser-src/
 
 plugins:
   - jekyll-sitemap
