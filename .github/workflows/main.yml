@@ -26,6 +26,11 @@ jobs:
         with:
           ruby-version: "3"
           bundler-cache: true
+      
+      - name: Build database browser
+        run: |
+          cd tests/database-browser-src
+          ls -al
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
