@@ -34,6 +34,10 @@ jobs:
           ls -al
           node --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --mode=development --progress --config webpack.config.js
           ls -al
+          move .\dist\dist\bundle.js .\dist\bundle.js
+          rmdir .\dist\dist
+          move .\dist ..\database-browser
+          copy /b/v/y index.html ..\database-browser\index.html
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
