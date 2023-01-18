@@ -26,9 +26,6 @@ defaults:
     values:
       layout: page
 
-include:
-  - tests/database-browser/index.*
-
 exclude:
   - docs/
   - Makefile
