@@ -2,14 +2,12 @@
 <html>
     <head>
         <title>Delta Browser</title>
-        <script src="dist/bundle.js"></script>
+        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}">
+        <link rel="stylesheet" href="src/index.css">
     </head>
     <body>
-        <div id="loading">Loading database browser...</div>
-        <div id="terminal" style="text-align: center; display: none;">
-            <textarea type="text" id="query" style="width: 400px; height: 100px;"></textarea><br/>
-            <button id="run">Run</button>
-            <pre><div id="output" style="max-height: 800px; overflow-y: auto; text-align: left;"/></pre>
-        </div>
+        <div id="root" style="height: 100%;"></div>
+        <script src="dist/bundle.js"></script>
     </body>
 </html>
