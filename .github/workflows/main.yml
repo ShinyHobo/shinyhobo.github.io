@@ -32,6 +32,7 @@ jobs:
           cd tests/database-browser-src
           ls -al
           npm install
+          ls -al 
           .\node_modules\.bin\webpack --mode=development
           ls -al
 
