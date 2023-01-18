@@ -32,7 +32,7 @@ jobs:
           cd tests/database-browser-src
           npm install
           ls -al
-          node --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --env.NODE_ENV=development --progress --config webpack.config.js
+          node --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --mode=development --progress --config webpack.config.js
           ls -al
 
       - name: Build 🏗
