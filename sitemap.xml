@@ -179,6 +179,9 @@
 <loc>https://shinyhobo.github.io/tests/2022-03-23-Scheduled-Deliverables.html</loc>
 </url>
 <url>
+<loc>https://shinyhobo.github.io/tests/database-browser/</loc>
+</url>
+<url>
 <loc>https://shinyhobo.github.io/data/</loc>
 </url>
 <url>
@@ -186,9 +189,5 @@
 </url>
 <url>
 <loc>https://shinyhobo.github.io/</loc>
-</url>
-<url>
-<loc>https://shinyhobo.github.io/tests/database-browser/</loc>
-<lastmod>2023-01-18T16:17:51+00:00</lastmod>
 </url>
 </urlset>
