@@ -31,6 +31,7 @@ jobs:
         run: |
           cd tests/database-browser-src
           ls -al
+          npm install
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
