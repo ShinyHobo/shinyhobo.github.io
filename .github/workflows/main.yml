@@ -35,7 +35,7 @@ jobs:
           mv ./dist/dist/bundle.js ./dist/bundle.js
           rmdir ./dist/dist
           mv ./dist ../database-browser
-          copy /b/v/y index.html ../database-browser/index.html
+          cp -f index.html ../database-browser/index.html
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
