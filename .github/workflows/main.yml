@@ -34,6 +34,7 @@ jobs:
           node --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --mode=development --progress --config webpack.config.js
           mv ./dist/dist/bundle.js ./dist/bundle.js
           rmdir ./dist/dist
+          mkdir ../database-browser
           mv ./dist ../database-browser
           cp -f index.html ../database-browser/index.html
           mkdir ../database-browser/src
