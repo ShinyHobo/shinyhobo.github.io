@@ -36,6 +36,7 @@ jobs:
           rmdir ./dist/dist
           mv ./dist ../database-browser
           cp -f index.html ../database-browser/index.html
+          ls -al
           cp ./src/index.css ../database-browser/src/index.css
           cd ../database-browser
           ls -al
