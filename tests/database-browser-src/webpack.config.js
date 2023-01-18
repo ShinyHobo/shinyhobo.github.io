@@ -18,7 +18,8 @@ module.exports = {
       extensions: [".tsx", ".ts", ".js"],
     },
     output: {
-      filename: "dist/bundle.js"
+      filename: "dist/bundle.js",
+      path: path.resolve(__dirname, "dist")
     },
     devServer: {
       liveReload: true,
