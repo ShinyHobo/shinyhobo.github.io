@@ -49,19 +49,25 @@ export default class Terminal extends React.Component {
 
     render() {
         return (
-          <div style={{height: "100%", display: "flex", flexDirection: "column", width: "100%"}}>
+          <>
             <div>
-                <div id="terminal" style={{ padding: "15px", background: "#151515" }}>
-                    <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
-                    <button id="run" onClick={this.RunQuery}>Run</button>
+              <div id="terminal" style={{ padding: "15px", background: "#151515" }}>
+                  <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
+                  <button id="run" onClick={this.RunQuery}>Run</button>
+              </div>
+              <h5 style={{padding: "10px"}}>
+                {this.stats ? 
+                <div>
+                  Fetched {formatBytes(this.stats.totalFetchedBytes)} in{" "}
+                  {this.stats.totalRequests} requests (DB size: {formatBytes(this.stats.totalBytes)}){this.stats.rowsReturned !== undefined ? " | " + this.stats.rowsReturned + " rows returned" : ""}
                 </div>
-                <h5 style={{padding: "10px"}}>{this.stats ? <div>
-                    Fetched {formatBytes(this.stats.totalFetchedBytes)} in{" "}
-                    {this.stats.totalRequests} requests (DB size: {formatBytes(this.stats.totalBytes)}){this.stats.rowsReturned !== undefined ? " | " + this.stats.rowsReturned + " rows returned" : ""}
-                  </div> : ""}</h5>
+                : <></>}
+              </h5>
             </div>
-            {typeof this.queryOutput === 'string' || !this.queryOutput.length ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <VirtualQueryResultsTable data={this.queryOutput}/>}
-          </div>
+            <div style={{height: "100%", display: "flex", flexDirection: "column", width: "100%"}}>
+              {typeof this.queryOutput === 'string' || !this.queryOutput.length ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <VirtualQueryResultsTable data={this.queryOutput}/>}
+            </div>
+          </>
         );
     }
 }
