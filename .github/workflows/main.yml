@@ -37,6 +37,8 @@ jobs:
           cp -f index.html ../database-browser/index.html
           mkdir ../database-browser/src
           cp ./src/index.css ../database-browser/src/index.css
+          cd ../database-browser
+          ls -al
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
