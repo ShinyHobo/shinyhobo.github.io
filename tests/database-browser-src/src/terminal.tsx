@@ -48,31 +48,52 @@ export default class Terminal extends React.Component {
     VirtualizedQueryResultsTable(input: any): JSX.Element {
         const parentRef = React.useRef();
 
+        if(!input.queryOutput.length) {
+            return (<>done</>)
+        }
+
         const rowVirtualizer = useVirtualizer({
             count: input.queryOutput.length,
             getScrollElement: () => parentRef.current ?? null,
             estimateSize: () => 100,
+            overscan: 5
         });
 
         return (
-            <div ref={parentRef as any} >
-                <table style={{ height: `${rowVirtualizer.getTotalSize()}px`, width: '100%', position: 'relative', textAlign: "left", marginTop: 0, flex: "1 1 auto", overflow: "auto" }} >
-                    <tbody>
-                        <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(input.queryOutput[0] ?? []).map(h => (<th key={"header-"+h}>{h}</th>))}</tr>
-                        {rowVirtualizer.getVirtualItems()?.map((virtualItem) => (
-                        <tr style={{boxShadow: "0px 1px #b5e853"}} key={virtualItem.key}>{Object.keys(input.queryOutput[virtualItem.key]).map((key: any) => (
-                            <td key={key + input.queryOutput[virtualItem.key]['id']}>{input.queryOutput[virtualItem.key][key]}</td>
-                            ))}</tr>)
-                        )}
-                    </tbody>
-                </table>
-            </div>
+            <table 
+                ref={parentRef as any}    
+            style={{
+                height: `200px`,
+                width: `400px`,
+                overflow: 'auto',
+              }} >
+                {/* <thead style={{position: "sticky", top: 0, background: "#151515"}}>
+                    <tr>{Object.keys(input.queryOutput[0] ?? []).map(h => (<th key={"header-"+h}>{h}</th>))}</tr>
+                </thead> */}
+                <tbody style={{
+                    height: `${rowVirtualizer.getTotalSize()}px`,
+                    width: '100%',
+                    position: 'relative',
+                }}>
+                    {rowVirtualizer.getVirtualItems()?.map((virtualRow) => (
+                        <tr key={virtualRow.index} style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: `${virtualRow.size}px`,
+                            transform: `translateY(${virtualRow.start}px)`,
+                          }}><td>asdf</td></tr>
+                    )
+                    )}
+                </tbody>
+            </table>
         );
     }
 
     render() {
         return (
-            <div style={{display: "Flex", flexFlow: "column", height: "100%"}}>
+            <div style={{height: "100%"}}>
                 <div id="terminal" style={{ padding: "15px", background: "#151515" }}>
                     <textarea id="query" style={{ width: "400px", height: "100px" }} defaultValue="select * from card_diff"></textarea><br/>
                     <button id="run" onClick={this.RunQuery}>Run</button>
@@ -81,11 +102,62 @@ export default class Terminal extends React.Component {
                     Database stats: fetched {formatBytes(this.stats.totalFetchedBytes)} in{" "}
                     {this.stats.totalRequests} requests (DB size: {formatBytes(this.stats.totalBytes)}){this.stats.rowsReturned !== undefined ? " | " + this.stats.rowsReturned + " rows returned" : ""}
                   </div> : ""}</div><br/>
-                {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <this.VirtualizedQueryResultsTable queryOutput={this.queryOutput} />}
+                {/* {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <this.VirtualizedQueryResultsTable queryOutput={this.queryOutput} />} */}
+                {typeof this.queryOutput === 'string' ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <RowVirtualizerFixed queryOutput={this.queryOutput }/>}
             </div>
         );
     }
 }
+
+function RowVirtualizerFixed({queryOutput}: {queryOutput: any[]}) {
+    if(!queryOutput || !queryOutput.length) {
+        return (<>nothing</>);
+    }
+    const parentRef = React.useRef() as any;
+    const rowVirtualizer = useVirtualizer({
+      count: queryOutput.length,
+      getScrollElement: () => parentRef.current,
+      estimateSize: () => 35,
+      overscan: 5,
+    })
+  
+    return (
+        <div
+          ref={parentRef}
+          className="List"
+          style={{
+            height: `200px`,
+            width: `400px`,
+            overflow: 'auto',
+          }}
+        >
+          <div
+            style={{
+              height: `${rowVirtualizer.getTotalSize()}px`,
+              width: '100%',
+              position: 'relative',
+            }}
+          >
+            {rowVirtualizer.getVirtualItems().map((virtualRow) => (
+              <div
+                key={virtualRow.index}
+                className={virtualRow.index % 2 ? 'ListItemOdd' : 'ListItemEven'}
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: `${virtualRow.size}px`,
+                  transform: `translateY(${virtualRow.start}px)`,
+                }}
+              >
+                Row {virtualRow.index}
+              </div>
+            ))}
+          </div>
+        </div>
+    )
+  }
 
 // The sqlite stats, tracks all requests from init
 type SqliteStats = {
