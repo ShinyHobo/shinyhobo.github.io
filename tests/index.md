@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Test Directory Root
 ---
 
 <h1>ShinyTracker: A Star Citizen Analytics Reporting Tool</h1>
