@@ -1,0 +1,1 @@
+To run: npx webpack serve --mode development --client-logging info

@@ -17,6 +17,15 @@
     "mobx-react": "^7.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sql.js-httpvfs": "^0.8.12"
+    "sql.js-httpvfs": "^0.8.12",
+    "react-scripts": "^5.0.0",
+    "react-chartjs-2": "^4.2.0",
+    "chart.js": "^3.8.0",
+    "chartjs-adapter-date-fns": "^2.0.0",
+    "chartjs-plugin-datalabels": "^2.0.0",
+    "date-fns": "^2.28.0"
+  },
+  "scripts": {
+    "debug": "npx webpack serve --mode development --client-logging info"
   }
 }
