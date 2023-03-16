@@ -1,30 +1,30 @@
-/*! ./Logger */
+/*!
+ * @kurkle/color v0.2.1
+ * https://github.com/kurkle/color#readme
+ * (c) 2022 Jukka Kurkela
+ * Released under the MIT License
+ */
 
-/*! ./createConsoleLogger */
+/*!
+ * Chart.js v3.9.1
+ * https://www.chartjs.org
+ * (c) 2022 Chart.js Contributors
+ * Released under the MIT License
+ */
 
-/*! tapable/lib/SyncBailHook */
+/*!
+ * chartjs-adapter-date-fns v2.0.1
+ * https://www.chartjs.org
+ * (c) 2022 chartjs-adapter-date-fns Contributors
+ * Released under the MIT license
+ */
 
-/*! webpack/lib/logging/runtime.js */
-
-/*!********************************************!*\
-  !*** ./client-src/modules/logger/index.js ***!
-  \********************************************/
-
-/*!****************************************************!*\
-  !*** ./node_modules/webpack/lib/logging/Logger.js ***!
-  \****************************************************/
-
-/*!*****************************************************!*\
-  !*** ./node_modules/webpack/lib/logging/runtime.js ***!
-  \*****************************************************/
-
-/*!*******************************************************!*\
-  !*** ./client-src/modules/logger/SyncBailHookFake.js ***!
-  \*******************************************************/
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/webpack/lib/logging/createConsoleLogger.js ***!
-  \*****************************************************************/
+/*!
+ * chartjs-plugin-datalabels v2.2.0
+ * https://chartjs-plugin-datalabels.netlify.app
+ * (c) 2017-2022 chartjs-plugin-datalabels contributors
+ * Released under the MIT license
+ */
 
 /**
  * @license React
@@ -54,6 +54,28 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @remix-run/router v1.4.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router DOM v6.9.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
  */
 
 /**
