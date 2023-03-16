@@ -56,7 +56,7 @@ class Event {
     },
     {
         Start: simulateDate(10),
-        End: simulateDate(15),
+        End: simulateDate(16),
         EventName: "Dev specific time (part)",
         EventSource: "Deliverable 1"
     },
