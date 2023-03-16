@@ -38,9 +38,10 @@ jobs:
           mv -v ./dist/* ../database-browser
           cp -f index.html ../database-browser/index.html
           mkdir ../database-browser/src
-          cp -r ./src/assets/ ../database-browser/src/assets/
+          cp -r ./src/assets/. ../database-browser/src/assets
           echo "Files moved..."
           cd ../database-browser
+          ls -al
           sed -i '1s/^/---\n---\n/' index.html
 
       - name: Build 🏗
