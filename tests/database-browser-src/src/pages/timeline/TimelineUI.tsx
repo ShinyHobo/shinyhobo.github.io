@@ -5,10 +5,10 @@ import { SqliteWorker } from "sql.js-httpvfs";
 import { LazyHttpDatabase, SplitFileConfig } from "sql.js-httpvfs/dist/sqlite.worker";
 import * as Comlink from "comlink";
 import { createDbWorker } from "sql.js-httpvfs";
-import Terminal from "./terminal"
+import { Timeline } from "../../components/timeline";
 
 @observer
-export class UI extends React.Component {
+export default class TimelineUI extends React.Component {
     private db: Comlink.Remote<LazyHttpDatabase> | null = null;
     private worker: SqliteWorker | null = null;
     private configs: SplitFileConfig[] | null = null;
@@ -63,6 +63,6 @@ export class UI extends React.Component {
             worker: this.worker,
             configs: this.configs
         };
-        return (<Terminal {...vfs}/>);
+        return (<Timeline/>);
     }
 }

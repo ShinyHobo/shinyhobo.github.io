@@ -2,8 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: [
-      'webpack-dev-server/client?http://localhost:8080/',
-      "./src"
+      "./src/index.tsx"
     ],
     module: {
       rules: [
@@ -19,8 +18,6 @@ module.exports = {
     },
     output: {
       filename: "bundle.js",
-      //path: path.resolve(__dirname, "dist"),
-      //publicPath: 'http://localhost:8080/'
     },
     devServer: {
       liveReload: true,
@@ -28,5 +25,6 @@ module.exports = {
       devMiddleware: {
         writeToDisk: true
       },
+      historyApiFallback: true,
     },
   };

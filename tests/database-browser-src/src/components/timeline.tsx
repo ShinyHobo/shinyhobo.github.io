@@ -1,4 +1,4 @@
-import testData from "../TestData";
+import testData from "../data/TestData";
 import React from "react";
 import { de } from "date-fns/locale";
 import { format } from "date-fns";
@@ -134,6 +134,18 @@ const data = {
   datasets: datasets
 };
 
+const chartOnClick = function(evt: any, activeEls: any, chartInstance: ChartJS) {
+  let chart = chartInstance
+  const points = chartInstance.getElementsAtEventForMode(evt, 'nearest', {}, true);
+  
+  if (points.length) {
+      const firstPoint = points[0];
+      let datasetIndex = firstPoint.datasetIndex, index = firstPoint.index;
+      chart.data.datasets[datasetIndex].data.splice(index, 1);
+      chart.update();
+  }
+}
+
 export const options: ChartOptions<"bar"> = {
   indexAxis: "y" as const,
   plugins: {
@@ -207,7 +219,9 @@ export const options: ChartOptions<"bar"> = {
         }
       }
     }
-  }
+  },
+  onClick: chartOnClick,
+  animation: false
 };
 
 export function Timeline() {
