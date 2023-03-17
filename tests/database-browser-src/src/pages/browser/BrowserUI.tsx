@@ -23,6 +23,7 @@ export default class BrowserUI extends React.Component {
 
     async init() {
         this.loadingState = "Connecting to database...";
+        console.log(import.meta.url);
         const workerUrl = new URL(
             "sql.js-httpvfs/dist/sqlite.worker.js",
             import.meta.url
