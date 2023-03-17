@@ -63,6 +63,6 @@ export default class TimelineUI extends React.Component {
             worker: this.worker,
             configs: this.configs
         };
-        return (<Timeline/>);
+        return (<div><Timeline/></div>);
     }
 }

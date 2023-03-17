@@ -63,6 +63,6 @@ export default class BrowserUI extends React.Component {
             worker: this.worker,
             configs: this.configs
         };
-        return (<Terminal {...vfs}/>);
+        return (<div id="terminal-container"><Terminal {...vfs}/></div>);
     }
 }
