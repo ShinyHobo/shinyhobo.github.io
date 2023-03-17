@@ -26,6 +26,7 @@ export default class App extends React.Component {
         makeObservable(this);
     }
 
+    // initializes the virtual file system web worker and opens the database connection
     async init() {
         this.loadingState = "Connecting to database...";
         const workerUrl = new URL(
@@ -70,16 +71,14 @@ export default class App extends React.Component {
       };
       return (
         <div>
-          <React.StrictMode>
-            <HashRouter>
-              <Routes>
-                <Route path="/" element={<Layout />}>
-                  <Route path="browser" element={<BrowserUI {...vfs}/>} />
-                  <Route path="timeline" element={<TimelineUI {...vfs}/>} />
-                </Route>
-              </Routes>
-            </HashRouter>
-          </React.StrictMode>
+          <HashRouter>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route path="browser" element={<BrowserUI {...vfs}/>} />
+                <Route path="timeline" element={<TimelineUI {...vfs}/>} />
+              </Route>
+            </Routes>
+          </HashRouter>
         </div>
       );
     }

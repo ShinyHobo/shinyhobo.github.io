@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -34,5 +35,18 @@ module.exports = {
         template: './src/assets/index-templates/dev.html',
         filename: 'index.html'
       })
-    ]
+    ],
+    devtool: "inline-source-map",
+    optimization: {
+      'minimize': false,
+      minimizer: [new TerserPlugin({
+          terserOptions: { 
+              compress: { 
+                  pure_funcs: [
+                      'console.log'
+                  ] 
+              } 
+           }
+      })]
+    }
   };

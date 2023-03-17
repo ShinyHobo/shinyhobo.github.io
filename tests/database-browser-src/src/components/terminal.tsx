@@ -2,15 +2,15 @@ import React from "react";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import { SqliteWorker } from "sql.js-httpvfs";
-import { LazyHttpDatabase, SplitFileConfig } from "sql.js-httpvfs/dist/sqlite.worker";
-import * as Comlink from "comlink";
+import { SplitFileConfig } from "sql.js-httpvfs/dist/sqlite.worker";
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { useMeasure } from '@react-hookz/web/esm';
+import { SqliteStats, Database } from "../utils/database-helpers";
 
 // The query terminal for accessing the database with sqlite commands
 @observer
 export default class Terminal extends React.Component {
-    private db: Comlink.Remote<LazyHttpDatabase> | null = null;
+    private db: Database = null;
     private worker: SqliteWorker | null = null;
     private dbConfig: SplitFileConfig[] | null = null;
 
@@ -154,15 +154,6 @@ function calculateColumnWidth(columnName: string) {
       return 200;
   }
 }
-
-// The sqlite stats, tracks all requests from init
-type SqliteStats = {
-    filename: string;
-    totalBytes: number;
-    totalFetchedBytes: number;
-    totalRequests: number;
-    rowsReturned?: number;
-};
 
 // Converts the bytes transfered to human readible values
 function formatBytes(b: number) {
