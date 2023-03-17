@@ -28,5 +28,6 @@
   },
   "scripts": {
     "debug": "npx webpack serve --config dev.config.js --mode development --client-logging info"
-  }
+  },
+  "homepage": "https://shinytracker.app/tests/database-browser/"
 }
