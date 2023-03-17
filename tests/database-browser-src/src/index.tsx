@@ -17,6 +17,6 @@ export default function App() {
       </BrowserRouter>
     );
   }
-
+console.log("working");
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(<App />);
