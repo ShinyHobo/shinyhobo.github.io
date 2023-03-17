@@ -27,6 +27,6 @@
     "sql.js-httpvfs": "^0.8.12"
   },
   "scripts": {
-    "debug": "npx webpack serve --mode development --client-logging info"
+    "debug": "npx webpack serve --config dev.config.js --mode development --client-logging info"
   }
 }
