@@ -206,4 +206,11 @@
 <url>
 <loc>https://shinyhobo.github.io/</loc>
 </url>
+<url>
+<loc>https://shinyhobo.github.io/tests/database-browser/src/assets/index-templates/prod.html</loc>
+</url>
+<url>
+<loc>https://shinyhobo.github.io/tests/database-browser/src/assets/index-templates/dev.html</loc>
+<lastmod>2023-03-17T02:48:19+00:00</lastmod>
+</url>
 </urlset>
