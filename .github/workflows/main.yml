@@ -41,8 +41,9 @@ jobs:
           cp -r ./src/assets/. ../database-browser/src/assets
           echo "Files moved..."
           cd ../database-browser
-          ls -al
           sed -i '1s/^/---\n---\n/' index.html
+          cd ./src
+          ls -al
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
