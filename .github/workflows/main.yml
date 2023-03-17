@@ -36,9 +36,14 @@ jobs:
           echo "Moving files to the correct directory..."
           mkdir ../database-browser
           mv -v ./dist/* ../database-browser
+          cp -f index.html ../database-browser/index.html
           mkdir ../database-browser/src
           cp -r ./src/assets/. ../database-browser/src/assets
           echo "Files moved..."
+          cd ../database-browser
+          sed -i '1s/^/---\n---\n/' index.html
+          cd ./src
+          ls -al
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
