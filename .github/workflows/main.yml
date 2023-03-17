@@ -39,6 +39,8 @@ jobs:
           mkdir ../database-browser/src
           cp -r ./src/assets/. ../database-browser/src/assets
           echo "Files moved..."
+          cd ../database-browser
+          sed -i '1s/^/---\n---\n/' index.html
 
       - name: Build 🏗
         run: bundle exec jekyll build --trace
