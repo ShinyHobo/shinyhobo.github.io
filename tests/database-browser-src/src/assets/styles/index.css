@@ -3,7 +3,17 @@ html {
   font-size: 14px;
   
   scrollbar-width: thin;
-  scrollbar-color: darkturquoise rgb(21, 21, 21)
+  scrollbar-color: darkturquoise rgb(21, 21, 21);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(21, 21, 21);
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkturquoise;
 }
 
 .List {

@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    mode: 'development',
     entry: [
       "./src/"
     ],
@@ -27,6 +28,7 @@ module.exports = {
       },
       historyApiFallback: true
     },
+    devtool: 'inline-source-map',
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/assets/index-templates/dev.html',
