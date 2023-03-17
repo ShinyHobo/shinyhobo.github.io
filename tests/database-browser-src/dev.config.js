@@ -17,11 +17,14 @@ module.exports = {
       extensions: [".tsx", ".ts", ".js"],
     },
     output: {
-      filename: "bundle.js",
-      path: path.resolve(__dirname, "dist"),
-      publicPath: '/'
+      filename: "bundle.js"
     },
     devServer: {
+      liveReload: true,
+      static: "./",
+      devMiddleware: {
+        writeToDisk: true
+      },
       historyApiFallback: true,
     },
   };
