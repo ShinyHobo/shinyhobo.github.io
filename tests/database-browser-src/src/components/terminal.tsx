@@ -5,7 +5,7 @@ import { SqliteWorker } from "sql.js-httpvfs";
 import { SplitFileConfig } from "sql.js-httpvfs/dist/sqlite.worker";
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { useMeasure } from '@react-hookz/web/esm';
-import { SqliteStats, Database } from "../utils/database-helpers";
+import { SqliteStats, Database, CommonDBFunctions } from "../utils/database-helpers";
 
 // The query terminal for accessing the database with sqlite commands
 @observer
@@ -58,8 +58,8 @@ export default class Terminal extends React.Component {
               <h5 style={{padding: "10px"}}>
                 {this.stats ? 
                 <div>
-                  Fetched {formatBytes(this.stats.totalFetchedBytes)} in{" "}
-                  {this.stats.totalRequests} requests (DB size: {formatBytes(this.stats.totalBytes)}){this.stats.rowsReturned !== undefined ? " | " + this.stats.rowsReturned + " rows returned" : ""}
+                  Fetched {CommonDBFunctions.formatBytes(this.stats.totalFetchedBytes)} in{" "}
+                  {this.stats.totalRequests} requests (DB size: {CommonDBFunctions.formatBytes(this.stats.totalBytes)}){this.stats.rowsReturned !== undefined ? " | " + this.stats.rowsReturned + " rows returned" : ""}
                 </div>
                 : <></>}
               </h5>
@@ -153,15 +153,4 @@ function calculateColumnWidth(columnName: string) {
     default: 
       return 200;
   }
-}
-
-// Converts the bytes transfered to human readible values
-function formatBytes(b: number) {
-    if (b > 1e6) {
-        return (b / 1e6).toFixed(2) + "MB";
-    }
-    if (b > 1e3) {
-        return (b / 1e3).toFixed(2) + "KB";
-    }
-    return b + "B";
 }
