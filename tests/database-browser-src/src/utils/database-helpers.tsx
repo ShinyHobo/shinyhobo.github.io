@@ -43,7 +43,7 @@ export class CommonDBFunctions {
      * @param addedDate The delta datetime to lookup
      * @returns The list of unique, listed deliverables on the progress tracker
      */
-    private static async getUniqueDeliverables(db: Database, addedDate: string) {
+    public static async getUniqueDeliverables(db: Database, addedDate: string) {
         // Get all deliverables, grouping by uuid and ordering by add date, to get the most recent additions only
         let dbDeliverables = await db?.query(`SELECT *, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} GROUP BY uuid ORDER BY addedDate DESC`) as any[];
 
@@ -69,7 +69,7 @@ export class CommonDBFunctions {
     }
 
     /**
-     * Builds the deliverable object array
+     * Builds the complete deliverable object (sub-componets like teamtimes included) array of all deliverables for the desired time
      * @param db The database connection
      * @param date The delta timestamp to use
      * @param alphabetize Whether or not to alphabetize sort the list (default no)
@@ -117,14 +117,18 @@ export class CommonDBFunctions {
         return alphabetize ? _.orderBy(dbDeliverables, [d => d.title.toLowerCase()], ['asc']) : dbDeliverables;
     }
 
-    // Converts the bytes transfered to human readible values
-    public static formatBytes(b: number) {
-        if (b > 1e6) {
-            return (b / 1e6).toFixed(2) + "MB";
+    /**
+     *  Converts the bytes transfered to human readible values
+     * @param bytes the bytes to convert
+     * @returns the value in terms of MB or KB
+     */
+    public static formatBytes(bytes: number) {
+        if (bytes > 1e6) {
+            return (bytes / 1e6).toFixed(2) + "MB";
         }
-        if (b > 1e3) {
-            return (b / 1e3).toFixed(2) + "KB";
+        if (bytes > 1e3) {
+            return (bytes / 1e3).toFixed(2) + "KB";
         }
-        return b + "B";
+        return bytes + "B";
     }
 }
