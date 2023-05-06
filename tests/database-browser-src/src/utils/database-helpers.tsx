@@ -16,7 +16,7 @@ export type Database = Comlink.Remote<LazyHttpDatabase> | null;
 // Common database functions
 export class CommonDBFunctions {
     /**
-     * Gets the list of available delta datetimes
+     * Gets the list of available delta datetimes (optimized)
      * @param db The database connection
      * @returns A list of epoch timestamps in seconds representing each delta's addition to the database
      */
@@ -27,7 +27,7 @@ export class CommonDBFunctions {
     }
 
     /**
-     * Gets the closest prior delta addition timestamp
+     * Gets the closest prior delta addition timestamp (optimized)
      * @param db The database connection
      * @param date The epoch timestamp to find the closest matching delta addition prior to the value
      * @returns The closest matching timestamp value
@@ -38,14 +38,19 @@ export class CommonDBFunctions {
     }
 
     /**
-     * Retrieves the list of unique deliverables for the given timestamp
+     * Retrieves the list of unique deliverables for the given timestamp (optimized)
      * @param db The database connection
      * @param addedDate The delta datetime to lookup
+     * @param limit The number of deliverables to get
+     * @param offset The number of deliverables to skip
      * @returns The list of unique, listed deliverables on the progress tracker
      */
-    public static async getUniqueDeliverables(db: Database, addedDate: string) {
+    public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number, offset: number) {
         // Get all deliverables, grouping by uuid and ordering by add date, to get the most recent additions only
-        let dbDeliverables = await db?.query(`SELECT *, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} GROUP BY uuid ORDER BY addedDate DESC`) as any[];
+        const dbDeliverableIds = (await db?.query(`SELECT id, title, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
+            GROUP BY uuid ORDER BY addedDate DESC LIMIT ${limit} offset ${offset}`) as any[]).map(d => d.id);
+
+        let dbDeliverables = await db?.query(`SELECT * FROM deliverable_diff WHERE id IN (${dbDeliverableIds.toString()})`) as any[];
 
         // Get complete list of deliverables that have names already, filtering out everything by the most recent addition of the item (some older entries are the same item with a different slug)
         const deduplicatedAnnouncedDeliverables = _.chain(dbDeliverables.filter(d => d.title && !d.title.includes("Unannounced"))).groupBy('title').map((d: any[]) => d[0]).value();
@@ -72,21 +77,27 @@ export class CommonDBFunctions {
      * Builds the complete deliverable object (sub-componets like teamtimes included) array of all deliverables for the desired time
      * @param db The database connection
      * @param date The delta timestamp to use
+     * @param limit The number of deliverables to build
+     * @param offset The number of deliverables to skip
      * @param alphabetize Whether or not to alphabetize sort the list (default no)
      * @returns The array of built deliverables
      */
-    public static async buildCompleteDeliverables(db: Database, date: string, alphabetize: boolean = false) {
-        const dbDeliverables = await this.getUniqueDeliverables(db, date);
+    public static async buildCompleteDeliverables(db: Database, date: string, limit: number = 0, offset: number = 0, alphabetize: boolean = false) {
+        const dbDeliverables = await this.getUniqueDeliverables(db, date, limit, offset);
         const cardIds: string = dbDeliverables.filter((dd) => dd.card_id).map((dd) => dd.card_id).toString();
         const dbCards: any[] = await db?.query(`SELECT * FROM card_diff WHERE id IN (${cardIds})`) as any[];
         const deliverableIds = dbDeliverables.map((dd) => dd.id).toString();
 
-        const dbDeliverableTeams: any[] = await db?.query(`SELECT *, MAX(addedDate) FROM team_diff WHERE addedDate <= ${date} AND id IN (SELECT team_id FROM deliverable_teams WHERE deliverable_id IN (${deliverableIds})) GROUP BY slug ORDER BY addedDate DESC`) as any[];
-        const deliverableTeamIds = dbDeliverableTeams.map(dt => dt.id).toString()
+        const dbDeliverableTeams: any[] = await db?.query(`SELECT *, MAX(addedDate) FROM team_diff WHERE addedDate <= ${date} AND 
+            id IN (SELECT team_id FROM deliverable_teams WHERE deliverable_id IN (${deliverableIds})) GROUP BY slug ORDER BY addedDate DESC`) as any[];
+        const deliverableTeamIds = dbDeliverableTeams.map(dt => dt.id).toString();
         const deliverableTeams = _.groupBy(await db?.query(`SELECT * FROM deliverable_teams WHERE team_id IN (${deliverableTeamIds}) AND deliverable_id IN (${deliverableIds})`) as any[], 'deliverable_id');
 
-        let dbTimeAllocations = await db?.query(`SELECT *, MAX(ta.addedDate), ta.id AS time_id, ta.uuid AS time_uuid, ta.addedDate AS time_added FROM timeAllocation_diff AS ta JOIN discipline_diff AS di ON di.id = ta.discipline_id`+
-         ` WHERE deliverable_id IN (${deliverableIds}) AND team_id IN (${dbDeliverableTeams.map(z => z.id).join(',')}) AND partialTime IS NOT NULL GROUP BY ta.uuid`) as any[];
+        //let dbTimeAllocations = await db?.query(`SELECT * FROM timeAllocation_diff AS ta INNER JOIN discipline_diff AS di ON di.id = ta.discipline_id WHERE 
+        //   deliverable_id IN (${deliverableIds}) AND team_id IN (${deliverableTeamIds})`) as any[];
+
+        let dbTimeAllocations = await db?.query(`SELECT *, MAX(ta.addedDate) as time_added, ta.id AS time_id, ta.uuid AS time_uuid FROM timeAllocation_diff AS ta JOIN 
+             discipline_diff AS di ON di.id = ta.discipline_id WHERE deliverable_id IN (${deliverableIds}) AND team_id IN (${deliverableTeamIds}) AND partialTime IS NOT NULL GROUP BY ta.uuid`) as any[];
 
         //let teamIds = dbTimeAllocations.map(z => z.team_id).filter((value, index, self) => self.indexOf(value) === index);
 

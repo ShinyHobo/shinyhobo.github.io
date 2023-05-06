@@ -23,6 +23,7 @@ module.exports = {
     },
     devServer: {
       liveReload: true,
+      hot: false,
       static: "./",
       devMiddleware: {
         writeToDisk: true

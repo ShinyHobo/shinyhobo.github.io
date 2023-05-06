@@ -42,7 +42,7 @@ export default class App extends React.Component {
                 config: {
                   serverMode: "full",
                   url: "/data/delta.db",
-                  requestChunkSize: 4096,
+                  requestChunkSize: 65536//16384//4096
                 },
               },
             ],
