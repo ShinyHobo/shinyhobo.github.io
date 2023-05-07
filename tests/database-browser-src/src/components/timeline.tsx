@@ -150,13 +150,7 @@ export const options: ChartOptions<"bar"> = {
   indexAxis: "y" as const,
   plugins: {
     tooltip: {
-      callbacks: {
-        title: () => "",
-        afterBody: (items) =>
-          data.datasets[items[0].datasetIndex].data[items[0].dataIndex][2],
-        label: (item) => data.datasets[item.datasetIndex].label
-      },
-      position: "custom" as "average"
+      enabled: false
     },
     legend: {
       display: false
@@ -170,13 +164,9 @@ export const options: ChartOptions<"bar"> = {
           ? "auto"
           : false;
       },
-      font: function (context: any) {
-        var width = context.chart.width;
-        var size = width / 100;
-        return {
+      font: {
           weight: "bold",
-          size: size
-        };
+          size: 20
       }
     }
   },
@@ -201,12 +191,7 @@ export const options: ChartOptions<"bar"> = {
           quarter: "yyyy-MM-dd HH:mm:ss.SSS",
           year: "yyyy-MM-dd HH:mm:ss.SSS"
         },
-        unit: "millisecond"
-      },
-      adapters: {
-        date: {
-          locale: de
-        }
+        unit: "second"
       },
       stacked: true
     },
@@ -220,8 +205,8 @@ export const options: ChartOptions<"bar"> = {
       }
     }
   },
-  onClick: chartOnClick,
-  animation: false
+  //onClick: chartOnClick,
+  //animation: false
 };
 
 export function Timeline() {

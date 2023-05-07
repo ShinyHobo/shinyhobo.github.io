@@ -5,6 +5,7 @@
     "@types/react-dom": "^18.0.10",
     "html-webpack-plugin": "^5.5.0",
     "http-server": "^14.1.1",
+    "terser-webpack-plugin": "^5.3.7",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0",
@@ -28,6 +29,6 @@
     "sql.js-httpvfs": "^0.8.12"
   },
   "scripts": {
-    "debug": "npx webpack serve --config webkit.dev.config.js --mode development --client-logging info"
+    "debug": "npx webpack serve --config webkit.dev.config.js --mode development --client-logging info --devtool source-map ./src/index.tsx"
   }
 }
