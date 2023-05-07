@@ -48,7 +48,7 @@ export class CommonDBFunctions {
     public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number, offset: number) {
         // Get all deliverables, grouping by uuid and ordering by add date, to get the most recent additions only
         const dbDeliverableIds = (await db?.query(`SELECT id, title, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
-            GROUP BY uuid ORDER BY addedDate DESC LIMIT ${limit} offset ${offset}`) as any[]).map(d => d.id);
+            GROUP BY uuid ORDER BY title ASC LIMIT ${limit} offset ${offset}`) as any[]).map(d => d.id);
 
         let dbDeliverables = await db?.query(`SELECT * FROM deliverable_diff WHERE id IN (${dbDeliverableIds.toString()})`) as any[];
 
