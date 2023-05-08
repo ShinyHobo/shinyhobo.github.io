@@ -12,7 +12,7 @@ export default class Layout extends React.Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/browser">Browser</Link>
+                  <Link to="/browser">Database Terminal</Link>
                 </li>
                 <li>
                   <Link to="/timeline">Scheduled Work Timeline</Link>
