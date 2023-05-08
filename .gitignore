@@ -12,3 +12,5 @@ tests/database-browser-src/.vscode/
 tests/database-browser-src/node_modules/
 tests/database-browser-src/dist/
 tests/database-browser-src/data/
+
+node_modules/
