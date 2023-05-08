@@ -304,7 +304,7 @@ export default class Timeline2 extends React.Component {
                             hour: "yyyy-MM-dd HH:mm:ss.SSS",
                             day: "yyyy-MM-dd",
                             week: "yyyy-MM-dd HH:mm:ss.SSS",
-                            month: "MM/yyyy",
+                            month: "yyyy-MM-dd",
                             quarter: "yyyy-MM-dd HH:mm:ss.SSS",
                             year: "yyyy-MM-dd HH:mm:ss.SSS"
                         },
