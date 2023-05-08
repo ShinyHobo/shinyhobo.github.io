@@ -22,6 +22,7 @@ import {
 import { Bar } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import "chartjs-adapter-date-fns";
+import { useSearchParams } from "react-router-dom";
 
 @observer
 export default class Timeline2 extends React.Component {
@@ -55,6 +56,13 @@ export default class Timeline2 extends React.Component {
             ChartDataLabels,
             TimeScale
         );
+
+        const params = window.location.hash.split('?');
+        if(params.length > 1) {
+            const queryParameters = new URLSearchParams(params[1]);
+            this.skip = Number.parseInt(queryParameters.get("skip") ?? "0");
+        }
+
         this.loadData();
     }
 
@@ -311,13 +319,61 @@ export default class Timeline2 extends React.Component {
         this.skip -= this.take;
         this.skip = this.skip < 0 ? 0 : this.skip;
         console.info("prev", this.skip);
+        window.history.replaceState('','',this.updateURLParameter(window.location.href,"skip",this.skip.toString()));
         this.loadData();
     }
 
     private next() {
         this.skip += this.take;
         console.info("next", this.skip);
+        window.history.replaceState('','',this.updateURLParameter(window.location.href,"skip",this.skip.toString()));
         this.loadData();
+    }
+
+    // Updates the url parameters
+    updateURLParameter(url: string, param: string, paramVal: string)
+    {
+        var TheAnchor = null;
+        var newAdditionalURL = "";
+        var tempArray = url.split("?");
+        var baseURL = tempArray[0];
+        var additionalURL = tempArray[1];
+        var temp = "";
+
+        if (additionalURL) 
+        {
+            var tmpAnchor = additionalURL.split("#");
+            var TheParams = tmpAnchor[0];
+                TheAnchor = tmpAnchor[1];
+            if(TheAnchor)
+                additionalURL = TheParams;
+
+            tempArray = additionalURL.split("&");
+
+            for (var i=0; i<tempArray.length; i++)
+            {
+                if(tempArray[i].split('=')[0] != param)
+                {
+                    newAdditionalURL += temp + tempArray[i];
+                    temp = "&";
+                }
+            }        
+        }
+        else
+        {
+            var tmpAnchor = baseURL.split("#");
+            var TheParams = tmpAnchor[0];
+                TheAnchor  = tmpAnchor[1];
+
+            if(TheParams)
+                baseURL = TheParams;
+        }
+
+        if(TheAnchor)
+            baseURL  += "#" + TheAnchor;
+
+        var rows_txt = temp + "" + param + "=" + paramVal;
+        return baseURL + "?" + newAdditionalURL + rows_txt;
     }
 
     render() {
