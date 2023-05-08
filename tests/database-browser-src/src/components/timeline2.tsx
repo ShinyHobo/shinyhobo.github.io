@@ -23,7 +23,6 @@ import {
 import { Bar } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import "chartjs-adapter-date-fns";
-import { useSearchParams } from "react-router-dom";
 
 @observer
 export default class Timeline2 extends React.Component {
@@ -328,7 +327,15 @@ export default class Timeline2 extends React.Component {
                     }
                 }
             },
-            animation: false
+            animation: false,
+            onClick: function(ev:any,el:any) {
+                // open link for deliverable when clicking bar
+                if(el.length) {
+                    let selection = ev.chart.config["_config"].data.datasets[el[0].datasetIndex];
+                    let slug = selection.stack.split(")")[0].split("(")[1];
+                    window.open(`https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/${slug}`, '_blank')?.focus();
+                }
+            }
         };
 
         console.info("data loaded:",this.data);
