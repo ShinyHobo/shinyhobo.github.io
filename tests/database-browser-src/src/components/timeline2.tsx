@@ -1,6 +1,7 @@
 import React from "react";
 import { CommonDBFunctions, Database, SqliteStats } from "../utils/database-helpers";
 import _ from "lodash";
+import * as he from 'he';
 import { SqliteWorker } from "sql.js-httpvfs";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -124,11 +125,17 @@ export default class Timeline2 extends React.Component {
                                 }
 
                                 returnRanges.forEach((time: any) => {
-                                    //let titleArr: string[] = deliverable.title.match(/\S.{1,20}(?=\s|$)/g);
-                                    //let title = titleArr.length > 1 ? titleArr[0] + "..." : titleArr[0];
+                                    let titleArr: string[] = deliverable.title.match(/\S.{1,20}(?=\s|$)/g);
+                                    let title = titleArr.length > 1 ? titleArr[0] + "..." : titleArr[0];
+                                    //let title = deliverable.title;
+                                    if(title === 'Unannounced') {
+                                        title = deliverable.description;
+                                    }
+                                    
+                                    console.info(he.unescape(title))
                                     const event: Event = {
                                         EventName: time.partialTime === 0 ? "Full-time" : time.partialTime === 1 ? "Part-time" : "Unscheduled",
-                                        EventSource: deliverable.title,//title,
+                                        EventSource: `(${deliverable.slug}) ${he.unescape(title)}`,//title,
                                         Start: new Date(time.startDate),
                                         End: new Date(time.endDate),
                                     };
