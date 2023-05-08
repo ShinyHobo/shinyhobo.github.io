@@ -89,57 +89,60 @@ export default class Timeline2 extends React.Component {
     
                                 // group by start/end date composit to determine number of tasks per time period
                                 //let sprints = _.chain(_.groupBy(team.timeAllocations, time => [time.startDate, time.endDate].join())).map((v:any)=>v).value();
-    
+
                                 let timeAllocations = team.timeAllocations.sort((a:any,b:any)=>a.startDate - b.startDate);
-                                let returnRanges = [];
-                                let currentRange: any= null;
-                                timeAllocations.forEach((r:any) => {
-                                    // bypass invalid value
-                                    if (r.startDate >= r.endDate) {
-                                        return;
-                                    }
-                                    //fill in the first element
-                                    if (!currentRange) {
-                                        currentRange = r;
-                                        return;
-                                    }
+                                let disciplines = _.chain(_.groupBy(timeAllocations, time => [time.discipline_id, time.deliverable_id, time.team_id].join())).map((v:any)=>v).value();
 
-                                    const currentEndDate = new Date(currentRange.endDate);
-                                    currentEndDate.setDate(currentEndDate.getDate() + 4); // covers time overlap when sprint ends on a weekend
-                                    const currentEndTime = currentEndDate.getTime();
-
-                                    if (currentEndTime < r.startDate) {
+                                disciplines.forEach((discipline: any) => {
+                                    let returnRanges = [];
+                                    let currentRange: any= null;
+                                    discipline.forEach((r:any) => {
+                                        // bypass invalid value
+                                        if (r.startDate >= r.endDate) {
+                                            return;
+                                        }
+                                        //fill in the first element
+                                        if (!currentRange) {
+                                            currentRange = r;
+                                            return;
+                                        }
+    
+                                        const currentEndDate = new Date(currentRange.endDate);
+                                        currentEndDate.setDate(currentEndDate.getDate() + 4); // covers time overlap when sprint ends on a weekend
+                                        const currentEndTime = currentEndDate.getTime();
+    
+                                        if (currentEndTime < r.startDate) {
+                                            returnRanges.push(currentRange);
+                                            currentRange = r;
+                                        } else if (currentRange.endDate < r.endDate) {
+                                            currentRange.endDate = r.endDate;
+                                            currentRange.partTime = typeof currentRange.partTime == 'number' ? currentRange.partTime : 0;
+                                            currentRange.fullTime = typeof currentRange.fullTime == 'number' ? currentRange.fullTime : 0;
+                                            currentRange.partTime += r.partialTime;
+                                            currentRange.fullTime += Math.abs(1 - r.partialTime);
+                                        }
+                                    });
+    
+                                    if(currentRange) {
                                         returnRanges.push(currentRange);
-                                        currentRange = r;
-                                    } else if (currentRange.endDate < r.endDate) {
-                                        currentRange.endDate = r.endDate;
-                                        currentRange.partTime = typeof currentRange.partTime == 'number' ? currentRange.partTime : 0;
-                                        currentRange.fullTime = typeof currentRange.fullTime == 'number' ? currentRange.fullTime : 0;
-                                        currentRange.partTime += r.partialTime;
-                                        currentRange.fullTime += Math.abs(1 - r.partialTime);
                                     }
-                                });
-
-                                if(currentRange) {
-                                    returnRanges.push(currentRange);
-                                }
-
-                                returnRanges.forEach((time: any) => {
-                                    let titleArr: string[] = deliverable.title.match(/\S.{1,20}(?=\s|$)/g);
-                                    let title = titleArr.length > 1 ? titleArr[0] + "..." : titleArr[0];
-                                    //let title = deliverable.title;
-                                    if(title === 'Unannounced') {
-                                        title = deliverable.description;
-                                    }
-                                    
-                                    console.info(he.unescape(title))
-                                    const event: Event = {
-                                        EventName: time.partialTime === 0 ? "Full-time" : time.partialTime === 1 ? "Part-time" : "Unscheduled",
-                                        EventSource: `(${deliverable.slug}) ${he.unescape(title)}`,//title,
-                                        Start: new Date(time.startDate),
-                                        End: new Date(time.endDate),
-                                    };
-                                    this.testData.push(event);
+    
+                                    returnRanges.forEach((time: any) => {
+                                        let titleArr: string[] = deliverable.title.match(/\S.{1,20}(?=\s|$)/g);
+                                        let title = titleArr.length > 1 ? titleArr[0] + "..." : titleArr[0];
+                                        //let title = deliverable.title;
+                                        if(title === 'Unannounced') {
+                                            title = deliverable.description;
+                                        }
+                                        const event: Event = {
+                                            EventName: time.partialTime === 0 ? "Full-time" : time.partialTime === 1 ? "Part-time" : "Unscheduled",
+                                            EventSource: `(${deliverable.slug}) ${he.unescape(title)}`,//title,
+                                            Discipline: `${team.abbreviation} (${time.title})`,
+                                            Start: new Date(time.startDate),
+                                            End: new Date(time.endDate),
+                                        };
+                                        this.testData.push(event);
+                                    });
                                 });
                             }
                         });
@@ -154,6 +157,7 @@ export default class Timeline2 extends React.Component {
         class Event {
             EventName: string = "";
             EventSource: string = "";
+            Discipline: string = "";
             Start: Date = new Date;
             End: Date = new Date();
         }
@@ -235,12 +239,13 @@ export default class Timeline2 extends React.Component {
             
             return {
                 label: event.EventName,
+                team_info: event.Discipline,
                 data: data,
                 skipNull: true,
                 backgroundColor: eventColors[eventNames.indexOf(event.EventName)],
                 stack: event.EventSource + "_" + stack.Stack,
                 datalabels: {
-                formatter: () => event.EventName
+                    formatter: () => event.EventName
                 }
             };
             });
@@ -255,56 +260,64 @@ export default class Timeline2 extends React.Component {
             indexAxis: "y" as const,
             plugins: {
                 tooltip: {
-                enabled: false
+                    enabled: true,
+                    callbacks: {
+                        title: function(tooltipItem:any) {
+                            return tooltipItem[0].dataset.team_info;
+                        },
+                        label: function(tootltipItem:any) {
+                            return tootltipItem.dataset.label;
+                        }
+                    },
                 },
                 legend: {
-                display: false
+                    display: false
                 },
                 datalabels: {
-                color: "black",
-                anchor: "start",
-                align: "right",
-                display: false,
-                font: {
-                    weight: "bold",
-                    size: 20
-                }
+                    color: "black",
+                    anchor: "start",
+                    align: "right",
+                    display: false,
+                    font: {
+                        weight: "bold",
+                        size: 20
+                    }
                 }
             },
             
             scales: {
                 x: {
-                min: Math.min(Date.parse("2021-01-01")),
-                max: Math.max(Date.parse("2023-12-31")),
-                ticks: {
-                    maxTicksLimit: 10,
-                    color: "white",
-                },
-                type: "time",
-                time: {
-                    displayFormats: {
-                    millisecond: "HH:mm:ss.SSS",
-                    second: "yyyy-MM-dd HH:mm:ss.SSS",
-                    minute: "yyyy-MM-dd HH:mm:ss.SSS",
-                    hour: "yyyy-MM-dd HH:mm:ss.SSS",
-                    day: "yyyy-MM-dd",
-                    week: "yyyy-MM-dd HH:mm:ss.SSS",
-                    month: "yyyy-MM-dd HH:mm:ss.SSS",
-                    quarter: "yyyy-MM-dd HH:mm:ss.SSS",
-                    year: "yyyy-MM-dd HH:mm:ss.SSS"
+                    min: Math.min(Date.parse("2021-01-01")),
+                    max: Math.max(Date.parse("2023-12-31")),
+                    ticks: {
+                        maxTicksLimit: 24,
+                        color: "white",
                     },
-                    unit: "day"
-                },
-                stacked: true
+                    type: "time",
+                    time: {
+                        displayFormats: {
+                        millisecond: "HH:mm:ss.SSS",
+                        second: "yyyy-MM-dd HH:mm:ss.SSS",
+                        minute: "yyyy-MM-dd HH:mm:ss.SSS",
+                        hour: "yyyy-MM-dd HH:mm:ss.SSS",
+                        day: "yyyy-MM-dd",
+                        week: "yyyy-MM-dd HH:mm:ss.SSS",
+                        month: "yyyy-MM-dd HH:mm:ss.SSS",
+                        quarter: "yyyy-MM-dd HH:mm:ss.SSS",
+                        year: "yyyy-MM-dd HH:mm:ss.SSS"
+                        },
+                        unit: "day"
+                    },
+                    stacked: true
                 },
                 y: {
-                stacked: true,
-                ticks: {
-                    color: "white",
-                    font: {
-                    size: 20
+                    stacked: true,
+                    ticks: {
+                        color: "white",
+                        font: {
+                            size: 20
+                        },
                     }
-                }
                 }
             },
             animation: false
