@@ -91,7 +91,7 @@ export default class Timeline2 extends React.Component {
                                 //let sprints = _.chain(_.groupBy(team.timeAllocations, time => [time.startDate, time.endDate].join())).map((v:any)=>v).value();
 
                                 let timeAllocations = team.timeAllocations.sort((a:any,b:any)=>a.startDate - b.startDate);
-                                let disciplines = _.chain(_.groupBy(timeAllocations, time => [time.discipline_id, time.deliverable_id, time.team_id].join())).map((v:any)=>v).value();
+                                let disciplines = _.chain(_.groupBy(timeAllocations, time => [time.discipline_id, time.deliverable_id, time.team_id, time.partialTime].join())).map((v:any)=>v).value();
 
                                 disciplines.forEach((discipline: any) => {
                                     let returnRanges = [];
