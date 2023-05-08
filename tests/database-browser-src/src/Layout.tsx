@@ -15,7 +15,7 @@ export default class Layout extends React.Component {
                   <Link to="/browser">Browser</Link>
                 </li>
                 <li>
-                  <Link to="/timeline">Timeline</Link>
+                  <Link to="/timeline">Scheduled Work Timeline</Link>
                 </li>
               </ul>
             </nav>
