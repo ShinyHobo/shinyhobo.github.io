@@ -290,25 +290,30 @@ export default class Timeline2 extends React.Component {
                     min: Math.min(Date.parse("2021-01-01")),
                     max: Math.max(Date.parse("2023-12-31")),
                     ticks: {
-                        maxTicksLimit: 24,
+                        maxTicksLimit: 48,
                         color: "white",
+                        autoSkip: false
                     },
+                    
                     type: "time",
                     time: {
                         displayFormats: {
-                        millisecond: "HH:mm:ss.SSS",
-                        second: "yyyy-MM-dd HH:mm:ss.SSS",
-                        minute: "yyyy-MM-dd HH:mm:ss.SSS",
-                        hour: "yyyy-MM-dd HH:mm:ss.SSS",
-                        day: "yyyy-MM-dd",
-                        week: "yyyy-MM-dd HH:mm:ss.SSS",
-                        month: "yyyy-MM-dd HH:mm:ss.SSS",
-                        quarter: "yyyy-MM-dd HH:mm:ss.SSS",
-                        year: "yyyy-MM-dd HH:mm:ss.SSS"
+                            millisecond: "HH:mm:ss.SSS",
+                            second: "yyyy-MM-dd HH:mm:ss.SSS",
+                            minute: "yyyy-MM-dd HH:mm:ss.SSS",
+                            hour: "yyyy-MM-dd HH:mm:ss.SSS",
+                            day: "yyyy-MM-dd",
+                            week: "yyyy-MM-dd HH:mm:ss.SSS",
+                            month: "MM/yyyy",
+                            quarter: "yyyy-MM-dd HH:mm:ss.SSS",
+                            year: "yyyy-MM-dd HH:mm:ss.SSS"
                         },
-                        unit: "day"
+                        unit: "month"
                     },
-                    stacked: true
+                    stacked: true,
+                    grid: {
+                        color: "grey"
+                    }
                 },
                 y: {
                     stacked: true,
@@ -317,6 +322,9 @@ export default class Timeline2 extends React.Component {
                         font: {
                             size: 20
                         },
+                    },
+                    grid: {
+                        color: "darkgrey"
                     }
                 }
             },
@@ -401,7 +409,7 @@ export default class Timeline2 extends React.Component {
             <>
                 <div>{this.working ? "Loading timeline..." : "Timeline loading complete."}</div>
                 {!this.working ? 
-                <div style={{ height: `${this.height}px` }}>
+                <div style={{ height: `${this.height}px`, width: "1900px" }}>
                     <button id="previous" onClick={this.previous.bind(this)}>previous</button>
                     <button id="next" onClick={this.next.bind(this)}>next</button>
                     <Bar options={this.options} data={this.data} />
