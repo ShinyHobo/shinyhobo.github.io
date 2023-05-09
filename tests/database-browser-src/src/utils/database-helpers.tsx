@@ -47,10 +47,11 @@ export class CommonDBFunctions {
      */
     public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number, offset: number) {
         // Get all deliverables, grouping by uuid and ordering by add date, to get the most recent additions only
-        const dbDeliverableIds = (await db?.query(`SELECT id, title, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
-            GROUP BY uuid ORDER BY title ASC LIMIT ${limit} offset ${offset}`) as any[]).map(d => d.id);
+        const dbDeliverableIds = (await db?.query(`SELECT id, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
+            GROUP BY uuid ORDER BY title ASC`) as any[]).map(d => d.id);
 
         let dbDeliverables = await db?.query(`SELECT * FROM deliverable_diff WHERE id IN (${dbDeliverableIds.toString()})`) as any[];
+        dbDeliverables = _.orderBy(dbDeliverables, [d => d.title.toLowerCase()], ['asc']);
 
         // Get complete list of deliverables that have names already, filtering out everything by the most recent addition of the item (some older entries are the same item with a different slug)
         const deduplicatedAnnouncedDeliverables = _.chain(dbDeliverables.filter(d => d.title && !d.title.includes("Unannounced"))).groupBy('title').map((d: any[]) => d[0]).value();
@@ -69,8 +70,8 @@ export class CommonDBFunctions {
         const unAnnouncedDeliverables = dbDeliverables.filter(d => d.title && d.title.includes("Unannounced"));
 
         dbDeliverables = [...announcedDeliverables, ...unAnnouncedDeliverables];
-        
-        return dbDeliverables;
+
+        return _(dbDeliverables).drop(offset).take(limit).value();
     }
 
     /**
