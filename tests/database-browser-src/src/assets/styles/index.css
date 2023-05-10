@@ -68,3 +68,70 @@ textarea {
   color: #d8d4cf;
   background-color: #222324;
 }
+
+.deliverable-list-container {
+  display: flex;
+}
+
+.deliverable-span {
+  border: 1px solid cadetblue;
+}
+
+.deliverable-info {
+  width: 400px;
+  border-right: 1px solid cadetblue;
+}
+
+.deliverable-info h3 {
+  margin-top: 5;
+  margin-bottom: 0;
+  margin-left: 10;
+}
+
+.deliverable-info .description {
+  margin-left: 10;
+  margin-bottom: 5;
+  height: 100px;
+  overflow-y: auto;
+  font-size: 12;
+  scrollbar-width: thin;
+  scrollbar-color: darkturquoise rgb(21, 21, 21);
+}
+
+.deliverable-info .projects {
+  margin-right: 10;
+  margin-bottom: 5;
+  text-align: right;
+}
+
+.deliverable-info tr {
+  overflow: hidden;
+}
+
+.deliverable-timeline {
+  overflow-x: auto;
+  cursor: grab;
+}
+
+.deliverable-timeline {
+  overflow-x: auto;
+  cursor: grab;
+}
+
+.deliverable-timeline:active {
+  cursor: grabbing;
+}
+
+.scroll{
+  width: 200px;
+  overflow-x: scroll;
+}
+
+.table-scroll {
+  overflow-x: scroll;
+  user-select: none;
+}
+
+#timeline-container {
+  width: 99vw;
+}

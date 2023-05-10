@@ -45,7 +45,7 @@ export class CommonDBFunctions {
      * @param offset The number of deliverables to skip
      * @returns The list of unique, listed deliverables on the progress tracker
      */
-    public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number, offset: number) {
+    public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number = 0, offset: number = 0) {
         // Get all deliverables, grouping by uuid and ordering by add date, to get the most recent additions only
         const dbDeliverableIds = (await db?.query(`SELECT id, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
             GROUP BY uuid ORDER BY title ASC`) as any[]).map(d => d.id);
@@ -71,23 +71,28 @@ export class CommonDBFunctions {
 
         dbDeliverables = [...announcedDeliverables, ...unAnnouncedDeliverables];
 
-        return _(dbDeliverables).drop(offset).take(limit).value();
+        let returnDeliverables = _(dbDeliverables);
+        if(offset) {
+            returnDeliverables = returnDeliverables.drop(offset);
+        }
+        if(limit) {
+            returnDeliverables = returnDeliverables.take(limit);
+        }
+
+        return returnDeliverables.value();
     }
 
     /**
      * Builds the complete deliverable object (sub-componets like teamtimes included) array of all deliverables for the desired time
      * @param db The database connection
      * @param date The delta timestamp to use
-     * @param limit The number of deliverables to build
-     * @param offset The number of deliverables to skip
-     * @param alphabetize Whether or not to alphabetize sort the list (default no)
+     * @param deliverables The deliverables to build out
      * @returns The array of built deliverables
      */
-    public static async buildCompleteDeliverables(db: Database, date: string, limit: number = 0, offset: number = 0, alphabetize: boolean = false) {
-        const dbDeliverables = await this.getUniqueDeliverables(db, date, limit, offset);
-        const cardIds: string = dbDeliverables.filter((dd) => dd.card_id).map((dd) => dd.card_id).toString();
+    public static async buildCompleteDeliverables(db: Database, date: string, deliverables: any[]) {
+        const cardIds: string = deliverables.filter((dd) => dd.card_id).map((dd) => dd.card_id).toString();
         const dbCards: any[] = await db?.query(`SELECT * FROM card_diff WHERE id IN (${cardIds})`) as any[];
-        const deliverableIds = dbDeliverables.map((dd) => dd.id).toString();
+        const deliverableIds = deliverables.map((dd) => dd.id).toString();
 
         const dbDeliverableTeams: any[] = await db?.query(`SELECT *, MAX(addedDate) FROM team_diff WHERE addedDate <= ${date} AND 
             id IN (SELECT team_id FROM deliverable_teams WHERE deliverable_id IN (${deliverableIds})) GROUP BY slug ORDER BY addedDate DESC`) as any[];
@@ -113,7 +118,7 @@ export class CommonDBFunctions {
                 });
         let dbTimeAllocationsGrouped = _.groupBy(dbTimeAllocations, 'deliverable_id');
 
-        dbDeliverables.forEach((d) => {
+        deliverables.forEach((d) => {
             d.card = dbCards.find((c) => c.id === d.card_id);
             const timeAllocations = _.groupBy(dbTimeAllocationsGrouped[d.id], 'team_id');
             const teams = dbDeliverableTeams.filter(t => deliverableTeams[d.id] && deliverableTeams[d.id].some(tid => t.id === tid.team_id));
@@ -126,7 +131,7 @@ export class CommonDBFunctions {
                 d.teams.push(team);
             });
         });
-        return alphabetize ? _.orderBy(dbDeliverables, [d => d.title.toLowerCase()], ['asc']) : dbDeliverables;
+        return deliverables;
     }
 
     /**
