@@ -222,9 +222,13 @@ export default class Timeline3 extends React.Component {
                                 </div>
                                 {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                 <div key={index} className="deliverable-info-box">
-                                    <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
-                                    <h4 className="projects">{deliverable.project_ids}</h4>
-                                    <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
+                                    <div style={{display: "flex"}}>
+                                        <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
+                                        <h4 className="projects">{deliverable.project_ids}</h4>
+                                    </div>
+                                    <div style={{display: "contents"}}>
+                                        <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
+                                    </div>
                                 </div>
                                 ))}
                             </div>
