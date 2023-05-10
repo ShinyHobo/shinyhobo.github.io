@@ -1,4 +1,4 @@
-import React, { createRef } from "react";
+import React, { useEffect } from "react";
 import { CommonDBFunctions, Database, SqliteStats } from "../utils/database-helpers";
 import _ from "lodash";
 import * as he from 'he';
@@ -116,6 +116,15 @@ export default class Timeline3 extends React.Component {
         this.hasMore = this.loadedDeliverables.length !== this.deliverables.length;
     }
 
+    componentDidUpdate() {    
+        this.timelineTable = document.querySelector('.deliverable-timeline');
+        this.timelineTableMonthHeader = document.getElementById("month-header");
+        // resets the month header position on page load
+        if(this.timelineTable && this.timelineTableMonthHeader) {
+            this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft
+        }
+    }
+
     render() {
         return (
             <>
@@ -140,7 +149,20 @@ export default class Timeline3 extends React.Component {
                     >
                         <div className="deliverable-list-container">
                             <div className="deliverable-info">
-                                <h2 className="deliverable-info-header">Deliverables</h2>
+                                <div className="deliverable-info-header" style={{display: "flex", width: "100%"}}>
+                                    <div style={{width: "100%", zIndex: 2}}>
+                                        <h2 style={{backgroundColor: "black", margin: 0, height: "100%"}}>Deliverables</h2>
+                                    </div>
+                                    <div style={{position: "relative", top: 0}}>
+                                        <div style={{position: "absolute", width: `calc(101px*${this.months.length}`, borderBottom: "1px solid white"}} id="month-header">
+                                            {this.months.map((date:Date, index:number)=> (
+                                                <div key={index} style={{width: 100, float:"left", backgroundColor:"black", height: 56, borderRight: "1px solid white"}}>
+                                                    <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
                                 {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                 <div key={index} className="deliverable-info-box">
                                     <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
@@ -150,13 +172,6 @@ export default class Timeline3 extends React.Component {
                                 ))}
                             </div>
                             <div className="deliverable-timeline">
-                                <div className="months" id="month-header">
-                                    {this.months.map((date:Date, index:number)=> (
-                                        <div key={index} className="month month-header">
-                                            <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3>
-                                        </div>
-                                    ))}
-                                </div>
                                 <div className="timeline-scroll" 
                                     onMouseDown={this.clickTimeline.bind(this)} 
                                     onMouseUp={this.unclickTimeline.bind(this)} 
@@ -165,14 +180,12 @@ export default class Timeline3 extends React.Component {
                                 >
                                     <div className="months">
                                     {this.months.map((date:Date, index:number)=> (
-                                        <div key={index} className="month">
-                                            {/* <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3> */}
-                                        </div>
+                                        <div key={index} className="month"/>
                                     ))}
                                         <div className="deliverable-rows">
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                             <div key={index} className="deliverable-row">
-                                                {deliverable.startDate} 
+                                                {deliverable.startDate} {deliverable.slug} 
                                             </div>
                                         ))}
                                         </div>
@@ -215,7 +228,7 @@ export default class Timeline3 extends React.Component {
                 const x = e.pageX - this.timelineTable.offsetLeft;
                 const scroll = x - this.startX;
                 this.timelineTable.scrollLeft = this.scrollLeft - scroll;
-                this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft + 331
+                this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft
             }
         }
     }

@@ -89,8 +89,11 @@ textarea {
   border-right: 1px solid white;
   height: 56px;
   background-color: black;
-  z-index: 2;
   margin: 0;
+}
+
+.deliverable-info .deliverable-info-header h2 {
+  z-index: 2;
 }
 
 .deliverable-info .description {
@@ -142,7 +145,7 @@ textarea {
   border-right: 1px solid white;
 }
 
-.deliverable-timeline .months .month-header {
+.month-header {
   height: 56px;
   position: sticky;
   top: 0;
@@ -168,7 +171,8 @@ textarea {
 .deliverable-timeline .timeline-scroll .deliverable-rows {
   position: absolute;
   width: 100%;
-  top: 56px;
+  top: 57px;
+  z-index: -1;
 }
 
 .scroll{
