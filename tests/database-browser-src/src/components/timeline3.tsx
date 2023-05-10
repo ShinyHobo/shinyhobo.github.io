@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { CommonDBFunctions, Database, SqliteStats } from "../utils/database-helpers";
 import _ from "lodash";
 import * as he from 'he';
@@ -6,9 +6,6 @@ import { SqliteWorker } from "sql.js-httpvfs";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import InfiniteScroll from 'react-infinite-scroll-component'
-
-import { useTable, useBlockLayout } from 'react-table';
-import { useSticky } from 'react-table-sticky';
 
 @observer
 export default class Timeline3 extends React.Component {
@@ -68,11 +65,12 @@ export default class Timeline3 extends React.Component {
         while(start < end) {
             let d = start.getDate();
             start.setMonth(start.getMonth()+1);
+            //start.setDate(0)
             if(start.getDate() != d) {
                 start.setDate(0);
             }
             
-            this.months.push(new Date(start));
+            this.months.push(new Date(start.getFullYear(), start.getMonth(), 1));
         }
     }
 
@@ -116,6 +114,66 @@ export default class Timeline3 extends React.Component {
         this.hasMore = this.loadedDeliverables.length !== this.deliverables.length;
     }
 
+    /**
+     * Groups deliverable team time allocations and stitches relavent time allocations together
+     * @param deliverable The deliverable to collect
+     * @returns The deliverable team/time groups
+     */
+    private collectDeliverableTimeline(deliverable: any): any[] {
+        let returnData: any[] = [];
+        if(deliverable.teams) {
+            deliverable.teams.forEach((team: any) => {
+                if(team.timeAllocations) {
+                    let timeAllocations = team.timeAllocations.slice().sort((a:any,b:any)=>a.startDate - b.startDate);
+                    let disciplines = _.chain(_.groupBy(timeAllocations, time => [time.discipline_id, time.deliverable_id, time.team_id, time.partialTime].join("-"))).map((v:any)=>v).value();
+    
+                    disciplines.forEach((discipline: any) => {
+                        let returnRanges = [];
+                        let currentRange: any= null;
+                        discipline.forEach((r:any) => {
+                            // bypass invalid value
+                            if (r.startDate >= r.endDate) {
+                                return;
+                            }
+                            //fill in the first element
+                            if (!currentRange) {
+                                currentRange = r;
+                                return;
+                            }
+    
+                            const currentEndDate = new Date(currentRange.endDate);
+                            currentEndDate.setDate(currentEndDate.getDate() + 4); // covers time overlap when sprint ends on a weekend
+                            const currentEndTime = currentEndDate.getTime();
+    
+                            if (currentEndTime < r.startDate) {
+                                returnRanges.push(currentRange);
+                                currentRange = r;
+                            } else if (currentRange.endDate < r.endDate) {
+                                currentRange.endDate = r.endDate;
+                                currentRange.partTime = typeof currentRange.partTime == 'number' ? currentRange.partTime : 0;
+                                currentRange.fullTime = typeof currentRange.fullTime == 'number' ? currentRange.fullTime : 0;
+                                currentRange.partTime += r.partialTime;
+                                currentRange.fullTime += Math.abs(1 - r.partialTime);
+                            }
+                        });
+    
+                        if(currentRange) {
+                            returnRanges.push(currentRange);
+                        }
+    
+                        returnRanges.forEach((time: any) => {
+                            returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title})
+                        });
+                    });
+                }
+            });
+        }
+        const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
+        const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
+        console.info(teamGroups)
+        return teamGroups;
+    }
+
     componentDidUpdate() {    
         this.timelineTable = document.querySelector('.deliverable-timeline');
         this.timelineTableMonthHeader = document.getElementById("month-header");
@@ -151,7 +209,7 @@ export default class Timeline3 extends React.Component {
                             <div className="deliverable-info">
                                 <div className="deliverable-info-header" style={{display: "flex", width: "100%"}}>
                                     <div style={{width: "100%", zIndex: 2}}>
-                                        <h2 style={{backgroundColor: "black", margin: 0, height: "100%"}}>Deliverables</h2>
+                                        <h2 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables</h2>
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div style={{position: "absolute", width: `calc(101px*${this.months.length}`, borderBottom: "1px solid white"}} id="month-header">
@@ -185,7 +243,21 @@ export default class Timeline3 extends React.Component {
                                         <div className="deliverable-rows">
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                             <div key={index} className="deliverable-row">
-                                                {deliverable.startDate} {deliverable.slug} 
+                                                {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, index:number)=>(
+                                                    <div key={index} className="team">
+                                                        {teamGroup.team}
+                                                        {teamGroup.discs.map((disc:any, index:number)=>(
+                                                            <div key={index}>
+                                                                <h6 style={{margin:0}}>{disc.name}</h6>
+                                                                {disc.times.map((time:any, index: number)=>(
+                                                                    <div key={index}>
+                                                                        {time.start}-{time.end}
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                ))}
                                             </div>
                                         ))}
                                         </div>

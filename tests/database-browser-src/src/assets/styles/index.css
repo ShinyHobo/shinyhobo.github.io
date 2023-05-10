@@ -137,6 +137,8 @@ textarea {
 .deliverable-timeline .timeline-scroll .deliverable-rows .deliverable-row {
   height: 150px;
   border-bottom: 1px solid white;
+  overflow: hidden;
+  position: relative;
 }
 
 .deliverable-timeline .months .month {
