@@ -170,7 +170,6 @@ export default class Timeline3 extends React.Component {
         }
         const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
         const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
-        console.info(teamGroups)
         return teamGroups;
     }
 

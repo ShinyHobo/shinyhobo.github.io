@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import { LazyHttpDatabase} from "sql.js-httpvfs/dist/sqlite.worker";
 import * as Comlink from "comlink";
+import * as he from 'he';
 
 // The sqlite stats, tracks all requests from initialization
 export type SqliteStats = {
@@ -48,26 +49,26 @@ export class CommonDBFunctions {
     public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number = 0, offset: number = 0) {
         // Get all deliverables, grouping by uuid and ordering by add date, to get the most recent additions only
         const dbDeliverableIds = (await db?.query(`SELECT id, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
-            GROUP BY uuid ORDER BY title ASC`) as any[]).map(d => d.id);
+            GROUP BY uuid ORDER BY id ASC`) as any[]).map(d => d.id);
 
         let dbDeliverables = await db?.query(`SELECT * FROM deliverable_diff WHERE id IN (${dbDeliverableIds.toString()})`) as any[];
-        dbDeliverables = _.orderBy(dbDeliverables, [d => d.title.toLowerCase()], ['asc']);
+        dbDeliverables = _.orderBy(dbDeliverables, [d => he.unescape(d.title).toLowerCase()], ['asc']);
 
         // Get complete list of deliverables that have names already, filtering out everything by the most recent addition of the item (some older entries are the same item with a different slug)
-        const deduplicatedAnnouncedDeliverables = _.chain(dbDeliverables.filter(d => d.title && !d.title.includes("Unannounced"))).groupBy('title').map((d: any[]) => d[0]).value();
+        const deduplicatedAnnouncedDeliverables = _.chain(dbDeliverables.filter(d => he.unescape(d.title) && !d.title.includes("Unannounced"))).groupBy(x => he.unescape(x.title)).map((d: any[]) => d[d.length-1]).value();
 
         // Get list of unannounced deliverables
-        const deduplicatedUnannouncedDeliverables = dbDeliverables.filter(d => d.title && d.title.includes("Unannounced"));
+        const deduplicatedUnannouncedDeliverables = dbDeliverables.filter(d => he.unescape(d.title) && d.title.includes("Unannounced"));
         dbDeliverables = [...deduplicatedAnnouncedDeliverables, ...deduplicatedUnannouncedDeliverables];
 
         // Get list of deliverables that have been removed (denoted by missing end/start dates); these are included in the initial query to retrieve the most up to date versions
         const removedDeliverables = dbDeliverables.filter(d => d.startDate === null && d.endDate === null);
-        dbDeliverables = dbDeliverables.filter(d => !removedDeliverables.some(r => r.uuid === d.uuid || (r.title && r.title === d.title && !r.title.includes("Unannounced"))));
+        dbDeliverables = dbDeliverables.filter(d => !removedDeliverables.some(r => r.uuid === d.uuid || (r.title && he.unescape(r.title) === he.unescape(d.title) && !r.title.includes("Unannounced"))));
 
         // Sort deliverables by announced (combining items with the same name)
-        const announcedDeliverables = _.chain(dbDeliverables.filter(d => d.title && !d.title.includes("Unannounced"))).groupBy('title').map(d => d[0]).value();
+        const announcedDeliverables = _.chain(dbDeliverables.filter(d => he.unescape(d.title) && !d.title.includes("Unannounced"))).groupBy('title').map(d => d[0]).value();
         // and unannounced (all have the same name)
-        const unAnnouncedDeliverables = dbDeliverables.filter(d => d.title && d.title.includes("Unannounced"));
+        const unAnnouncedDeliverables = dbDeliverables.filter(d => he.unescape(d.title) && d.title.includes("Unannounced"));
 
         dbDeliverables = [...announcedDeliverables, ...unAnnouncedDeliverables];
 
