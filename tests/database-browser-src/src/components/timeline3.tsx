@@ -153,22 +153,20 @@ export default class Timeline3 extends React.Component {
                                     onMouseMove={this.moveTimeline.bind(this)} 
                                     onMouseLeave={this.unclickTimeline.bind(this)}
                                 >
-                                    <div style={{display: "flex"}}>
+                                    <div className="months">
                                     {this.months.map((date:Date, index:number)=> (
                                         <div key={index} className="month">
                                             <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3>
                                         </div>
                                     ))}
-                                    </div>
-                                    {this.months.map((date:Date, index:number)=> (
-                                    <div key={index} className="month">
+                                        <div className="deliverable-rows">
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
-                                        <div key={index} className="deliverable-row">
-                                            {deliverable.startDate} 
-                                        </div>
+                                            <div key={index} className="deliverable-row">
+                                                {deliverable.startDate} 
+                                            </div>
                                         ))}
+                                        </div>
                                     </div>
-                                    ))}
                                 </div>
                             </div>
                         </div>
@@ -201,7 +199,6 @@ export default class Timeline3 extends React.Component {
 
     private moveTimeline(e:any) {
         if(this.timelineClicked) {
-            console.info("moving")
             if(this._scroller) {
                 const x = e.pageX - this._scroller.offsetLeft;
                 const scroll = x - this.startX;

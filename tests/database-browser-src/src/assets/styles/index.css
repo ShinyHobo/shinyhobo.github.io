@@ -116,41 +116,49 @@ textarea {
 .deliverable-timeline {
   overflow-x: auto;
   cursor: grab;
-}
-
-.deliverable-timeline {
   overflow-x: auto;
   cursor: grab;
+  user-select: none;
   display: flex;
-  height: 100%;
+  height: auto;
+  width: 100%;
+  scrollbar-width: none;
 }
 
 .deliverable-timeline:active {
   cursor: grabbing;
 }
 
-.deliverable-timeline .deliverable-row {
+.deliverable-timeline .timeline-scroll .deliverable-rows .deliverable-row {
   height: 150px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
 }
 
-.deliverable-timeline .month {
+.deliverable-timeline .months .month {
   width: 100px;
   float: left;
   border-right: 1px solid white;
 }
 
-.deliverable-timeline .month h3 {
+.deliverable-timeline .months .month h3 {
   text-align: center;
-  height: 36px;
 }
 
-.deliverable-timeline {
-  overflow-x: scroll;
-  user-select: none;
+.deliverable-timeline .months {
+  display: flex;
+  height: 100%;
+  position: absolute;
+}
+
+.deliverable-timeline .timeline-scroll {
+  position: relative;
+}
+
+.deliverable-timeline .timeline-scroll .deliverable-rows {
+  top: 56px;
+  position: absolute;
   width: 100%;
-  scrollbar-width: none;
 }
 
 .scroll{
