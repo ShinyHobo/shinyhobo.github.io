@@ -104,8 +104,13 @@ textarea {
   text-align: right;
 }
 
-.deliverable-info tr {
-  overflow: hidden;
+.deliverable-info .deliverable-info-box {
+  height: 150px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: darkturquoise rgb(21, 21, 21);
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .deliverable-timeline {
@@ -116,20 +121,42 @@ textarea {
 .deliverable-timeline {
   overflow-x: auto;
   cursor: grab;
+  display: flex;
+  height: 100%;
 }
 
 .deliverable-timeline:active {
   cursor: grabbing;
 }
 
+.deliverable-timeline .deliverable-row {
+  height: 150px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.deliverable-timeline .month {
+  width: 100px;
+  float: left;
+  border-right: 1px solid white;
+}
+
+.deliverable-timeline .month h3 {
+  text-align: center;
+  height: 36px;
+}
+
+.deliverable-timeline {
+  overflow-x: scroll;
+  user-select: none;
+  width: 100%;
+  scrollbar-width: none;
+}
+
 .scroll{
   width: 200px;
   overflow-x: scroll;
-}
-
-.table-scroll {
-  overflow-x: scroll;
-  user-select: none;
+  scrollbar-width: none;
 }
 
 #timeline-container {

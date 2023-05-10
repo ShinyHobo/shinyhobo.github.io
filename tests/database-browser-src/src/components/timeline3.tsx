@@ -24,6 +24,8 @@ export default class Timeline3 extends React.Component {
     private skip: number = 0;
     private hasMore: boolean = true;
 
+    private months: Date[] = [];
+
     constructor(vfs: any) {
         super(vfs);
         this.db = vfs.db;
@@ -38,6 +40,8 @@ export default class Timeline3 extends React.Component {
      * Initializes the selectable delta values and the corresponding unique deliverable list for the most recent delta
      */
     private initializeData() {
+        this.getTimelineMonths();
+
         CommonDBFunctions.getDeltaList(this.db).then(async (deltas:string[]) => {
             // only use latest pull time for each day
             this.deltaDatetimes = _(deltas.map((d:string)=>new Date(Number.parseInt(d)))).groupBy((d:Date)=>d.toDateString()).map((d:Date[])=>d[0].getTime()).value();
@@ -49,6 +53,25 @@ export default class Timeline3 extends React.Component {
             
             this.loading = false;
         });
+    }
+
+    /**
+     * Gets the list of months between Jan 1, 2021 and the end of the next year
+     */
+    private getTimelineMonths() {
+        let start = new Date(Date.parse("2021-01-01"));
+        const now = new Date(Date.now());
+        const end = new Date(Date.parse(`${now.getFullYear()+1}-11-30`));
+        
+        while(start < end) {
+            let d = start.getDate();
+            start.setMonth(start.getMonth()+1);
+            if(start.getDate() != d) {
+                start.setDate(0);
+            }
+            
+            this.months.push(new Date(start));
+        }
     }
 
     /**
@@ -113,54 +136,41 @@ export default class Timeline3 extends React.Component {
                         }
                     >
                         <div  className="deliverable-list-container">
-                        <table className="deliverable-info">
-                            <thead>
-                                <tr><td><h2>Deliverables</h2></td></tr>
-                            </thead>
-                            <tbody>
+                            <div className="deliverable-info">
+                            <h2>Deliverables</h2>
                             {this.loadedDeliverables.map((deliverable:any, index:number)=> (
-                                <tr key={index} className="deliverable-info">
-                                    <td>
-                                        <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
-                                        <h4 className="projects">{deliverable.project_ids}</h4>
-                                        <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
-                                    </td>
-                                </tr>
+                                <div key={index} className="deliverable-info-box">
+                                    <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
+                                    <h4 className="projects">{deliverable.project_ids}</h4>
+                                    <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
+                                </div>
                             ))}
-                            </tbody>
-                        </table>
-                        <div className="table-scroll">
-                            <table className="deliverable-timeline" 
-                                onMouseDown={this.clickTimeline.bind(this)} 
-                                onMouseUp={this.unclickTimeline.bind(this)} 
-                                onMouseMove={this.moveTimeline.bind(this)} 
-                                onMouseLeave={this.unclickTimeline.bind(this)}>
-                                <thead>
-                                    <tr>
-                                        <td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td><td>january 2021</td>
-                                        <td>february 2021</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                {this.loadedDeliverables.map((deliverable:any, index:number)=> (
-                                    <tr key={index} className="deliverable-info">
-                                        <td style={{width:60}}>
-                                            {deliverable.startDate}    
-                                        </td>
-                                    </tr>
-                                ))}
-                                </tbody>
-                            </table>
-                        </div>
+                            </div>
+                            <div className="deliverable-timeline">
+                                <div className="timeline-scroll" 
+                                    onMouseDown={this.clickTimeline.bind(this)} 
+                                    onMouseUp={this.unclickTimeline.bind(this)} 
+                                    onMouseMove={this.moveTimeline.bind(this)} 
+                                    onMouseLeave={this.unclickTimeline.bind(this)}
+                                >
+                                    <div style={{display: "flex"}}>
+                                    {this.months.map((date:Date, index:number)=> (
+                                        <div key={index} className="month">
+                                            <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3>
+                                        </div>
+                                    ))}
+                                    </div>
+                                    {this.months.map((date:Date, index:number)=> (
+                                    <div key={index} className="month">
+                                        {this.loadedDeliverables.map((deliverable:any, index:number)=> (
+                                        <div key={index} className="deliverable-row">
+                                            {deliverable.startDate} 
+                                        </div>
+                                        ))}
+                                    </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                         
                     </InfiniteScroll>
@@ -178,7 +188,7 @@ export default class Timeline3 extends React.Component {
 
     private clickTimeline(e:any) {
         this.timelineClicked = true;
-        this._scroller = document.querySelector('.table-scroll');
+        this._scroller = document.querySelector('.deliverable-timeline');
         if(this._scroller) {
             this.startX = e.pageX - this._scroller.offsetLeft;
             this.scrollLeft = this._scroller.scrollLeft;
@@ -191,21 +201,11 @@ export default class Timeline3 extends React.Component {
 
     private moveTimeline(e:any) {
         if(this.timelineClicked) {
+            console.info("moving")
             if(this._scroller) {
-                //let left = _scroller.scrollLeft - window.scrollX + e.clientX;
-                //let top = _scroller.scrollTop - window.scrollY + e.clientY;
-                // _scroller.scroll({
-                //     top: top,
-                //     left: left,
-                //     behavior: "smooth"
-                // })
-
                 const x = e.pageX - this._scroller.offsetLeft;
                 const scroll = x - this.startX;
                 this._scroller.scrollLeft = this.scrollLeft - scroll;
-    
-                //console.info(_scroller.scrollLeft, window.scrollX, e.clientX, left)
-                //console.info(left, _scroller.scrollLeft, e.clientX, window.scrollX)
             }
         }
     }
