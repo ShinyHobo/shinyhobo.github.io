@@ -33,6 +33,8 @@ export default class Timeline3 extends React.Component {
 
         makeObservable(this);
 
+        document.body.style.overflowX = "hidden";
+
         this.initializeData();
     }
 
@@ -118,12 +120,13 @@ export default class Timeline3 extends React.Component {
         return (
             <>
                 {!this.loading ? 
-                <div style={{margin: "10px"}}>
+                <>
                     <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
                         {this.deltaDatetimes.map((e:any) => {
                             return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString()}</option>;
                         })}
                     </select>
+                    <div id="scrollable-timeline">
                     <InfiniteScroll
                         dataLength={this.loadedDeliverables.length}
                         next={this.fetchData.bind(this)}
@@ -135,18 +138,25 @@ export default class Timeline3 extends React.Component {
                             </p>
                         }
                     >
-                        <div  className="deliverable-list-container">
+                        <div className="deliverable-list-container">
                             <div className="deliverable-info">
-                            <h2>Deliverables</h2>
-                            {this.loadedDeliverables.map((deliverable:any, index:number)=> (
+                                <h2 className="deliverable-info-header">Deliverables</h2>
+                                {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                 <div key={index} className="deliverable-info-box">
                                     <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
                                     <h4 className="projects">{deliverable.project_ids}</h4>
                                     <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
                                 </div>
-                            ))}
+                                ))}
                             </div>
                             <div className="deliverable-timeline">
+                                <div className="months" id="month-header">
+                                    {this.months.map((date:Date, index:number)=> (
+                                        <div key={index} className="month month-header">
+                                            <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3>
+                                        </div>
+                                    ))}
+                                </div>
                                 <div className="timeline-scroll" 
                                     onMouseDown={this.clickTimeline.bind(this)} 
                                     onMouseUp={this.unclickTimeline.bind(this)} 
@@ -156,7 +166,7 @@ export default class Timeline3 extends React.Component {
                                     <div className="months">
                                     {this.months.map((date:Date, index:number)=> (
                                         <div key={index} className="month">
-                                            <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3>
+                                            {/* <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3> */}
                                         </div>
                                     ))}
                                         <div className="deliverable-rows">
@@ -170,9 +180,9 @@ export default class Timeline3 extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        
                     </InfiniteScroll>
                 </div>
+                </>
                 : <></>}
                 <h5 style={{margin: "10px"}}>{this.loading ? "Loading timeline..." : ""}</h5>
             </>
@@ -182,14 +192,16 @@ export default class Timeline3 extends React.Component {
     private timelineClicked: boolean = false;
     private scrollLeft: number = 0;
     private startX: number = 0;
-    private _scroller: any | null = null;
+    private timelineTable: any | null = null;
+    private timelineTableMonthHeader: any | null = null;
 
     private clickTimeline(e:any) {
         this.timelineClicked = true;
-        this._scroller = document.querySelector('.deliverable-timeline');
-        if(this._scroller) {
-            this.startX = e.pageX - this._scroller.offsetLeft;
-            this.scrollLeft = this._scroller.scrollLeft;
+        this.timelineTable = document.querySelector('.deliverable-timeline');
+        this.timelineTableMonthHeader = document.getElementById("month-header");
+        if(this.timelineTable && this.timelineTableMonthHeader) {
+            this.startX = e.pageX - this.timelineTable.offsetLeft;
+            this.scrollLeft = this.timelineTable.scrollLeft;
         }
     }
 
@@ -199,10 +211,11 @@ export default class Timeline3 extends React.Component {
 
     private moveTimeline(e:any) {
         if(this.timelineClicked) {
-            if(this._scroller) {
-                const x = e.pageX - this._scroller.offsetLeft;
+            if(this.timelineTable && this.timelineTableMonthHeader) {
+                const x = e.pageX - this.timelineTable.offsetLeft;
                 const scroll = x - this.startX;
-                this._scroller.scrollLeft = this.scrollLeft - scroll;
+                this.timelineTable.scrollLeft = this.scrollLeft - scroll;
+                this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft + 331
             }
         }
     }

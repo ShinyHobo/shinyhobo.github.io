@@ -79,13 +79,18 @@ textarea {
 
 .deliverable-info {
   width: 400px;
-  border-right: 1px solid cadetblue;
 }
 
-.deliverable-info h3 {
-  margin-top: 5;
-  margin-bottom: 0;
-  margin-left: 10;
+.deliverable-info .deliverable-info-header {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  height: 56px;
+  background-color: black;
+  z-index: 2;
+  margin: 0;
 }
 
 .deliverable-info .description {
@@ -110,19 +115,16 @@ textarea {
   scrollbar-width: thin;
   scrollbar-color: darkturquoise rgb(21, 21, 21);
   border-bottom: 1px solid white;
-  border-top: 1px solid white;
 }
 
 .deliverable-timeline {
-  overflow-x: auto;
-  cursor: grab;
-  overflow-x: auto;
   cursor: grab;
   user-select: none;
   display: flex;
   height: auto;
   width: 100%;
   scrollbar-width: none;
+  overflow: auto;
 }
 
 .deliverable-timeline:active {
@@ -132,13 +134,21 @@ textarea {
 .deliverable-timeline .timeline-scroll .deliverable-rows .deliverable-row {
   height: 150px;
   border-bottom: 1px solid white;
-  border-top: 1px solid white;
 }
 
 .deliverable-timeline .months .month {
   width: 100px;
   float: left;
   border-right: 1px solid white;
+}
+
+.deliverable-timeline .months .month-header {
+  height: 56px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid white;
+  background-color: black;
+  z-index: 1;
 }
 
 .deliverable-timeline .months .month h3 {
@@ -156,9 +166,9 @@ textarea {
 }
 
 .deliverable-timeline .timeline-scroll .deliverable-rows {
-  top: 56px;
   position: absolute;
   width: 100%;
+  top: 56px;
 }
 
 .scroll{
@@ -167,6 +177,17 @@ textarea {
   scrollbar-width: none;
 }
 
+#scrollable-timeline {
+  height: 100vh;
+  /* overflow-y: scroll; */
+  scrollbar-width: thin;
+  scrollbar-color: darkturquoise rgb(21, 21, 21);
+}
+
 #timeline-container {
-  width: 99vw;
+  width: 100vw;
+}
+
+#scrollable-timeline .infinite-scroll-component {
+  overflow: unset !important;
 }
