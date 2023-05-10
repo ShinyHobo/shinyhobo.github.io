@@ -113,7 +113,7 @@ textarea {
 }
 
 .deliverable-info .deliverable-info-box {
-  height: 150px;
+  height: 200px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: darkturquoise rgb(21, 21, 21);
@@ -135,7 +135,7 @@ textarea {
 }
 
 .deliverable-timeline .timeline-scroll .deliverable-rows .deliverable-row {
-  height: 150px;
+  height: 200px;
   border-bottom: 1px solid white;
   overflow: hidden;
   position: relative;
@@ -145,6 +145,7 @@ textarea {
   width: 100px;
   float: left;
   border-right: 1px solid white;
+  box-sizing: border-box;
 }
 
 .month-header {

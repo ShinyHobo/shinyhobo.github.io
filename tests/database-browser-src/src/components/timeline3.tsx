@@ -211,9 +211,9 @@ export default class Timeline3 extends React.Component {
                                         <h2 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables</h2>
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
-                                        <div style={{position: "absolute", width: `calc(101px*${this.months.length}`, borderBottom: "1px solid white"}} id="month-header">
+                                        <div style={{position: "absolute", width: `calc(100px*${this.months.length}`, borderBottom: "1px solid white"}} id="month-header">
                                             {this.months.map((date:Date, index:number)=> (
-                                                <div key={index} style={{width: 100, float:"left", backgroundColor:"black", height: 56, borderRight: "1px solid white"}}>
+                                                <div key={index} style={{width: 100, float:"left", backgroundColor:"black", height: 56, borderRight: "1px solid white", boxSizing: "border-box"}}>
                                                     <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3>
                                                 </div>
                                             ))}
@@ -244,15 +244,13 @@ export default class Timeline3 extends React.Component {
                                             <div key={index} className="deliverable-row">
                                                 {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, index:number)=>(
                                                     <div key={index} className="team">
-                                                        {teamGroup.team}
                                                         {teamGroup.discs.map((disc:any, index:number)=>(
-                                                            <div key={index}>
-                                                                <h6 style={{margin:0}}>{disc.name}</h6>
-                                                                {disc.times.map((time:any, index: number)=>(
-                                                                    <div key={index}>
-                                                                        {time.start}-{time.end}
-                                                                    </div>
-                                                                ))}
+                                                            <div key={index} className="discipline" style={{height:12}}>
+                                                            {disc.times.map((time:any, index: number)=>(
+                                                                <div key={index} className="time-box">
+                                                                    {this.createBox(time)}
+                                                                </div>
+                                                            ))}
                                                             </div>
                                                         ))}
                                                     </div>
@@ -271,6 +269,21 @@ export default class Timeline3 extends React.Component {
                 <h5 style={{margin: "10px"}}>{this.loading ? "Loading timeline..." : ""}</h5>
             </>
         );
+    }
+
+    private createBox(time:any) {
+        let monthCount = this.months.length;
+        let start = this.months[0].getTime();
+        let end = this.months[monthCount-1].getTime();
+        let totalWidth = 100*monthCount;
+
+        let timeSpan = end - start;
+        let fromStart1 = time.start - start;
+        let fromStart2 = time.end - start;
+        let percentOfTimespan1 = fromStart1/timeSpan;
+        let percentOfTimespan2 = fromStart2/timeSpan;
+
+        return <span style={{left: percentOfTimespan1*totalWidth, right: totalWidth-(percentOfTimespan2*totalWidth), backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: 10}}/>;
     }
 
     private timelineClicked: boolean = false;
