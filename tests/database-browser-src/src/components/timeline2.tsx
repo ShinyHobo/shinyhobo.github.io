@@ -75,81 +75,83 @@ export default class Timeline2 extends React.Component {
             //});
             console.info("starting deliverable builds");
             let now: number = Date.now();
-            Promise.all([CommonDBFunctions.buildCompleteDeliverables(this.db, deltas[0],this.take,this.skip)]).then(async data => {
-                let stats = await this.worker?.getStats() as SqliteStats;
-                console.info("fetched: ", CommonDBFunctions.formatBytes(stats.totalFetchedBytes));
-                console.info("total: ", CommonDBFunctions.formatBytes(stats.totalBytes));
-                console.info("time: ", (Date.now() - now) / 1000, " seconds");
-
-                data[0].forEach((deliverable: any)=> {
-                    if(deliverable.teams) {
-                        deliverable.teams.forEach((team: any) => {
-                            if(team.timeAllocations) {
+            CommonDBFunctions.getUniqueDeliverables(this.db, deltas[0], this.take, this.skip).then((deliverables:any[])=>{
+                Promise.all([CommonDBFunctions.buildCompleteDeliverables(this.db, deltas[0],deliverables)]).then(async data => {
+                    let stats = await this.worker?.getStats() as SqliteStats;
+                    console.info("fetched: ", CommonDBFunctions.formatBytes(stats.totalFetchedBytes));
+                    console.info("total: ", CommonDBFunctions.formatBytes(stats.totalBytes));
+                    console.info("time: ", (Date.now() - now) / 1000, " seconds");
     
-                                // group by start/end date composit to determine number of tasks per time period
-                                //let sprints = _.chain(_.groupBy(team.timeAllocations, time => [time.startDate, time.endDate].join())).map((v:any)=>v).value();
-
-                                let timeAllocations = team.timeAllocations.sort((a:any,b:any)=>a.startDate - b.startDate);
-                                let disciplines = _.chain(_.groupBy(timeAllocations, time => [time.discipline_id, time.deliverable_id, time.team_id, time.partialTime].join("-"))).map((v:any)=>v).value();
-
-                                disciplines.forEach((discipline: any) => {
-                                    let returnRanges = [];
-                                    let currentRange: any= null;
-                                    discipline.forEach((r:any) => {
-                                        // bypass invalid value
-                                        if (r.startDate >= r.endDate) {
-                                            return;
-                                        }
-                                        //fill in the first element
-                                        if (!currentRange) {
-                                            currentRange = r;
-                                            return;
-                                        }
+                    data[0].forEach((deliverable: any)=> {
+                        if(deliverable.teams) {
+                            deliverable.teams.forEach((team: any) => {
+                                if(team.timeAllocations) {
+        
+                                    // group by start/end date composit to determine number of tasks per time period
+                                    //let sprints = _.chain(_.groupBy(team.timeAllocations, time => [time.startDate, time.endDate].join())).map((v:any)=>v).value();
     
-                                        const currentEndDate = new Date(currentRange.endDate);
-                                        currentEndDate.setDate(currentEndDate.getDate() + 4); // covers time overlap when sprint ends on a weekend
-                                        const currentEndTime = currentEndDate.getTime();
+                                    let timeAllocations = team.timeAllocations.sort((a:any,b:any)=>a.startDate - b.startDate);
+                                    let disciplines = _.chain(_.groupBy(timeAllocations, time => [time.discipline_id, time.deliverable_id, time.team_id, time.partialTime].join("-"))).map((v:any)=>v).value();
     
-                                        if (currentEndTime < r.startDate) {
+                                    disciplines.forEach((discipline: any) => {
+                                        let returnRanges = [];
+                                        let currentRange: any= null;
+                                        discipline.forEach((r:any) => {
+                                            // bypass invalid value
+                                            if (r.startDate >= r.endDate) {
+                                                return;
+                                            }
+                                            //fill in the first element
+                                            if (!currentRange) {
+                                                currentRange = r;
+                                                return;
+                                            }
+        
+                                            const currentEndDate = new Date(currentRange.endDate);
+                                            currentEndDate.setDate(currentEndDate.getDate() + 4); // covers time overlap when sprint ends on a weekend
+                                            const currentEndTime = currentEndDate.getTime();
+        
+                                            if (currentEndTime < r.startDate) {
+                                                returnRanges.push(currentRange);
+                                                currentRange = r;
+                                            } else if (currentRange.endDate < r.endDate) {
+                                                currentRange.endDate = r.endDate;
+                                                currentRange.partTime = typeof currentRange.partTime == 'number' ? currentRange.partTime : 0;
+                                                currentRange.fullTime = typeof currentRange.fullTime == 'number' ? currentRange.fullTime : 0;
+                                                currentRange.partTime += r.partialTime;
+                                                currentRange.fullTime += Math.abs(1 - r.partialTime);
+                                            }
+                                        });
+        
+                                        if(currentRange) {
                                             returnRanges.push(currentRange);
-                                            currentRange = r;
-                                        } else if (currentRange.endDate < r.endDate) {
-                                            currentRange.endDate = r.endDate;
-                                            currentRange.partTime = typeof currentRange.partTime == 'number' ? currentRange.partTime : 0;
-                                            currentRange.fullTime = typeof currentRange.fullTime == 'number' ? currentRange.fullTime : 0;
-                                            currentRange.partTime += r.partialTime;
-                                            currentRange.fullTime += Math.abs(1 - r.partialTime);
                                         }
+        
+                                        returnRanges.forEach((time: any) => {
+                                            let titleArr: string[] = deliverable.title.match(/\S.{1,20}(?=\s|$)/g);
+                                            let title = titleArr.length > 1 ? titleArr[0] + "..." : titleArr[0];
+                                            //let title = deliverable.title;
+                                            if(title === 'Unannounced') {
+                                                title = deliverable.description;
+                                            }
+                                            const event: Event = {
+                                                EventName: time.partialTime === 0 ? "Full-time" : time.partialTime === 1 ? "Part-time" : "Unscheduled",
+                                                EventSource: `(${deliverable.slug}) ${he.unescape(title)}`,//title,
+                                                Discipline: `${team.abbreviation} (${time.title})`,
+                                                Start: new Date(time.startDate),
+                                                End: new Date(time.endDate),
+                                            };
+                                            this.testData.push(event);
+                                        });
                                     });
+                                }
+                            });
+                        }
+                    });
     
-                                    if(currentRange) {
-                                        returnRanges.push(currentRange);
-                                    }
-    
-                                    returnRanges.forEach((time: any) => {
-                                        let titleArr: string[] = deliverable.title.match(/\S.{1,20}(?=\s|$)/g);
-                                        let title = titleArr.length > 1 ? titleArr[0] + "..." : titleArr[0];
-                                        //let title = deliverable.title;
-                                        if(title === 'Unannounced') {
-                                            title = deliverable.description;
-                                        }
-                                        const event: Event = {
-                                            EventName: time.partialTime === 0 ? "Full-time" : time.partialTime === 1 ? "Part-time" : "Unscheduled",
-                                            EventSource: `(${deliverable.slug}) ${he.unescape(title)}`,//title,
-                                            Discipline: `${team.abbreviation} (${time.title})`,
-                                            Start: new Date(time.startDate),
-                                            End: new Date(time.endDate),
-                                        };
-                                        this.testData.push(event);
-                                    });
-                                });
-                            }
-                        });
-                    }
+                    console.info("events loaded");
+                    this.loadChart();
                 });
-
-                console.info("events loaded");
-                this.loadChart();
             });
         });
 

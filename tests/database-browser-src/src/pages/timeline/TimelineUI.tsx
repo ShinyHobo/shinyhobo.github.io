@@ -1,5 +1,6 @@
 import React from "react";
 import Timeline2 from "../../components/timeline2";
+import Timeline3 from "../../components/timeline3";
 
 export default class TimelineUI extends React.Component {
     private vfs: any;
@@ -10,6 +11,6 @@ export default class TimelineUI extends React.Component {
     }
 
     render() {
-        return (<div id="timeline-container"><Timeline2 {...this.vfs}/></div>);
+        return (<div id="timeline-container"><Timeline3 {...this.vfs}/></div>);
     }
 }

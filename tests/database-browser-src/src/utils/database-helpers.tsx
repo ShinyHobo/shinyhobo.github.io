@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import { LazyHttpDatabase} from "sql.js-httpvfs/dist/sqlite.worker";
 import * as Comlink from "comlink";
+import * as he from 'he';
 
 // The sqlite stats, tracks all requests from initialization
 export type SqliteStats = {
@@ -45,49 +46,54 @@ export class CommonDBFunctions {
      * @param offset The number of deliverables to skip
      * @returns The list of unique, listed deliverables on the progress tracker
      */
-    public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number, offset: number) {
+    public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number = 0, offset: number = 0) {
         // Get all deliverables, grouping by uuid and ordering by add date, to get the most recent additions only
         const dbDeliverableIds = (await db?.query(`SELECT id, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
-            GROUP BY uuid ORDER BY title ASC`) as any[]).map(d => d.id);
+            GROUP BY uuid ORDER BY addedDate ASC`) as any[]).map(d => d.id);
 
         let dbDeliverables = await db?.query(`SELECT * FROM deliverable_diff WHERE id IN (${dbDeliverableIds.toString()})`) as any[];
-        dbDeliverables = _.orderBy(dbDeliverables, [d => d.title.toLowerCase()], ['asc']);
+        dbDeliverables = _.orderBy(dbDeliverables, [d => he.unescape(d.title).toLowerCase()], ['asc']);
 
         // Get complete list of deliverables that have names already, filtering out everything by the most recent addition of the item (some older entries are the same item with a different slug)
-        const deduplicatedAnnouncedDeliverables = _.chain(dbDeliverables.filter(d => d.title && !d.title.includes("Unannounced"))).groupBy('title').map((d: any[]) => d[0]).value();
+        const deduplicatedAnnouncedDeliverables = _.chain(dbDeliverables.filter(d => he.unescape(d.title) && !d.title.includes("Unannounced"))).groupBy(x => he.unescape(x.title)).map((d: any[]) => d[d.length-1]).value();
 
         // Get list of unannounced deliverables
-        const deduplicatedUnannouncedDeliverables = dbDeliverables.filter(d => d.title && d.title.includes("Unannounced"));
+        const deduplicatedUnannouncedDeliverables = dbDeliverables.filter(d => he.unescape(d.title) && d.title.includes("Unannounced"));
         dbDeliverables = [...deduplicatedAnnouncedDeliverables, ...deduplicatedUnannouncedDeliverables];
 
         // Get list of deliverables that have been removed (denoted by missing end/start dates); these are included in the initial query to retrieve the most up to date versions
         const removedDeliverables = dbDeliverables.filter(d => d.startDate === null && d.endDate === null);
-        dbDeliverables = dbDeliverables.filter(d => !removedDeliverables.some(r => r.uuid === d.uuid || (r.title && r.title === d.title && !r.title.includes("Unannounced"))));
+        dbDeliverables = dbDeliverables.filter(d => !removedDeliverables.some(r => r.uuid === d.uuid || (r.title && he.unescape(r.title) === he.unescape(d.title) && !r.title.includes("Unannounced"))));
 
         // Sort deliverables by announced (combining items with the same name)
-        const announcedDeliverables = _.chain(dbDeliverables.filter(d => d.title && !d.title.includes("Unannounced"))).groupBy('title').map(d => d[0]).value();
+        const announcedDeliverables = _.chain(dbDeliverables.filter(d => he.unescape(d.title) && !d.title.includes("Unannounced"))).groupBy('title').map(d => d[0]).value();
         // and unannounced (all have the same name)
-        const unAnnouncedDeliverables = dbDeliverables.filter(d => d.title && d.title.includes("Unannounced"));
+        const unAnnouncedDeliverables = dbDeliverables.filter(d => he.unescape(d.title) && d.title.includes("Unannounced"));
 
         dbDeliverables = [...announcedDeliverables, ...unAnnouncedDeliverables];
 
-        return _(dbDeliverables).drop(offset).take(limit).value();
+        let returnDeliverables = _(dbDeliverables);
+        if(offset) {
+            returnDeliverables = returnDeliverables.drop(offset);
+        }
+        if(limit) {
+            returnDeliverables = returnDeliverables.take(limit);
+        }
+
+        return returnDeliverables.value();
     }
 
     /**
      * Builds the complete deliverable object (sub-componets like teamtimes included) array of all deliverables for the desired time
      * @param db The database connection
      * @param date The delta timestamp to use
-     * @param limit The number of deliverables to build
-     * @param offset The number of deliverables to skip
-     * @param alphabetize Whether or not to alphabetize sort the list (default no)
+     * @param deliverables The deliverables to build out
      * @returns The array of built deliverables
      */
-    public static async buildCompleteDeliverables(db: Database, date: string, limit: number = 0, offset: number = 0, alphabetize: boolean = false) {
-        const dbDeliverables = await this.getUniqueDeliverables(db, date, limit, offset);
-        const cardIds: string = dbDeliverables.filter((dd) => dd.card_id).map((dd) => dd.card_id).toString();
+    public static async buildCompleteDeliverables(db: Database, date: string, deliverables: any[]) {
+        const cardIds: string = deliverables.filter((dd) => dd.card_id).map((dd) => dd.card_id).toString();
         const dbCards: any[] = await db?.query(`SELECT * FROM card_diff WHERE id IN (${cardIds})`) as any[];
-        const deliverableIds = dbDeliverables.map((dd) => dd.id).toString();
+        const deliverableIds = deliverables.map((dd) => dd.id).toString();
 
         const dbDeliverableTeams: any[] = await db?.query(`SELECT *, MAX(addedDate) FROM team_diff WHERE addedDate <= ${date} AND 
             id IN (SELECT team_id FROM deliverable_teams WHERE deliverable_id IN (${deliverableIds})) GROUP BY slug ORDER BY addedDate DESC`) as any[];
@@ -113,7 +119,7 @@ export class CommonDBFunctions {
                 });
         let dbTimeAllocationsGrouped = _.groupBy(dbTimeAllocations, 'deliverable_id');
 
-        dbDeliverables.forEach((d) => {
+        deliverables.forEach((d) => {
             d.card = dbCards.find((c) => c.id === d.card_id);
             const timeAllocations = _.groupBy(dbTimeAllocationsGrouped[d.id], 'team_id');
             const teams = dbDeliverableTeams.filter(t => deliverableTeams[d.id] && deliverableTeams[d.id].some(tid => t.id === tid.team_id));
@@ -126,7 +132,7 @@ export class CommonDBFunctions {
                 d.teams.push(team);
             });
         });
-        return alphabetize ? _.orderBy(dbDeliverables, [d => d.title.toLowerCase()], ['asc']) : dbDeliverables;
+        return deliverables;
     }
 
     /**
