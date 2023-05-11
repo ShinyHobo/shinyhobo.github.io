@@ -68,3 +68,152 @@ textarea {
   color: #d8d4cf;
   background-color: #222324;
 }
+
+.deliverable-list-container {
+  display: flex;
+}
+
+.deliverable-span {
+  border: 1px solid cadetblue;
+}
+
+.deliverable-info {
+  width: 400px;
+}
+
+.deliverable-info .deliverable-info-header {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  height: 56px;
+  background-color: black;
+  margin: 0;
+}
+
+.deliverable-info .deliverable-info-header h2 {
+  z-index: 2;
+}
+
+.deliverable-info .description {
+  margin-left: 10;
+  margin-bottom: 5;
+  overflow-y: auto;
+  font-size: 12;
+  scrollbar-width: thin;
+  scrollbar-color: darkturquoise rgb(21, 21, 21);
+}
+
+.deliverable-info .projects {
+  margin-right: 10;
+  margin-bottom: 5;
+  text-align: right;
+}
+
+.deliverable-info .deliverable-info-box {
+  height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: darkturquoise rgb(21, 21, 21);
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid white;
+}
+
+.deliverable-info .deliverable-info-box h3 {
+  margin-bottom: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.deliverable-info .deliverable-info-box h4 {
+  text-align: center;
+  margin-bottom: 0;
+  width: 60px;
+  padding-top: 6px;
+}
+
+.deliverable-timeline {
+  cursor: grab;
+  user-select: none;
+  display: flex;
+  height: auto;
+  width: 100%;
+  scrollbar-width: none;
+  overflow: auto;
+}
+
+.deliverable-timeline:active {
+  cursor: grabbing;
+}
+
+.deliverable-timeline .timeline-scroll .deliverable-rows .deliverable-row {
+  height: 195px;
+  margin-top: 5px;
+  border-bottom: 1px solid white;
+  overflow: hidden;
+  position: relative;
+}
+
+.deliverable-timeline .months .month {
+  width: 100px;
+  float: left;
+  border-right: 1px solid darkslategray;
+  box-sizing: border-box;
+  z-index: -5;
+}
+
+.month-header {
+  height: 56px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid white;
+  background-color: black;
+  z-index: 1;
+}
+
+.deliverable-timeline .months {
+  display: flex;
+  height: 100%;
+  position: absolute;
+}
+
+.deliverable-timeline .timeline-scroll {
+  position: relative;
+}
+
+.deliverable-timeline .timeline-scroll .deliverable-rows {
+  position: absolute;
+  width: 100%;
+  top: 57px;
+  z-index: -1;
+}
+
+.scroll{
+  width: 200px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+#scrollable-timeline {
+  height: 100vh;
+  /* overflow-y: scroll; */
+  scrollbar-width: thin;
+  scrollbar-color: darkturquoise rgb(21, 21, 21);
+}
+
+#timeline-container {
+  width: 100vw;
+}
+
+#scrollable-timeline .infinite-scroll-component {
+  overflow: unset !important;
+}
+
+.today-line, .sampled-line {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
