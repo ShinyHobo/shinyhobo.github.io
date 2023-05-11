@@ -201,6 +201,12 @@ export default class Timeline3 extends React.Component {
         if(this.timelineTable && this.timelineTableMonthHeader) {
             this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft
         }
+
+        let timeline = document.querySelector(".deliverable-timeline") as any;
+        if(timeline) {
+            let pageContainer = document.getElementById("scrollable-timeline") as any;
+            pageContainer.style.height = timeline.clientHeight + 100
+        }
     }
 
     render() {
@@ -225,7 +231,7 @@ export default class Timeline3 extends React.Component {
                         })}
                         </select>
                     </div>
-                    <div id="scrollable-timeline">
+                    <div id="scrollable-timeline" style={{}}>
                     <InfiniteScroll
                         dataLength={this.loadedDeliverables.length}
                         next={this.fetchData.bind(this)}
