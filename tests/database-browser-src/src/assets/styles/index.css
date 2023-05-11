@@ -211,3 +211,9 @@ textarea {
 #scrollable-timeline .infinite-scroll-component {
   overflow: unset !important;
 }
+
+.today-line, .sampled-line {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}

@@ -49,9 +49,18 @@ export default class Timeline3 extends React.Component {
             const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, this.getDeliverableSubset());
             this.loadedDeliverables = [...firstSet];
             this.hasMore = this.loadedDeliverables.length !== this.deliverables.length;
+            this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
             this.loading = false;
         });
     }
+
+    private monthCount: number = 0;
+    private start: number = 0;
+    private end: number = 0;
+    private totalWidth: number = 0;
+    private timeSpan: number = 0;
+    private todayLine: number = 0;
+    private sampledLine: number = 0;
 
     /**
      * Gets the list of months between Jan 1, 2021 and the end of the next year
@@ -71,6 +80,16 @@ export default class Timeline3 extends React.Component {
             
             this.months.push(new Date(start.getFullYear(), start.getMonth(), 1));
         }
+
+        this.monthCount = this.months.length;
+        this.start = this.months[0].getTime();
+        let endOfTimeline = new Date(this.months[this.monthCount-1].getTime());
+        endOfTimeline.setDate(31);
+        this.end = endOfTimeline.getTime();
+        this.totalWidth = 100*this.monthCount;
+        this.timeSpan = this.end - this.start;
+
+        this.todayLine = (now.getTime() - this.start) / this.timeSpan * this.totalWidth;
     }
 
     /**
@@ -102,10 +121,13 @@ export default class Timeline3 extends React.Component {
         const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, this.getDeliverableSubset());
         this.loadedDeliverables = [...firstSet];
         this.hasMore = this.loadedDeliverables.length !== this.deliverables.length;
-        
+        this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
         this.loading = false;
     }
 
+    /**
+     * Gets more data from the database, triggers the view to update
+     */
     private async fetchData() {
         this.skip += 20;
         const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, this.getDeliverableSubset());
@@ -160,7 +182,7 @@ export default class Timeline3 extends React.Component {
                             }
         
                             returnRanges.forEach((time: any) => {
-                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id})
+                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers})
                             });
                         });
                     });
@@ -186,11 +208,23 @@ export default class Timeline3 extends React.Component {
             <>
                 {!this.loading ? 
                 <>
-                    <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
+                    <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
+                        <h4 style={{margin: 2}}>Legend</h4>
+                        <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Indicates part time work</p>
+                        <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Indicates full time work</p>
+                        <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> Indicates the sample date</p>
+                        <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
+                    </div>
+                    <div style={{marginLeft: 10, display: "inline-block"}}>
+                        <p>Click and drag to scroll the timeline.</p>
+                        <p>Hover over a timeline block to view details.</p>
+                        <p>Change the sample date below to view timeline snapshots:</p>
+                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
                         {this.deltaDatetimes.map((e:any) => {
                             return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString()}</option>;
                         })}
-                    </select>
+                        </select>
+                    </div>
                     <div id="scrollable-timeline">
                     <InfiniteScroll
                         dataLength={this.loadedDeliverables.length}
@@ -242,6 +276,8 @@ export default class Timeline3 extends React.Component {
                                     {this.months.map((date:Date, index:number)=> (
                                         <div key={index} className="month"/>
                                     ))}
+                                        <div className="today-line" style={{left: this.todayLine, borderRight: "1px solid yellow"}}></div>
+                                        <div className="sampled-line" style={{left: this.sampledLine, borderRight: "1px solid red" }}></div>
                                         <div className="deliverable-rows">
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                             <div key={index} className="deliverable-row">
@@ -307,21 +343,13 @@ export default class Timeline3 extends React.Component {
      * @returns the timespan box for display
      */
     private createBox(time:any, times:any[]) {
-        let monthCount = this.months.length;
-        let start = this.months[0].getTime();
-        let end = this.months[monthCount-1].getTime();
-        let totalWidth = 100*monthCount;
+        let fromStart1 = time.start - this.start;
+        let fromStart2 = time.end - this.start;
+        let percentOfTimespan1 = fromStart1/this.timeSpan;
+        let percentOfTimespan2 = fromStart2/this.timeSpan;
 
-        let timeSpan = end - start;
-        let fromStart1 = time.start - start;
-        let fromStart2 = time.end - start;
-        let percentOfTimespan1 = fromStart1/timeSpan;
-        let percentOfTimespan2 = fromStart2/timeSpan;
-
-        let right = totalWidth-(percentOfTimespan2*totalWidth);
-        let left = percentOfTimespan1*totalWidth;
-        
-        let half = ((totalWidth-right)+left)/2 - this.popupWidth/2;
+        let right = this.totalWidth-(percentOfTimespan2*this.totalWidth);
+        let left = percentOfTimespan1*this.totalWidth;
 
         let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id);
         let matched = matches.length > 1;
@@ -331,8 +359,8 @@ export default class Timeline3 extends React.Component {
         }
 
         return <>
-            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: index ? 6 : 0}} className="timeline-bar"
-                data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks} data-half-width={half}/>
+            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: index ? 5 : 0}} className="timeline-bar"
+                data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks}/>
         </>;
     }
 
