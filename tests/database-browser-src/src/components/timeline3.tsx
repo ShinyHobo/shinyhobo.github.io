@@ -40,7 +40,7 @@ export default class Timeline3 extends React.Component {
      */
     private initializeData() {
         this.getTimelineMonths();
-
+        
         CommonDBFunctions.getDeltaList(this.db).then(async (deltas:string[]) => {
             // only use latest pull time for each day
             this.deltaDatetimes = _(deltas.map((d:string)=>new Date(Number.parseInt(d)))).groupBy((d:Date)=>d.toDateString()).map((d:Date[])=>d[0].getTime()).value();
@@ -241,31 +241,33 @@ export default class Timeline3 extends React.Component {
             <>
                 {!this.loading ? 
                 <>
-                    <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
-                        <h4 style={{margin: 2}}>Legend</h4>
-                        <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Indicates part time work</p>
-                        <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Indicates full time work</p>
-                        <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> Indicates the sample date</p>
-                        <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
-                    </div>
-                    <div style={{marginLeft: 10, display: "inline-block"}}>
-                        <p>Click and drag to scroll the timeline</p>
-                        <p>Hover over a timeline block to view details</p>
-                        <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
-                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
-                        {this.deltaDatetimes.map((e:any) => {
-                            return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
-                        })}
-                        </select>
-                        <input type="text" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search"/>
-                        <button onClick={this.searchInitiated.bind(this)}>Search</button>
-                    </div>
-                    <div id="scrollable-timeline" style={{}}>
+                <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
+                    <h4 style={{margin: 2}}>Legend</h4>
+                    <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Indicates part time work</p>
+                    <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Indicates full time work</p>
+                    <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> Indicates the sample date</p>
+                    <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
+                </div>
+                <div style={{marginLeft: 10, display: "inline-block"}}>
+                    <p>Click and drag to scroll the timeline</p>
+                    <p>Hover over a timeline block to view details</p>
+                    <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
+                    <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
+                    {this.deltaDatetimes.map((e:any) => {
+                        return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
+                    })}
+                    </select>
+                    <input type="text" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search"/>
+                    <button onClick={this.searchInitiated.bind(this)}>Search</button>
+                </div>
+                <div style={{height: "100vh", overflowX: "hidden", scrollbarWidth: "none"}} id="scrollableDiv">
+                <div id="scrollable-timeline" style={{}}>
                     <InfiniteScroll
                         dataLength={this.loadedDeliverables.length}
                         next={this.fetchData.bind(this)}
                         hasMore={this.hasMore}
                         loader={<h3>Loading...</h3>}
+                        scrollableTarget="scrollableDiv"
                         endMessage={
                             <p style={{ textAlign: 'center' }}>
                                 <b>All deliverables loaded</b>
@@ -300,11 +302,14 @@ export default class Timeline3 extends React.Component {
                                 </div>
                                 ))}
                             </div>
-                            <div className="deliverable-timeline">
+                            <div className="deliverable-timeline" onScroll={this.scrollTimelineHeader.bind(this)}>
                                 <div className="timeline-scroll" 
                                     onMouseDown={this.clickTimeline.bind(this)} 
+                                    onTouchStart={this.clickTimeline.bind(this)} 
                                     onMouseUp={this.unclickTimeline.bind(this)} 
+                                    onTouchEnd={this.unclickTimeline.bind(this)}
                                     onMouseMove={this.moveTimeline.bind(this)} 
+                                    onTouchMove={this.moveTimeline.bind(this)}
                                     onMouseLeave={this.unclickTimeline.bind(this)}
                                 >
                                     <div className="months" onMouseMove={this.hoverTimeline.bind(this)}>
@@ -337,6 +342,7 @@ export default class Timeline3 extends React.Component {
                             </div>
                         </div>
                     </InfiniteScroll>
+                </div>
                 </div>
                 </>
                 : <></>}
@@ -407,11 +413,13 @@ export default class Timeline3 extends React.Component {
     private timelineTableMonthHeader: any | null = null;
 
     private clickTimeline(e:any) {
+        if (e.button === 1) return false;
         this.timelineClicked = true;
         this.timelineTable = document.querySelector('.deliverable-timeline');
         this.timelineTableMonthHeader = document.getElementById("month-header");
         if(this.timelineTable && this.timelineTableMonthHeader) {
-            this.startX = e.pageX - this.timelineTable.offsetLeft;
+            let pageX = e.pageX || e.touches[0].pageX;
+            this.startX = pageX - this.timelineTable.offsetLeft;
             this.scrollLeft = this.timelineTable.scrollLeft;
         }
     }
@@ -423,12 +431,20 @@ export default class Timeline3 extends React.Component {
     private moveTimeline(e:any) {
         if(this.timelineClicked) {
             if(this.timelineTable && this.timelineTableMonthHeader) {
-                const x = e.pageX - this.timelineTable.offsetLeft;
+                let pageX = e.pageX || e.touches[0].pageX;
+                const x = pageX - this.timelineTable.offsetLeft;
                 const scroll = x - this.startX;
                 this.timelineTable.scrollLeft = this.scrollLeft - scroll;
-                this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft
             }
         }
+    }
+
+    /**
+     * Forces the timeline header position to match the timeline grid position
+     * @param e The scroll event
+     */
+    private scrollTimelineHeader(e:any) {
+        this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft;
     }
     //#endregion
 }
