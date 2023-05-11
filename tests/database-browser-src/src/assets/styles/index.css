@@ -150,7 +150,8 @@ textarea {
 }
 
 .deliverable-timeline .timeline-scroll .deliverable-rows .deliverable-row {
-  height: 200px;
+  height: 195px;
+  margin-top: 5px;
   border-bottom: 1px solid white;
   overflow: hidden;
   position: relative;

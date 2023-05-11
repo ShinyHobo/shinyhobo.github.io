@@ -49,7 +49,6 @@ export default class Timeline3 extends React.Component {
             const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, this.getDeliverableSubset());
             this.loadedDeliverables = [...firstSet];
             this.hasMore = this.loadedDeliverables.length !== this.deliverables.length;
-            
             this.loading = false;
         });
     }
@@ -60,7 +59,7 @@ export default class Timeline3 extends React.Component {
     private getTimelineMonths() {
         let start = new Date(Date.parse("2021-01-01"));
         const now = new Date(Date.now());
-        const end = new Date(Date.parse(`${now.getFullYear()+1}-11-30`));
+        const end = new Date(Date.parse(`${now.getFullYear()}-11-30`));
         
         while(start < end) {
             let d = start.getDate();
@@ -125,44 +124,44 @@ export default class Timeline3 extends React.Component {
             deliverable.teams.forEach((team: any) => {
                 if(team.timeAllocations) {
                     let timeAllocations = team.timeAllocations.slice().sort((a:any,b:any)=>a.startDate - b.startDate);
-                    let disciplines = _.chain(_.groupBy(timeAllocations, time => [time.discipline_id, time.deliverable_id, time.team_id, time.partialTime].join("-"))).map((v:any)=>v).value();
-    
-                    disciplines.forEach((discipline: any) => {
-                        let returnRanges = [];
-                        let currentRange: any= null;
-                        discipline.forEach((r:any) => {
-                            // bypass invalid value
-                            if (r.startDate >= r.endDate) {
-                                return;
-                            }
-                            //fill in the first element
-                            if (!currentRange) {
-                                currentRange = r;
-                                return;
-                            }
-    
-                            const currentEndDate = new Date(currentRange.endDate);
-                            currentEndDate.setDate(currentEndDate.getDate() + 4); // covers time overlap when sprint ends on a weekend
-                            const currentEndTime = currentEndDate.getTime();
-    
-                            if (currentEndTime < r.startDate) {
+                    let disciplines = _.chain(_.groupBy(timeAllocations, time => [time.discipline_id, time.deliverable_id, time.team_id].join("-"))).map((v:any[])=>v).value();
+                    disciplines.forEach((discipline: any[]) => {
+                        const timeGroups = _.chain(_.groupBy(discipline, x => [x.startDate,x.endDate,x.partialTime].join("-"))).map(x=>x).value();
+
+                        timeGroups.forEach((group: any[])=>{
+                            const tasks = group.length;
+                            let returnRanges = [];
+                            let currentRange: any= null;
+                            group.forEach((r:any) => {
+                                // bypass invalid value
+                                if (r.startDate >= r.endDate) {
+                                    return;
+                                }
+                                //fill in the first element
+                                if (!currentRange) {
+                                    currentRange = r;
+                                    return;
+                                }
+        
+                                const currentEndDate = new Date(currentRange.endDate);
+                                currentEndDate.setDate(currentEndDate.getDate()); // covers time overlap when sprint ends on a weekend
+                                const currentEndTime = currentEndDate.getTime();
+        
+                                if (currentEndTime < r.startDate) {
+                                    returnRanges.push(currentRange);
+                                    currentRange = r;
+                                } else if (currentRange.endDate < r.endDate) {
+                                    currentRange.endDate = r.endDate;
+                                }
+                            });
+        
+                            if(currentRange) {
                                 returnRanges.push(currentRange);
-                                currentRange = r;
-                            } else if (currentRange.endDate < r.endDate) {
-                                currentRange.endDate = r.endDate;
-                                currentRange.partTime = typeof currentRange.partTime == 'number' ? currentRange.partTime : 0;
-                                currentRange.fullTime = typeof currentRange.fullTime == 'number' ? currentRange.fullTime : 0;
-                                currentRange.partTime += r.partialTime;
-                                currentRange.fullTime += Math.abs(1 - r.partialTime);
                             }
-                        });
-    
-                        if(currentRange) {
-                            returnRanges.push(currentRange);
-                        }
-    
-                        returnRanges.forEach((time: any) => {
-                            returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title})
+        
+                            returnRanges.forEach((time: any) => {
+                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id})
+                            });
                         });
                     });
                 }
@@ -239,20 +238,20 @@ export default class Timeline3 extends React.Component {
                                     onMouseMove={this.moveTimeline.bind(this)} 
                                     onMouseLeave={this.unclickTimeline.bind(this)}
                                 >
-                                    <div className="months">
+                                    <div className="months" onMouseMove={this.hoverTimeline.bind(this)}>
                                     {this.months.map((date:Date, index:number)=> (
                                         <div key={index} className="month"/>
                                     ))}
                                         <div className="deliverable-rows">
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                             <div key={index} className="deliverable-row">
-                                                {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, index:number)=>(
-                                                    <div key={index} className="team">
-                                                        {teamGroup.discs.map((disc:any, index:number)=>(
-                                                            <div key={index} className="discipline" style={{height:12}}>
+                                                {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number)=>(
+                                                    <div key={teamIndex} className="team">
+                                                        {teamGroup.discs.map((disc:any, disciplineIndex:number)=>(
+                                                            <div key={disciplineIndex} className="discipline" style={{height:12, position: "relative"}}>
                                                             {disc.times.map((time:any, index: number)=>(
                                                                 <div key={index} className="time-box">
-                                                                    {this.createBox(time)}
+                                                                    {this.createBox(time, disc.times)}
                                                                 </div>
                                                             ))}
                                                             </div>
@@ -275,7 +274,39 @@ export default class Timeline3 extends React.Component {
         );
     }
 
-    private createBox(time:any) {
+    private popupWidth: number = 240;
+
+    /**
+     * Displays a popup with schedule information when moused over
+     * @param e The event
+     */
+    private hoverTimeline(e:any) {
+        const _overlapped = document.elementsFromPoint(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset)
+        let filtered = _overlapped.filter(el=>el.classList.contains("timeline-bar")) as any[];
+        let popup = document.querySelector(".timeline-bar-popup");
+        if(popup && popup.parentNode) {
+            popup.parentNode.removeChild(popup)
+        }
+        if(filtered.length) {
+            let data = filtered[0].dataset;
+
+            let startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "2-digit"});
+            let endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "2-digit"});
+
+            filtered[0].insertAdjacentHTML("beforeend",`<div class="timeline-bar-popup" style="position: absolute; width: ${this.popupWidth}; top: 12; left: ${0}px; z-index: 1; background-color: black; text-align: center; font-size: 14" >
+                <div>${data.abbr} (${data["disc"]})</div>
+                <div>${data.tasks} tasks</div>
+                <div>${startDisplay} - ${endDisplay}</div>
+            </div>`);
+        }
+    }
+
+    /**
+     * Generates a timespan box for display
+     * @param time The time information to use
+     * @returns the timespan box for display
+     */
+    private createBox(time:any, times:any[]) {
         let monthCount = this.months.length;
         let start = this.months[0].getTime();
         let end = this.months[monthCount-1].getTime();
@@ -287,9 +318,25 @@ export default class Timeline3 extends React.Component {
         let percentOfTimespan1 = fromStart1/timeSpan;
         let percentOfTimespan2 = fromStart2/timeSpan;
 
-        return <span style={{left: percentOfTimespan1*totalWidth, right: totalWidth-(percentOfTimespan2*totalWidth), backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: 10}}/>;
+        let right = totalWidth-(percentOfTimespan2*totalWidth);
+        let left = percentOfTimespan1*totalWidth;
+        
+        let half = ((totalWidth-right)+left)/2 - this.popupWidth/2;
+
+        let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id);
+        let matched = matches.length > 1;
+        let index = 0;
+        if(matched) {
+            index = matches.indexOf(time);
+        }
+
+        return <>
+            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: index ? 6 : 0}} className="timeline-bar"
+                data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks} data-half-width={half}/>
+        </>;
     }
 
+    //#region Timeline dragging
     private timelineClicked: boolean = false;
     private scrollLeft: number = 0;
     private startX: number = 0;
@@ -320,4 +367,5 @@ export default class Timeline3 extends React.Component {
             }
         }
     }
+    //#endregion
 }
