@@ -105,7 +105,14 @@ export default class Timeline3 extends React.Component {
      * @returns The subset of deliverables
      */
     private getDeliverableSubset() {
-        return _(this.deliverables).drop(this.skip).take(this.take).value();
+        this.searchingDeliverables = this.deliverables;
+
+        // Separating the listed deliverables from the full list to allow searching without re-querying the database
+        if(this.searching) {
+            this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchText) || he.unescape(d.description).toLowerCase().includes(this.searchText));
+        }
+
+        return _(this.searchingDeliverables).drop(this.skip).take(this.take).value();
     }
 
     /**
@@ -116,11 +123,15 @@ export default class Timeline3 extends React.Component {
         this.hasMore = true;
         this.skip = 0;
         this.loadedDeliverables = [];
-        this.selectedDelta = e.target.value;
-        await this.getDeliverablesForDelta();
-        const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, this.getDeliverableSubset());
+        if(e) {
+            this.searching = false;
+            this.selectedDelta = e.target.value;
+            await this.getDeliverablesForDelta();
+        }
+        const subset = this.getDeliverableSubset();
+        const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, subset);
         this.loadedDeliverables = [...firstSet];
-        this.hasMore = this.loadedDeliverables.length !== this.deliverables.length;
+        this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
         this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
         this.loading = false;
     }
@@ -132,7 +143,23 @@ export default class Timeline3 extends React.Component {
         this.skip += 20;
         const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, this.getDeliverableSubset());
         this.loadedDeliverables.push(...subSet);
-        this.hasMore = this.loadedDeliverables.length !== this.deliverables.length;
+        this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
+        if(!this.hasMore) {
+            this.searching = false;
+        }
+    }
+
+    private searchText: string = "";
+    private searching: boolean = false;
+    private searchingDeliverables: any[] = [];
+
+    /**
+     * Begin searching for deliverables whose titles and descriptions contain the search term
+     * @param e The click event
+     */
+    private searchInitiated(e: any) {
+        this.searching = true;
+        this.deltaSelected(null);
     }
 
     /**
@@ -227,9 +254,11 @@ export default class Timeline3 extends React.Component {
                         <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
                         <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
                         {this.deltaDatetimes.map((e:any) => {
-                            return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString()}</option>;
+                            return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
                         })}
                         </select>
+                        <input type="text" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search"/>
+                        <button onClick={this.searchInitiated.bind(this)}>Search</button>
                     </div>
                     <div id="scrollable-timeline" style={{}}>
                     <InfiniteScroll
