@@ -9,9 +9,6 @@ export default class Layout extends React.Component {
             <nav>
               <ul>
                 <li>
-                  <Link to="https://shinytracker.app">Home</Link>
-                </li>
-                <li>
                   <Link to="/browser">Database Terminal</Link>
                 </li>
                 <li>
