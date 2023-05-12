@@ -27,7 +27,7 @@ regenerate: true
   </div>
   <div id="teams" class="posts">
     <h3><a class="category-link" href="{{ '/categories/teams/' | relative_url }}" target="_blank">Scheduled Deliverables Report</a></h3>
-    <p class="index-post-desc">Looks at the currently (and soon to be) scheduled deliverables and the work associated with them.</p>
+    <p class="index-post-desc">Looks at the currently (and soon to be) scheduled deliverables and the work associated with them</p>
     <ul>
       {% for post in site.categories['Teams'] limit:6 %}
         <li>
