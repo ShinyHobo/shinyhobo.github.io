@@ -38,12 +38,13 @@ export default class App extends React.Component {
         const vfs = await createDbWorker(
             [
               {
-                from: "inline",
-                config: {
-                  serverMode: "full",
-                  url: "/data/delta.db",
-                  requestChunkSize: 65536//16384//4096
-                },
+                from: "jsonconfig",
+                configUrl: "/data/config.json?2023-05-15"
+                // config: {
+                //   serverMode: "full",
+                //   url: "/data/delta.db",
+                //   requestChunkSize: 65536//16384//4096
+                // },
               },
             ],
             workerUrl.toString(),
