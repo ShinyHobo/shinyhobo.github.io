@@ -2,8 +2,8 @@
 {
     "serverMode": "chunked",
     "requestChunkSize": 16384,
-    "databaseLengthBytes": 104652800,
-    "serverChunkSize": 8388608,
+    "databaseLengthBytes": 101941248,
+    "serverChunkSize": 16777216,
     "urlPrefix": "db.sqlite3.",
     "suffixLength": 3,
 	"cacheBust": "2023-05-17"
