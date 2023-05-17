@@ -110,6 +110,17 @@ export default class Timeline3 extends React.Component {
 
         // Separating the listed deliverables from the full list to allow searching without re-querying the database
         if(this.searching) {
+            // filter on time allocation start/end dates in proximity to delta date
+            if(this.inProgressFilter) {
+                if(!this.inProgressIds.length) {
+                    this.inProgressIds = await CommonDBFunctions.getInProgressDelivarables(this.db, this.selectedDelta, this.searchingDeliverables.filter(d => d.endDate >= this.selectedDelta));
+                }
+                this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressIds.includes(d.id))
+            } else {
+                // unset in progress ids
+                this.inProgressIds = [];
+            }
+
             // filter on title and description
             if(this.searchText) {
                 this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchText) || he.unescape(d.description).toLowerCase().includes(this.searchText));
@@ -121,17 +132,6 @@ export default class Timeline3 extends React.Component {
                     (this.scFilter && d.project_ids === 'SC') || 
                     (this.sq42Filter && d.project_ids === 'SQ42') ||
                     (this.bothFilter && d.project_ids === 'SC,SQ42'));
-            }
-            
-            // filter on time allocation start/end dates in proximity to delta date
-            if(this.inProgressFilter) {
-                if(!this.inProgressIds.length) {
-                    this.inProgressIds = await CommonDBFunctions.getInProgressDelivarables(this.db, this.selectedDelta, this.searchingDeliverables.filter(d => d.endDate >= this.selectedDelta));
-                }
-                this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressIds.includes(d.id))
-            } else {
-                // unset in progress ids
-                this.inProgressIds = [];
             }
         }
 
