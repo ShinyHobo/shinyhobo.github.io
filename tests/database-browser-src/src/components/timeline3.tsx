@@ -283,21 +283,25 @@ export default class Timeline3 extends React.Component {
                     <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
                 </div>
                 <div style={{marginLeft: 10, display: "inline-block"}}>
-                    <p style={{marginTop: 0}}>Click and drag to scroll the timeline</p>
+                    <p>Click and drag to scroll the timeline</p>
                     <p>Hover over a timeline block to view details</p>
                     <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
-                    <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
-                    {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
-                    {this.deltaDatetimes.map((e:any) => {
-                        return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
-                    })}
-                    </select>
-                    <input type="text" id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
-                    <button onClick={this.searchInitiated.bind(this)}>Search</button>
-                    <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter; this.searchInitiated();}}/>SQ42</label>
-                    <label><input type="checkbox" onChange={e => {this.scFilter = !this.scFilter; this.searchInitiated();}}/>SC</label>
-                    <label><input type="checkbox" onChange={e => {this.bothFilter = !this.bothFilter; this.searchInitiated();}}/>Both</label>
-                    <label><input type="checkbox" onChange={e => {this.inProgressFilter = !this.inProgressFilter; this.searchInitiated();}}/>In Progress</label>
+                    <p>
+                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
+                        {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
+                        {this.deltaDatetimes.map((e:any) => {
+                            return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
+                        })}
+                        </select>
+                        <input type="text" id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
+                        <button onClick={this.searchInitiated.bind(this)}>Search</button>
+                        <span style={{display: "inline-block"}}>
+                            <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter; this.searchInitiated();}}/>SQ42</label>
+                            <label><input type="checkbox" onChange={e => {this.scFilter = !this.scFilter; this.searchInitiated();}}/>SC</label>
+                            <label><input type="checkbox" onChange={e => {this.bothFilter = !this.bothFilter; this.searchInitiated();}}/>Both</label>
+                            <label><input type="checkbox" onChange={e => {this.inProgressFilter = !this.inProgressFilter; this.searchInitiated();}}/>In Progress</label>
+                        </span>
+                    </p>
                 </div>
                 {!this.loading ? 
                 <>
