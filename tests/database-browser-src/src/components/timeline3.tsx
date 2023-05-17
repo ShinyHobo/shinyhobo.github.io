@@ -296,7 +296,7 @@ export default class Timeline3 extends React.Component {
                 </div>
                 {!this.loading ? 
                 <>
-                <div style={{height: "100vh", overflowX: "hidden", scrollbarWidth: "none"}} id="scrollableDiv">
+                <div style={{height: "100vh", overflowX: "hidden", scrollbarWidth: "none", borderBottom: "1px solid white"}} id="scrollableDiv">
                 <div id="scrollable-timeline" style={{}}>
                     <InfiniteScroll
                         dataLength={this.loadedDeliverables.length}
