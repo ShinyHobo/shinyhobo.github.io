@@ -145,10 +145,10 @@ export default class Timeline3 extends React.Component {
     private async deltaSelected(e:any) {
         this.hasMore = true;
         this.skip = 0;
-        this.loadedDeliverables = [];
+        this.loading = true;
         if(e) {
             if(!this.searchText) {
-                this.searching = false
+                this.searching = false;
             }
             
             this.selectedDelta = e.target.value;
@@ -294,9 +294,9 @@ export default class Timeline3 extends React.Component {
                     <input type="text" id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
                     <button onClick={this.searchInitiated.bind(this)}>Search</button>
                     <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter; this.searchInitiated();}}/>SQ42</label>
-                    <label><input type="checkbox" checked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter; this.searchInitiated();}}/>SC</label>
-                    <label><input type="checkbox" checked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter; this.searchInitiated();}}/>Both</label>
-                    <label><input type="checkbox" checked={this.inProgressFilter} onChange={e => {this.inProgressFilter = !this.inProgressFilter; this.searchInitiated();}}/>In Progress</label>
+                    <label><input type="checkbox" onChange={e => {this.scFilter = !this.scFilter; this.searchInitiated();}}/>SC</label>
+                    <label><input type="checkbox" onChange={e => {this.bothFilter = !this.bothFilter; this.searchInitiated();}}/>Both</label>
+                    <label><input type="checkbox" onChange={e => {this.inProgressFilter = !this.inProgressFilter; this.searchInitiated();}}/>In Progress</label>
                 </div>
                 {!this.loading ? 
                 <>
