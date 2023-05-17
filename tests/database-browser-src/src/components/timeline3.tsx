@@ -263,10 +263,11 @@ export default class Timeline3 extends React.Component {
                     <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
                 </div>
                 <div style={{marginLeft: 10, display: "inline-block"}}>
-                    <p>Click and drag to scroll the timeline</p>
+                    <p style={{marginTop: 0}}>Click and drag to scroll the timeline</p>
                     <p>Hover over a timeline block to view details</p>
                     <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
                     <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
+                    {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
                     {this.deltaDatetimes.map((e:any) => {
                         return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
                     })}
