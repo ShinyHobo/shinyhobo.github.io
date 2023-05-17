@@ -110,6 +110,12 @@ export default class Timeline3 extends React.Component {
         // Separating the listed deliverables from the full list to allow searching without re-querying the database
         if(this.searching) {
             this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchText) || he.unescape(d.description).toLowerCase().includes(this.searchText));
+            if(this.scFilter) {
+                this.searchingDeliverables = this.searchingDeliverables.filter(d => d.project_ids.includes('SC'));
+            }
+            if(this.sq42Filter) {
+                this.searchingDeliverables = this.searchingDeliverables.filter(d => d.project_ids.includes('SQ42'));
+            }
         }
 
         return _(this.searchingDeliverables).drop(this.skip).take(this.take).value();
@@ -124,7 +130,10 @@ export default class Timeline3 extends React.Component {
         this.skip = 0;
         this.loadedDeliverables = [];
         if(e) {
-            this.searching = false;
+            if(!this.searchText) {
+                this.searching = false
+            }
+            
             this.selectedDelta = e.target.value;
             await this.getDeliverablesForDelta();
         }
@@ -152,12 +161,14 @@ export default class Timeline3 extends React.Component {
     private searchText: string = "";
     private searching: boolean = false;
     private searchingDeliverables: any[] = [];
+    private sq42Filter: boolean = false;
+    private scFilter: boolean = false;
 
     /**
      * Begin searching for deliverables whose titles and descriptions contain the search term
      * @param e The click event
      */
-    private searchInitiated(e: any) {
+    private searchInitiated() {
         this.searching = true;
         this.deltaSelected(null);
     }
@@ -234,13 +245,16 @@ export default class Timeline3 extends React.Component {
             let pageContainer = document.getElementById("scrollable-timeline") as any;
             pageContainer.style.height = timeline.clientHeight + 100
         }
+
+        var searchField = document.getElementById("search-field") as HTMLInputElement;
+        if(searchField) {
+            searchField.value = this.searchText;
+        }
     }
 
     render() {
         return (
             <>
-                {!this.loading ? 
-                <>
                 <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
                     <h4 style={{margin: 2}}>Legend</h4>
                     <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Indicates part time work</p>
@@ -257,9 +271,13 @@ export default class Timeline3 extends React.Component {
                         return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
                     })}
                     </select>
-                    <input type="text" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search"/>
+                    <input type="text" id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
                     <button onClick={this.searchInitiated.bind(this)}>Search</button>
+                    <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter; this.searchInitiated();}}/>Filter by SQ42</label>
+                    <label><input type="checkbox" checked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter; this.searchInitiated();}}/>Filter by SC</label>
                 </div>
+                {!this.loading ? 
+                <>
                 <div style={{height: "100vh", overflowX: "hidden", scrollbarWidth: "none"}} id="scrollableDiv">
                 <div id="scrollable-timeline" style={{}}>
                     <InfiniteScroll
@@ -278,7 +296,7 @@ export default class Timeline3 extends React.Component {
                             <div className="deliverable-info">
                                 <div className="deliverable-info-header" style={{display: "flex", width: "100%"}}>
                                     <div style={{width: "100%", zIndex: 2}}>
-                                        <h2 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables</h2>
+                                        <h2 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables ({this.deliverables.length})</h2>
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div style={{position: "absolute", width: `calc(100px*${this.months.length}`, borderBottom: "1px solid white"}} id="month-header">
