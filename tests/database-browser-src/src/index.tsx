@@ -39,7 +39,7 @@ export default class App extends React.Component {
             [
               {
                 from: "jsonconfig",
-                configUrl: "/data/config.json?cb=2023-05-15-0"
+                configUrl: "/data/config.json?cb=2023-05-17"
                 // config: {
                 //   serverMode: "full",
                 //   url: "/data/delta.db",

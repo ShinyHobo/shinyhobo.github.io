@@ -46,7 +46,7 @@ export default class Timeline3 extends React.Component {
             this.deltaDatetimes = _(deltas.map((d:string)=>new Date(Number.parseInt(d)))).groupBy((d:Date)=>d.toDateString()).map((d:Date[])=>d[0].getTime()).value();
             this.selectedDelta = deltas[0];
             await this.getDeliverablesForDelta();
-            const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, this.getDeliverableSubset());
+            const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables = [...firstSet];
             this.hasMore = this.loadedDeliverables.length !== this.deliverables.length;
             this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
@@ -61,6 +61,7 @@ export default class Timeline3 extends React.Component {
     private timeSpan: number = 0;
     private todayLine: number = 0;
     private sampledLine: number = 0;
+    private inProgressIds: number[] = []; // deliverable ids
 
     /**
      * Gets the list of months between Jan 1, 2021 and the end of the next year
@@ -104,17 +105,33 @@ export default class Timeline3 extends React.Component {
      * Gets a subset of deliverables using the set skip and take options
      * @returns The subset of deliverables
      */
-    private getDeliverableSubset() {
+    private async getDeliverableSubset() {
         this.searchingDeliverables = this.deliverables;
 
         // Separating the listed deliverables from the full list to allow searching without re-querying the database
         if(this.searching) {
-            this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchText) || he.unescape(d.description).toLowerCase().includes(this.searchText));
-            if(this.scFilter) {
-                this.searchingDeliverables = this.searchingDeliverables.filter(d => d.project_ids.includes('SC'));
+            // filter on title and description
+            if(this.searchText) {
+                this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchText) || he.unescape(d.description).toLowerCase().includes(this.searchText));
             }
-            if(this.sq42Filter) {
-                this.searchingDeliverables = this.searchingDeliverables.filter(d => d.project_ids.includes('SQ42'));
+
+            // filter on project
+            if(this.scFilter || this.sq42Filter || this.bothFilter) {
+                this.searchingDeliverables = this.searchingDeliverables.filter(d => 
+                    (this.scFilter && d.project_ids === 'SC') || 
+                    (this.sq42Filter && d.project_ids === 'SQ42') ||
+                    (this.bothFilter && d.project_ids === 'SC,SQ42'));
+            }
+            
+            // filter on time allocation start/end dates in proximity to delta date
+            if(this.inProgressFilter) {
+                if(!this.inProgressIds.length) {
+                    this.inProgressIds = await CommonDBFunctions.getInProgressDelivarables(this.db, this.selectedDelta, this.searchingDeliverables.filter(d => d.endDate >= this.selectedDelta));
+                }
+                this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressIds.includes(d.id))
+            } else {
+                // unset in progress ids
+                this.inProgressIds = [];
             }
         }
 
@@ -137,7 +154,7 @@ export default class Timeline3 extends React.Component {
             this.selectedDelta = e.target.value;
             await this.getDeliverablesForDelta();
         }
-        const subset = this.getDeliverableSubset();
+        const subset = await this.getDeliverableSubset();
         const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, subset);
         this.loadedDeliverables = [...firstSet];
         this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
@@ -150,7 +167,7 @@ export default class Timeline3 extends React.Component {
      */
     private async fetchData() {
         this.skip += 20;
-        const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, this.getDeliverableSubset());
+        const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
         this.loadedDeliverables.push(...subSet);
         this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
         if(!this.hasMore) {
@@ -163,6 +180,8 @@ export default class Timeline3 extends React.Component {
     private searchingDeliverables: any[] = [];
     private sq42Filter: boolean = false;
     private scFilter: boolean = false;
+    private bothFilter: boolean = false;
+    private inProgressFilter: boolean = false;
 
     /**
      * Begin searching for deliverables whose titles and descriptions contain the search term
@@ -274,8 +293,10 @@ export default class Timeline3 extends React.Component {
                     </select>
                     <input type="text" id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
                     <button onClick={this.searchInitiated.bind(this)}>Search</button>
-                    <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter; this.searchInitiated();}}/>Filter by SQ42</label>
-                    <label><input type="checkbox" checked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter; this.searchInitiated();}}/>Filter by SC</label>
+                    <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter; this.searchInitiated();}}/>SQ42</label>
+                    <label><input type="checkbox" checked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter; this.searchInitiated();}}/>SC</label>
+                    <label><input type="checkbox" checked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter; this.searchInitiated();}}/>Both</label>
+                    <label><input type="checkbox" checked={this.inProgressFilter} onChange={e => {this.inProgressFilter = !this.inProgressFilter; this.searchInitiated();}}/>In Progress</label>
                 </div>
                 {!this.loading ? 
                 <>
@@ -297,7 +318,7 @@ export default class Timeline3 extends React.Component {
                             <div className="deliverable-info">
                                 <div className="deliverable-info-header" style={{display: "flex", width: "100%"}}>
                                     <div style={{width: "100%", zIndex: 2}}>
-                                        <h2 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables ({this.deliverables.length})</h2>
+                                        <h2 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables ({this.searchingDeliverables.length})</h2>
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div style={{position: "absolute", width: `calc(100px*${this.months.length}`, borderBottom: "1px solid white"}} id="month-header">

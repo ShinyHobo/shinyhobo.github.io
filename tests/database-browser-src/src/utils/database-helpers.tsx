@@ -82,6 +82,22 @@ export class CommonDBFunctions {
 
         return returnDeliverables.value();
     }
+    
+    private static lookAheadTime: number = 86400000 * 14; // 14 days, bi-weekly updates, usually
+
+    /**
+     * Gets the list of in progress deliverable ids
+     * @param db The database connection
+     * @param date The delta timestamp to use
+     * @param deliverables The deliverables to search with
+     * @returns The list of deliverable ids that have time allocations currently, or about to be, in progress
+     */
+    public static async getInProgressDelivarables(db: Database, date: string, deliverables: any[]): Promise<number[]> {
+        const deliverableIds = deliverables.map((dd) => dd.id).toString();
+        const query = `select DISTINCT MAX(addedDate) as max, deliverable_id from timeAllocation_diff WHERE deliverable_id IN (${deliverableIds}) AND ((startDate <= ${parseInt(date) + CommonDBFunctions.lookAheadTime} AND ${date} <= endDate)) GROUP BY uuid`;
+        const results = await db?.query(query);
+        return [...new Set(results?.map((r: any) => parseInt(r.deliverable_id)))] as number[];
+    }
 
     /**
      * Builds the complete deliverable object (sub-componets like teamtimes included) array of all deliverables for the desired time
