@@ -99,6 +99,7 @@ export default class Timeline3 extends React.Component {
     private async getDeliverablesForDelta() {
         this.loading = true;
         this.deliverables = await CommonDBFunctions.getUniqueDeliverables(this.db, this.selectedDelta.toString());
+        this.inProgressIds = await CommonDBFunctions.getInProgressDelivarables(this.db, this.selectedDelta, this.deliverables.filter(d => d.endDate >= this.selectedDelta));
     }
 
     /**
@@ -112,13 +113,7 @@ export default class Timeline3 extends React.Component {
         if(this.searching) {
             // filter on time allocation start/end dates in proximity to delta date
             if(this.inProgressFilter) {
-                if(!this.inProgressIds.length) {
-                    this.inProgressIds = await CommonDBFunctions.getInProgressDelivarables(this.db, this.selectedDelta, this.searchingDeliverables.filter(d => d.endDate >= this.selectedDelta));
-                }
                 this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressIds.includes(d.id))
-            } else {
-                // unset in progress ids
-                this.inProgressIds = [];
             }
 
             // filter on title and description
