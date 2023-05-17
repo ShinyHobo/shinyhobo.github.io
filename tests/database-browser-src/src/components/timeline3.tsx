@@ -256,13 +256,14 @@ export default class Timeline3 extends React.Component {
         this.timelineTableMonthHeader = document.getElementById("month-header");
         // resets the month header position on page load
         if(this.timelineTable && this.timelineTableMonthHeader) {
-            this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft
+            this.timelineTableMonthHeader.style.left = -this.timelineTable.scrollLeft;
         }
 
         let timeline = document.querySelector(".deliverable-timeline") as any;
         if(timeline) {
             let pageContainer = document.getElementById("scrollable-timeline") as any;
-            pageContainer.style.height = timeline.clientHeight + 100
+            pageContainer.style.height = timeline.clientHeight + 100;
+            timeline.scroll(this.sampledLine - 100,0);
         }
 
         var searchField = document.getElementById("search-field") as HTMLInputElement;
@@ -318,7 +319,7 @@ export default class Timeline3 extends React.Component {
                             <div className="deliverable-info">
                                 <div className="deliverable-info-header" style={{display: "flex", width: "100%"}}>
                                     <div style={{width: "100%", zIndex: 2}}>
-                                        <h2 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables ({this.searchingDeliverables.length})</h2>
+                                        <h3 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables ({this.searchingDeliverables.length})</h3>
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div style={{position: "absolute", width: `calc(100px*${this.months.length}`, borderBottom: "1px solid white"}} id="month-header">
