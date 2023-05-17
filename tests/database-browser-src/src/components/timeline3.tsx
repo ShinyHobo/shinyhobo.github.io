@@ -142,10 +142,6 @@ export default class Timeline3 extends React.Component {
         this.skip = 0;
         this.loading = true;
         if(e) {
-            if(!this.searchText) {
-                this.searching = false;
-            }
-            
             this.selectedDelta = e.target.value;
             await this.getDeliverablesForDelta();
         }
