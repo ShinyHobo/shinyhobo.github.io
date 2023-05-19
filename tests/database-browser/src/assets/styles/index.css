@@ -64,6 +64,11 @@ html {
   background-color: #202324;
 }
 
+#terminal-container {
+  width: 99vw;
+  overflow-x: auto;
+}
+
 textarea {
   color: #d8d4cf;
   background-color: #222324;
@@ -126,6 +131,7 @@ textarea {
   margin-bottom: 0;
   width: 100%;
   padding: 5px;
+  line-height: 1.2;
 }
 
 .deliverable-info .deliverable-info-box h4 {
@@ -143,6 +149,8 @@ textarea {
   width: 100%;
   scrollbar-width: none;
   overflow: auto;
+  z-index: 0;
+  position: relative;
 }
 
 .deliverable-timeline:active {
@@ -150,11 +158,11 @@ textarea {
 }
 
 .deliverable-timeline .timeline-scroll .deliverable-rows .deliverable-row {
-  height: 195px;
-  margin-top: 5px;
+  min-height: 100px;
   border-bottom: 1px solid white;
-  overflow: hidden;
   position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .deliverable-timeline .months .month {
@@ -177,7 +185,6 @@ textarea {
 .deliverable-timeline .months {
   display: flex;
   height: 100%;
-  position: absolute;
 }
 
 .deliverable-timeline .timeline-scroll {
@@ -188,7 +195,7 @@ textarea {
   position: absolute;
   width: 100%;
   top: 57px;
-  z-index: -1;
+  z-index: 10;
 }
 
 .scroll{
@@ -216,4 +223,19 @@ textarea {
   height: 100%;
   position: absolute;
   z-index: -1;
+}
+
+.deliverable-row .team {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.deliverable-row .team .discipline {
+  height: 10px;
+  position: relative;
+}
+
+.deliverable-row .team .discipline .time-box {
+  margin: 2px;
 }
