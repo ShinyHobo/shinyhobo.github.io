@@ -20,6 +20,8 @@ export default class Timeline3 extends React.Component {
     private take: number = 20;
     private skip: number = 0;
     private hasMore: boolean = true;
+    private scrolledToToday: boolean = false;
+    private horizontalScrollPosition: number = 0;
 
     private months: Date[] = [];
 
@@ -237,8 +239,21 @@ export default class Timeline3 extends React.Component {
                 }
             });
         }
+
+        const discGroup = _(returnData).groupBy('abbr');
+        const teamMin: any[] = discGroup.map((group) => _.minBy(group, 'start')).value();
+        const teamMax: any[] = discGroup.map((group) => _.maxBy(group, 'end')).value();
+
+        //const deliverableMin: any = _.minBy(teamMin, 'start').start;
+        //const deliverableMax: number = _.maxBy(teamMax, 'end').end;
+
         const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
-        const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
+        const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, 
+            start: this.calculateTimeLeft(teamMin.filter(tm => tm.abbr === team)[0].start), end: this.calculateTimeRight(teamMax.filter(tm => tm.abbr === team)[0].end), 
+            discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
+
+        console.info(teamGroups)
+
         return teamGroups;
     }
 
@@ -254,12 +269,28 @@ export default class Timeline3 extends React.Component {
         if(timeline) {
             let pageContainer = document.getElementById("scrollable-timeline") as any;
             pageContainer.style.height = timeline.clientHeight + 100;
-            timeline.scroll(this.sampledLine - 100,0);
+            if(this.scrolledToToday) {
+                timeline.scroll(this.horizontalScrollPosition,0);
+            } else {
+                const scrollPos = this.todayLine - 100;
+                timeline.scroll(scrollPos,0);
+                this.horizontalScrollPosition = scrollPos;
+                this.scrolledToToday = true;
+            }
         }
 
         var searchField = document.getElementById("search-field") as HTMLInputElement;
         if(searchField) {
             searchField.value = this.searchText;
+        }
+
+        let infoBoxes = document.querySelectorAll(".deliverable-info-box");
+        if(infoBoxes) {
+            infoBoxes.forEach((i: any) => {
+                let id = i.id.split("deliverable-info-")[1];
+                let row = document.getElementById("deliverable-row-"+id);
+                i.style.height = row?.clientHeight;
+            });
         }
     }
 
@@ -312,7 +343,7 @@ export default class Timeline3 extends React.Component {
                     >
                         <div className="deliverable-list-container">
                             <div className="deliverable-info">
-                                <div className="deliverable-info-header" style={{display: "flex", width: "100%"}}>
+                                <div className="deliverable-info-header" style={{display: "flex", width: "100%", position: "sticky", zIndex: 10}}>
                                     <div style={{width: "100%", zIndex: 2}}>
                                         <h3 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables ({this.searchingDeliverables.length})</h3>
                                     </div>
@@ -327,7 +358,7 @@ export default class Timeline3 extends React.Component {
                                     </div>
                                 </div>
                                 {this.loadedDeliverables.map((deliverable:any, index:number)=> (
-                                <div key={index} className="deliverable-info-box">
+                                <div key={index} className="deliverable-info-box" id={"deliverable-info-"+deliverable.id} style={{height: 60}}>
                                     <div style={{display: "flex"}}>
                                         <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
                                         <h4 className="projects">{deliverable.project_ids}</h4>
@@ -348,19 +379,20 @@ export default class Timeline3 extends React.Component {
                                     onTouchMove={this.moveTimeline.bind(this)}
                                     onMouseLeave={this.unclickTimeline.bind(this)}
                                 >
-                                    <div className="months" onMouseMove={this.hoverTimeline.bind(this)}>
+                                    <div className="months">
                                     {this.months.map((date:Date, index:number)=> (
-                                        <div key={index} className="month"/>
+                                        <div key={index} className="month" style={{backgroundColor: index % 6 < 3 ? "white" : "none", opacity: index % 6 < 3 ? 0.05 : 0 }}/>
                                     ))}
                                         <div className="today-line" style={{left: this.todayLine, borderRight: "1px solid yellow"}}></div>
                                         <div className="sampled-line" style={{left: this.sampledLine, borderRight: "1px solid red" }}></div>
-                                        <div className="deliverable-rows">
+                                    </div>
+                                    <div className="deliverable-rows" onMouseMove={this.hoverTimeline.bind(this)}>
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
-                                            <div key={index} className="deliverable-row">
-                                                {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number)=>(
+                                            <div key={index} className="deliverable-row" id={"deliverable-row-"+deliverable.id}>
+                                                {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
                                                     <div key={teamIndex} className="team">
-                                                        {teamGroup.discs.map((disc:any, disciplineIndex:number)=>(
-                                                            <div key={disciplineIndex} className="discipline" style={{height:12, position: "relative"}}>
+                                                        {teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
+                                                            <div key={disciplineIndex} className="discipline">
                                                             {disc.times.map((time:any, index: number)=>(
                                                                 <div key={index} className="time-box">
                                                                     {this.createBox(time, disc.times)}
@@ -368,11 +400,12 @@ export default class Timeline3 extends React.Component {
                                                             ))}
                                                             </div>
                                                         ))}
+                                                        <div style={{position: "absolute", height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10, 
+                                                            top: -1, zIndex: -1, border: "1px solid dimgray", backgroundColor: "white", opacity: 0.2, borderRadius: 10}}/>
                                                     </div>
                                                 ))}
                                             </div>
                                         ))}
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -406,7 +439,7 @@ export default class Timeline3 extends React.Component {
             let startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "2-digit"});
             let endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "2-digit"});
 
-            filtered[0].insertAdjacentHTML("beforeend",`<div class="timeline-bar-popup" style="position: absolute; width: ${this.popupWidth}; top: 12; left: ${0}px; z-index: 1; background-color: black; text-align: center; font-size: 14" >
+            filtered[0].insertAdjacentHTML("beforeend",`<div class="timeline-bar-popup" style="position: absolute; width: ${this.popupWidth}; top: 12; left: ${0}px; z-index: 10000; background-color: black; text-align: center; font-size: 14" >
                 <div>${data.abbr} (${data["disc"]})</div>
                 <div>${data.tasks} tasks</div>
                 <div>${startDisplay} - ${endDisplay}</div>
@@ -420,13 +453,8 @@ export default class Timeline3 extends React.Component {
      * @returns the timespan box for display
      */
     private createBox(time:any, times:any[]) {
-        let fromStart1 = time.start - this.start;
-        let fromStart2 = time.end - this.start;
-        let percentOfTimespan1 = fromStart1/this.timeSpan;
-        let percentOfTimespan2 = fromStart2/this.timeSpan;
-
-        let right = this.totalWidth-(percentOfTimespan2*this.totalWidth);
-        let left = percentOfTimespan1*this.totalWidth;
+        let right = this.calculateTimeRight(time.end);
+        let left = this.calculateTimeLeft(time.start);
 
         let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id);
         let matched = matches.length > 1;
@@ -439,6 +467,28 @@ export default class Timeline3 extends React.Component {
             <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: index ? 5 : 0}} className="timeline-bar"
                 data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks}/>
         </>;
+    }
+
+    /**
+     * Calculates the pixels from the left to position a time div
+     * @param startTime The start time
+     * @returns 
+     */
+    private calculateTimeLeft(startTime: number) {
+        const fromStart = startTime- this.start;
+        const percentOfTimespan = fromStart / this.timeSpan;
+        return percentOfTimespan * this.totalWidth;
+    }
+
+    /**
+     * Calculates the pixels from the right to position a time div
+     * @param endTime The end date
+     * @returns The pixel positioning
+     */
+    private calculateTimeRight(endTime: number) {
+        const fromStart = endTime- this.start;
+        const percentOfTimespan = fromStart / this.timeSpan;
+        return this.totalWidth-(percentOfTimespan * this.totalWidth);
     }
 
     //#region Timeline dragging
@@ -471,6 +521,7 @@ export default class Timeline3 extends React.Component {
                 const x = pageX - this.timelineTable.offsetLeft;
                 const scroll = x - this.startX;
                 this.timelineTable.scrollLeft = this.scrollLeft - scroll;
+                this.horizontalScrollPosition = this.timelineTable.scrollLeft;
             }
         }
     }
