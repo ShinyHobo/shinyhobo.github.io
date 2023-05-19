@@ -239,8 +239,21 @@ export default class Timeline3 extends React.Component {
                 }
             });
         }
+
+        const discGroup = _(returnData).groupBy('abbr');
+        const teamMin: any[] = discGroup.map((group) => _.minBy(group, 'start')).value();
+        const teamMax: any[] = discGroup.map((group) => _.maxBy(group, 'end')).value();
+
+        //const deliverableMin: any = _.minBy(teamMin, 'start').start;
+        //const deliverableMax: number = _.maxBy(teamMax, 'end').end;
+
         const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
-        const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
+        const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, 
+            start: this.calculateTimeLeft(teamMin.filter(tm => tm.abbr === team)[0].start), end: this.calculateTimeRight(teamMax.filter(tm => tm.abbr === team)[0].end), 
+            discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
+
+        console.info(teamGroups)
+
         return teamGroups;
     }
 
@@ -376,10 +389,10 @@ export default class Timeline3 extends React.Component {
                                     <div className="deliverable-rows" onMouseMove={this.hoverTimeline.bind(this)}>
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                             <div key={index} className="deliverable-row" id={"deliverable-row-"+deliverable.id}>
-                                                {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number)=>(
+                                                {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
                                                     <div key={teamIndex} className="team">
-                                                        {teamGroup.discs.map((disc:any, disciplineIndex:number)=>(
-                                                            <div key={disciplineIndex} className="discipline" style={{height:12, position: "relative"}}>
+                                                        {teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
+                                                            <div key={disciplineIndex} className="discipline">
                                                             {disc.times.map((time:any, index: number)=>(
                                                                 <div key={index} className="time-box">
                                                                     {this.createBox(time, disc.times)}
@@ -387,6 +400,8 @@ export default class Timeline3 extends React.Component {
                                                             ))}
                                                             </div>
                                                         ))}
+                                                        <div style={{position: "absolute", height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10, 
+                                                            top: -1, zIndex: -1, border: "1px solid dimgray", backgroundColor: "white", opacity: 0.2, borderRadius: 10}}/>
                                                     </div>
                                                 ))}
                                             </div>
@@ -438,13 +453,8 @@ export default class Timeline3 extends React.Component {
      * @returns the timespan box for display
      */
     private createBox(time:any, times:any[]) {
-        let fromStart1 = time.start - this.start;
-        let fromStart2 = time.end - this.start;
-        let percentOfTimespan1 = fromStart1/this.timeSpan;
-        let percentOfTimespan2 = fromStart2/this.timeSpan;
-
-        let right = this.totalWidth-(percentOfTimespan2*this.totalWidth);
-        let left = percentOfTimespan1*this.totalWidth;
+        let right = this.calculateTimeRight(time.end);
+        let left = this.calculateTimeLeft(time.start);
 
         let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id);
         let matched = matches.length > 1;
@@ -457,6 +467,28 @@ export default class Timeline3 extends React.Component {
             <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: index ? 5 : 0}} className="timeline-bar"
                 data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks}/>
         </>;
+    }
+
+    /**
+     * Calculates the pixels from the left to position a time div
+     * @param startTime The start time
+     * @returns 
+     */
+    private calculateTimeLeft(startTime: number) {
+        const fromStart = startTime- this.start;
+        const percentOfTimespan = fromStart / this.timeSpan;
+        return percentOfTimespan * this.totalWidth;
+    }
+
+    /**
+     * Calculates the pixels from the right to position a time div
+     * @param endTime The end date
+     * @returns The pixel positioning
+     */
+    private calculateTimeRight(endTime: number) {
+        const fromStart = endTime- this.start;
+        const percentOfTimespan = fromStart / this.timeSpan;
+        return this.totalWidth-(percentOfTimespan * this.totalWidth);
     }
 
     //#region Timeline dragging
