@@ -34,6 +34,8 @@ export default class Timeline3 extends React.Component {
 
         document.body.style.overflowX = "hidden";
 
+        this.deliverableTtimelineDiv = React.createRef();
+
         this.initializeData();
     }
 
@@ -146,7 +148,6 @@ export default class Timeline3 extends React.Component {
         if(e) {
             this.selectedDelta = e.target.value;
             this.scrolledToToday = false;
-            this.newDeltaSelected = true
             await this.getDeliverablesForDelta();
         }
         const subset = await this.getDeliverableSubset();
@@ -161,7 +162,7 @@ export default class Timeline3 extends React.Component {
      * Gets more data from the database, triggers the view to update
      */
     private async fetchData() {
-        if(document.getElementById("scrollableDiv")?.scrollTop) {
+        if(this.deliverableTtimelineDiv.current?.scrollHeight) {
             this.skip += 20;
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables.push(...subSet);
@@ -179,7 +180,7 @@ export default class Timeline3 extends React.Component {
     private scFilter: boolean = false;
     private bothFilter: boolean = false;
     private inProgressFilter: boolean = false;
-    private newDeltaSelected: boolean = false;
+    private deliverableTtimelineDiv: any;
 
     /**
      * Begin searching for deliverables whose titles and descriptions contain the search term
@@ -272,19 +273,13 @@ export default class Timeline3 extends React.Component {
         if(timeline) {
             let pageContainer = document.getElementById("scrollable-timeline") as any;
             pageContainer.style.height = timeline.clientHeight + 100;
-            if(document.getElementById("scrollableDiv")?.scrollTop || !this.scrolledToToday) {
-                if(this.scrolledToToday) {
-                    timeline.scroll(this.horizontalScrollPosition,0);
-                } else {
-                    const scrollPos = this.todayLine - 100;
-                    this.scrolledToToday = this.horizontalScrollPosition !== scrollPos;
-                    if(this.scrolledToToday||this.newDeltaSelected) {
-                        timeline.scroll(scrollPos,0);
-                        this.horizontalScrollPosition = scrollPos;
-                        this.scrolledToToday = true;
-                        this.newDeltaSelected = true;
-                    }
-                }
+            if(this.scrolledToToday) {
+                timeline.scroll(this.horizontalScrollPosition,0);
+            } else {
+                const scrollPos = this.todayLine - 100;
+                timeline.scroll(scrollPos,0);
+                this.horizontalScrollPosition = scrollPos;
+                this.scrolledToToday = true;
             }
         }
 
@@ -378,7 +373,7 @@ export default class Timeline3 extends React.Component {
                                 </div>
                                 ))}
                             </div>
-                            <div className="deliverable-timeline" onScroll={this.scrollTimelineHeader.bind(this)}>
+                            <div className="deliverable-timeline" onScroll={this.scrollTimelineHeader.bind(this)}  ref={this.deliverableTtimelineDiv}>
                                 <div className="timeline-scroll" 
                                     onMouseDown={this.clickTimeline.bind(this)} 
                                     onTouchStart={this.clickTimeline.bind(this)} 
