@@ -111,27 +111,25 @@ export default class Timeline3 extends React.Component {
      * @returns The subset of deliverables
      */
     private async getDeliverableSubset() {
-        this.searchingDeliverables = this.deliverables;
-
         // Separating the listed deliverables from the full list to allow searching without re-querying the database
-        if(this.searching) {
-            // filter on time allocation start/end dates in proximity to delta date
-            if(this.inProgressFilter) {
-                this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressIds.includes(d.id))
-            }
+        this.searchingDeliverables = this.deliverables;
+        
+        // filter on time allocation start/end dates in proximity to delta date
+        if(this.inProgressFilter) {
+            this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressIds.includes(d.id))
+        }
 
-            // filter on title and description
-            if(this.searchText) {
-                this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchText) || he.unescape(d.description).toLowerCase().includes(this.searchText));
-            }
+        // filter on title and description
+        if(this.searchText) {
+            this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchText) || he.unescape(d.description).toLowerCase().includes(this.searchText));
+        }
 
-            // filter on project
-            if(this.scFilter || this.sq42Filter || this.bothFilter) {
-                this.searchingDeliverables = this.searchingDeliverables.filter(d => 
-                    (this.scFilter && d.project_ids === 'SC') || 
-                    (this.sq42Filter && d.project_ids === 'SQ42') ||
-                    (this.bothFilter && d.project_ids === 'SC,SQ42'));
-            }
+        // filter on project
+        if(this.scFilter || this.sq42Filter || this.bothFilter) {
+            this.searchingDeliverables = this.searchingDeliverables.filter(d => 
+                (this.scFilter && d.project_ids === 'SC') || 
+                (this.sq42Filter && d.project_ids === 'SQ42') ||
+                (this.bothFilter && d.project_ids === 'SC,SQ42'));
         }
 
         return _(this.searchingDeliverables).drop(this.skip).take(this.take).value();
@@ -167,14 +165,10 @@ export default class Timeline3 extends React.Component {
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables.push(...subSet);
             this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
-            if(!this.hasMore) {
-                this.searching = false;
-            }
         }
     }
 
     private searchText: string = "";
-    private searching: boolean = false;
     private searchingDeliverables: any[] = [];
     private sq42Filter: boolean = false;
     private scFilter: boolean = false;
@@ -187,7 +181,6 @@ export default class Timeline3 extends React.Component {
      * @param e The click event
      */
     private searchInitiated() {
-        this.searching = true;
         this.deltaSelected(null);
     }
 
