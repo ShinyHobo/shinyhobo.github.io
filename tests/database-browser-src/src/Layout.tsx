@@ -16,7 +16,7 @@ export default class Layout extends React.Component {
                   <Link to="/browser">Database Terminal</Link>
                 </li>
                 <li>
-                  <Link to="/timeline" onClick={() => CommonNavigationFunctions.refresh()}>Scheduled Work Timeline</Link>
+                  <Link to="/timeline" onClick={CommonNavigationFunctions.refresh}>Scheduled Work Timeline</Link>
                 </li>
               </ul>
             </nav>
