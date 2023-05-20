@@ -148,7 +148,7 @@ textarea {
   height: auto;
   width: 100%;
   scrollbar-width: none;
-  overflow: auto;
+  overflow: hidden;
   z-index: 0;
   position: relative;
 }

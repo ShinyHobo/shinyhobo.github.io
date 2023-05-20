@@ -146,6 +146,7 @@ export default class Timeline3 extends React.Component {
         if(e) {
             this.selectedDelta = e.target.value;
             this.scrolledToToday = false;
+            this.newDeltaSelected = true
             await this.getDeliverablesForDelta();
         }
         const subset = await this.getDeliverableSubset();
@@ -160,7 +161,6 @@ export default class Timeline3 extends React.Component {
      * Gets more data from the database, triggers the view to update
      */
     private async fetchData() {
-        console.info("fetching")
         if(document.getElementById("scrollableDiv")?.scrollTop) {
             this.skip += 20;
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
@@ -179,6 +179,7 @@ export default class Timeline3 extends React.Component {
     private scFilter: boolean = false;
     private bothFilter: boolean = false;
     private inProgressFilter: boolean = false;
+    private newDeltaSelected: boolean = false;
 
     /**
      * Begin searching for deliverables whose titles and descriptions contain the search term
@@ -277,9 +278,11 @@ export default class Timeline3 extends React.Component {
                 } else {
                     const scrollPos = this.todayLine - 100;
                     this.scrolledToToday = this.horizontalScrollPosition !== scrollPos;
-                    if(this.scrolledToToday) {
+                    if(this.scrolledToToday||this.newDeltaSelected) {
                         timeline.scroll(scrollPos,0);
                         this.horizontalScrollPosition = scrollPos;
+                        this.scrolledToToday = true;
+                        this.newDeltaSelected = true;
                     }
                 }
             }
@@ -333,7 +336,7 @@ export default class Timeline3 extends React.Component {
                 </div>
                 {!this.loading ? 
                 <>
-                <div style={{height: "500px", overflowX: "hidden", scrollbarWidth: "none", borderBottom: "1px solid white"}} id="scrollableDiv">
+                <div style={{height: "100vh", overflowX: "hidden", scrollbarWidth: "none", borderBottom: "1px solid white"}} id="scrollableDiv">
                 <div id="scrollable-timeline">
                     <InfiniteScroll
                         dataLength={this.loadedDeliverables.length}
