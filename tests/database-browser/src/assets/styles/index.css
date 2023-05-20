@@ -248,3 +248,15 @@ textarea {
   pointer-events: none;
   opacity: 0.5;
 }
+
+.filter-fields button, select {
+  cursor: pointer;
+}
+
+.filter-fields select {
+  scrollbar-width: thin;
+}
+
+.filter-fields .filter-options input[type='checkbox'], label {
+  cursor: pointer;
+}
