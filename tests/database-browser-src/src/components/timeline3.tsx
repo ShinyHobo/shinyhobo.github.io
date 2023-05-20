@@ -18,7 +18,7 @@ export default class Timeline3 extends React.Component {
     private selectedDelta: string = "";
     private deliverables: any[] = [];
     @observable private loadedDeliverables: any[] = [];
-    private take: number = 20;
+    private take: number = 10;
     private skip: number = 0;
     private hasMore: boolean = true;
     private scrolledToToday: boolean = false;
@@ -182,7 +182,7 @@ export default class Timeline3 extends React.Component {
      */
     private async fetchData() {
         if(this.deliverableTtimelineDiv.current?.scrollHeight) {
-            this.skip += 10;
+            this.skip += this.take;
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables.push(...subSet);
             this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
