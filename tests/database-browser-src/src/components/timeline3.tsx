@@ -23,6 +23,7 @@ export default class Timeline3 extends React.Component {
     private hasMore: boolean = true;
     private scrolledToToday: boolean = false;
     private horizontalScrollPosition: number = 0;
+    private searchTextField: any;
 
     private months: Date[] = [];
 
@@ -36,6 +37,7 @@ export default class Timeline3 extends React.Component {
         document.body.style.overflowX = "hidden";
 
         this.deliverableTtimelineDiv = React.createRef();
+        this.searchTextField = React.createRef();
 
         this.initializeData();
     }
@@ -356,12 +358,17 @@ export default class Timeline3 extends React.Component {
                             return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
                         })}
                         </select>
-                        <input type="text" id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
+                        <span style={{marginRight: -15}}>
+                            <input ref={this.searchTextField} type="text" style={{paddingRight: 20}} id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
+                            <button style={{appearance: "none", cursor: "pointer", borderRadius: "50%", width: 17, height: 17, lineHeight: 0, left: -20, position: "relative"}} title="Clear search text" onClick={() => {this.searchText = ""; this.searchTextField.current.value = ""} }>
+                                <span style={{position: "relative", left: -1, top: -1}}>x</span>
+                            </button>
+                        </span>
                         <span style={{display: "inline-block"}}>
-                            <label><input type="checkbox" defaultChecked={this.sq42Filter} onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
-                            <label><input type="checkbox" defaultChecked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
-                            <label><input type="checkbox" defaultChecked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
-                            <label><input type="checkbox" defaultChecked={this.inProgressFilter} onChange={e => {this.inProgressFilter = !this.inProgressFilter;}}/>In Progress</label>
+                            <label title="Show deliverables that are only for Squadron 42"><input type="checkbox" defaultChecked={this.sq42Filter} onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
+                            <label title="Show deliverables that are only for Star Citizen"><input type="checkbox" defaultChecked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
+                            <label title="Show deliverables that are for both SC and SQ42"><input type="checkbox" defaultChecked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
+                            <label title="Show deliverables that are currently (or soon to be) scheduled"><input type="checkbox" defaultChecked={this.inProgressFilter} onChange={e => {this.inProgressFilter = !this.inProgressFilter;}}/>In Progress</label>
                         </span>
                         <button onClick={this.searchInitiated.bind(this)} style={{marginLeft: 5}}>Apply Filters</button>
                     </p>
