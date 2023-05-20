@@ -5,7 +5,8 @@ import * as he from 'he';
 import { SqliteWorker } from "sql.js-httpvfs";
 import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
-import InfiniteScroll from 'react-infinite-scroll-component'
+import InfiniteScroll from 'react-infinite-scroll-component';
+import { CommonNavigationFunctions } from "../utils/navigation-helpers";
 
 @observer
 export default class Timeline3 extends React.Component {
@@ -43,12 +44,15 @@ export default class Timeline3 extends React.Component {
      * Initializes the selectable delta values and the corresponding unique deliverable list for the most recent delta
      */
     private initializeData() {
+        this.initializeParameters();
         this.getTimelineMonths();
         
         CommonDBFunctions.getDeltaList(this.db).then(async (deltas:string[]) => {
             // only use latest pull time for each day
             this.deltaDatetimes = _(deltas.map((d:string)=>new Date(Number.parseInt(d)))).groupBy((d:Date)=>d.toDateString()).map((d:Date[])=>d[0].getTime()).value();
-            this.selectedDelta = deltas[0];
+            if(!this.selectedDelta||!deltas.filter(d => d === this.selectedDelta).length) {
+                this.selectedDelta =  deltas[0];
+            }
             await this.getDeliverablesForDelta();
             const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables = [...firstSet];
@@ -56,6 +60,21 @@ export default class Timeline3 extends React.Component {
             this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
             this.loading = false;
         });
+    }
+
+    /**
+     * Initializes the model parameters based on the url parameters
+     */
+    private initializeParameters() {
+        const params = window.location.hash.split('?');
+        if(params.length > 1) {
+            const queryParameters = new URLSearchParams(params[1]);
+            this.sq42Filter = queryParameters.get("sq42") === "1";
+            this.scFilter = queryParameters.get("sc") === "1";
+            this.bothFilter = queryParameters.get("both") === "1";
+            this.inProgressFilter = queryParameters.get("inProgress") === "1";
+            this.selectedDelta = queryParameters.get("date") ?? "";
+        }
     }
 
     private monthCount: number = 0;
@@ -140,6 +159,7 @@ export default class Timeline3 extends React.Component {
      * @param e The change event
      */
     private async deltaSelected(e:any) {
+        this.setFilterUrlParameters();
         this.hasMore = true;
         this.skip = 0;
         this.loading = true;
@@ -182,6 +202,26 @@ export default class Timeline3 extends React.Component {
      */
     private searchInitiated() {
         this.deltaSelected(null);
+    }
+
+    /**
+     * Sets the url parameters based on the selected filters
+     */
+    private setFilterUrlParameters() {
+        CommonNavigationFunctions.resetUrl();
+        CommonNavigationFunctions.updateURLParameter("date",this.selectedDelta.toString());
+        if(this.sq42Filter) {
+            CommonNavigationFunctions.updateURLParameter("sq42","1");
+        }
+        if(this.scFilter) {
+            CommonNavigationFunctions.updateURLParameter("sc","1");
+        }
+        if(this.bothFilter) {
+            CommonNavigationFunctions.updateURLParameter("both","1");
+        }
+        if(this.inProgressFilter) {
+            CommonNavigationFunctions.updateURLParameter("inProgress","1");
+        }
     }
 
     /**
@@ -314,10 +354,10 @@ export default class Timeline3 extends React.Component {
                         </select>
                         <input type="text" id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
                         <span style={{display: "inline-block"}}>
-                            <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
-                            <label><input type="checkbox" onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
-                            <label><input type="checkbox" onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
-                            <label><input type="checkbox" onChange={e => {this.inProgressFilter = !this.inProgressFilter;}}/>In Progress</label>
+                            <label><input type="checkbox" checked={this.sq42Filter} onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
+                            <label><input type="checkbox" checked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
+                            <label><input type="checkbox" checked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
+                            <label><input type="checkbox" checked={this.inProgressFilter} onChange={e => {this.inProgressFilter = !this.inProgressFilter;}}/>In Progress</label>
                         </span>
                         <button onClick={this.searchInitiated.bind(this)} style={{marginLeft: 5}}>Apply Filters</button>
                     </p>
