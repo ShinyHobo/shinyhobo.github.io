@@ -305,7 +305,7 @@ export default class Timeline3 extends React.Component {
                     <p>Click and drag to scroll the timeline</p>
                     <p>Hover over a timeline block to view details</p>
                     <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
-                    <p>
+                    <p className={this.loading?"filter-disable":""}>
                         <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
                         {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
                         {this.deltaDatetimes.map((e:any) => {
@@ -313,13 +313,13 @@ export default class Timeline3 extends React.Component {
                         })}
                         </select>
                         <input type="text" id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
-                        <button onClick={this.searchInitiated.bind(this)}>Search</button>
                         <span style={{display: "inline-block"}}>
-                            <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter; this.searchInitiated();}}/>SQ42</label>
-                            <label><input type="checkbox" onChange={e => {this.scFilter = !this.scFilter; this.searchInitiated();}}/>SC</label>
-                            <label><input type="checkbox" onChange={e => {this.bothFilter = !this.bothFilter; this.searchInitiated();}}/>Both</label>
-                            <label><input type="checkbox" onChange={e => {this.inProgressFilter = !this.inProgressFilter; this.searchInitiated();}}/>In Progress</label>
+                            <label><input type="checkbox" onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
+                            <label><input type="checkbox" onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
+                            <label><input type="checkbox" onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
+                            <label><input type="checkbox" onChange={e => {this.inProgressFilter = !this.inProgressFilter;}}/>In Progress</label>
                         </span>
+                        <button onClick={this.searchInitiated.bind(this)} style={{marginLeft: 5}}>Apply Filters</button>
                     </p>
                 </div>
                 {!this.loading ? 
