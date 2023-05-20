@@ -47,7 +47,7 @@ export class CommonNavigationFunctions {
             baseURL  += "#" + TheAnchor;
 
         var rows_txt = temp + "" + param + "=" + paramVal;
-        window.history.replaceState('','',baseURL + "?" + newAdditionalURL + rows_txt);
+        window.history.replaceState('','',encodeURI(baseURL + "?" + newAdditionalURL + rows_txt));
     }
 
     /**
