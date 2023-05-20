@@ -160,12 +160,15 @@ export default class Timeline3 extends React.Component {
      * Gets more data from the database, triggers the view to update
      */
     private async fetchData() {
-        this.skip += 20;
-        const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
-        this.loadedDeliverables.push(...subSet);
-        this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
-        if(!this.hasMore) {
-            this.searching = false;
+        console.info("fetching")
+        if(document.getElementById("scrollableDiv")?.scrollTop) {
+            this.skip += 20;
+            const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
+            this.loadedDeliverables.push(...subSet);
+            this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
+            if(!this.hasMore) {
+                this.searching = false;
+            }
         }
     }
 
@@ -256,7 +259,7 @@ export default class Timeline3 extends React.Component {
         return teamGroups;
     }
 
-    componentDidUpdate() {    
+    componentDidUpdate() {
         this.timelineTable = document.querySelector('.deliverable-timeline');
         this.timelineTableMonthHeader = document.getElementById("month-header");
         // resets the month header position on page load
@@ -268,14 +271,17 @@ export default class Timeline3 extends React.Component {
         if(timeline) {
             let pageContainer = document.getElementById("scrollable-timeline") as any;
             pageContainer.style.height = timeline.clientHeight + 100;
-            this.horizontalScrollPosition = this.timelineTable.scrollLeft;
-            if(this.scrolledToToday) {
-                timeline.scroll(this.horizontalScrollPosition,0);
-            } else {
-                const scrollPos = this.todayLine - 100;
-                timeline.scroll(scrollPos,0);
-                this.horizontalScrollPosition = scrollPos;
-                this.scrolledToToday = true;
+            if(document.getElementById("scrollableDiv")?.scrollTop || !this.scrolledToToday) {
+                if(this.scrolledToToday) {
+                    timeline.scroll(this.horizontalScrollPosition,0);
+                } else {
+                    const scrollPos = this.todayLine - 100;
+                    this.scrolledToToday = this.horizontalScrollPosition !== scrollPos;
+                    if(this.scrolledToToday) {
+                        timeline.scroll(scrollPos,0);
+                        this.horizontalScrollPosition = scrollPos;
+                    }
+                }
             }
         }
 
@@ -327,8 +333,8 @@ export default class Timeline3 extends React.Component {
                 </div>
                 {!this.loading ? 
                 <>
-                <div style={{height: "100vh", overflowX: "hidden", scrollbarWidth: "none", borderBottom: "1px solid white"}} id="scrollableDiv">
-                <div id="scrollable-timeline" style={{}}>
+                <div style={{height: "500px", overflowX: "hidden", scrollbarWidth: "none", borderBottom: "1px solid white"}} id="scrollableDiv">
+                <div id="scrollable-timeline">
                     <InfiniteScroll
                         dataLength={this.loadedDeliverables.length}
                         next={this.fetchData.bind(this)}
