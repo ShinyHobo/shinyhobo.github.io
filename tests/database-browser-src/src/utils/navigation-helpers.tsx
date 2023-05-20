@@ -63,8 +63,11 @@ export class CommonNavigationFunctions {
      * Resets the url parameters and refreshes the page
      */
     public static refresh() {
+        var tempArray = window.location.href.split("?");
         CommonNavigationFunctions.resetUrl();
-        window.location.reload();
+        if(tempArray.length > 1) {
+            window.location.reload();
+        }
     }
 }
 
