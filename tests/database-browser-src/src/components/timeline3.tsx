@@ -390,7 +390,7 @@ export default class Timeline3 extends React.Component {
                                 >
                                     <div className="months">
                                     {this.months.map((date:Date, index:number)=> (
-                                        <div key={index} className="month" style={{backgroundColor: index % 6 < 3 ? "#202020" : "none", opacity: index % 6 < 3 ? 0.5 : 1 }}/>
+                                        <div key={index} className="month" style={{backgroundColor: index % 6 < 3 ? "#202020" : "none", opacity: 0.5 }}/>
                                     ))}
                                         <div className="today-line" style={{left: this.todayLine, borderRight: "1px solid yellow"}}></div>
                                         <div className="sampled-line" style={{left: this.sampledLine, borderRight: "1px solid red" }}></div>
