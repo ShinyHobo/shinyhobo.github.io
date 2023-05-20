@@ -351,7 +351,7 @@ export default class Timeline3 extends React.Component {
                     <p>Click and drag to scroll the timeline</p>
                     <p>Hover over a timeline block to view details</p>
                     <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
-                    <p className={this.loading?"filter-disable":""}>
+                    <p className={`filter-fields ${this.loading?"filter-disable":""}`}>
                         <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
                         {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
                         {this.deltaDatetimes.map((e:any) => {
@@ -364,7 +364,7 @@ export default class Timeline3 extends React.Component {
                                 <span style={{position: "relative", left: -1, top: -1}}>x</span>
                             </button>
                         </span>
-                        <span style={{display: "inline-block"}}>
+                        <span style={{display: "inline-block"}} className="filter-options">
                             <label title="Show deliverables that are only for Squadron 42"><input type="checkbox" defaultChecked={this.sq42Filter} onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
                             <label title="Show deliverables that are only for Star Citizen"><input type="checkbox" defaultChecked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
                             <label title="Show deliverables that are for both SC and SQ42"><input type="checkbox" defaultChecked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
