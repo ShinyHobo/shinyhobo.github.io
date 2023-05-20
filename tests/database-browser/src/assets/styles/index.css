@@ -243,3 +243,8 @@ textarea {
 .deliverable-row .team .discipline .time-box {
   margin: 2px;
 }
+
+.filter-disable {
+  pointer-events: none;
+  opacity: 0.5;
+}
