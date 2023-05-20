@@ -46,8 +46,8 @@ export class CommonNavigationFunctions {
         if(TheAnchor)
             baseURL  += "#" + TheAnchor;
 
-        var rows_txt = temp + "" + param + "=" + paramVal;
-        window.history.replaceState('','',encodeURI(baseURL + "?" + newAdditionalURL + rows_txt));
+        var rows_txt = temp + "" + param + "=" + encodeURI(paramVal);
+        window.history.replaceState('','',baseURL + "?" + newAdditionalURL + rows_txt);
     }
 
     /**
