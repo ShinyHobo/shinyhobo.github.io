@@ -145,6 +145,7 @@ export default class Timeline3 extends React.Component {
         this.loading = true;
         if(e) {
             this.selectedDelta = e.target.value;
+            this.scrolledToToday = false;
             await this.getDeliverablesForDelta();
         }
         const subset = await this.getDeliverableSubset();
@@ -252,8 +253,6 @@ export default class Timeline3 extends React.Component {
             start: this.calculateTimeLeft(teamMin.filter(tm => tm.abbr === team)[0].start), end: this.calculateTimeRight(teamMax.filter(tm => tm.abbr === team)[0].end), 
             discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
 
-        console.info(teamGroups)
-
         return teamGroups;
     }
 
@@ -269,6 +268,7 @@ export default class Timeline3 extends React.Component {
         if(timeline) {
             let pageContainer = document.getElementById("scrollable-timeline") as any;
             pageContainer.style.height = timeline.clientHeight + 100;
+            this.horizontalScrollPosition = this.timelineTable.scrollLeft;
             if(this.scrolledToToday) {
                 timeline.scroll(this.horizontalScrollPosition,0);
             } else {
