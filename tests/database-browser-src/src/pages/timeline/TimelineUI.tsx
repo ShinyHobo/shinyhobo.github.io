@@ -1,5 +1,4 @@
 import React from "react";
-import Timeline2 from "../../components/timeline2";
 import Timeline3 from "../../components/timeline3";
 
 export default class TimelineUI extends React.Component {
