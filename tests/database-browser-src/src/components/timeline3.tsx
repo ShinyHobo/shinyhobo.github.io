@@ -161,7 +161,7 @@ export default class Timeline3 extends React.Component {
      */
     private async fetchData() {
         if(this.deliverableTtimelineDiv.current?.scrollHeight) {
-            this.skip += 20;
+            this.skip += 10;
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables.push(...subSet);
             this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
