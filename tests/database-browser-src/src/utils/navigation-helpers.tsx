@@ -58,5 +58,13 @@ export class CommonNavigationFunctions {
         var baseURL = tempArray[0];
         window.history.replaceState('','',baseURL);
     }
+
+    /**
+     * Resets the url parameters and refreshes the page
+     */
+    public static refresh() {
+        CommonNavigationFunctions.resetUrl();
+        window.location.reload();
+    }
 }
 
