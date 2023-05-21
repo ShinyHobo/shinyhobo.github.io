@@ -162,7 +162,6 @@ export default class Timeline3 extends React.Component {
      * @param e The change event
      */
     private async deltaSelected(e:any) {
-        this.setFilterUrlParameters();
         this.hasMore = true;
         this.skip = 0;
         this.loading = true;
@@ -176,6 +175,7 @@ export default class Timeline3 extends React.Component {
         this.loadedDeliverables = [...firstSet];
         this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
         this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
+        this.setFilterUrlParameters();
         this.loading = false;
     }
 
@@ -277,12 +277,14 @@ export default class Timeline3 extends React.Component {
                             }
         
                             returnRanges.forEach((time: any) => {
-                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers})
+                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers});
                             });
                         });
                     });
                 }
             });
+        } else {
+            returnData.push({start: deliverable.startDate, end: deliverable.endDate});
         }
 
         const discGroup = _(returnData).groupBy('abbr');
@@ -294,7 +296,7 @@ export default class Timeline3 extends React.Component {
 
         const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
         const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, 
-            start: this.calculateTimeLeft(teamMin.filter(tm => tm.abbr === team)[0].start), end: this.calculateTimeRight(teamMax.filter(tm => tm.abbr === team)[0].end), 
+            start: this.calculateTimeLeft((teamMin[0].abbr && teamMin.filter(tm => tm.abbr === team)[0].start) ?? teamMin[0].start), end: this.calculateTimeRight((teamMax[0].abbr && teamMax.filter(tm => tm.abbr === team)[0].end) ?? teamMax[0].end), 
             discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
 
         return teamGroups;
@@ -441,7 +443,7 @@ export default class Timeline3 extends React.Component {
                                             <div key={index} className="deliverable-row" id={"deliverable-row-"+deliverable.id}>
                                                 {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
                                                     <div key={teamIndex} className="team">
-                                                        {teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
+                                                        {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
                                                             <div key={disciplineIndex} className="discipline">
                                                             {disc.times.map((time:any, index: number)=>(
                                                                 <div key={index} className="time-box">
