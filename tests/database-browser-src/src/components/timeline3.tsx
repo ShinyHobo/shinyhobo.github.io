@@ -501,7 +501,8 @@ export default class Timeline3 extends React.Component {
             let startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "2-digit"});
             let endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "2-digit"});
 
-            filtered[0].insertAdjacentHTML("beforeend",`<div class="timeline-bar-popup" style="position: absolute; width: ${this.popupWidth}; top: 12; left: ${0}px; z-index: 10000; background-color: black; text-align: center; font-size: 14" >
+            filtered[0].parentNode.insertAdjacentHTML("beforeend",
+            `<div class="timeline-bar-popup" style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-120}; top: ${e.pageY-window.scrollY}" >
                 <div>${data.abbr} (${data["disc"]})</div>
                 <div>${data.tasks} tasks</div>
                 <div>${startDisplay} - ${endDisplay}</div>
