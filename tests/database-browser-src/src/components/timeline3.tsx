@@ -7,6 +7,7 @@ import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { CommonNavigationFunctions } from "../utils/navigation-helpers";
+import { releaseProxy } from "comlink";
 
 @observer
 export default class Timeline3 extends React.Component {
@@ -162,21 +163,27 @@ export default class Timeline3 extends React.Component {
      * @param e The change event
      */
     private async deltaSelected(e:any) {
-        this.hasMore = true;
-        this.skip = 0;
-        this.loading = true;
-        if(e) {
-            this.selectedDelta = e.target.value;
-            this.scrolledToToday = false;
-            await this.getDeliverablesForDelta();
+        try {
+            this.hasMore = true;
+            this.skip = 0;
+            this.loading = true;
+            if(e) {
+                this.selectedDelta = e.target.value;
+                this.scrolledToToday = false;
+                await this.getDeliverablesForDelta();
+            }
+            const subset = await this.getDeliverableSubset();
+            const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, subset);
+            this.loadedDeliverables = [...firstSet];
+            this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
+            this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
+            this.setFilterUrlParameters();
+            this.loading = false;
+        } catch(e) {
+            // if a DHR error pops up, it can usually work to set the url parameters and completely reset the database connection through a page refresh
+            this.setFilterUrlParameters();
+            window.location.reload();
         }
-        const subset = await this.getDeliverableSubset();
-        const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, subset);
-        this.loadedDeliverables = [...firstSet];
-        this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
-        this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
-        this.setFilterUrlParameters();
-        this.loading = false;
     }
 
     /**
