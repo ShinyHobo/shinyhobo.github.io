@@ -247,6 +247,7 @@ textarea {
 .deliverable-row .team .discipline .time-box .timeline-bar:hover {
   border: 2px solid white;
   z-index: 50;
+  transform: translateY(-2px);
 }
 
 .filter-disable {
