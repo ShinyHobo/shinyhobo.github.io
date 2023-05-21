@@ -7,6 +7,7 @@ import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { CommonNavigationFunctions } from "../utils/navigation-helpers";
+import { releaseProxy } from "comlink";
 
 @observer
 export default class Timeline3 extends React.Component {
@@ -162,21 +163,27 @@ export default class Timeline3 extends React.Component {
      * @param e The change event
      */
     private async deltaSelected(e:any) {
-        this.setFilterUrlParameters();
-        this.hasMore = true;
-        this.skip = 0;
-        this.loading = true;
-        if(e) {
-            this.selectedDelta = e.target.value;
-            this.scrolledToToday = false;
-            await this.getDeliverablesForDelta();
+        try {
+            this.hasMore = true;
+            this.skip = 0;
+            this.loading = true;
+            if(e) {
+                this.selectedDelta = e.target.value;
+                this.scrolledToToday = false;
+                await this.getDeliverablesForDelta();
+            }
+            const subset = await this.getDeliverableSubset();
+            const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, subset);
+            this.loadedDeliverables = [...firstSet];
+            this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
+            this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
+            this.setFilterUrlParameters();
+            this.loading = false;
+        } catch(e) {
+            // if a DHR error pops up, it can usually work to set the url parameters and completely reset the database connection through a page refresh
+            this.setFilterUrlParameters();
+            window.location.reload();
         }
-        const subset = await this.getDeliverableSubset();
-        const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, subset);
-        this.loadedDeliverables = [...firstSet];
-        this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
-        this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
-        this.loading = false;
     }
 
     /**
@@ -277,12 +284,14 @@ export default class Timeline3 extends React.Component {
                             }
         
                             returnRanges.forEach((time: any) => {
-                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers})
+                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers});
                             });
                         });
                     });
                 }
             });
+        } else {
+            returnData.push({start: deliverable.startDate, end: deliverable.endDate});
         }
 
         const discGroup = _(returnData).groupBy('abbr');
@@ -294,7 +303,7 @@ export default class Timeline3 extends React.Component {
 
         const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
         const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, 
-            start: this.calculateTimeLeft(teamMin.filter(tm => tm.abbr === team)[0].start), end: this.calculateTimeRight(teamMax.filter(tm => tm.abbr === team)[0].end), 
+            start: this.calculateTimeLeft((teamMin[0].abbr && teamMin.filter(tm => tm.abbr === team)[0].start) ?? teamMin[0].start), end: this.calculateTimeRight((teamMax[0].abbr && teamMax.filter(tm => tm.abbr === team)[0].end) ?? teamMax[0].end), 
             discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
 
         return teamGroups;
@@ -352,7 +361,7 @@ export default class Timeline3 extends React.Component {
                     <p>Hover over a timeline block to view details</p>
                     <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
                     <p className={`filter-fields ${this.loading?"filter-disable":""}`}>
-                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
+                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()}>
                         {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
                         {this.deltaDatetimes.map((e:any) => {
                             return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
@@ -441,7 +450,7 @@ export default class Timeline3 extends React.Component {
                                             <div key={index} className="deliverable-row" id={"deliverable-row-"+deliverable.id}>
                                                 {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
                                                     <div key={teamIndex} className="team">
-                                                        {teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
+                                                        {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
                                                             <div key={disciplineIndex} className="discipline">
                                                             {disc.times.map((time:any, index: number)=>(
                                                                 <div key={index} className="time-box">
