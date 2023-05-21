@@ -352,7 +352,7 @@ export default class Timeline3 extends React.Component {
                     <p>Hover over a timeline block to view details</p>
                     <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
                     <p className={`filter-fields ${this.loading?"filter-disable":""}`}>
-                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)}>
+                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()}>
                         {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
                         {this.deltaDatetimes.map((e:any) => {
                             return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
