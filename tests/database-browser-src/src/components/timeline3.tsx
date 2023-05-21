@@ -49,20 +49,23 @@ export default class Timeline3 extends React.Component {
     private initializeData() {
         this.initializeParameters();
         this.getTimelineMonths();
-        
-        CommonDBFunctions.getDeltaList(this.db).then(async (deltas:string[]) => {
-            // only use latest pull time for each day
-            this.deltaDatetimes = _(deltas.map((d:string)=>new Date(Number.parseInt(d)))).groupBy((d:Date)=>d.toDateString()).map((d:Date[])=>d[0].getTime()).value();
-            if(!this.selectedDelta||!deltas.filter(d => d === this.selectedDelta).length) {
-                this.selectedDelta =  deltas[0];
-            }
-            await this.getDeliverablesForDelta();
-            const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
-            this.loadedDeliverables = [...firstSet];
-            this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
-            this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
-            this.loading = false;
-        });
+        try {
+            CommonDBFunctions.getDeltaList(this.db).then(async (deltas:string[]) => {
+                // only use latest pull time for each day
+                this.deltaDatetimes = _(deltas.map((d:string)=>new Date(Number.parseInt(d)))).groupBy((d:Date)=>d.toDateString()).map((d:Date[])=>d[0].getTime()).value();
+                if(!this.selectedDelta||!deltas.filter(d => d === this.selectedDelta).length) {
+                    this.selectedDelta =  deltas[0];
+                }
+                await this.getDeliverablesForDelta();
+                const firstSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
+                this.loadedDeliverables = [...firstSet];
+                this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
+                this.sampledLine = (Number.parseInt(this.selectedDelta) - this.start) / this.timeSpan * this.totalWidth;
+                this.loading = false;
+            });
+        } catch(e) {
+            alert("Failed to access and load the database! Please report this on my github, if possible. Make sure to include the url or list the filters used.");
+        }
     }
 
     /**

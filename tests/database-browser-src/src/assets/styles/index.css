@@ -244,6 +244,11 @@ textarea {
   margin: 2px;
 }
 
+.deliverable-row .team .discipline .time-box .timeline-bar:hover {
+  border: 2px solid white;
+  z-index: 50;
+}
+
 .filter-disable {
   pointer-events: none;
   opacity: 0.5;
