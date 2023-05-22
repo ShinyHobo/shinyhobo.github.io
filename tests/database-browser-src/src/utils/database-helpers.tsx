@@ -93,9 +93,20 @@ export class CommonDBFunctions {
      * @returns The list of deliverable ids that have time allocations currently, or about to be, in progress
      */
     public static async getInProgressDelivarables(db: Database, date: string, deliverables: any[]): Promise<number[]> {
-        const deliverableIds = deliverables.map((dd) => dd.id).toString();
-        const query = `select DISTINCT MAX(addedDate) as max, deliverable_id from timeAllocation_diff WHERE deliverable_id IN (${deliverableIds}) AND ((startDate <= ${parseInt(date) + CommonDBFunctions.lookAheadTime} AND ${date} <= endDate)) GROUP BY uuid`;
-        const results = await db?.query(query);
+        let deliverableIds = deliverables.map((dd) => dd.id).toString();
+        const query = `SELECT deliverable_id, team_id, MAX(max) as m FROM (SELECT DISTINCT MAX(addedDate) as max, deliverable_id, team_id from timeAllocation_diff WHERE deliverable_id IN (${deliverableIds}) AND 
+            ((startDate <= ${parseInt(date) + CommonDBFunctions.lookAheadTime} AND ${date} <= endDate)) GROUP BY uuid) GROUP BY deliverable_id ORDER BY m DESC`;
+        let results = await db?.query(query);
+        
+        deliverableIds = results?.map((r: any) => r.deliverable_id).toString() ?? "";
+
+        const teamCheckQuery = `SELECT id FROM (SELECT id, MAX(addedDate) FROM team_diff WHERE addedDate <= ${date} AND 
+            id IN (SELECT team_id FROM deliverable_teams WHERE deliverable_id IN (${deliverableIds})) GROUP BY slug ORDER BY addedDate DESC)`;
+        
+        const foundTeams = await db?.query(teamCheckQuery);
+        const teamIds = foundTeams?.map((ft:any)=>ft.id) as number[];
+        results = results?.filter((r:any)=> teamIds.indexOf(r.team_id) > -1);
+
         return [...new Set(results?.map((r: any) => parseInt(r.deliverable_id)))] as number[];
     }
 

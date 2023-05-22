@@ -270,9 +270,9 @@ export default class Timeline3 extends React.Component {
                                     return;
                                 }
         
-                                const currentEndDate = new Date(currentRange.endDate);
-                                currentEndDate.setDate(currentEndDate.getDate()); // covers time overlap when sprint ends on a weekend
-                                const currentEndTime = currentEndDate.getTime();
+                                //const currentEndDate = new Date(currentRange.endDate);
+                                //currentEndDate.setDate(currentEndDate.getDate()+4); // covers time overlap when sprint ends on a weekend
+                                const currentEndTime = currentRange.endDate; //currentEndDate.getTime();
         
                                 if (currentEndTime < r.startDate) {
                                     returnRanges.push(currentRange);
@@ -287,7 +287,7 @@ export default class Timeline3 extends React.Component {
                             }
         
                             returnRanges.forEach((time: any) => {
-                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers});
+                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers, deliverable_id: deliverable.id});
                             });
                         });
                     });
@@ -518,8 +518,7 @@ export default class Timeline3 extends React.Component {
     private createBox(time:any, times:any[]) {
         let right = this.calculateTimeRight(time.end);
         let left = this.calculateTimeLeft(time.start);
-
-        let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id);
+        let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id && x.deliverable_id == time.deliverable_id);
         let matched = matches.length > 1;
         let index = 0;
         if(matched) {
