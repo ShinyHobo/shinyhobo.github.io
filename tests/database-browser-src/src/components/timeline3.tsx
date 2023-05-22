@@ -270,9 +270,9 @@ export default class Timeline3 extends React.Component {
                                     return;
                                 }
         
-                                const currentEndDate = new Date(currentRange.endDate);
-                                currentEndDate.setDate(currentEndDate.getDate()); // covers time overlap when sprint ends on a weekend
-                                const currentEndTime = currentEndDate.getTime();
+                                //const currentEndDate = new Date(currentRange.endDate);
+                                //currentEndDate.setDate(currentEndDate.getDate()+4); // covers time overlap when sprint ends on a weekend
+                                const currentEndTime = currentRange.endDate; //currentEndDate.getTime();
         
                                 if (currentEndTime < r.startDate) {
                                     returnRanges.push(currentRange);
