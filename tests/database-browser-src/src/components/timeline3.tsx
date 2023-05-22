@@ -17,6 +17,7 @@ export default class Timeline3 extends React.Component {
     @observable private loading: boolean = true;
     private deltaDatetimes: number[] = [];
     private selectedDelta: string = "";
+    private beganTeamTracking: number = 1644732000000; // team tracking began on Feb 13, 2022
     private deliverables: any[] = [];
     @observable private loadedDeliverables: any[] = [];
     private take: number = 10;
@@ -142,7 +143,9 @@ export default class Timeline3 extends React.Component {
         
         // filter on time allocation start/end dates in proximity to delta date
         if(this.inProgressFilter) {
-            this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressIds.includes(d.id))
+            const delta = parseInt(this.selectedDelta);
+            const wasTrackingTeams = delta >= this.beganTeamTracking;
+            this.searchingDeliverables = this.searchingDeliverables.filter(d => (wasTrackingTeams && this.inProgressIds.includes(d.id)) || (!wasTrackingTeams && d.startDate <= delta && delta <= d.endDate));
         }
 
         // filter on title and description
