@@ -7,7 +7,6 @@ import { makeObservable, observable } from "mobx";
 import { observer } from "mobx-react";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { CommonNavigationFunctions } from "../utils/navigation-helpers";
-import { releaseProxy } from "comlink";
 
 @observer
 export default class Timeline3 extends React.Component {

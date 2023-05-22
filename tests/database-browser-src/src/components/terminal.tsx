@@ -24,6 +24,8 @@ export default class Terminal extends React.Component {
         this.db = vfs.db;
         this.dbConfig = vfs.configs;
 
+        document.body.style.overflowX = "hidden";
+
         this.RunQuery = this.RunQuery.bind(this);
         makeObservable(this);
     }
@@ -64,7 +66,7 @@ export default class Terminal extends React.Component {
                 : <></>}
               </h5>
             </div>
-            <div style={{height: "100%", display: "flex", flexDirection: "column", width: "100%"}}>
+            <div id="query-results" style={{height: "100%", display: "flex", flexDirection: "column", width: "100%", overflowX: "auto", scrollbarWidth: "thin"}}>
               {typeof this.queryOutput === 'string' || !this.queryOutput.length ? <h2 style={{padding: "10px"}}>{this.queryOutput}</h2> : <VirtualQueryResultsTable data={this.queryOutput}/>}
             </div>
           </>
@@ -98,7 +100,7 @@ function VirtualQueryResultsTable({data}: {data: any[]}): JSX.Element {
   return (
     <>
       {tooLarge ? (<h3 style={{padding: 10}}>Query too large to render. {tooLarge} items have been truncated.</h3>) : (<></>) }
-      <div ref={parentRef} className="List" style={{overflow: "auto", direction: 'rtl', scrollbarWidth: "thin"}}>
+      <div ref={parentRef} className="List">
         <table style={{ height: `${rowVirtualizer.getTotalSize()}px`, width: '100%', direction: 'ltr' }}>
           <thead ref={theadRef}>
           <tr style={{position: "sticky", top: 0, background: "#151515"}}>{Object.keys(data[0] ?? []).map(h => (<th key={h} style={{width: calculateColumnWidth(h)}}>{h}</th>))}</tr>
