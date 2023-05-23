@@ -17,6 +17,7 @@ export default class Timeline3 extends React.Component {
     private deltaDatetimes: number[] = [];
     private selectedDelta: string = "";
     @observable private selectedTeam: string = "";
+    private previousSelectedTeam: string = "";
     private beganTeamTracking: number = 1644732000000; // team tracking began on Feb 13, 2022
     private deliverables: any[] = [];
     @observable private loadedDeliverables: any[] = [];
@@ -83,6 +84,7 @@ export default class Timeline3 extends React.Component {
             this.inProgressFilter = queryParameters.get("inProgress") === "1";
             this.selectedDelta = queryParameters.get("date") ?? "";
             this.selectedTeam = queryParameters.get("team") ?? "";
+            this.previousSelectedTeam = this.selectedTeam;
         }
     }
 
@@ -131,31 +133,38 @@ export default class Timeline3 extends React.Component {
     private async getDeliverablesForDelta() {
         this.loading = true;
         this.deliverables = await CommonDBFunctions.getUniqueDeliverables(this.db, this.selectedDelta.toString());
-        this.inProgressIds = await CommonDBFunctions.getInProgressDelivarables(this.db, this.selectedDelta, this.deliverables.filter(d => d.endDate >= this.selectedDelta));
+        this.inProgressIds = await CommonDBFunctions.getInProgressDeliverables(this.db, this.selectedDelta, this.deliverables.filter(d => d.endDate >= this.selectedDelta));
         this.deliverableTeams = await CommonDBFunctions.getDeliverableTeams(this.db, this.deliverables);
     }
 
     /**
      * Gets a subset of deliverables using the set skip and take options
+     * @param skipAdjustment The amount to adjust the skip/take amount
      * @returns The subset of deliverables
      */
     private async getDeliverableSubset() {
         // Separating the listed deliverables from the full list to allow searching without re-querying the database
         this.searchingDeliverables = this.deliverables;
-
-        if(this.selectedTeam) {
-            const team = this.deliverableTeams.filter((dt:any) => dt.key === this.selectedTeam);
-            if(team.length) {
-                const deliverableIds = team[0].deliverables.map((d:any)=>d.deliverable_id);
-                this.searchingDeliverables = this.searchingDeliverables.filter(d => deliverableIds.some(di => di === d.id));
-            }
-        }
-
         // filter on time allocation start/end dates in proximity to delta date
         if(this.inProgressFilter) {
             const delta = parseInt(this.selectedDelta);
             const wasTrackingTeams = delta >= this.beganTeamTracking;
             this.searchingDeliverables = this.searchingDeliverables.filter(d => (wasTrackingTeams && this.inProgressIds.includes(d.id)) || (!wasTrackingTeams && d.startDate <= delta && delta <= d.endDate));
+        }
+
+        if(this.selectedTeam) {
+            const team = this.deliverableTeams.filter((dt:any) => dt.key === this.selectedTeam);
+            if(team.length) {
+                const deliverableIds = team[0].deliverables.map((d:any)=>d.deliverable_id);
+                if(this.inProgressFilter) {
+                    if(!this.inProgressTeams.length) {
+                        this.inProgressTeams = await CommonDBFunctions.getInProgressDeliverables(this.db, this.selectedDelta, this.searchingDeliverables.filter(sd => deliverableIds.some(di => di === sd.id)), this.getTeamIdsForSelectedTeam());
+                    }
+                    this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressTeams.some(di => di === d.id));
+                } else {
+                    this.searchingDeliverables = this.searchingDeliverables.filter(d => deliverableIds.some(di => di === d.id));
+                }
+            }
         }
 
         // filter on title and description
@@ -183,6 +192,7 @@ export default class Timeline3 extends React.Component {
             this.hasMore = true;
             this.skip = 0;
             this.loading = true;
+            this.previousSelectedTeam = this.selectedTeam;
             if(e) {
                 this.deliverableTeams = [];
                 this.selectedDelta = e.target.value;
@@ -204,6 +214,20 @@ export default class Timeline3 extends React.Component {
     }
 
     /**
+     * Gets the team ids for use with queries
+     * @returns The unique list of team ids as a comma delimited string
+     */
+    private getTeamIdsForSelectedTeam() {
+        if(this.selectedTeam) {
+            const team = this.deliverableTeams.filter((dt:any) => dt.key === this.selectedTeam);
+            if(team.length) {
+                return [...new Set(team[0].deliverables.map(d=>d.team_id))].toString();
+            }
+        }
+        return "";
+    }
+
+    /**
      * Gets more data from the database, triggers the view to update
      */
     private async fetchData() {
@@ -217,6 +241,7 @@ export default class Timeline3 extends React.Component {
 
     private searchText: string = "";
     private searchingDeliverables: any[] = [];
+    private inProgressTeams: any[] = [];
     private sq42Filter: boolean = false;
     private scFilter: boolean = false;
     private bothFilter: boolean = false;
@@ -228,6 +253,9 @@ export default class Timeline3 extends React.Component {
      * @param e The click event
      */
     private searchInitiated() {
+        if(this.previousSelectedTeam != this.selectedTeam) {
+            this.inProgressTeams = [];
+        }
         this.deltaSelected(null);
     }
 

@@ -92,10 +92,10 @@ export class CommonDBFunctions {
      * @param deliverables The deliverables to search with
      * @returns The list of deliverable ids that have time allocations currently, or about to be, in progress
      */
-    public static async getInProgressDelivarables(db: Database, date: string, deliverables: any[]): Promise<number[]> {
+    public static async getInProgressDeliverables(db: Database, date: string, deliverables: any[], checkTeamIds: string = ""): Promise<number[]> {
         let deliverableIds = deliverables.map((dd) => dd.id).toString();
         const query = `SELECT deliverable_id, team_id, MAX(max) as m FROM (SELECT DISTINCT MAX(addedDate) as max, deliverable_id, team_id from timeAllocation_diff WHERE deliverable_id IN (${deliverableIds}) AND 
-            ((startDate <= ${parseInt(date) + CommonDBFunctions.lookAheadTime} AND ${date} <= endDate)) GROUP BY uuid) GROUP BY deliverable_id ORDER BY m DESC`;
+            startDate <= ${parseInt(date) + CommonDBFunctions.lookAheadTime} AND ${date} <= endDate ${checkTeamIds?`AND team_id IN (${checkTeamIds}) `:""}GROUP BY uuid) GROUP BY deliverable_id ORDER BY m DESC`;
         let results = await db?.query(query);
         
         deliverableIds = results?.map((r: any) => r.deliverable_id).toString() ?? "";
