@@ -332,7 +332,8 @@ export default class Timeline3 extends React.Component {
                             }
 
                             returnRanges.forEach((time: any) => {
-                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, team_id: team.id, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers, deliverable_id: deliverable.id});
+                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, team_id: team.id, abbr: team.abbreviation, disc: time.title, 
+                                    tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers, deliverable_id: deliverable.id});
                             });
                         });
                     });
@@ -551,13 +552,16 @@ export default class Timeline3 extends React.Component {
         if(filtered.length) {
             let data = filtered[0].dataset;
 
-            let startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "2-digit"});
-            let endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "2-digit"});
-
+            let startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
+            let endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
+            
+            let teamTitle = this.deliverableTeams.filter(dt => dt.deliverables.some(d => d.team_id == data.team_id))[0]?.key;
+            
             filtered[0].parentNode.insertAdjacentHTML("beforeend",
             `<div class="timeline-bar-popup" style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-120}; top: ${e.pageY-window.scrollY}" >
-                <div>${data.abbr} (${data["disc"]})</div>
-                <div>${data.tasks} tasks</div>
+                <div>${teamTitle}</div>
+                <div>(${data.abbr})</div>
+                <div>${data.disc} - ${data.tasks} tasks</div>
                 <div>${startDisplay} - ${endDisplay}</div>
             </div>`);
         }
@@ -576,7 +580,7 @@ export default class Timeline3 extends React.Component {
         let left = this.calculateTimeLeft(time.start);
 
         return <>
-            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched && time.partial ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
+            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
                 data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks} data-team_id={time.team_id}/>
         </>;
     }
