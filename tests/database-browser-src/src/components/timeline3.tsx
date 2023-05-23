@@ -556,7 +556,7 @@ export default class Timeline3 extends React.Component {
 
             filtered[0].parentNode.insertAdjacentHTML("beforeend",
             `<div class="timeline-bar-popup" style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-120}; top: ${e.pageY-window.scrollY}" >
-                <div>${data.abbr} (${data["disc"]}) ${data.team_id}</div>
+                <div>${data.abbr} (${data["disc"]})</div>
                 <div>${data.tasks} tasks</div>
                 <div>${startDisplay} - ${endDisplay}</div>
             </div>`);
@@ -569,17 +569,14 @@ export default class Timeline3 extends React.Component {
      * @returns the timespan box for display
      */
     private createBox(time:any, times:any[]) {
-        let right = this.calculateTimeRight(time.end);
-        let left = this.calculateTimeLeft(time.start);
         let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id && x.deliverable_id == time.deliverable_id && x.team_id == time.team_id);
         let matched = matches.length > 1;
-        let index = 0;
-        if(matched) {
-            index = matches.indexOf(time);
-        }
+
+        let right = this.calculateTimeRight(time.end);
+        let left = this.calculateTimeLeft(time.start);
 
         return <>
-            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
+            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched && time.partial ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
                 data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks} data-team_id={time.team_id}/>
         </>;
     }

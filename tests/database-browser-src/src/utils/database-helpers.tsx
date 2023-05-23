@@ -165,10 +165,8 @@ export class CommonDBFunctions {
             d.card = dbCards.find((c) => c.id === d.card_id);
             const timeAllocations = _.groupBy(dbTimeAllocationsGrouped[d.id], 'team_id');
             const teams = dbDeliverableTeams.filter(t => deliverableTeams[d.id] && deliverableTeams[d.id].some(tid => t.id === tid.team_id));
+            d.teams = [];
             teams.forEach((t) => {
-                if(!d.teams) {
-                    d.teams = [];
-                }
                 let team = _.clone(t);
                 team.timeAllocations = timeAllocations[t.id] && timeAllocations[t.id].filter(z => z.startDate && z.endDate);
                 d.teams.push(team);
