@@ -92,10 +92,10 @@ export class CommonDBFunctions {
      * @param deliverables The deliverables to search with
      * @returns The list of deliverable ids that have time allocations currently, or about to be, in progress
      */
-    public static async getInProgressDelivarables(db: Database, date: string, deliverables: any[]): Promise<number[]> {
+    public static async getInProgressDeliverables(db: Database, date: string, deliverables: any[], checkTeamIds: string = ""): Promise<number[]> {
         let deliverableIds = deliverables.map((dd) => dd.id).toString();
         const query = `SELECT deliverable_id, team_id, MAX(max) as m FROM (SELECT DISTINCT MAX(addedDate) as max, deliverable_id, team_id from timeAllocation_diff WHERE deliverable_id IN (${deliverableIds}) AND 
-            ((startDate <= ${parseInt(date) + CommonDBFunctions.lookAheadTime} AND ${date} <= endDate)) GROUP BY uuid) GROUP BY deliverable_id ORDER BY m DESC`;
+            startDate <= ${parseInt(date) + CommonDBFunctions.lookAheadTime} AND ${date} <= endDate ${checkTeamIds?`AND team_id IN (${checkTeamIds}) `:""}GROUP BY uuid) GROUP BY deliverable_id ORDER BY m DESC`;
         let results = await db?.query(query);
         
         deliverableIds = results?.map((r: any) => r.deliverable_id).toString() ?? "";
@@ -108,6 +108,21 @@ export class CommonDBFunctions {
         results = results?.filter((r:any)=> teamIds.indexOf(r.team_id) > -1);
 
         return [...new Set(results?.map((r: any) => parseInt(r.deliverable_id)))] as number[];
+    }
+
+    /**
+     * Gets a list of deliverables and the teams that were assigned to them.
+     * @param db The database connection
+     * @param deliverables The deliverables to filter by
+     * @returns The list of deliverable team composites
+     */
+    public static async getDeliverableTeams(db: Database, deliverables: any[]) {
+        const deliverableIds = deliverables.map((dd) => dd.id).toString();
+        const deliverableTeamQuery = `SELECT deliverable_id, team_id, title, abbreviation FROM deliverable_teams AS dt INNER JOIN team_diff AS td ON dt.team_id = td.id WHERE deliverable_id IN (${deliverableIds}) GROUP BY deliverable_id, title ORDER BY addedDate`;
+        const deliverableTeams = await db?.query(deliverableTeamQuery) as any[];
+        const ordered = _.orderBy(deliverableTeams, [(g:any)=>g.title], ['asc'])
+        const group = _.groupBy(ordered, 'title');
+        return Object.keys(group).map(key => ({ key, deliverables: group[key] }));
     }
 
     /**
@@ -150,10 +165,8 @@ export class CommonDBFunctions {
             d.card = dbCards.find((c) => c.id === d.card_id);
             const timeAllocations = _.groupBy(dbTimeAllocationsGrouped[d.id], 'team_id');
             const teams = dbDeliverableTeams.filter(t => deliverableTeams[d.id] && deliverableTeams[d.id].some(tid => t.id === tid.team_id));
+            d.teams = [];
             teams.forEach((t) => {
-                if(!d.teams) {
-                    d.teams = [];
-                }
                 let team = _.clone(t);
                 team.timeAllocations = timeAllocations[t.id] && timeAllocations[t.id].filter(z => z.startDate && z.endDate);
                 d.teams.push(team);
