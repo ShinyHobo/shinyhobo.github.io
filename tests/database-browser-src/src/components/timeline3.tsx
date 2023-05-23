@@ -292,7 +292,7 @@ export default class Timeline3 extends React.Component {
      */
     private collectDeliverableTimeline(deliverable: any): any[] {
         let returnData: any[] = [];
-        if(deliverable.teams) {
+        if(deliverable.teams.length) {
             deliverable.teams.forEach((team: any) => {
                 if(team.timeAllocations) {
                     let timeAllocations = team.timeAllocations.slice().sort((a:any,b:any)=>a.startDate - b.startDate);
@@ -373,7 +373,8 @@ export default class Timeline3 extends React.Component {
             if(this.scrolledToToday) {
                 timeline.scroll(this.horizontalScrollPosition,0);
             } else {
-                const scrollPos = this.todayLine - 100;
+                // TODO - use today/delta selected here
+                const scrollPos = this.sampledLine - 100;
                 timeline.scroll(scrollPos,0);
                 this.horizontalScrollPosition = scrollPos;
                 this.scrolledToToday = true;
