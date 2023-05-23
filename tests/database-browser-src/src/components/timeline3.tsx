@@ -555,7 +555,7 @@ export default class Timeline3 extends React.Component {
             let startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
             let endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
             
-            let teamTitle = this.deliverableTeams.filter(dt => dt.deliverables.some(d => d.team_id == data.team_id))[0]?.key;
+            let teamTitle = this.deliverableTeams.filter(dt => dt.deliverables.some(d => d.abbreviation == data.abbr))[0]?.key;
 
             filtered[0].parentNode.insertAdjacentHTML("beforeend",
             `<div class="timeline-bar-popup" style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-120}; top: ${e.pageY-window.scrollY}" >
