@@ -111,6 +111,21 @@ export class CommonDBFunctions {
     }
 
     /**
+     * Gets a list of deliverables and the teams that were assigned to them.
+     * @param db The database connection
+     * @param deliverables The deliverables to filter by
+     * @returns The list of deliverable team composites
+     */
+    public static async getDeliverableTeams(db: Database, deliverables: any[]) {
+        const deliverableIds = deliverables.map((dd) => dd.id).toString();
+        const deliverableTeamQuery = `SELECT deliverable_id, team_id, title, abbreviation FROM deliverable_teams AS dt INNER JOIN team_diff AS td ON dt.team_id = td.id WHERE deliverable_id IN (${deliverableIds}) GROUP BY deliverable_id, title ORDER BY addedDate`;
+        const deliverableTeams = await db?.query(deliverableTeamQuery) as any[];
+        const ordered = _.orderBy(deliverableTeams, [(g:any)=>g.title], ['asc'])
+        const group = _.groupBy(ordered, 'title');
+        return Object.keys(group).map(key => ({ key, deliverables: group[key] }));
+    }
+
+    /**
      * Builds the complete deliverable object (sub-componets like teamtimes included) array of all deliverables for the desired time
      * @param db The database connection
      * @param date The delta timestamp to use

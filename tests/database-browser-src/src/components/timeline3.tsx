@@ -16,6 +16,7 @@ export default class Timeline3 extends React.Component {
     @observable private loading: boolean = true;
     private deltaDatetimes: number[] = [];
     private selectedDelta: string = "";
+    @observable private selectedTeam: string = "";
     private beganTeamTracking: number = 1644732000000; // team tracking began on Feb 13, 2022
     private deliverables: any[] = [];
     @observable private loadedDeliverables: any[] = [];
@@ -81,6 +82,7 @@ export default class Timeline3 extends React.Component {
             this.bothFilter = queryParameters.get("both") === "1";
             this.inProgressFilter = queryParameters.get("inProgress") === "1";
             this.selectedDelta = queryParameters.get("date") ?? "";
+            this.selectedTeam = queryParameters.get("team") ?? "";
         }
     }
 
@@ -92,6 +94,7 @@ export default class Timeline3 extends React.Component {
     private todayLine: number = 0;
     private sampledLine: number = 0;
     private inProgressIds: number[] = []; // deliverable ids
+    private deliverableTeams: { key: string; deliverables: any[]; }[]= [];
 
     /**
      * Gets the list of months between Jan 1, 2021 and the end of the next year
@@ -100,15 +103,14 @@ export default class Timeline3 extends React.Component {
         let start = new Date(Date.parse("2021-01-01"));
         const now = new Date(Date.now());
         const end = new Date(Date.parse(`${now.getFullYear()}-11-30`));
-        
+
         while(start < end) {
             let d = start.getDate();
             start.setMonth(start.getMonth()+1);
-            //start.setDate(0)
             if(start.getDate() != d) {
                 start.setDate(0);
             }
-            
+
             this.months.push(new Date(start.getFullYear(), start.getMonth(), 1));
         }
 
@@ -130,6 +132,7 @@ export default class Timeline3 extends React.Component {
         this.loading = true;
         this.deliverables = await CommonDBFunctions.getUniqueDeliverables(this.db, this.selectedDelta.toString());
         this.inProgressIds = await CommonDBFunctions.getInProgressDelivarables(this.db, this.selectedDelta, this.deliverables.filter(d => d.endDate >= this.selectedDelta));
+        this.deliverableTeams = await CommonDBFunctions.getDeliverableTeams(this.db, this.deliverables);
     }
 
     /**
@@ -139,7 +142,15 @@ export default class Timeline3 extends React.Component {
     private async getDeliverableSubset() {
         // Separating the listed deliverables from the full list to allow searching without re-querying the database
         this.searchingDeliverables = this.deliverables;
-        
+
+        if(this.selectedTeam) {
+            const team = this.deliverableTeams.filter((dt:any) => dt.key === this.selectedTeam);
+            if(team.length) {
+                const deliverableIds = team[0].deliverables.map((d:any)=>d.deliverable_id);
+                this.searchingDeliverables = this.searchingDeliverables.filter(d => deliverableIds.some(di => di === d.id));
+            }
+        }
+
         // filter on time allocation start/end dates in proximity to delta date
         if(this.inProgressFilter) {
             const delta = parseInt(this.selectedDelta);
@@ -154,8 +165,8 @@ export default class Timeline3 extends React.Component {
 
         // filter on project
         if(this.scFilter || this.sq42Filter || this.bothFilter) {
-            this.searchingDeliverables = this.searchingDeliverables.filter(d => 
-                (this.scFilter && d.project_ids === 'SC') || 
+            this.searchingDeliverables = this.searchingDeliverables.filter(d =>
+                (this.scFilter && d.project_ids === 'SC') ||
                 (this.sq42Filter && d.project_ids === 'SQ42') ||
                 (this.bothFilter && d.project_ids === 'SC,SQ42'));
         }
@@ -173,6 +184,7 @@ export default class Timeline3 extends React.Component {
             this.skip = 0;
             this.loading = true;
             if(e) {
+                this.deliverableTeams = [];
                 this.selectedDelta = e.target.value;
                 this.scrolledToToday = false;
                 await this.getDeliverablesForDelta();
@@ -240,6 +252,9 @@ export default class Timeline3 extends React.Component {
         if(this.inProgressFilter) {
             CommonNavigationFunctions.updateURLParameter("inProgress","1");
         }
+        if(this.selectedTeam) {
+            CommonNavigationFunctions.updateURLParameter("team", this.selectedTeam);
+        }
     }
 
     /**
@@ -271,11 +286,11 @@ export default class Timeline3 extends React.Component {
                                     currentRange = r;
                                     return;
                                 }
-        
+
                                 //const currentEndDate = new Date(currentRange.endDate);
                                 //currentEndDate.setDate(currentEndDate.getDate()+4); // covers time overlap when sprint ends on a weekend
                                 const currentEndTime = currentRange.endDate; //currentEndDate.getTime();
-        
+
                                 if (currentEndTime < r.startDate) {
                                     returnRanges.push(currentRange);
                                     currentRange = r;
@@ -283,13 +298,13 @@ export default class Timeline3 extends React.Component {
                                     currentRange.endDate = r.endDate;
                                 }
                             });
-        
+
                             if(currentRange) {
                                 returnRanges.push(currentRange);
                             }
-        
+
                             returnRanges.forEach((time: any) => {
-                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers, deliverable_id: deliverable.id});
+                                returnData.push({start: time.startDate, end: time.endDate, partial: time.partialTime, team_id: team.id, abbr: team.abbreviation, disc: time.title, tasks: tasks, discipline_id: time.discipline_id, devs: time.numberOfMembers, deliverable_id: deliverable.id});
                             });
                         });
                     });
@@ -307,8 +322,8 @@ export default class Timeline3 extends React.Component {
         //const deliverableMax: number = _.maxBy(teamMax, 'end').end;
 
         const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
-        const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team, 
-            start: this.calculateTimeLeft((teamMin[0].abbr && teamMin.filter(tm => tm.abbr === team)[0].start) ?? teamMin[0].start), end: this.calculateTimeRight((teamMax[0].abbr && teamMax.filter(tm => tm.abbr === team)[0].end) ?? teamMax[0].end), 
+        const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team,
+            start: this.calculateTimeLeft((teamMin[0].abbr && teamMin.filter(tm => tm.abbr === team)[0].start) ?? teamMin[0].start), end: this.calculateTimeRight((teamMax[0].abbr && teamMax.filter(tm => tm.abbr === team)[0].end) ?? teamMax[0].end),
             discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
 
         return teamGroups;
@@ -366,28 +381,36 @@ export default class Timeline3 extends React.Component {
                     <p>Hover over a timeline block to view details</p>
                     <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
                     <p className={`filter-fields ${this.loading?"filter-disable":""}`}>
-                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()}>
+                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()} style={{marginRight: 5}}>
                         {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
                         {this.deltaDatetimes.map((e:any) => {
                             return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
                         })}
                         </select>
-                        <span style={{marginRight: -15}}>
-                            <input ref={this.searchTextField} type="text" style={{paddingRight: 20}} id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
-                            <button style={{appearance: "none", cursor: "pointer", borderRadius: "50%", width: 17, height: 17, lineHeight: 0, left: -20, position: "relative"}} title="Clear search text" onClick={() => {this.searchText = ""; this.searchTextField.current.value = ""} }>
-                                <span style={{position: "relative", left: -1, top: -1}}>x</span>
-                            </button>
+                        <span style={{marginRight: 5}}>
+                            <span style={{marginRight: -15}}>
+                                <input ref={this.searchTextField} type="text" style={{paddingRight: 20}} id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
+                                <button style={{appearance: "none", cursor: "pointer", borderRadius: "50%", width: 17, height: 17, lineHeight: 0, left: -20, position: "relative"}} title="Clear search text" onClick={() => {this.searchText = ""; this.searchTextField.current.value = ""} }>
+                                    <span style={{position: "relative", left: -1, top: -1}}>x</span>
+                                </button>
+                            </span>
                         </span>
-                        <span style={{display: "inline-block"}} className="filter-options">
+                        <select name="selectedTeam" value={this.selectedTeam} onChange={(e:any)=>this.selectedTeam = e.target.value} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()}>
+                        {!this.deliverableTeams.length ? <option>Loading...</option>:<option value="" >Select team (none)</option>}
+                        {this.deliverableTeams.map((dt:any)=>{
+                            return <option key={dt.key} value={dt.key}>{dt.key} ({dt.deliverables[0].abbreviation})</option>
+                        })}
+                        </select>
+                        <span style={{display: "inline-block", marginRight: 5}} className="filter-options">
                             <label title="Show deliverables that are only for Squadron 42"><input type="checkbox" defaultChecked={this.sq42Filter} onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
                             <label title="Show deliverables that are only for Star Citizen"><input type="checkbox" defaultChecked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
                             <label title="Show deliverables that are for both SC and SQ42"><input type="checkbox" defaultChecked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
                             <label title="Show deliverables that are currently (or soon to be) scheduled"><input type="checkbox" defaultChecked={this.inProgressFilter} onChange={e => {this.inProgressFilter = !this.inProgressFilter;}}/>In Progress</label>
                         </span>
-                        <button onClick={this.searchInitiated.bind(this)} style={{marginLeft: 5}}>Apply Filters</button>
+                        <button onClick={this.searchInitiated.bind(this)}>Apply Filters</button>
                     </p>
                 </div>
-                {!this.loading ? 
+                {!this.loading ?
                 <>
                 <div style={{height: "100vh", overflowX: "hidden", scrollbarWidth: "none", borderBottom: "1px solid white"}} id="scrollableDiv">
                 <div id="scrollable-timeline">
@@ -434,12 +457,12 @@ export default class Timeline3 extends React.Component {
                                 ))}
                             </div>
                             <div className="deliverable-timeline" onScroll={this.scrollTimelineHeader.bind(this)}  ref={this.deliverableTtimelineDiv}>
-                                <div className="timeline-scroll" 
-                                    onMouseDown={this.clickTimeline.bind(this)} 
-                                    onTouchStart={this.clickTimeline.bind(this)} 
-                                    onMouseUp={this.unclickTimeline.bind(this)} 
+                                <div className="timeline-scroll"
+                                    onMouseDown={this.clickTimeline.bind(this)}
+                                    onTouchStart={this.clickTimeline.bind(this)}
+                                    onMouseUp={this.unclickTimeline.bind(this)}
                                     onTouchEnd={this.unclickTimeline.bind(this)}
-                                    onMouseMove={this.moveTimeline.bind(this)} 
+                                    onMouseMove={this.moveTimeline.bind(this)}
                                     onTouchMove={this.moveTimeline.bind(this)}
                                     onMouseLeave={this.unclickTimeline.bind(this)}
                                 >
@@ -464,7 +487,7 @@ export default class Timeline3 extends React.Component {
                                                             ))}
                                                             </div>
                                                         ))}
-                                                        <div style={{position: "absolute", height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10, 
+                                                        <div style={{position: "absolute", height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10,
                                                             top: -1, zIndex: -1, border: "1px solid dimgray", backgroundColor: "white", opacity: 0.2, borderRadius: 10}}/>
                                                     </div>
                                                 ))}
@@ -505,7 +528,7 @@ export default class Timeline3 extends React.Component {
 
             filtered[0].parentNode.insertAdjacentHTML("beforeend",
             `<div class="timeline-bar-popup" style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-120}; top: ${e.pageY-window.scrollY}" >
-                <div>${data.abbr} (${data["disc"]})</div>
+                <div>${data.abbr} (${data["disc"]}) ${data.team_id}</div>
                 <div>${data.tasks} tasks</div>
                 <div>${startDisplay} - ${endDisplay}</div>
             </div>`);
@@ -520,7 +543,7 @@ export default class Timeline3 extends React.Component {
     private createBox(time:any, times:any[]) {
         let right = this.calculateTimeRight(time.end);
         let left = this.calculateTimeLeft(time.start);
-        let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id && x.deliverable_id == time.deliverable_id);
+        let matches = times.filter(x => x.start === time.start && x.end === time.end && x.discipline_id === time.discipline_id && x.deliverable_id == time.deliverable_id && x.team_id == time.team_id);
         let matched = matches.length > 1;
         let index = 0;
         if(matched) {
@@ -528,15 +551,15 @@ export default class Timeline3 extends React.Component {
         }
 
         return <>
-            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: index ? 5 : 0}} className="timeline-bar"
-                data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks}/>
+            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
+                data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks} data-team_id={time.team_id}/>
         </>;
     }
 
     /**
      * Calculates the pixels from the left to position a time div
      * @param startTime The start time
-     * @returns 
+     * @returns
      */
     private calculateTimeLeft(startTime: number) {
         const fromStart = startTime- this.start;
