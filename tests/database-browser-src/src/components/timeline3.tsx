@@ -192,6 +192,9 @@ export default class Timeline3 extends React.Component {
             this.hasMore = true;
             this.skip = 0;
             this.loading = true;
+            if(this.previousSelectedTeam != this.selectedTeam || e) {
+                this.inProgressTeams = [];
+            }
             this.previousSelectedTeam = this.selectedTeam;
             if(e) {
                 this.deliverableTeams = [];
