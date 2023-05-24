@@ -153,9 +153,9 @@ export default class Timeline3 extends React.Component {
         }
 
         if(this.selectedTeam) {
-            const team = this.deliverableTeams.filter((dt:any) => dt.key === this.selectedTeam);
-            if(team.length) {
-                const deliverableIds = team[0].deliverables.map((d:any)=>d.deliverable_id);
+            const team = this.getSelectedTeamInfo();
+            if(team) {
+                const deliverableIds = team.deliverables.map((d:any)=>d.deliverable_id);
                 if(this.inProgressFilter) {
                     if(!this.inProgressTeams.length) {
                         this.inProgressTeams = await CommonDBFunctions.getInProgressDeliverables(this.db, this.selectedDelta, this.searchingDeliverables.filter(sd => deliverableIds.some(di => di === sd.id)), this.getTeamIdsForSelectedTeam());
@@ -181,6 +181,14 @@ export default class Timeline3 extends React.Component {
         }
 
         return _(this.searchingDeliverables).drop(this.skip).take(this.take).value();
+    }
+
+    /**
+     * Gets the team information for the selected team
+     * @returns The team info
+     */
+    private getSelectedTeamInfo() {
+        return this.deliverableTeams.filter((dt:any) => dt.key === this.selectedTeam)[0];
     }
 
     /**
@@ -222,9 +230,9 @@ export default class Timeline3 extends React.Component {
      */
     private getTeamIdsForSelectedTeam() {
         if(this.selectedTeam) {
-            const team = this.deliverableTeams.filter((dt:any) => dt.key === this.selectedTeam);
-            if(team.length) {
-                return [...new Set(team[0].deliverables.map(d=>d.team_id))].toString();
+            const team = this.getSelectedTeamInfo();
+            if(team) {
+                return [...new Set(team.deliverables.map(d=>d.team_id))].toString();
             }
         }
         return "";
@@ -400,6 +408,8 @@ export default class Timeline3 extends React.Component {
     }
 
     render() {
+        const teamInfo = this.getSelectedTeamInfo();
+        const teamAbbr = teamInfo?.deliverables[0].abbreviation;
         return (
             <>
                 <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
@@ -520,8 +530,7 @@ export default class Timeline3 extends React.Component {
                                                             ))}
                                                             </div>
                                                         ))}
-                                                        <div style={{position: "absolute", height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10,
-                                                            top: -1, zIndex: -1, border: "1px solid dimgray", backgroundColor: "white", opacity: 0.2, borderRadius: 10}}/>
+                                                        <div className={`team-group ${teamAbbr==teamGroup.team?"selected-team":""}`} style={{height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10}}/>
                                                     </div>
                                                 ))}
                                             </div>

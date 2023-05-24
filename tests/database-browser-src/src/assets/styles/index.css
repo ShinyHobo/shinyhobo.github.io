@@ -265,3 +265,19 @@ textarea {
 .filter-fields .filter-options input[type='checkbox'], label {
   cursor: pointer;
 }
+
+.timeline-scroll .deliverable-row .team .selected-team {
+  background-color: white !important;
+  border: 1px dashed black !important;
+  opacity: 0.4 !important;
+}
+
+.timeline-scroll .deliverable-row .team .team-group {
+  position: absolute;
+  top: -1;
+  z-index: -1;
+  border: 1px solid dimgray;
+  background-color: white;
+  opacity: 0.2;
+  border-radius: 10px;
+}
