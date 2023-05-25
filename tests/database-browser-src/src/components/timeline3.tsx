@@ -17,7 +17,6 @@ export default class Timeline3 extends React.Component {
     private deltaDatetimes: number[] = [];
     private selectedDelta: string = "";
     @observable private selectedTeam: string = "";
-    private previousSelectedTeam: string = "";
     private beganTeamTracking: number = 1644732000000; // team tracking began on Feb 13, 2022
     private deliverables: any[] = [];
     @observable private loadedDeliverables: any[] = [];
@@ -67,24 +66,6 @@ export default class Timeline3 extends React.Component {
             });
         } catch(e) {
             alert("Failed to access and load the database! Please report this on my github, if possible. Make sure to include the url or list the filters used.");
-        }
-    }
-
-    /**
-     * Initializes the model parameters based on the url parameters
-     */
-    private initializeParameters() {
-        const params = window.location.hash.split('?');
-        if(params.length > 1) {
-            const queryParameters = new URLSearchParams(params[1]);
-            this.searchText = decodeURI(queryParameters.get("searchText") ?? "");
-            this.sq42Filter = queryParameters.get("sq42") === "1";
-            this.scFilter = queryParameters.get("sc") === "1";
-            this.bothFilter = queryParameters.get("both") === "1";
-            this.inProgressFilter = queryParameters.get("inProgress") === "1";
-            this.selectedDelta = queryParameters.get("date") ?? "";
-            this.selectedTeam = queryParameters.get("team") ?? "";
-            this.previousSelectedTeam = this.selectedTeam;
         }
     }
 
@@ -138,52 +119,6 @@ export default class Timeline3 extends React.Component {
     }
 
     /**
-     * Gets a subset of deliverables using the set skip and take options
-     * @param skipAdjustment The amount to adjust the skip/take amount
-     * @returns The subset of deliverables
-     */
-    private async getDeliverableSubset() {
-        // Separating the listed deliverables from the full list to allow searching without re-querying the database
-        this.searchingDeliverables = this.deliverables;
-        // filter on time allocation start/end dates in proximity to delta date
-        if(this.inProgressFilter) {
-            const delta = parseInt(this.selectedDelta);
-            const wasTrackingTeams = delta >= this.beganTeamTracking;
-            this.searchingDeliverables = this.searchingDeliverables.filter(d => (wasTrackingTeams && this.inProgressIds.includes(d.id)) || (!wasTrackingTeams && d.startDate <= delta && delta <= d.endDate));
-        }
-
-        if(this.selectedTeam) {
-            const team = this.getSelectedTeamInfo();
-            if(team) {
-                const deliverableIds = team.deliverables.map((d:any)=>d.deliverable_id);
-                if(this.inProgressFilter) {
-                    if(!this.inProgressTeams.length) {
-                        this.inProgressTeams = await CommonDBFunctions.getInProgressDeliverables(this.db, this.selectedDelta, this.searchingDeliverables.filter(sd => deliverableIds.some(di => di === sd.id)), this.getTeamIdsForSelectedTeam());
-                    }
-                    this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressTeams.some(di => di === d.id));
-                } else {
-                    this.searchingDeliverables = this.searchingDeliverables.filter(d => deliverableIds.some(di => di === d.id));
-                }
-            }
-        }
-
-        // filter on title and description
-        if(this.searchText) {
-            this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchText) || he.unescape(d.description).toLowerCase().includes(this.searchText));
-        }
-
-        // filter on project
-        if(this.scFilter || this.sq42Filter || this.bothFilter) {
-            this.searchingDeliverables = this.searchingDeliverables.filter(d =>
-                (this.scFilter && d.project_ids === 'SC') ||
-                (this.sq42Filter && d.project_ids === 'SQ42') ||
-                (this.bothFilter && d.project_ids === 'SC,SQ42'));
-        }
-
-        return _(this.searchingDeliverables).drop(this.skip).take(this.take).value();
-    }
-
-    /**
      * Gets the team information for the selected team
      * @returns The team info
      */
@@ -200,11 +135,8 @@ export default class Timeline3 extends React.Component {
             this.hasMore = true;
             this.skip = 0;
             this.loading = true;
-            if(this.previousSelectedTeam != this.selectedTeam || e) {
-                this.inProgressTeams = [];
-            }
-            this.previousSelectedTeam = this.selectedTeam;
             if(e) {
+                this.inProgressTeams = [];
                 this.deliverableTeams = [];
                 this.selectedDelta = e.target.value;
                 this.scrolledToToday = false;
@@ -250,6 +182,7 @@ export default class Timeline3 extends React.Component {
         }
     }
 
+    //#region Filters
     private searchText: string = "";
     private searchingDeliverables: any[] = [];
     private inProgressTeams: any[] = [];
@@ -259,15 +192,94 @@ export default class Timeline3 extends React.Component {
     private inProgressFilter: boolean = false;
     private deliverableTtimelineDiv: any;
 
+    private searchTextBacking: string = "";
+    private sq42FilterBacking: boolean = false;
+    private scFilterBacking: boolean = false;
+    private bothFilterBacking: boolean = false;
+    private inProgressFilterBacking: boolean = false;
+    private selectedTeamBacking: string = "";
+
     /**
      * Begin searching for deliverables whose titles and descriptions contain the search term
      * @param e The click event
      */
     private searchInitiated() {
-        if(this.previousSelectedTeam != this.selectedTeam) {
-            this.inProgressTeams = [];
-        }
+        this.updateBackingFilters();
         this.deltaSelected(null);
+    }
+
+    private updateBackingFilters() {
+        this.searchTextBacking = this.searchText;
+        this.sq42FilterBacking = this.sq42Filter;
+        this.scFilterBacking = this.scFilter;
+        this.bothFilterBacking = this.bothFilter;
+        this.inProgressFilterBacking = this.inProgressFilter;
+        this.selectedTeamBacking = this.selectedTeam;
+    }
+
+    /**
+     * Gets a subset of deliverables using the set skip and take options
+     * @param skipAdjustment The amount to adjust the skip/take amount
+     * @returns The subset of deliverables
+     */
+    private async getDeliverableSubset() {
+        // Separating the listed deliverables from the full list to allow searching without re-querying the database
+        this.searchingDeliverables = this.deliverables;
+        // filter on time allocation start/end dates in proximity to delta date
+        if(this.inProgressFilterBacking) {
+            const delta = parseInt(this.selectedDelta);
+            const wasTrackingTeams = delta >= this.beganTeamTracking;
+            this.searchingDeliverables = this.searchingDeliverables.filter(d => (wasTrackingTeams && this.inProgressIds.includes(d.id)) || (!wasTrackingTeams && d.startDate <= delta && delta <= d.endDate));
+        }
+
+        if(this.selectedTeamBacking) {
+            const team = this.getSelectedTeamInfo();
+            if(team) {
+                const deliverableIds = team.deliverables.map((d:any)=>d.deliverable_id);
+                if(this.inProgressFilterBacking) {
+                    if(!this.inProgressTeams.length) {
+                        this.inProgressTeams = await CommonDBFunctions.getInProgressDeliverables(this.db, this.selectedDelta, this.searchingDeliverables.filter(sd => deliverableIds.some(di => di === sd.id)), this.getTeamIdsForSelectedTeam());
+                    }
+                    this.searchingDeliverables = this.searchingDeliverables.filter(d => this.inProgressTeams.some(di => di === d.id));
+                } else {
+                    this.searchingDeliverables = this.searchingDeliverables.filter(d => deliverableIds.some(di => di === d.id));
+                }
+            }
+        }
+
+        // filter on title and description
+        if(this.searchTextBacking) {
+            this.searchingDeliverables = this.searchingDeliverables.filter(d => he.unescape(d.title).toLowerCase().includes(this.searchTextBacking) || he.unescape(d.description).toLowerCase().includes(this.searchTextBacking));
+        }
+
+        // filter on project
+        if(this.scFilterBacking || this.sq42FilterBacking || this.bothFilterBacking) {
+            this.searchingDeliverables = this.searchingDeliverables.filter(d =>
+                (this.scFilterBacking && d.project_ids === 'SC') ||
+                (this.sq42FilterBacking && d.project_ids === 'SQ42') ||
+                (this.bothFilterBacking && d.project_ids === 'SC,SQ42'));
+        }
+
+        return _(this.searchingDeliverables).drop(this.skip).take(this.take).value();
+    }
+
+    /**
+     * Initializes the model parameters based on the url parameters
+     */
+    private initializeParameters() {
+        const params = window.location.hash.split('?');
+        if(params.length > 1) {
+            const queryParameters = new URLSearchParams(params[1]);
+            this.searchText = decodeURI(queryParameters.get("searchText") ?? "");
+            this.sq42Filter = queryParameters.get("sq42") === "1";
+            this.scFilter = queryParameters.get("sc") === "1";
+            this.bothFilter = queryParameters.get("both") === "1";
+            this.inProgressFilter = queryParameters.get("inProgress") === "1";
+            this.selectedDelta = queryParameters.get("date") ?? "";
+            this.selectedTeam = queryParameters.get("team") ?? "";
+
+            this.updateBackingFilters();
+        }
     }
 
     /**
@@ -295,6 +307,7 @@ export default class Timeline3 extends React.Component {
             CommonNavigationFunctions.updateURLParameter("team", this.selectedTeam);
         }
     }
+    //#endregion
 
     /**
      * Groups deliverable team time allocations and stitches relavent time allocations together
