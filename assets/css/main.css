@@ -21,6 +21,7 @@ footer {
     text-align: center;
     position: relative;
     clear: both;
+    z-index: -1;
 }
 
 details > summary {
