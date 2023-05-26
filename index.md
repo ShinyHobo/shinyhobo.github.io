@@ -10,7 +10,7 @@ regenerate: true
   <p>I've been working on some new ways to explore the data:</p>
   <ul>
     <li><a href="{{ '/tests/database-browser/#/browser' | relative_url}}" target="_blank">Database Terminal</a> - a readonly, full-access SQLite terminal</li>
-    <li><a href="{{ '/tests/database-browser/#/timeline' | relative_url}}" target="_blank">Scheduled Work Timeline</a> - an enhanced version of the Progress Tracker</li>
+    <li><a href="{{ '/tests/database-browser/#/timeline' | relative_url}}" target="_blank">Scheduled Work Timeline</a> - an enhanced version of the official Progress Tracker</li>
   </ul>
   <div style="text-align: center;">
     <a href="{{ '/tests/database-browser/#/timeline' | relative_url}}" target="_blank"><img src="{{ site.url }}/assets/images/timeline.png" style="max-height: 160px; box-shadow: 0px 0px 8px #b5e853; border-radius: 10px;"/></a>
