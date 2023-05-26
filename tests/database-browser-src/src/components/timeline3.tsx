@@ -489,10 +489,15 @@ export default class Timeline3 extends React.Component {
                                         <h3 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables ({this.searchingDeliverables.length})</h3>
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
-                                        <div style={{position: "absolute", width: `calc(100px*${this.months.length}`, borderBottom: "1px solid white"}} id="month-header">
+                                        <div style={{width: `calc(100px*${this.months.length}`}} id="month-header">
+                                            {this.months.filter((v,i)=>i%3==0).map((date:Date, index:number)=> (
+                                                <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderRight: index % 4 == 3?"1px solid white":"none" }}>
+                                                    <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {year:"numeric"})}</h3>
+                                                </div>
+                                            ))}
                                             {this.months.map((date:Date, index:number)=> (
-                                                <div key={index} style={{width: 100, float:"left", backgroundColor:"black", height: 56, borderRight: "1px solid white", boxSizing: "border-box"}}>
-                                                    <h3>{date.toLocaleDateString(undefined, {month:"short",year: "numeric"})}</h3>
+                                                <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderRight: index % 12 == 11?"1px solid white":"none" }}>
+                                                    <h4>{date.toLocaleDateString(undefined, {month:"short"})}</h4>
                                                 </div>
                                             ))}
                                         </div>

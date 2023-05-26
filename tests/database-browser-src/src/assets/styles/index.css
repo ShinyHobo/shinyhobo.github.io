@@ -176,13 +176,29 @@ textarea {
   z-index: -5;
 }
 
-.month-header {
+#month-header {
+  position: absolute;
   height: 56px;
-  position: sticky;
-  top: 0;
-  border-bottom: 1px solid white;
   background-color: black;
-  z-index: 1;
+}
+
+#month-header .month-box {
+  width: 100px;
+  float: left;
+  background-color: black;
+  height: 26px;
+  box-sizing: border-box;
+}
+
+#month-header .quarter-group {
+  width: 300px;
+  float: left;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+#month-header .month-box h3 {
+  margin: 0px;
 }
 
 .deliverable-timeline .months {
