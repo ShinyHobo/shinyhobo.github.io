@@ -446,7 +446,7 @@ export default class Timeline3 extends React.Component {
                         <span style={{marginRight: 5}}>
                             <span style={{marginRight: -15}}>
                                 <input ref={this.searchTextField} type="text" style={{paddingRight: 20}} id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
-                                <button style={{appearance: "none", cursor: "pointer", borderRadius: "50%", width: 17, height: 17, lineHeight: 0, left: -20, position: "relative"}} title="Clear search text" onClick={() => {this.searchText = ""; this.searchTextField.current.value = ""} }>
+                                <button style={{appearance: "none", cursor: "pointer", borderRadius: "50%", width: 17, height: 17, lineHeight: 0, left: -20, position: "relative", border: "none"}} title="Clear search text" onClick={() => {this.searchText = ""; this.searchTextField.current.value = ""} }>
                                     <span style={{position: "relative", left: -1, top: -1}}>x</span>
                                 </button>
                             </span>
