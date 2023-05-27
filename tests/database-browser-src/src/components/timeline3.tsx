@@ -26,6 +26,7 @@ export default class Timeline3 extends React.Component {
     private scrolledToToday: boolean = false;
     private horizontalScrollPosition: number = 0;
     private searchTextField: any;
+    private fetching: boolean = false;
 
     private months: Date[] = [];
 
@@ -40,6 +41,9 @@ export default class Timeline3 extends React.Component {
 
         this.deliverableTtimelineDiv = React.createRef();
         this.searchTextField = React.createRef();
+
+        // account for zoom out
+        window.addEventListener('resize', () => {this.fixDataForPageHeight()});
 
         this.initializeData();
     }
@@ -176,9 +180,21 @@ export default class Timeline3 extends React.Component {
     private async fetchData() {
         if(this.deliverableTtimelineDiv.current?.scrollHeight) {
             this.skip += this.take;
+            this.fetching = true;
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables.push(...subSet);
             this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
+            this.fetching = false;
+        }
+    }
+
+    private fixDataForPageHeight() {
+        if(!this.fetching) {
+            let scrollableDiv = document.getElementById("scrollableDiv");
+            let infiniteScroller = document.getElementsByClassName("infinite-scroll-component");
+            if((scrollableDiv && infiniteScroller.length) && scrollableDiv?.clientHeight > infiniteScroller[0]?.scrollHeight) {
+                this.fetchData();
+            }
         }
     }
 
@@ -418,12 +434,8 @@ export default class Timeline3 extends React.Component {
                 i.style.height = row?.clientHeight;
             });
         }
-
-        let scrollableDiv = document.getElementById("scrollableDiv");
-        let infiniteScroller = document.getElementsByClassName("infinite-scroll-component");
-        if((scrollableDiv && infiniteScroller.length) && scrollableDiv?.clientHeight > infiniteScroller[0]?.scrollHeight) {
-            this.fetchData();
-        }
+        
+        this.fixDataForPageHeight();
     }
 
     render() {
