@@ -418,6 +418,12 @@ export default class Timeline3 extends React.Component {
                 i.style.height = row?.clientHeight;
             });
         }
+
+        let scrollableDiv = document.getElementById("scrollableDiv");
+        let infiniteScroller = document.getElementsByClassName("infinite-scroll-component");
+        if((scrollableDiv && infiniteScroller.length) && scrollableDiv?.clientHeight > infiniteScroller[0]?.scrollHeight) {
+            this.fetchData();
+        }
     }
 
     render() {
