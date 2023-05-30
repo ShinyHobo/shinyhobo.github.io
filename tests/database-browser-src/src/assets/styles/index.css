@@ -180,6 +180,7 @@ textarea {
   position: absolute;
   height: 56px;
   background-color: black;
+  width: max-content;
 }
 
 #month-header .month-box {
