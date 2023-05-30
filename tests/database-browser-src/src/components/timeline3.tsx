@@ -508,7 +508,7 @@ export default class Timeline3 extends React.Component {
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div id="month-header">
-                                            <div id="quarters">
+                                            <div id="quarters" style={{display: "flex"}}>
                                             {this.months.filter((v,i)=>i%3==0).map((date:Date, index:number)=> (
                                                 <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderRight: index % 4 == 3?"1px solid white":"none" }}>
                                                     <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {year:"numeric"})}</h3>
