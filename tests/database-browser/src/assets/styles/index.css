@@ -307,3 +307,7 @@ textarea {
   opacity: 0.2;
   border-radius: 10px;
 }
+
+nav span {
+  margin-right: 10px;
+}
