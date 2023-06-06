@@ -447,7 +447,7 @@ export default class Timeline3 extends React.Component {
                     <h1 style={{marginBottom: 0, marginLeft: 10}}>Scheduled Work Timeline</h1>
                     <div style={{marginLeft: 10, display: "inline-block"}}>
                         <div style={{margin: 0}}>
-                            <div style={{marginLeft:10,maxWidth:1000}}>This is the Scheduled Work Timeline, an enhanced verion of the Progress Tracker. On it, you can see how each teams' time schedules are broken up, their priority, and the number of tasks assigned per segment. In addition, you can:</div>
+                            <div style={{marginLeft:10,marginRight:10,maxWidth:1000}}>This is the Scheduled Work Timeline, an enhanced verion of the Progress Tracker. On it, you can see how each teams' time schedules are broken up, their priority, and the number of tasks assigned per segment. In addition, you can:</div>
                             <ul>
                                 <li>Click and drag to scroll the timeline</li>
                                 <li>Hover over a timeline block to view more details</li>
