@@ -446,7 +446,7 @@ export default class Timeline3 extends React.Component {
                 <div style={{width: "100vw"}}>
                     <h1 style={{marginBottom: 0, marginLeft: 10}}>Scheduled Work Timeline</h1>
                     <div style={{marginLeft: 10, display: "inline-block"}}>
-                        <p style={{margin: 0}}>
+                        <div style={{margin: 0}}>
                             <div style={{marginLeft:10,maxWidth:1000}}>This is the Scheduled Work Timeline, an enhanced verion of the Progress Tracker. On it, you can see how each teams' time schedules are broken up, their priority, and the number of tasks assigned per segment. In addition, you can:</div>
                             <ul>
                                 <li>Click and drag to scroll the timeline</li>
@@ -461,7 +461,7 @@ export default class Timeline3 extends React.Component {
                                 <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> Indicates the sample date</p>
                                 <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
                             </div>
-                        </p>
+                        </div>
                         <p className={`filter-fields ${this.loading?"filter-disable":""}`}>
                             <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()} style={{marginRight: 5}}>
                             {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
@@ -567,7 +567,7 @@ export default class Timeline3 extends React.Component {
                                         <div className="today-line" style={{left: this.todayLine, borderRight: "1px solid yellow"}}></div>
                                         <div className="sampled-line" style={{left: this.sampledLine, borderRight: "1px solid red" }}></div>
                                     </div>
-                                    <div className="deliverable-rows" onMouseMove={this.hoverTimeline.bind(this)}>
+                                    <div className="deliverable-rows">
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                             <div key={index} className="deliverable-row" id={"deliverable-row-"+deliverable.id}>
                                                 {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
@@ -575,7 +575,7 @@ export default class Timeline3 extends React.Component {
                                                         {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
                                                             <div key={disciplineIndex} className="discipline">
                                                             {disc.times.map((time:any, index: number)=>(
-                                                                <div key={index} className="time-box">
+                                                                <div key={index} className="time-box" onMouseMove={this.hoverTimeline.bind(this)} onMouseLeave={this.hoverTimeline.bind(this)}>
                                                                     {this.createBox(time, disc.times)}
                                                                 </div>
                                                             ))}
@@ -607,27 +607,32 @@ export default class Timeline3 extends React.Component {
      * @param e The event
      */
     private hoverTimeline(e:any) {
-        const _overlapped = document.elementsFromPoint(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset)
-        let filtered = _overlapped.filter(el=>el.classList.contains("timeline-bar")) as any[];
-        let popup = document.querySelector(".timeline-bar-popup");
-        if(popup && popup.parentNode) {
+        let popup = document.querySelector(".timeline-bar-popup") as any;
+        if(popup && popup.parentNode && e.type == "mouseleave") {
             popup.parentNode.removeChild(popup)
         }
-        if(filtered.length) {
-            let data = filtered[0].dataset;
+        if(e.target && e.type == "mousemove") {
+            let data = e.target.dataset;
 
             let startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
             let endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
             
             let teamTitle = this.deliverableTeams.filter(dt => dt.deliverables.some(d => d.abbreviation == data.abbr))[0]?.key;
 
-            filtered[0].parentNode.insertAdjacentHTML("beforeend",
-            `<div class="timeline-bar-popup" style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-120}; top: ${e.pageY-window.scrollY}" >
-                <div>${teamTitle}</div>
-                <div>(${data.abbr})</div>
-                <div>${data.disc} - ${data.tasks} task${data.tasks>1?"s":""}</div>
-                <div>${startDisplay} - ${endDisplay}</div>
-            </div>`);
+            let leftShift = this.popupWidth / 2;
+            if(popup) {
+                popup.style.left = e.pageX-leftShift;
+                popup.style.top = e.pageY-window.scrollY;
+            } else {
+                e.target.parentNode.insertAdjacentHTML("beforeend",
+                `<div class="timeline-bar-popup"
+                    style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}" >
+                    <div>${teamTitle}</div>
+                    <div>(${data.abbr})</div>
+                    <div>${data.disc} - ${data.tasks} task${data.tasks>1?"s":""}</div>
+                    <div>${startDisplay} - ${endDisplay}</div>
+                </div>`);
+            }
         }
     }
 
