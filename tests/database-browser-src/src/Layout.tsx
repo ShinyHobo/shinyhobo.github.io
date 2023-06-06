@@ -7,18 +7,16 @@ export default class Layout extends React.Component {
     render() {
         return (
             <>
-            <nav>
-              <ul>
-                <li>
+            <nav style={{marginLeft: 10}}>
+                <span>
                   <a href="https://shinytracker.app">Home</a>
-                </li>
-                <li>
+                </span>
+                <span>
                   <Link to="/browser">Database Terminal</Link>
-                </li>
-                <li>
+                </span>
+                <span>
                   <Link to="/timeline" onClick={CommonNavigationFunctions.refresh}>Scheduled Work Timeline</Link>
-                </li>
-              </ul>
+                </span>
             </nav>
             <Outlet />
           </>
