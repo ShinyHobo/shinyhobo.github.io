@@ -311,3 +311,7 @@ textarea {
 nav span {
   margin-right: 10px;
 }
+
+.container .btn-container {
+  margin-left: 10px;
+}
