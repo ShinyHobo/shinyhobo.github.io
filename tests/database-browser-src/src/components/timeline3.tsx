@@ -528,10 +528,12 @@ export default class Timeline3 extends React.Component {
                                 {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                 <div key={index} className="deliverable-info-box" id={"deliverable-info-"+deliverable.id} style={{height: 60}}>
                                     <div style={{display: "flex"}}>
-                                        <a href={`https://robertsspaceindustries.com/roadmap/progress-tracker/deliverables/${deliverable.slug}`} target="_blank" title={`${new Date(deliverable.startDate).toLocaleDateString()} - ${new Date(deliverable.endDate).toLocaleDateString()}`}>
+                                        <a href={`https://${CommonDBFunctions.rsi}/roadmap/progress-tracker/deliverables/${deliverable.slug}`} target="_blank" title={`${new Date(deliverable.startDate).toLocaleDateString()} - ${new Date(deliverable.endDate).toLocaleDateString()}`}>
                                             <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
                                         </a>
-                                        <h4 className="projects">{deliverable.project_ids}</h4>
+                                        <h4 className="projects">{deliverable.project_ids.split(',').map((pid:string)=>(
+                                            <span key={pid}><img src={`https://${CommonDBFunctions.rsi}${CommonDBFunctions.ProjectImages[pid]}`}/></span>
+                                        ))}</h4>
                                     </div>
                                     <div style={{display: "contents"}}>
                                         <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
