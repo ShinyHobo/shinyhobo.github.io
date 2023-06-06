@@ -32,7 +32,6 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - tests/database-browser-src/
 
 plugins:
   - jekyll-sitemap
