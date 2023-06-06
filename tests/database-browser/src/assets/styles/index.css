@@ -135,13 +135,24 @@ textarea {
   width: 100%;
   padding: 5px;
   line-height: 1.2;
+  margin-left: 5px;
 }
 
-.deliverable-info .deliverable-info-box h4 {
+.deliverable-info .deliverable-info-box .projects {
   text-align: center;
-  margin-bottom: 0;
   width: 60px;
   padding-top: 6px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.deliverable-info .deliverable-info-box .projects span {
+  width:  100%;
+}
+
+.deliverable-info .deliverable-info-box .projects img {
+  width: 20px;
 }
 
 .deliverable-timeline {
