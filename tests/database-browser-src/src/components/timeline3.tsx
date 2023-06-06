@@ -443,46 +443,55 @@ export default class Timeline3 extends React.Component {
         const teamAbbr = teamInfo?.deliverables[0].abbreviation;
         return (
             <>
-                <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
-                    <h4 style={{margin: 2}}>Legend</h4>
-                    <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Indicates part time work</p>
-                    <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Indicates full time work</p>
-                    <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> Indicates the sample date</p>
-                    <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
-                </div>
-                <div style={{marginLeft: 10, display: "inline-block"}}>
-                    <p>Click and drag to scroll the timeline</p>
-                    <p>Hover over a timeline block to view details</p>
-                    <p>Change the sample date below to view timeline snapshots (dates prior to 2022-02-13 lack discrete team schedules)</p>
-                    <p className={`filter-fields ${this.loading?"filter-disable":""}`}>
-                        <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()} style={{marginRight: 5}}>
-                        {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
-                        {this.deltaDatetimes.map((e:any) => {
-                            return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
-                        })}
-                        </select>
-                        <span style={{marginRight: 5}}>
-                            <span style={{marginRight: -15}}>
-                                <input ref={this.searchTextField} type="text" style={{paddingRight: 20}} id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
-                                <button style={{appearance: "none", cursor: "pointer", borderRadius: "50%", width: 17, height: 17, lineHeight: 0, left: -20, position: "relative"}} title="Clear search text" onClick={() => {this.searchText = ""; this.searchTextField.current.value = ""} }>
-                                    <span style={{position: "relative", left: -1, top: -1}}>x</span>
-                                </button>
+                <div style={{width: "100vw"}}>
+                    <h1 style={{marginBottom: 0, marginLeft: 10}}>Scheduled Work Timeline</h1>
+                    <div style={{marginLeft: 10, display: "inline-block"}}>
+                        <p>
+                            <div>This is the Scheduled Work Timeline, an enhanced verion of the Progress Tracker. On it, you can see how each teams' time schedules are broken up, their priority, and the number of tasks assigned per segment. In addition, you can:</div>
+                            <ul>
+                                <li>Click and drag to scroll the timeline</li>
+                                <li>Hover over a timeline block to view more details</li>
+                                <li>Change the sample date below to view timeline snapshots (dates prior to Feb 13, 2022 lack discrete team schedules)</li>
+                                <li>Filter by game, team, and schedules that are active within two weeks of the sample date</li>
+                            </ul>
+                            <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
+                                <h4 style={{margin: 2}}>Legend</h4>
+                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Indicates part time work</p>
+                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Indicates full time work</p>
+                                <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> Indicates the sample date</p>
+                                <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
+                            </div>
+                        </p>
+                        <p className={`filter-fields ${this.loading?"filter-disable":""}`}>
+                            <select name="selectedDelta" value={this.selectedDelta} onChange={this.deltaSelected.bind(this)} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()} style={{marginRight: 5}}>
+                            {!this.deltaDatetimes.length ? <option>Loading...</option>:<></>}
+                            {this.deltaDatetimes.map((e:any) => {
+                                return <option key={e} value={e}>{new Date(Number.parseInt(e)).toLocaleDateString(undefined, {month:"short", day: "2-digit", year: "numeric"})}</option>;
+                            })}
+                            </select>
+                            <span style={{marginRight: 5}}>
+                                <span style={{marginRight: -15}}>
+                                    <input ref={this.searchTextField} type="text" style={{paddingRight: 20}} id="search-field" onChange={e => this.searchText = e.target.value.toLowerCase()} placeholder="Deliverable search" onKeyDown={e => {if(e.key === 'Enter') {this.searchInitiated()}}}/>
+                                    <button style={{appearance: "none", cursor: "pointer", borderRadius: "50%", width: 18, height: 18, border: "none", lineHeight: 0, left: -20, position: "relative"}} title="Clear search text" onClick={() => {this.searchText = ""; this.searchTextField.current.value = ""} }>
+                                        <span style={{position: "relative", left: -1, top: -1}}>x</span>
+                                    </button>
+                                </span>
                             </span>
-                        </span>
-                        <select name="selectedTeam" value={this.selectedTeam} onChange={(e:any)=>this.selectedTeam = e.target.value} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()}>
-                        {!this.deliverableTeams.length ? <option>Loading...</option>:<option value="" >Select team (none)</option>}
-                        {this.deliverableTeams.map((dt:any)=>{
-                            return <option key={dt.key} value={dt.key}>{dt.key} ({dt.deliverables[0].abbreviation})</option>
-                        })}
-                        </select>
-                        <span style={{display: "inline-block", marginRight: 5}} className="filter-options">
-                            <label title="Show deliverables that are only for Squadron 42"><input type="checkbox" defaultChecked={this.sq42Filter} onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
-                            <label title="Show deliverables that are only for Star Citizen"><input type="checkbox" defaultChecked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
-                            <label title="Show deliverables that are for both SC and SQ42"><input type="checkbox" defaultChecked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
-                            <label title="Show deliverables that are currently (or soon to be) scheduled"><input type="checkbox" defaultChecked={this.inProgressFilter} onChange={e => {this.inProgressFilter = !this.inProgressFilter;}}/>In Progress</label>
-                        </span>
-                        <button onClick={this.searchInitiated.bind(this)}>Apply Filters</button>
-                    </p>
+                            <select name="selectedTeam" value={this.selectedTeam} onChange={(e:any)=>this.selectedTeam = e.target.value} onFocus={(e:any) => e.target.selectedOptions[0].scrollIntoView()}>
+                            {!this.deliverableTeams.length ? <option>Loading...</option>:<option value="" >Select team (none)</option>}
+                            {this.deliverableTeams.map((dt:any)=>{
+                                return <option key={dt.key} value={dt.key}>{dt.key} ({dt.deliverables[0].abbreviation})</option>
+                            })}
+                            </select>
+                            <span style={{display: "inline-block", marginRight: 5}} className="filter-options">
+                                <label title="Show deliverables that are only for Squadron 42"><input type="checkbox" defaultChecked={this.sq42Filter} onChange={e => {this.sq42Filter = !this.sq42Filter;}}/>SQ42</label>
+                                <label title="Show deliverables that are only for Star Citizen"><input type="checkbox" defaultChecked={this.scFilter} onChange={e => {this.scFilter = !this.scFilter;}}/>SC</label>
+                                <label title="Show deliverables that are for both SC and SQ42"><input type="checkbox" defaultChecked={this.bothFilter} onChange={e => {this.bothFilter = !this.bothFilter;}}/>Both</label>
+                                <label title="Show deliverables that are currently (or soon to be) scheduled"><input type="checkbox" defaultChecked={this.inProgressFilter} onChange={e => {this.inProgressFilter = !this.inProgressFilter;}}/>In Progress</label>
+                            </span>
+                            <button onClick={this.searchInitiated.bind(this)}>Apply Filters</button>
+                        </p>
+                    </div>
                 </div>
                 {!this.loading ?
                 <>
