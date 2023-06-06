@@ -189,4 +189,13 @@ export class CommonDBFunctions {
         }
         return bytes + "B";
     }
+
+    /** RSI hostname */
+    public static readonly rsi = 'robertsspaceindustries.com';
+
+    /** The available project images */
+    public static readonly ProjectImages: {[key:string]: string;} = {
+        SQ42: "/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png",
+        SC: "/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"
+    };
 }
