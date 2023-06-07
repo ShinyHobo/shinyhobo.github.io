@@ -443,7 +443,7 @@ export default class Timeline3 extends React.Component {
         const teamAbbr = teamInfo?.deliverables[0].abbreviation;
         return (
             <>
-                <div style={{width: "100vw"}}>
+                <div id="timeline-info-box">
                     <h1 style={{marginBottom: 0, marginLeft: 10}}>Scheduled Work Timeline</h1>
                     <div style={{marginLeft: 10, marginRight:20, display: "inline-block"}}>
                         <div>
