@@ -260,6 +260,10 @@ textarea {
   #timeline-info-box {
     width: 800px;
   }
+
+  body {
+    overflow-x: auto !important;
+  }
 }
 
 #scrollable-timeline .infinite-scroll-component {
