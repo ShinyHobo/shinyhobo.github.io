@@ -244,6 +244,24 @@ textarea {
   width: 100vw;
 }
 
+#timeline-container {
+  width: 100vw;
+}
+
+#timeline-info-box {
+  width: 100vw;
+}
+
+@media only screen and (max-width: 800px) {
+  #timeline-container {
+    width: 800px;
+  }
+
+  #timeline-info-box {
+    width: 800px;
+  }
+}
+
 #scrollable-timeline .infinite-scroll-component {
   overflow: unset !important;
 }
