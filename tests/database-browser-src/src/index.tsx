@@ -39,7 +39,7 @@ export default class App extends React.Component {
             [
               {
                 from: "jsonconfig",
-                configUrl: "/data/config.json?cb=2023-05-17-4"
+                configUrl: "/data/config.json?cb=2023-06-14"
                 // from: "inline",
                 // config: {
                 //   serverMode: "full",

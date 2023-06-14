@@ -69,7 +69,7 @@ export default class Timeline3 extends React.Component {
                 this.loading = false;
             });
         } catch(e) {
-            alert("Failed to access and load the database! Please report this on my github, if possible. Make sure to include the url or list the filters used.");
+            alert("Failed to access and load the database! First, clear your cache (Ctrl-F5). If the issue persists, please report this on my github, if possible. Make sure to include the url or list the filters used.");
         }
     }
 
@@ -447,13 +447,14 @@ export default class Timeline3 extends React.Component {
                     <h1 style={{marginBottom: 0, marginLeft: 10}}>Scheduled Work Timeline</h1>
                     <div style={{marginLeft: 10, marginRight:20, display: "inline-block"}}>
                         <div>
-                            <div style={{marginLeft:10,maxWidth:1000}}>This is the Scheduled Work Timeline, an enhanced verion of the Progress Tracker. On it, you can see how each teams' time schedules are broken up, their priority, and the number of tasks assigned per segment. In addition, you can:</div>
+                            <div style={{marginLeft:10,maxWidth:1000}}>This is the Scheduled Work Timeline, an enhanced verion of the Progress Tracker. On it, you can see how each teams' time schedules are broken up, their priority, and the number of tasks assigned per segment. You can:</div>
                             <ul>
                                 <li>Click and drag to scroll the timeline</li>
-                                <li>Hover over a timeline block to view more details</li>
-                                <li>Change the sample date below to view timeline snapshots (dates prior to Feb 13, 2022 lack discrete team schedules)</li>
+                                <li>Hover over a time schedule block to view more details</li>
+                                <li>Change the sample date to view timeline snapshots (dates prior to Feb 13, 2022 lack discrete team schedules)</li>
                                 <li>Filter by game, team, and/or the schedules that are active within two weeks of the selected sample date</li>
                             </ul>
+                            <div style={{marginLeft:10,maxWidth:1000}}>This is a work in progress, so stay tuned for additional features and ways to visualize the data.</div>
                             <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
                                 <h4 style={{margin: 2}}>Legend</h4>
                                 <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Indicates part time work</p>
