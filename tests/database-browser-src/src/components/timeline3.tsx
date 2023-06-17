@@ -87,18 +87,16 @@ export default class Timeline3 extends React.Component {
      * Gets the list of months between Jan 1, 2021 and the end of the next year
      */
     private getTimelineMonths() {
-        let start = new Date(Date.parse("2021-01-01"));
+        let start = new Date(Date.parse("2021-01-01T00:00:00"));
         const now = new Date(Date.now());
-        const end = new Date(Date.parse(`${now.getFullYear()}-11-30`));
+        const end = new Date(Date.parse(`${now.getUTCFullYear()}-12-31T00:00:00`));
 
-        while(start < end) {
-            let d = start.getDate();
-            start.setMonth(start.getMonth()+1);
-            if(start.getDate() != d) {
-                start.setDate(0);
+        const yearCount = end.getUTCFullYear() - start.getUTCFullYear();
+
+        for(let year = start.getUTCFullYear(); year <= yearCount + start.getUTCFullYear(); year++) {
+            for(let month = 0; month < 12; month++) {
+                this.months.push(new Date(year, month, 1));
             }
-
-            this.months.push(new Date(start.getFullYear(), start.getMonth(), 1));
         }
 
         this.monthCount = this.months.length;
@@ -521,14 +519,14 @@ export default class Timeline3 extends React.Component {
                                             <div id="quarters" style={{display: "flex"}}>
                                             {this.months.filter((v,i)=>i%3==0).map((date:Date, index:number)=> (
                                                 <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderRight: index % 4 == 3?"1px solid white":"none" }}>
-                                                    <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {year:"numeric"})}</h3>
+                                                    <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {timeZone: "UTC", year:"numeric"})}</h3>
                                                 </div>
                                             ))}
                                             </div>
                                             <div id="months">
                                             {this.months.map((date:Date, index:number)=> (
                                                 <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderRight: index % 12 == 11?"1px solid white":"none" }}>
-                                                    <h4>{date.toLocaleDateString(undefined, {month:"short"})}</h4>
+                                                    <h4>{date.toLocaleDateString(undefined, {timeZone: "UTC", month:"short"})}</h4>
                                                 </div>
                                             ))}
                                             </div>
