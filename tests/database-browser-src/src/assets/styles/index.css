@@ -161,7 +161,6 @@ textarea {
   width: 100%;
   scrollbar-width: none;
   overflow: hidden;
-  z-index: 0;
   position: relative;
 }
 
@@ -223,7 +222,6 @@ textarea {
   position: absolute;
   width: 100%;
   top: 57px;
-  z-index: 10;
 }
 
 .scroll{
@@ -294,6 +292,10 @@ textarea {
   border: 2px solid white;
   z-index: 50;
   transform: translateY(-2px);
+}
+
+.deliverable-row .team .discipline .time-box .timeline-bar {
+  position: absolute;
 }
 
 .timeline-bar-popup {

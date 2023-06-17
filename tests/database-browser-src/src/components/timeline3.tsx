@@ -658,7 +658,7 @@ export default class Timeline3 extends React.Component {
         let left = this.calculateTimeLeft(time.start);
 
         return <>
-            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
+            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", height: matched ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
                 data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks} data-team_id={time.team_id}/>
         </>;
     }
