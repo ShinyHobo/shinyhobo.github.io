@@ -546,6 +546,16 @@ export default class Timeline3 extends React.Component {
                                     <div style={{display: "contents"}}>
                                         <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
                                     </div>
+                                    <div className="team-list">
+                                        {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
+                                            <div key={teamIndex} className="team">
+                                                {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
+                                                    <div key={disciplineIndex} className="discipline"/>
+                                                ))}
+                                                <span className="team-list-abbr">{teamGroup.team}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                                 ))}
                             </div>
@@ -625,7 +635,7 @@ export default class Timeline3 extends React.Component {
             } else {
                 e.target.parentNode.insertAdjacentHTML("beforeend",
                 `<div class="timeline-bar-popup"
-                    style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}" >
+                    style="width: ${this.popupWidth}px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}" >
                     <div>${teamTitle}</div>
                     <div>(${data.abbr})</div>
                     <div>${data.disc} - ${data.tasks} task${data.tasks>1?"s":""}</div>

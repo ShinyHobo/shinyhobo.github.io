@@ -116,14 +116,13 @@ textarea {
 }
 
 .deliverable-info .deliverable-info-box {
-  height: 200px;
-  overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: darkturquoise rgb(21, 21, 21);
   border-bottom: 1px solid white;
   display: flex;
   flex-direction: column;
   border-right: 1px solid white;
+  position: relative;
 }
 
 .deliverable-info .deliverable-info-box a {
@@ -297,6 +296,15 @@ textarea {
   transform: translateY(-2px);
 }
 
+.timeline-bar-popup {
+  position: fixed; 
+  z-index: 10000; 
+  background-color: black; 
+  text-align: center; 
+  font-size: 14; 
+  margin-top: 14px;
+}
+
 .filter-disable {
   pointer-events: none;
   opacity: 0.5;
@@ -336,4 +344,29 @@ nav span {
 
 .container .btn-container {
   margin-left: 10px;
+}
+
+.team-list {
+  position: absolute;
+  width: 40px;
+  right: -41px;
+  top: 10px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.team-list .team {
+  position: relative;
+}
+
+.team-list .team .discipline {
+  height: 12px;
+}
+
+.team-list .team .team-list-abbr {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  line-height: 0.9;
+  background-color: rgba(0,0,0,0.5);
 }
