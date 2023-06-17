@@ -516,16 +516,16 @@ export default class Timeline3 extends React.Component {
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div id="month-header">
-                                            <div id="quarters" style={{display: "flex"}}>
+                                            <div id="quarters" style={{display: "flex", width: "101%"}}>
                                             {this.months.filter((v,i)=>i%3==0).map((date:Date, index:number)=> (
-                                                <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderRight: index % 4 == 3?"1px solid white":"none" }}>
+                                                <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderLeft: index % 4 == 0?"1px solid white":"none" }}>
                                                     <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {timeZone: "UTC", year:"numeric"})}</h3>
                                                 </div>
                                             ))}
                                             </div>
-                                            <div id="months">
+                                            <div id="months" style={{display: "flex", width: "101%"}}>
                                             {this.months.map((date:Date, index:number)=> (
-                                                <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderRight: index % 12 == 11?"1px solid white":"none" }}>
+                                                <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderLeft: index % 12 == 0?"1px solid white":"none" }}>
                                                     <h4>{date.toLocaleDateString(undefined, {timeZone: "UTC", month:"short"})}</h4>
                                                 </div>
                                             ))}
