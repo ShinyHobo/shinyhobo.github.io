@@ -668,17 +668,24 @@ export default class Timeline3 extends React.Component {
                 if(this.selectedPopupBox !== e.target && popup && popup.parentNode) {
                     popup.parentNode.removeChild(popup);
                 }
-            } else {
+            } else if(false) { // shelving for now
                 const team = elements.find((el:any) => el.className === "team") as any;
                 const data = team.dataset;
                 const teamTitle = this.deliverableTeams.filter(dt => dt.deliverables.some(d => d.abbreviation == data.team))[0]?.key;
-                const startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
-                const endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
+                const startDate = new Date(Number.parseInt(data.start));
+                const startDisplay = startDate.toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
+                const endDate = new Date(Number.parseInt(data.end));
+                const endDisplay = endDate.toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
+                const totalWeeks = Math.ceil((endDate.getTime() - startDate.getTime()) / (7 * 24 * 60 * 60 * 1000));
+
+                const scheduledWeeks = 10;
                 e.target.parentNode.insertAdjacentHTML("beforeend",
                 `<div class="timeline-bar-popup" style="width: ${this.popupWidth}px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}">
                     <div>${teamTitle}</div>
                     <div>(${data.team})</div>
                     <div>${startDisplay} - ${endDisplay}</div>
+                    <div>${scheduledWeeks}/${totalWeeks} weeks scheduled</div>
+                    <div>part-time</div>
                 </div>`);
                 if(this.selectedPopupBox !== e.target && popup && popup.parentNode) {
                     popup.parentNode.removeChild(popup);
