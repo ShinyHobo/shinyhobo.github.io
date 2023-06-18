@@ -90,10 +90,12 @@ textarea {
   position: sticky;
   top: 0;
   border-bottom: 1px solid white;
-  border-right: 1px solid white;
   height: 56px;
   background-color: black;
   margin: 0;
+  display: flex;
+  width: 100%;
+  z-index: 10;
 }
 
 .deliverable-info .deliverable-info-header h2 {
@@ -371,4 +373,9 @@ nav span {
   top: 0;
   line-height: 0.9;
   background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
+label {
+  user-select: none;
 }
