@@ -87,18 +87,16 @@ export default class Timeline3 extends React.Component {
      * Gets the list of months between Jan 1, 2021 and the end of the next year
      */
     private getTimelineMonths() {
-        let start = new Date(Date.parse("2021-01-01"));
+        let start = new Date(Date.parse("2021-01-01T00:00:00"));
         const now = new Date(Date.now());
-        const end = new Date(Date.parse(`${now.getFullYear()}-11-30`));
+        const end = new Date(Date.parse(`${now.getUTCFullYear()}-12-31T00:00:00`));
 
-        while(start < end) {
-            let d = start.getDate();
-            start.setMonth(start.getMonth()+1);
-            if(start.getDate() != d) {
-                start.setDate(0);
+        const yearCount = end.getUTCFullYear() - start.getUTCFullYear();
+
+        for(let year = start.getUTCFullYear(); year <= yearCount + start.getUTCFullYear(); year++) {
+            for(let month = 0; month < 12; month++) {
+                this.months.push(new Date(year, month, 1));
             }
-
-            this.months.push(new Date(start.getFullYear(), start.getMonth(), 1));
         }
 
         this.monthCount = this.months.length;
@@ -398,6 +396,14 @@ export default class Timeline3 extends React.Component {
         return teamGroups;
     }
 
+    private toggleTeamLabels() {
+        let divs = document.getElementsByClassName("team-list-abbr") as any;
+        for(let i=0, len=divs.length; i<len; i++)
+        {
+            divs[i].style.display = divs[i].style.display == "none" || !divs[i].style.display ? "block" : "none";
+        }
+    }
+
     componentDidUpdate() {
         this.timelineTable = document.querySelector('.deliverable-timeline');
         this.timelineTableMonthHeader = document.getElementById("month-header");
@@ -441,6 +447,8 @@ export default class Timeline3 extends React.Component {
     render() {
         const teamInfo = this.getSelectedTeamInfo();
         const teamAbbr = teamInfo?.deliverables[0].abbreviation;
+        const delta = parseInt(this.selectedDelta);
+        const wasTrackingTeams = delta >= this.beganTeamTracking;
         return (
             <>
                 <div id="timeline-info-box">
@@ -512,23 +520,24 @@ export default class Timeline3 extends React.Component {
                     >
                         <div className="deliverable-list-container">
                             <div className="deliverable-info">
-                                <div className="deliverable-info-header" style={{display: "flex", width: "100%", position: "sticky", zIndex: 10}}>
-                                    <div style={{width: "100%", zIndex: 2}}>
-                                        <h3 style={{backgroundColor: "black", margin: 0, height: "100%", borderRight: "1px solid white"}}>Deliverables ({this.searchingDeliverables.length})</h3>
+                                <div className="deliverable-info-header">
+                                    <div style={{backgroundColor: "black", width: "100%", height: "100%", zIndex: 2, borderRight: "1px solid white"}}>
+                                        <h3 style={{margin: 0}}>Deliverables ({this.searchingDeliverables.length})</h3>
+                                        {wasTrackingTeams?<label title="Show/hide team abbreviations next to each deliverable"><input type="checkbox" onChange={e => {this.toggleTeamLabels()}}/>Show Team Labels</label>:<></>}
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div id="month-header">
-                                            <div id="quarters" style={{display: "flex"}}>
+                                            <div id="quarters" style={{display: "flex", width: "101%"}}>
                                             {this.months.filter((v,i)=>i%3==0).map((date:Date, index:number)=> (
-                                                <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderRight: index % 4 == 3?"1px solid white":"none" }}>
-                                                    <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {year:"numeric"})}</h3>
+                                                <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderLeft: index % 4 == 0?"1px solid white":"none" }}>
+                                                    <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {timeZone: "UTC", year:"numeric"})}</h3>
                                                 </div>
                                             ))}
                                             </div>
-                                            <div id="months">
+                                            <div id="months" style={{display: "flex", width: "101%"}}>
                                             {this.months.map((date:Date, index:number)=> (
-                                                <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderRight: index % 12 == 11?"1px solid white":"none" }}>
-                                                    <h4>{date.toLocaleDateString(undefined, {month:"short"})}</h4>
+                                                <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderLeft: index % 12 == 0?"1px solid white":"none" }}>
+                                                    <h4>{date.toLocaleDateString(undefined, {timeZone: "UTC", month:"short"})}</h4>
                                                 </div>
                                             ))}
                                             </div>
@@ -547,6 +556,16 @@ export default class Timeline3 extends React.Component {
                                     </div>
                                     <div style={{display: "contents"}}>
                                         <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
+                                    </div>
+                                    <div className="team-list">
+                                        {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
+                                            <div key={teamIndex} className="team">
+                                                {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
+                                                    <div key={disciplineIndex} className="discipline"/>
+                                                ))}
+                                                {teamGroup.team !== "undefined"?<span className="team-list-abbr">{teamGroup.team}</span>:<></>}
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                                 ))}
@@ -627,7 +646,7 @@ export default class Timeline3 extends React.Component {
             } else {
                 e.target.parentNode.insertAdjacentHTML("beforeend",
                 `<div class="timeline-bar-popup"
-                    style="position: fixed; width: ${this.popupWidth}px; z-index: 10000; background-color: black; text-align: center; font-size: 14; margin-top: 14px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}" >
+                    style="width: ${this.popupWidth}px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}" >
                     <div>${teamTitle}</div>
                     <div>(${data.abbr})</div>
                     <div>${data.disc} - ${data.tasks} task${data.tasks>1?"s":""}</div>
@@ -650,7 +669,7 @@ export default class Timeline3 extends React.Component {
         let left = this.calculateTimeLeft(time.start);
 
         return <>
-            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", position: "absolute", height: matched ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
+            <span style={{left: left, right: right, backgroundColor: time.partial ? "orange" : "green", height: matched ? 5 : 10, top: matched && time.partial ? 5 : 0}} className="timeline-bar"
                 data-start={time.start} data-end={time.end} data-abbr={time.abbr} data-disc={time.disc} data-tasks={time.tasks} data-team_id={time.team_id}/>
         </>;
     }
