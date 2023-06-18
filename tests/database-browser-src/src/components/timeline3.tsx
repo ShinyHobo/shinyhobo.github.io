@@ -87,7 +87,7 @@ export default class Timeline3 extends React.Component {
      * Gets the list of months between Jan 1, 2021 and the end of the next year
      */
     private getTimelineMonths() {
-        let start = new Date(Date.parse("2021-01-01T00:00:00"));
+        const start = new Date(Date.parse("2021-01-01T00:00:00"));
         const now = new Date(Date.now());
         const end = new Date(Date.parse(`${now.getUTCFullYear()}-12-31T00:00:00`));
 
@@ -535,14 +535,14 @@ export default class Timeline3 extends React.Component {
                                             <div id="quarters" style={{display: "flex", width: "101%"}}>
                                             {this.months.filter((v,i)=>i%3==0).map((date:Date, index:number)=> (
                                                 <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderLeft: index % 4 == 0?"1px solid white":"none" }}>
-                                                    <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {timeZone: "UTC", year:"numeric"})}</h3>
+                                                    <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {year:"numeric"})}</h3>
                                                 </div>
                                             ))}
                                             </div>
                                             <div id="months" style={{display: "flex", width: "101%"}}>
                                             {this.months.map((date:Date, index:number)=> (
                                                 <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderLeft: index % 12 == 0?"1px solid white":"none" }}>
-                                                    <h4>{date.toLocaleDateString(undefined, {timeZone: "UTC", month:"short"})}</h4>
+                                                    <h4>{date.toLocaleDateString(undefined, {month:"short"})}</h4>
                                                 </div>
                                             ))}
                                             </div>
