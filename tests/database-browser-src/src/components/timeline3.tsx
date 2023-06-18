@@ -396,13 +396,7 @@ export default class Timeline3 extends React.Component {
         return teamGroups;
     }
 
-    private toggleTeamLabels() {
-        let divs = document.getElementsByClassName("team-list-abbr") as any;
-        for(let i=0, len=divs.length; i<len; i++)
-        {
-            divs[i].style.display = divs[i].style.display == "none" || !divs[i].style.display ? "block" : "none";
-        }
-    }
+    @observable private showTeamLabels = false;
 
     componentDidUpdate() {
         this.timelineTable = document.querySelector('.deliverable-timeline');
@@ -523,7 +517,7 @@ export default class Timeline3 extends React.Component {
                                 <div className="deliverable-info-header">
                                     <div style={{backgroundColor: "black", width: "100%", height: "100%", zIndex: 2, borderRight: "1px solid white"}}>
                                         <h3 style={{margin: 0}}>Deliverables ({this.searchingDeliverables.length})</h3>
-                                        {wasTrackingTeams?<label title="Show/hide team abbreviations next to each deliverable"><input type="checkbox" onChange={e => {this.toggleTeamLabels()}}/>Show Team Labels</label>:<></>}
+                                        {wasTrackingTeams?<label title="Show/hide team abbreviations next to each deliverable"><input type="checkbox" onChange={e => {this.showTeamLabels = !this.showTeamLabels}}/>Show Team Labels</label>:<></>}
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div id="month-header">
@@ -563,7 +557,7 @@ export default class Timeline3 extends React.Component {
                                                 {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
                                                     <div key={disciplineIndex} className="discipline"/>
                                                 ))}
-                                                {teamGroup.team !== "undefined"?<span className="team-list-abbr">{teamGroup.team}</span>:<></>}
+                                                {teamGroup.team !== "undefined"?<span className="team-list-abbr" style={{display: (this.showTeamLabels ? "block" : "none")}}>{teamGroup.team}</span>:<></>}
                                             </div>
                                         ))}
                                     </div>
