@@ -391,6 +391,7 @@ export default class Timeline3 extends React.Component {
 
         const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
         const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team,
+            startTime: teamMin.filter(tm => tm.abbr === team)[0].start ?? teamMin[0].start, endTime: teamMax.filter(tm => tm.abbr === team)[0].end ?? teamMax[0].end,
             start: this.calculateTimeLeft((teamMin[0].abbr && teamMin.filter(tm => tm.abbr === team)[0].start) ?? teamMin[0].start), end: this.calculateTimeRight((teamMax[0].abbr && teamMax.filter(tm => tm.abbr === team)[0].end) ?? teamMax[0].end),
             discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
 
@@ -596,17 +597,17 @@ export default class Timeline3 extends React.Component {
                                         {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                             <div key={index} className="deliverable-row" id={"deliverable-row-"+deliverable.id}>
                                                 {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
-                                                    <div key={teamIndex} className="team">
+                                                    <div key={teamIndex} className="team" data-team={teamGroup.team} data-start={teamGroup.startTime} data-end={teamGroup.endTime} onMouseMove={this.hoverTimeline.bind(this)} onMouseLeave={this.hoverTimeline.bind(this)}>
                                                         {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
                                                             <div key={disciplineIndex} className="discipline">
                                                             {disc.times.map((time:any, index: number)=>(
-                                                                <div key={index} className="time-box" onMouseMove={this.hoverTimeline.bind(this)} onMouseLeave={this.hoverTimeline.bind(this)}>
+                                                                <div key={index} className="time-box">
                                                                     {this.createBox(time, disc.times)}
                                                                 </div>
                                                             ))}
                                                             </div>
                                                         ))}
-                                                        <div className={`team-group ${teamAbbr==teamGroup.team?"selected-team":""}`} style={{height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10}}/>
+                                                        <div className={`team-group${teamAbbr==teamGroup.team?" selected-team":""}`} style={{height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10}}/>
                                                     </div>
                                                 ))}
                                             </div>
@@ -626,39 +627,65 @@ export default class Timeline3 extends React.Component {
     }
 
     private popupWidth: number = 240;
+    private popupIsTimelineBar: boolean = false;
+    private selectedPopupBox: any;
 
     /**
      * Displays a popup with schedule information when moused over
      * @param e The event
      */
     private hoverTimeline(e:any) {
+        const elements = document.elementsFromPoint(e.clientX, e.clientY);
+        const isTeamGroup = elements.some((el:any) => el.className === "team-group");
+        const isTimelineBar = elements.some((el:any) => el.className === "timeline-bar");
+
         let popup = document.querySelector(".timeline-bar-popup") as any;
-        if(popup && popup.parentNode && e.type == "mouseleave") {
-            popup.parentNode.removeChild(popup)
+        if(popup && popup.parentNode && (e.type == "mouseleave" || isTimelineBar !== this.popupIsTimelineBar || !isTeamGroup)) {
+            popup.parentNode.removeChild(popup);
         }
-        if(e.target && e.type == "mousemove") {
-            let data = e.target.dataset;
-
-            let startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
-            let endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
-            
-            let teamTitle = this.deliverableTeams.filter(dt => dt.deliverables.some(d => d.abbreviation == data.abbr))[0]?.key;
-
-            let leftShift = this.popupWidth / 2;
-            if(popup) {
+        
+        this.popupIsTimelineBar = isTimelineBar;
+        
+        if(e.target && e.type == "mousemove" && isTeamGroup) {
+            const leftShift = this.popupWidth / 2;
+            if(popup && this.selectedPopupBox === e.target) {
                 popup.style.left = e.pageX-leftShift;
                 popup.style.top = e.pageY-window.scrollY;
-            } else {
+            } else if(isTimelineBar) {
+                
+                const data = e.target.dataset;
+                const startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
+                const endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
+                const teamTitle = this.deliverableTeams.filter(dt => dt.deliverables.some(d => d.abbreviation == data.abbr))[0]?.key;
+
                 e.target.parentNode.insertAdjacentHTML("beforeend",
-                `<div class="timeline-bar-popup"
-                    style="width: ${this.popupWidth}px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}" >
+                `<div class="timeline-bar-popup" style="width: ${this.popupWidth}px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}">
                     <div>${teamTitle}</div>
                     <div>(${data.abbr})</div>
                     <div>${data.disc} - ${data.tasks} task${data.tasks>1?"s":""}</div>
                     <div>${startDisplay} - ${endDisplay}</div>
                 </div>`);
+                if(this.selectedPopupBox !== e.target && popup && popup.parentNode) {
+                    popup.parentNode.removeChild(popup);
+                }
+            } else {
+                const team = elements.find((el:any) => el.className === "team") as any;
+                const data = team.dataset;
+                const teamTitle = this.deliverableTeams.filter(dt => dt.deliverables.some(d => d.abbreviation == data.team))[0]?.key;
+                const startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
+                const endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
+                e.target.parentNode.insertAdjacentHTML("beforeend",
+                `<div class="timeline-bar-popup" style="width: ${this.popupWidth}px; left: ${e.pageX-leftShift}; top: ${e.pageY-window.scrollY}">
+                    <div>${teamTitle}</div>
+                    <div>(${data.team})</div>
+                    <div>${startDisplay} - ${endDisplay}</div>
+                </div>`);
+                if(this.selectedPopupBox !== e.target && popup && popup.parentNode) {
+                    popup.parentNode.removeChild(popup);
+                }
             }
         }
+        this.selectedPopupBox = e.target;
     }
 
     /**
