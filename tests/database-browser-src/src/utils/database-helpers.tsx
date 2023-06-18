@@ -198,4 +198,69 @@ export class CommonDBFunctions {
         SQ42: "/media/z2vo2a613vja6r/source/Squadron42_White_Reserved_Transparent.png",
         SC: "/media/b9ka4ohfxyb1kr/source/StarCitizen_Square_LargeTrademark_White_Transparent.png"
     };
+
+    /** The up/down stream position of a team, false is up */
+    public static readonly TeamStreamPosition: {[key:string]: boolean} = {
+        ACFT: true, // Arena Commander Feature Team
+        AFT: false, // Actor Feature Team
+        AIC: true, // AI Content Team
+        AITF: true, // AI Tech and Feature Team
+        //ATT:, // Actor Tech Team
+        AUDIO: true, // Audio
+        //CAT:, // Character Art and Tech Team
+        CINE: true, // Cinematics Team
+        CTA: true, // Character Tech Art
+        DVT: true, // Tools Team
+        EDIT: true, // Editor Team
+        ENG: true, // Engine Team
+        EULZ1: false, // EU Landing Zone 1
+        EULZ2: false, // EU Landing Zone 2
+        EULZ: false, // EU Landing Zone Team
+        EUPU: false, // EU PU Gameplay Feature Team
+        EUSB1: false, // EU Sandbox 1
+        EUSB2: false, // EU Sandbox 2
+        EUVC: false, // Vehicle Content - EU
+        FACE: true, // Facial Animation
+        //FS:, // Firesprite Team
+        GFX: true, // Graphics Team
+        GPS: false, // Gameplay Story
+        GSC: false, // Game Services Team
+        INTER: true, // Interactables Team
+        LCA: true, // Location Concept Art
+        LD1: true, // SQ42 Level Design 1 - FPS
+        LD2: true, // SQ42 Level Design 2 - Flight
+        LD3: true, // SQ42 Level Design 3 - Social
+        LIGHT: true, // Lighting Team
+        LIT: false, // Live Tools Team
+        //LMC:, // Live Mission Content Team
+        MFT: false, // Mission Feature Team
+        MOCAP: true, // Motion Capture Team
+        MTLSB: false, // MTL Sandbox 1
+        MTLVC: false, // Vehicle Content - MTL
+        NARR: true, // Narrative
+        NET: true, // Network Team
+        //PCT:, // Planet Content Team
+        PHYS: true, // Physics Team
+        //PROPS:, // Props Team
+        PT: true, // Persistent Tech Team
+        PTT: true, // Planet Tech Team
+        S42A: true, // SQ42 Art
+        S42CA: true, // SQ42 Character Art
+        S42FT: true, // SQ42 Feature Team
+        S42UI: true, // SQ42 UI Feature Team
+        SCCA: true, // SC Character Art
+        SST: false, // Systemic Services and Tools Team
+        TAN: true, // Tech Animation Team
+        //UIF:, // UI Feature Team
+        UIT: true, // UI Tech Team
+        USPU: false, // US PU Gameplay Feature Team
+        USVC: false, // Vehicle Content - US
+        VCA: true, // Vehicle Concept Art
+        //VET:, // Vehicle Experience Team
+        VFT: false, // Vehicle Feature Team
+        VFX: true, // VFX Team
+        //VTT:, // Vehicle Tech Team
+        WCT: true, // Weapon Content Team
+        WFT: false// Weapon Feature Team
+    };
 }
