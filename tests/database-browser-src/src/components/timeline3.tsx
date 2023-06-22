@@ -391,7 +391,7 @@ export default class Timeline3 extends React.Component {
 
         const teamGroupsObj = _.mapValues(_.groupBy(returnData, d => d.abbr),team => _.groupBy(team, t => t.disc));
         const teamGroups = _.map(teamGroupsObj, (v:any, team:any)=>({team,
-            startTime: teamMin.filter(tm => tm.abbr === team)[0].start ?? teamMin[0].start, endTime: teamMax.filter(tm => tm.abbr === team)[0].end ?? teamMax[0].end,
+            startTime: teamMin.filter(tm => tm.abbr === team)[0]?.start ?? teamMin[0].start, endTime: teamMax.filter(tm => tm.abbr === team)[0]?.end ?? teamMax[0].end,
             start: this.calculateTimeLeft((teamMin[0].abbr && teamMin.filter(tm => tm.abbr === team)[0].start) ?? teamMin[0].start), end: this.calculateTimeRight((teamMax[0].abbr && teamMax.filter(tm => tm.abbr === team)[0].end) ?? teamMax[0].end),
             discs: _.map(v, (c:any,name:any)=>({name, times: [...c]}))})) as any[];
 
