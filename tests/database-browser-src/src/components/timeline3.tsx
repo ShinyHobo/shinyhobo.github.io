@@ -91,7 +91,7 @@ export default class Timeline3 extends React.Component {
         const now = new Date(Date.now());
         const end = new Date(Date.parse(`${now.getUTCFullYear()}-12-31T00:00:00`));
 
-        const yearCount = end.getUTCFullYear() - start.getUTCFullYear();
+        const yearCount = end.getUTCFullYear() - start.getUTCFullYear() + 1;
 
         for(let year = start.getUTCFullYear(); year <= yearCount + start.getUTCFullYear(); year++) {
             for(let month = 0; month < 12; month++) {
