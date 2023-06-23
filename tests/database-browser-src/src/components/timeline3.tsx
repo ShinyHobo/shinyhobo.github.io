@@ -20,7 +20,7 @@ export default class Timeline3 extends React.Component {
     private beganTeamTracking: number = 1644732000000; // team tracking began on Feb 13, 2022
     private deliverables: any[] = [];
     @observable private loadedDeliverables: any[] = [];
-    private take: number = 10;
+    private take: number = 20;
     private skip: number = 0;
     private hasMore: boolean = true;
     private scrolledToToday: boolean = false;
