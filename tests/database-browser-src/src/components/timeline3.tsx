@@ -182,7 +182,6 @@ export default class Timeline3 extends React.Component {
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables.push(...subSet);
             this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
-            this.toggleTeamLabels(null);
             this.fetching = false;
         }
     }
@@ -448,6 +447,7 @@ export default class Timeline3 extends React.Component {
         }
         
         this.fixDataForPageHeight();
+        this.toggleTeamLabels(null);
     }
 
     render() {
@@ -529,7 +529,7 @@ export default class Timeline3 extends React.Component {
                                 <div className="deliverable-info-header">
                                     <div style={{backgroundColor: "black", width: "100%", height: "100%", zIndex: 2, borderRight: "1px solid white"}}>
                                         <h3 style={{margin: 0}}>Deliverables ({this.searchingDeliverables.length})</h3>
-                                        {wasTrackingTeams?<label title="Show/hide team abbreviations next to each deliverable"><input type="checkbox" onChange={e => {this.toggleTeamLabels(e)}}/>Show Team Labels</label>:<></>}
+                                        {wasTrackingTeams?<label title="Show/hide team abbreviations next to each deliverable"><input type="checkbox" defaultChecked={this.showTeamLabels} onChange={e => {this.toggleTeamLabels(e)}}/>Show Team Labels</label>:<></>}
                                     </div>
                                     <div style={{position: "relative", top: 0}}>
                                         <div id="month-header">
