@@ -6,6 +6,16 @@ html {
   scrollbar-color: darkturquoise rgb(21, 21, 21);
 }
 
+.container {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+}
+
+.root {
+  margin-top: 100px;
+}
+
 ::-webkit-scrollbar {
   width: 9px;
   height: 9px;
@@ -244,7 +254,7 @@ textarea {
 }
 
 #scrollableDiv {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 200px);
   overflow-x: hidden; 
   scrollbar-width: none;
   border-bottom: 1px solid white
