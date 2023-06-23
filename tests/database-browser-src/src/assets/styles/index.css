@@ -105,8 +105,9 @@ textarea {
 .deliverable-info .description {
   margin-left: 10;
   margin-bottom: 5;
+  padding-right: 5;
   overflow-y: auto;
-  font-size: 12;
+  font-size: 11;
   scrollbar-width: thin;
   scrollbar-color: darkturquoise rgb(21, 21, 21);
 }
@@ -129,6 +130,7 @@ textarea {
 
 .deliverable-info .deliverable-info-box a {
   width: 100%;
+  margin: auto 0;
 }
 
 .deliverable-info .deliverable-info-box a h3 {
@@ -137,6 +139,8 @@ textarea {
   padding: 5px;
   line-height: 1.2;
   margin-left: 5px;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .deliverable-info .deliverable-info-box .projects {
@@ -237,6 +241,13 @@ textarea {
   /* overflow-y: scroll; */
   scrollbar-width: thin;
   scrollbar-color: darkturquoise rgb(21, 21, 21);
+}
+
+#scrollableDiv {
+  height: calc(100vh - 60px);
+  overflow-x: hidden; 
+  scrollbar-width: none;
+  border-bottom: 1px solid white
 }
 
 #timeline-container {

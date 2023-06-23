@@ -182,7 +182,6 @@ export default class Timeline3 extends React.Component {
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
             this.loadedDeliverables.push(...subSet);
             this.hasMore = this.loadedDeliverables.length !== this.searchingDeliverables.length;
-            this.toggleTeamLabels(null);
             this.fetching = false;
         }
     }
@@ -448,6 +447,7 @@ export default class Timeline3 extends React.Component {
         }
         
         this.fixDataForPageHeight();
+        this.toggleTeamLabels(null);
     }
 
     render() {
@@ -510,114 +510,114 @@ export default class Timeline3 extends React.Component {
                 </div>
                 {!this.loading ?
                 <>
-                <div style={{height: "100vh", overflowX: "hidden", scrollbarWidth: "none", borderBottom: "1px solid white"}} id="scrollableDiv">
-                <div id="scrollable-timeline">
-                    <InfiniteScroll
-                        dataLength={this.loadedDeliverables.length}
-                        next={this.fetchData.bind(this)}
-                        hasMore={this.hasMore}
-                        loader={<h3>Loading...</h3>}
-                        scrollableTarget="scrollableDiv"
-                        endMessage={
-                            <p style={{ textAlign: 'center' }}>
-                                <b>All deliverables loaded</b>
-                            </p>
-                        }
-                    >
-                        <div className="deliverable-list-container">
-                            <div className="deliverable-info">
-                                <div className="deliverable-info-header">
-                                    <div style={{backgroundColor: "black", width: "100%", height: "100%", zIndex: 2, borderRight: "1px solid white"}}>
-                                        <h3 style={{margin: 0}}>Deliverables ({this.searchingDeliverables.length})</h3>
-                                        {wasTrackingTeams?<label title="Show/hide team abbreviations next to each deliverable"><input type="checkbox" onChange={e => {this.toggleTeamLabels(e)}}/>Show Team Labels</label>:<></>}
-                                    </div>
-                                    <div style={{position: "relative", top: 0}}>
-                                        <div id="month-header">
-                                            <div id="quarters" style={{display: "flex", width: "101%"}}>
-                                            {this.months.filter((v,i)=>i%3==0).map((date:Date, index:number)=> (
-                                                <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderLeft: index % 4 == 0?"1px solid white":"none" }}>
-                                                    <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {year:"numeric"})}</h3>
+                <div id="scrollableDiv">
+                    <div id="scrollable-timeline">
+                        <InfiniteScroll
+                            dataLength={this.loadedDeliverables.length}
+                            next={this.fetchData.bind(this)}
+                            hasMore={this.hasMore}
+                            loader={<h3>Loading...</h3>}
+                            scrollableTarget="scrollableDiv"
+                            endMessage={
+                                <p style={{ textAlign: 'center' }}>
+                                    <b>All deliverables loaded</b>
+                                </p>
+                            }
+                        >
+                            <div className="deliverable-list-container">
+                                <div className="deliverable-info">
+                                    <div className="deliverable-info-header">
+                                        <div style={{backgroundColor: "black", width: "100%", height: "100%", zIndex: 2, borderRight: "1px solid white"}}>
+                                            <h3 style={{margin: 0}}>Deliverables ({this.searchingDeliverables.length})</h3>
+                                            {wasTrackingTeams?<label title="Show/hide team abbreviations next to each deliverable"><input type="checkbox" defaultChecked={this.showTeamLabels} onChange={e => {this.toggleTeamLabels(e)}}/>Show Team Labels</label>:<></>}
+                                        </div>
+                                        <div style={{position: "relative", top: 0}}>
+                                            <div id="month-header">
+                                                <div id="quarters" style={{display: "flex", width: "101%"}}>
+                                                {this.months.filter((v,i)=>i%3==0).map((date:Date, index:number)=> (
+                                                    <div key={index} className="quarter-group" style={{backgroundColor: index % 2 == 0 ? "#282828" : "#181818", borderLeft: index % 4 == 0?"1px solid white":"none" }}>
+                                                        <h3>Q{index%4+1} {date.toLocaleDateString(undefined, {year:"numeric"})}</h3>
+                                                    </div>
+                                                ))}
                                                 </div>
-                                            ))}
-                                            </div>
-                                            <div id="months" style={{display: "flex", width: "101%"}}>
-                                            {this.months.map((date:Date, index:number)=> (
-                                                <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderLeft: index % 12 == 0?"1px solid white":"none" }}>
-                                                    <h4>{date.toLocaleDateString(undefined, {month:"short"})}</h4>
+                                                <div id="months" style={{display: "flex", width: "101%"}}>
+                                                {this.months.map((date:Date, index:number)=> (
+                                                    <div key={index} className="month-box" style={{backgroundColor: index % 6 < 3 ? "#282828" : "#181818", borderLeft: index % 12 == 0?"1px solid white":"none" }}>
+                                                        <h4>{date.toLocaleDateString(undefined, {month:"short"})}</h4>
+                                                    </div>
+                                                ))}
                                                 </div>
-                                            ))}
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                {this.loadedDeliverables.map((deliverable:any, index:number)=> (
-                                <div key={index} className="deliverable-info-box" id={"deliverable-info-"+deliverable.id} style={{height: 60}}>
-                                    <div style={{display: "flex"}}>
-                                        <a href={`https://${CommonDBFunctions.rsi}/roadmap/progress-tracker/deliverables/${deliverable.slug}`} target="_blank" title={`${new Date(deliverable.startDate).toLocaleDateString()} - ${new Date(deliverable.endDate).toLocaleDateString()}`}>
-                                            <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
-                                        </a>
-                                        <h4 className="projects">{deliverable.project_ids.split(',').map((pid:string)=>(
-                                            <span key={pid}><img src={`https://${CommonDBFunctions.rsi}${CommonDBFunctions.ProjectImages[pid]}`}/></span>
-                                        ))}</h4>
+                                    {this.loadedDeliverables.map((deliverable:any, index:number)=> (
+                                    <div key={index} className="deliverable-info-box" id={"deliverable-info-"+deliverable.id} style={{height: 60}}>
+                                        <div style={{display: "flex"}}>
+                                            <a href={`https://${CommonDBFunctions.rsi}/roadmap/progress-tracker/deliverables/${deliverable.slug}`} target="_blank" title={`${new Date(deliverable.startDate).toLocaleDateString()} - ${new Date(deliverable.endDate).toLocaleDateString()}`}>
+                                                <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
+                                            </a>
+                                            <h4 className="projects">{deliverable.project_ids.split(',').map((pid:string)=>(
+                                                <span key={pid}><img src={`https://${CommonDBFunctions.rsi}${CommonDBFunctions.ProjectImages[pid]}`}/></span>
+                                            ))}</h4>
+                                        </div>
+                                        <div style={{display: "contents"}}>
+                                            <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
+                                        </div>
+                                        <div className="team-list">
+                                            {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
+                                                <div key={teamIndex} className="team">
+                                                    {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
+                                                        <div key={disciplineIndex} className="discipline"/>
+                                                    ))}
+                                                    {teamGroup.team !== "undefined"?<span className="team-list-abbr">{teamGroup.team}</span>:<></>}
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
-                                    <div style={{display: "contents"}}>
-                                        <div className="description">{deliverable.title === "Unannounced" ? "" : he.unescape(deliverable.description)}</div>
-                                    </div>
-                                    <div className="team-list">
-                                        {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
-                                            <div key={teamIndex} className="team">
-                                                {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
-                                                    <div key={disciplineIndex} className="discipline"/>
-                                                ))}
-                                                {teamGroup.team !== "undefined"?<span className="team-list-abbr">{teamGroup.team}</span>:<></>}
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                                ))}
-                            </div>
-                            <div className="deliverable-timeline" onScroll={this.scrollTimelineHeader.bind(this)}  ref={this.deliverableTtimelineDiv}>
-                                <div className="timeline-scroll"
-                                    onMouseDown={this.clickTimeline.bind(this)}
-                                    onTouchStart={this.clickTimeline.bind(this)}
-                                    onMouseUp={this.unclickTimeline.bind(this)}
-                                    onTouchEnd={this.unclickTimeline.bind(this)}
-                                    onMouseMove={this.moveTimeline.bind(this)}
-                                    onTouchMove={this.moveTimeline.bind(this)}
-                                    onMouseLeave={this.unclickTimeline.bind(this)}
-                                >
-                                    <div className="months">
-                                    {this.months.map((date:Date, index:number)=> (
-                                        <div key={index} className="month" style={{backgroundColor: index % 6 < 3 ? "#202020" : "none", opacity: 0.5 }}/>
                                     ))}
-                                        <div className="today-line" style={{left: this.todayLine, borderRight: "1px solid yellow"}}></div>
-                                        <div className="sampled-line" style={{left: this.sampledLine, borderRight: "1px solid red" }}></div>
-                                    </div>
-                                    <div className="deliverable-rows">
-                                        {this.loadedDeliverables.map((deliverable:any, index:number)=> (
-                                            <div key={index} className="deliverable-row" id={"deliverable-row-"+deliverable.id}>
-                                                {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
-                                                    <div key={teamIndex} className="team" data-team={teamGroup.team} data-start={teamGroup.startTime} data-end={teamGroup.endTime} onMouseMove={this.hoverTimeline.bind(this)} onMouseLeave={this.hoverTimeline.bind(this)}>
-                                                        {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
-                                                            <div key={disciplineIndex} className="discipline">
-                                                            {disc.times.map((time:any, index: number)=>(
-                                                                <div key={index} className="time-box">
-                                                                    {this.createBox(time, disc.times)}
+                                </div>
+                                <div className="deliverable-timeline" onScroll={this.scrollTimelineHeader.bind(this)}  ref={this.deliverableTtimelineDiv}>
+                                    <div className="timeline-scroll"
+                                        onMouseDown={this.clickTimeline.bind(this)}
+                                        onTouchStart={this.clickTimeline.bind(this)}
+                                        onMouseUp={this.unclickTimeline.bind(this)}
+                                        onTouchEnd={this.unclickTimeline.bind(this)}
+                                        onMouseMove={this.moveTimeline.bind(this)}
+                                        onTouchMove={this.moveTimeline.bind(this)}
+                                        onMouseLeave={this.unclickTimeline.bind(this)}
+                                    >
+                                        <div className="months">
+                                        {this.months.map((date:Date, index:number)=> (
+                                            <div key={index} className="month" style={{backgroundColor: index % 6 < 3 ? "#202020" : "none", opacity: 0.5 }}/>
+                                        ))}
+                                            <div className="today-line" style={{left: this.todayLine, borderRight: "1px solid yellow"}}></div>
+                                            <div className="sampled-line" style={{left: this.sampledLine, borderRight: "1px solid red" }}></div>
+                                        </div>
+                                        <div className="deliverable-rows">
+                                            {this.loadedDeliverables.map((deliverable:any, index:number)=> (
+                                                <div key={index} className="deliverable-row" id={"deliverable-row-"+deliverable.id}>
+                                                    {this.collectDeliverableTimeline(deliverable).map((teamGroup:any, teamIndex:number, teamRow: any)=>(
+                                                        <div key={teamIndex} className="team" data-team={teamGroup.team} data-start={teamGroup.startTime} data-end={teamGroup.endTime} onMouseMove={this.hoverTimeline.bind(this)} onMouseLeave={this.hoverTimeline.bind(this)}>
+                                                            {teamGroup.team !== "undefined" && teamGroup.discs.map((disc:any, disciplineIndex:number, row: any)=>(
+                                                                <div key={disciplineIndex} className="discipline">
+                                                                {disc.times.map((time:any, index: number)=>(
+                                                                    <div key={index} className="time-box">
+                                                                        {this.createBox(time, disc.times)}
+                                                                    </div>
+                                                                ))}
                                                                 </div>
                                                             ))}
-                                                            </div>
-                                                        ))}
-                                                        <div className={`team-group${teamAbbr==teamGroup.team?" selected-team":""}`} style={{height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10}}/>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        ))}
+                                                            <div className={`team-group${teamAbbr==teamGroup.team?" selected-team":""}`} style={{height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10}}/>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </InfiniteScroll>
-                </div>
+                        </InfiniteScroll>
+                    </div>
                 </div>
                 </>
                 : <></>}
