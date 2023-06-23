@@ -390,3 +390,8 @@ nav span {
 label {
   user-select: none;
 }
+
+footer {
+  font-size: 9px;
+  line-height: 1;
+}
