@@ -243,6 +243,13 @@ textarea {
   scrollbar-color: darkturquoise rgb(21, 21, 21);
 }
 
+#scrollableDiv {
+  height: calc(100vh - 60px);
+  overflow-x: hidden; 
+  scrollbar-width: none;
+  border-bottom: 1px solid white
+}
+
 #timeline-container {
   width: 100vw;
 }
