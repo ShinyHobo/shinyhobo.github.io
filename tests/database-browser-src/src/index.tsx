@@ -34,12 +34,11 @@ export default class App extends React.Component {
             import.meta.url
         );
         const wasmUrl = new URL("sql.js-httpvfs/dist/sql-wasm.wasm", import.meta.url);
-          
         const vfs = await createDbWorker(
             [
               {
                 from: "jsonconfig",
-                configUrl: "/data/config.json?cb=2023-06-21"
+                configUrl: `/data/config.json?cb=${Date.now()}`
                 // from: "inline",
                 // config: {
                 //   serverMode: "full",
