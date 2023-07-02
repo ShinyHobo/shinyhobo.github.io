@@ -48,8 +48,11 @@ export class CommonDBFunctions {
      */
     public static async getUniqueDeliverables(db: Database, addedDate: string, limit: number = 0, offset: number = 0) {
         // Get all deliverables, grouping by uuid and ordering by add date, to get the most recent additions only
-        const dbDeliverableIds = (await db?.query(`SELECT id, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
-            GROUP BY uuid ORDER BY addedDate ASC`) as any[]).map(d => d.id);
+        //const dbDeliverableIds = (await db?.query(`SELECT id, MAX(addedDate) as max FROM deliverable_diff WHERE addedDate <= ${addedDate} 
+        //    GROUP BY uuid ORDER BY addedDate ASC`) as any[]).map(d => d.id);
+
+        const dbDeliverableIdsResult = await db?.query(`SELECT sampleDate, deliverable_ids FROM sample_date_deliverables_cache WHERE sampleDate = ${addedDate}`);
+        const dbDeliverableIds = dbDeliverableIdsResult?.map((r:any) => r.deliverable_ids)[0].split(",");
 
         let dbDeliverables = await db?.query(`SELECT * FROM deliverable_diff WHERE id IN (${dbDeliverableIds.toString()})`) as any[];
         dbDeliverables = _.orderBy(dbDeliverables, [d => he.unescape(d.title).toLowerCase()], ['asc']);
@@ -108,6 +111,12 @@ export class CommonDBFunctions {
         results = results?.filter((r:any)=> teamIds.indexOf(r.team_id) > -1);
 
         return [...new Set(results?.map((r: any) => parseInt(r.deliverable_id)))] as number[];
+    }
+
+    public static async getInProgressDeliverablesCache(db: Database, date: string): Promise<number[]> {
+        const results = await db?.query(`SELECT sampleDate, deliverable_ids FROM in_progress_deliverables_cache WHERE sampleDate = ${date}`);
+        const ids = results?.map((r:any) => r.deliverable_ids)[0].split(",");
+        return [...new Set(ids?.map((r: any) => parseInt(r)))] as number[];
     }
 
     /**

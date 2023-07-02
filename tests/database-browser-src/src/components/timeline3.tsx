@@ -116,7 +116,8 @@ export default class Timeline3 extends React.Component {
     private async getDeliverablesForDelta() {
         this.loading = true;
         this.deliverables = await CommonDBFunctions.getUniqueDeliverables(this.db, this.selectedDelta.toString());
-        this.inProgressIds = await CommonDBFunctions.getInProgressDeliverables(this.db, this.selectedDelta, this.deliverables.filter(d => d.endDate >= this.selectedDelta));
+        //this.inProgressIds = await CommonDBFunctions.getInProgressDeliverables(this.db, this.selectedDelta, this.deliverables.filter(d => d.endDate >= this.selectedDelta));
+        this.inProgressIds = await CommonDBFunctions.getInProgressDeliverablesCache(this.db, this.selectedDelta);
         this.deliverableTeams = await CommonDBFunctions.getDeliverableTeams(this.db, this.deliverables);
     }
 
