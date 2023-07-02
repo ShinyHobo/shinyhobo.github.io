@@ -636,7 +636,7 @@ export default class Timeline3 extends React.Component {
      */
     private hoverTimeline(e:any) {
         const elements = document.elementsFromPoint(e.clientX, e.clientY);
-        const isTeamGroup = elements.some((el:any) => el.className === "team-group");
+        const isTeamGroup = elements.some((el:any) => el.classList.contains("team-group"));
         const isTimelineBar = elements.some((el:any) => el.className === "timeline-bar");
 
         let popup = document.querySelector(".timeline-bar-popup") as any;
