@@ -113,6 +113,12 @@ export class CommonDBFunctions {
         return [...new Set(results?.map((r: any) => parseInt(r.deliverable_id)))] as number[];
     }
 
+    /**
+     * Gets in progress deliverable ids from a cache table
+     * @param db The database connection
+     * @param date The sample date to filter by
+     * @returns The set of in progress deliverable ids
+     */
     public static async getInProgressDeliverablesCache(db: Database, date: string): Promise<number[]> {
         const results = await db?.query(`SELECT sampleDate, deliverable_ids FROM in_progress_deliverables_cache WHERE sampleDate = ${date}`);
         const ids = results?.map((r:any) => r.deliverable_ids)[0].split(",");
@@ -132,6 +138,13 @@ export class CommonDBFunctions {
         const ordered = _.orderBy(deliverableTeams, [(g:any)=>g.title], ['asc'])
         const group = _.groupBy(ordered, 'title');
         return Object.keys(group).map(key => ({ key, deliverables: group[key] }));
+    }
+
+    public static async getDeliverableTeamsCache(db: Database, date: string, deliverables: any[]) {
+        const deliverableTeamsCacheQuery = `SELECT team_ids FROM deliverable_teams_cache WHERE sampleDate = ${date}`;
+        const teamIdsResults = await db?.query(deliverableTeamsCacheQuery) as any[];
+        const teamIds = teamIdsResults?.map((r:any) => r.team_ids)[0].split(",");
+        return[];
     }
 
     /**
