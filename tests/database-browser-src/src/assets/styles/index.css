@@ -126,6 +126,7 @@ textarea {
   margin-right: 10;
   margin-bottom: 5;
   text-align: right;
+  cursor: help;
 }
 
 .deliverable-info .deliverable-info-box {
@@ -328,6 +329,11 @@ textarea {
   text-align: center; 
   font-size: 14; 
   margin-top: 14px;
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid #b5e853;
+  border-radius: 5px;
 }
 
 .filter-disable {

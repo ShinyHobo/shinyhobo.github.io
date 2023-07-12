@@ -39,7 +39,7 @@ export default class Timeline3 extends React.Component {
 
         document.body.style.overflowX = "hidden";
 
-        this.deliverableTtimelineDiv = React.createRef();
+        this.deliverableTimelineDiv = React.createRef();
         this.searchTextField = React.createRef();
 
         // account for zoom out
@@ -177,7 +177,7 @@ export default class Timeline3 extends React.Component {
      * Gets more data from the database, triggers the view to update
      */
     private async fetchData() {
-        if(this.deliverableTtimelineDiv.current?.scrollHeight) {
+        if(this.deliverableTimelineDiv.current?.scrollHeight) {
             this.skip += this.take;
             this.fetching = true;
             const subSet = await CommonDBFunctions.buildCompleteDeliverables(this.db, this.selectedDelta, await this.getDeliverableSubset());
@@ -205,7 +205,7 @@ export default class Timeline3 extends React.Component {
     private scFilter: boolean = false;
     private bothFilter: boolean = false;
     private inProgressFilter: boolean = false;
-    private deliverableTtimelineDiv: any;
+    private deliverableTimelineDiv: any;
 
     private searchTextBacking: string = "";
     private sq42FilterBacking: boolean = false;
@@ -554,10 +554,10 @@ export default class Timeline3 extends React.Component {
                                     {this.loadedDeliverables.map((deliverable:any, index:number)=> (
                                     <div key={index} className="deliverable-info-box" id={"deliverable-info-"+deliverable.id} style={{height: 60}}>
                                         <div style={{display: "flex"}}>
-                                            <a href={`https://${CommonDBFunctions.rsi}/roadmap/progress-tracker/deliverables/${deliverable.slug}`} target="_blank" title={`${new Date(deliverable.startDate).toLocaleDateString()} - ${new Date(deliverable.endDate).toLocaleDateString()}`}>
-                                                <h3>{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
+                                            <a href={`https://${CommonDBFunctions.rsi}/roadmap/progress-tracker/deliverables/${deliverable.slug}`} target="_blank">
+                                                <h3 className="deliverable-title">{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
                                             </a>
-                                            <h4 className="projects">{deliverable.project_ids.split(',').map((pid:string)=>(
+                                            <h4 className="projects" data-id={deliverable.id} onMouseMove={this.hoverTimeline.bind(this)} onMouseLeave={this.hoverTimeline.bind(this)}>{deliverable.project_ids.split(',').map((pid:string)=>(
                                                 <span key={pid}><img src={`https://${CommonDBFunctions.rsi}${CommonDBFunctions.ProjectImages[pid]}`}/></span>
                                             ))}</h4>
                                         </div>
@@ -577,7 +577,7 @@ export default class Timeline3 extends React.Component {
                                     </div>
                                     ))}
                                 </div>
-                                <div className="deliverable-timeline" onScroll={this.scrollTimelineHeader.bind(this)}  ref={this.deliverableTtimelineDiv}>
+                                <div className="deliverable-timeline" onScroll={this.scrollTimelineHeader.bind(this)}  ref={this.deliverableTimelineDiv}>
                                     <div className="timeline-scroll"
                                         onMouseDown={this.clickTimeline.bind(this)}
                                         onTouchStart={this.clickTimeline.bind(this)}
@@ -639,6 +639,7 @@ export default class Timeline3 extends React.Component {
         const elements = document.elementsFromPoint(e.clientX, e.clientY);
         const isTeamGroup = elements.some((el:any) => el.classList.contains("team-group"));
         const isTimelineBar = elements.some((el:any) => el.className === "timeline-bar");
+        const isDeliverableTitle = elements.find((el:any) => el.className === "projects") as any;
 
         let popup = document.querySelector(".timeline-bar-popup") as any;
         if(popup && popup.parentNode && (e.type == "mouseleave" || isTimelineBar !== this.popupIsTimelineBar || !isTeamGroup)) {
@@ -647,13 +648,12 @@ export default class Timeline3 extends React.Component {
         
         this.popupIsTimelineBar = isTimelineBar;
         
-        if(e.target && e.type == "mousemove" && isTeamGroup) {
+        if(e.target && e.type == "mousemove") {
             const leftShift = this.popupWidth / 2;
-            if(popup && this.selectedPopupBox === e.target) {
+            if(popup && this.selectedPopupBox === e.target && isTeamGroup) {
                 popup.style.left = e.pageX-leftShift;
                 popup.style.top = e.pageY-window.scrollY;
-            } else if(isTimelineBar) {
-                
+            } else if(isTimelineBar && isTeamGroup) {
                 const data = e.target.dataset;
                 const startDisplay = (new Date(Number.parseInt(data.start))).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
                 const endDisplay = (new Date(Number.parseInt(data.end))).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
@@ -669,6 +669,35 @@ export default class Timeline3 extends React.Component {
                 if(this.selectedPopupBox !== e.target && popup && popup.parentNode) {
                     popup.parentNode.removeChild(popup);
                 }
+                this.selectedPopupBox = e.target;
+            } else if(isDeliverableTitle) {
+                const data = isDeliverableTitle.dataset;
+                const deliverable = this.deliverables.find(d => d.id == data.id);
+                const weeks = Math.ceil((deliverable.endDate - deliverable.startDate) / (86400000 * 7));
+                const startDisplay = (new Date(deliverable.startDate)).toLocaleDateString(undefined, {month:"short",day: "2-digit", year: "numeric"});
+                const endDisplay = (new Date(deliverable.endDate)).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
+                const updatedDisplay = (new Date(deliverable.addedDate)).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
+
+                const card = deliverable.card;
+                console.info(card)
+
+                const heightAdjust = card ? 170 : 75;
+
+                isDeliverableTitle.parentNode.insertAdjacentHTML("beforeend",
+                `<div class="timeline-bar-popup" style="width: ${this.popupWidth}px; left: ${e.pageX+25}; top: ${e.pageY-window.scrollY-heightAdjust};">
+                    ${card?`<div>Release ${card.release_title}</div>`:""}
+                    ${card?`<div><img src="https://${CommonDBFunctions.rsi + card.thumbnail}" width="${this.popupWidth}"/></div>`:""}
+                    ${card?`<div>Category: ${card.category}</div>`:""}
+                    <div>${weeks} Week${weeks>1?"s":""}</div>
+                    <div>${startDisplay} - ${endDisplay}</div>
+                    <div>Last updated ${updatedDisplay}</div>
+                    <div>${deliverable.numberOfTeams} Team${deliverable.numberOfTeams>1?"s":""}</div>
+                    <div>${deliverable.numberOfDisciplines} Discipline${deliverable.numberOfDisciplines>1?"s":""}</div>
+                </div>`);
+                if(this.selectedPopupBox !== e.target && popup && popup.parentNode) {
+                    popup.parentNode.removeChild(popup);
+                }
+                this.selectedPopupBox = isDeliverableTitle;
             } else if(false) { // shelving for now
                 const team = elements.find((el:any) => el.className === "team") as any;
                 const data = team.dataset;
@@ -693,7 +722,6 @@ export default class Timeline3 extends React.Component {
                 }
             }
         }
-        this.selectedPopupBox = e.target;
     }
 
     /**
