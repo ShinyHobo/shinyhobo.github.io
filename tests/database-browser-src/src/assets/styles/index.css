@@ -356,7 +356,7 @@ textarea {
 .timeline-scroll .deliverable-row .team .selected-team {
   background-color: white !important;
   border: 1px dashed black !important;
-  opacity: 0.4 !important;
+  opacity: 0.2 !important;
 }
 
 .timeline-scroll .deliverable-row .team .team-group {
@@ -365,8 +365,18 @@ textarea {
   z-index: -1;
   border: 1px solid dimgray;
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.3;
   border-radius: 10px;
+}
+:root {
+  --height: 312px;
+}
+.upstream-team {
+  background-color: #242b5a !important;
+}
+
+.downstream-team {
+  background-color: #30040e !important;
 }
 
 nav span {
