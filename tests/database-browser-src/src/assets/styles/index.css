@@ -369,6 +369,26 @@ textarea {
   border-radius: 10px;
 }
 
+.upstream-team {
+  background: repeating-linear-gradient(
+    45deg,
+    #2e103a,
+    #2e103a 10px,
+    grey 10px,
+    grey 20px
+  );
+}
+
+.downstream-team {
+  background: repeating-linear-gradient(
+    -45deg,
+    #242b5a,
+    #242b5a 10px,
+    grey 10px,
+    grey 20px
+  );
+}
+
 nav span {
   margin-right: 10px;
 }

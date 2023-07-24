@@ -453,7 +453,7 @@ export default class Timeline3 extends React.Component {
 
     render() {
         const teamInfo = this.getSelectedTeamInfo();
-        const teamAbbr = teamInfo?.deliverables[0].abbreviation;
+        const selectedTeamAbbr = teamInfo?.deliverables[0].abbreviation;
         const delta = parseInt(this.selectedDelta);
         const wasTrackingTeams = delta >= this.beganTeamTracking;
         return (
@@ -472,10 +472,12 @@ export default class Timeline3 extends React.Component {
                             <div style={{marginLeft:10,maxWidth:1000}}>This is a work in progress, so stay tuned for additional features and ways to visualize the data.</div>
                             <div style={{width:300, margin: 10, padding: 5, border: "1px solid white", display: "inline-block"}}>
                                 <h4 style={{margin: 2}}>Legend</h4>
-                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Indicates part time work</p>
-                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Indicates full time work</p>
-                                <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> Indicates the sample date</p>
-                                <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Indicates today</p>
+                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Part time work</p>
+                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Full time work</p>
+                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 20, display: "inline-block"}} className="upstream-team"/> Upstream team</p>
+                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 20, display: "inline-block"}} className="downstream-team"/> Downstream team</p>
+                                <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> The sample date</p>
+                                <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Today</p>
                             </div>
                         </div>
                         <p className={`filter-fields ${this.loading?"filter-disable":""}`}>
@@ -608,7 +610,8 @@ export default class Timeline3 extends React.Component {
                                                                 ))}
                                                                 </div>
                                                             ))}
-                                                            <div className={`team-group${teamAbbr==teamGroup.team?" selected-team":""}`} style={{height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10}}/>
+                                                            <div className={`team-group${selectedTeamAbbr==teamGroup.team?" selected-team":""}${CommonDBFunctions.TeamStreamPosition[teamGroup.team]==true?" downstream-team":""}${CommonDBFunctions.TeamStreamPosition[teamGroup.team]==false?" upstream-team":""}`} 
+                                                                style={{height: 12 * teamGroup.discs.length - 2, left: teamGroup.start - 10, right: teamGroup.end - 10}}/>
                                                         </div>
                                                     ))}
                                                 </div>
