@@ -682,7 +682,6 @@ export default class Timeline3 extends React.Component {
                 const updatedDisplay = (new Date(deliverable.addedDate)).toLocaleDateString(undefined, {month:"short",day: "2-digit",year: "numeric"});
 
                 const card = deliverable.card;
-                console.info(card)
 
                 const heightAdjust = card ? 170 : 75;
 
