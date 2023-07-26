@@ -476,7 +476,7 @@ export default class Timeline3 extends React.Component {
                                 <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Full time work</p>
                                 <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, display: "inline-block"}} className="upstream-team"/> Upstream team</p>
                                 <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, display: "inline-block", opacity: 0.3}} className="downstream-team"/> Downstream team</p>
-                                <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> The sample date</p>
+                                <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "#ff3c00", display: "inline-block"}}/> The sample date</p>
                                 <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Today</p>
                             </div>
                         </div>
@@ -594,7 +594,7 @@ export default class Timeline3 extends React.Component {
                                             <div key={index} className="month" style={{backgroundColor: index % 6 < 3 ? "#202020" : "none", opacity: 0.5 }}/>
                                         ))}
                                             <div className="today-line" style={{left: this.todayLine, borderRight: "1px solid yellow"}}></div>
-                                            <div className="sampled-line" style={{left: this.sampledLine, borderRight: "1px solid red" }}></div>
+                                            <div className="sampled-line" style={{left: this.sampledLine, borderRight: "1px solid #ff3c00" }}></div>
                                         </div>
                                         <div className="deliverable-rows">
                                             {this.loadedDeliverables.map((deliverable:any, index:number)=> (
