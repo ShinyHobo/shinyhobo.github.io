@@ -475,7 +475,7 @@ export default class Timeline3 extends React.Component {
                                 <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "orange", display: "inline-block"}}/> Part time work</p>
                                 <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, backgroundColor: "green", display: "inline-block"}}/> Full time work</p>
                                 <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, display: "inline-block"}} className="upstream-team"/> Upstream team</p>
-                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, display: "inline-block"}} className="downstream-team"/> Downstream team</p>
+                                <p style={{margin: 2}}><span style={{margin: 0, height: 10, width: 10, display: "inline-block", opacity: 0.3}} className="downstream-team"/> Downstream team</p>
                                 <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "red", display: "inline-block"}}/> The sample date</p>
                                 <p style={{margin: 2}}><span style={{marginBottom: 0, marginLeft: 3, height: 10, width: 3, backgroundColor: "yellow", display: "inline-block"}}/> Today</p>
                             </div>

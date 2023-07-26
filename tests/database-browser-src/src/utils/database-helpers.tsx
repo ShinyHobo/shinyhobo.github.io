@@ -227,7 +227,7 @@ export class CommonDBFunctions {
         AFT: false, // Actor Feature Team
         AIC: true, // AI Content Team
         AITF: true, // AI Tech and Feature Team
-        //ATT:, // Actor Tech Team
+        ATT: true, // Actor Tech Team
         AUDIO: true, // Audio
         //CAT:, // Character Art and Tech Team
         CINE: true, // Cinematics Team
