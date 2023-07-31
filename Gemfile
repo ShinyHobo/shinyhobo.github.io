@@ -5,6 +5,7 @@ gem "liquid", "~>4.0.4"
 gem "jekyll-theme-hacker"
 gem 'jekyll-sitemap'
 gem "webrick", "~> 1.7"
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :jekyll_plugins do
   gem "jekyll-paginate-v2", ">= 3.0"
