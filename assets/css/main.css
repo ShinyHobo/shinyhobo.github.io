@@ -23,6 +23,16 @@ html, body {
     }
 }
 
+header {
+    padding: 0;
+    background: rgb(21, 21, 21);
+    padding-bottom: 10px;
+}
+
+header h2 {
+    margin: 0;
+}
+
 footer {
     width: 90%;
     margin: 0 auto;
