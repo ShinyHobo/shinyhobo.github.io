@@ -560,7 +560,7 @@ export default class Timeline3 extends React.Component {
                                                 <h3 className="deliverable-title">{deliverable.title === "Unannounced" ? deliverable.description : he.unescape(deliverable.title)}</h3>
                                             </a>
                                             <h4 className="projects" data-id={deliverable.id} onMouseMove={this.hoverTimeline.bind(this)} onMouseLeave={this.hoverTimeline.bind(this)}>{deliverable.project_ids.split(',').map((pid:string)=>(
-                                                <span key={pid}><img src={`https://${CommonDBFunctions.rsi}${CommonDBFunctions.ProjectImages[pid]}`}/></span>
+                                                <span key={pid}>{pid?<img src={`https://${CommonDBFunctions.rsi}${CommonDBFunctions.ProjectImages[pid]}`}/>:"?"}</span>
                                             ))}</h4>
                                         </div>
                                         <div style={{display: "contents"}}>
