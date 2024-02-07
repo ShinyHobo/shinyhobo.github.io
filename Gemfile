@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "4.3.2"
 gem "sass-embedded", "1.69.5"
+gem "google-protobuf", "3.25.1"
 gem "liquid", "~>4.0.4"
 gem "jekyll-theme-hacker"
 gem 'jekyll-sitemap'
