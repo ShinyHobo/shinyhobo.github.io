@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "4.3.2"
-get "sass-embedded", "1.69.5"
+gem "sass-embedded", "1.69.5"
 gem "liquid", "~>4.0.4"
 gem "jekyll-theme-hacker"
 gem 'jekyll-sitemap'
