@@ -335,10 +335,10 @@
 <loc>https://shinyhobo.github.io/tests/2022-03-23-Scheduled-Deliverables.html</loc>
 </url>
 <url>
-<loc>https://shinyhobo.github.io/tests/database-browser/</loc>
+<loc>https://shinyhobo.github.io/data/</loc>
 </url>
 <url>
-<loc>https://shinyhobo.github.io/data/</loc>
+<loc>https://shinyhobo.github.io/tests/database-browser/</loc>
 </url>
 <url>
 <loc>https://shinyhobo.github.io/tests/</loc>
@@ -348,10 +348,10 @@
 </url>
 <url>
 <loc>https://shinyhobo.github.io/tests/database-browser/src/assets/index-templates/dev.html</loc>
-<lastmod>2024-03-06T22:03:55+00:00</lastmod>
+<lastmod>2024-03-20T22:11:01+00:00</lastmod>
 </url>
 <url>
 <loc>https://shinyhobo.github.io/tests/database-browser/src/assets/index-templates/prod.html</loc>
-<lastmod>2024-03-06T22:03:55+00:00</lastmod>
+<lastmod>2024-03-20T22:11:01+00:00</lastmod>
 </url>
 </urlset>
