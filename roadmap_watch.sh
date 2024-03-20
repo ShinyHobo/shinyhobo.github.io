@@ -1,0 +1,2 @@
+#!/bin/bash
+while true; do CONTENT=$(wget -qO- https://robertsspaceindustries.com/roadmap); if [[ "$CONTENT" == *"Currently down for maintenance"* ]]; then printf ".";  else echo -en "\007"; echo "UP"; fi; sleep 15; done
