@@ -12,78 +12,90 @@ import { LazyHttpDatabase, SplitFileConfig } from "sql.js-httpvfs/dist/sqlite.wo
 import * as Comlink from "comlink";
 import { createDbWorker } from "sql.js-httpvfs";
 
-@observer
-export default class App extends React.Component {
-    private db: Comlink.Remote<LazyHttpDatabase> | null = null;
-    private worker: SqliteWorker | null = null;
-    private configs: SplitFileConfig[] | null = null;
+const isFirefox = typeof navigator !== "undefined" && /firefox/i.test(navigator.userAgent);
 
-    @observable private loadingState: string = "Loading...";
+if (isFirefox) {
+  const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+  root.render(
+    <div style={{ padding: 20, color: "#b00", fontWeight: "bold", fontSize: 18 }}>
+      This functionality is not compatible with Firefox due to GitHub Pages limitations.<br />
+      Please use a different browser such as Edge or Chrome. Sorry!
+    </div>
+  );
+} else {
+  class App extends React.Component {
+      private db: Comlink.Remote<LazyHttpDatabase> | null = null;
+      private worker: SqliteWorker | null = null;
+      private configs: SplitFileConfig[] | null = null;
 
-    constructor(p: {}) {
-        super(p);
-        this.init();
-        makeObservable(this);
-    }
+      @observable private loadingState: string = "Loading...";
 
-    // initializes the virtual file system web worker and opens the database connection
-    async init() {
-        this.loadingState = "Connecting to database...";
-        const workerUrl = new URL(
-            "sql.js-httpvfs/dist/sqlite.worker.js",
-            import.meta.url
+      constructor(p: {}) {
+          super(p);
+          this.init();
+          makeObservable(this);
+      }
+
+      // initializes the virtual file system web worker and opens the database connection
+      async init() {
+          this.loadingState = "Connecting to database...";
+          const workerUrl = new URL(
+              "sql.js-httpvfs/dist/sqlite.worker.js",
+              import.meta.url
+          );
+          const wasmUrl = new URL("sql.js-httpvfs/dist/sql-wasm.wasm", import.meta.url);
+          const vfs = await createDbWorker(
+              [
+                {
+                  from: "jsonconfig",
+                  configUrl: `/data/config.json?cb=${Date.now()}`
+                  // from: "inline",
+                  // config: {
+                  //   serverMode: "full",
+                  //   url: "/data/delta.db",
+                  //   requestChunkSize: 65536//16384//4096
+                  // },
+                },
+              ],
+              workerUrl.toString(),
+              wasmUrl.toString()
+          );
+
+          try {
+              this.worker = vfs.worker;
+              this.db = vfs.db;
+              this.configs = vfs.configs;
+          } catch(err) {
+              this.loadingState = "Failed to connect to database!";
+              return;
+          }
+          
+          this.loadingState = "";
+      }
+
+      render() {
+        if (this.loadingState) return <div style={{padding: 10}}>{this.loadingState}</div>;
+        const vfs = {
+            db: this.db,
+            worker: this.worker,
+            configs: this.configs
+        };
+        return (
+          <div>
+            <HashRouter>
+              <Routes>
+                <Route path="/" element={<Layout />}>
+                  <Route path="browser" element={<BrowserUI {...vfs}/>} />
+                  <Route path="timeline" element={<TimelineUI {...vfs}/>} />
+                </Route>
+              </Routes>
+            </HashRouter>
+          </div>
         );
-        const wasmUrl = new URL("sql.js-httpvfs/dist/sql-wasm.wasm", import.meta.url);
-        const vfs = await createDbWorker(
-            [
-              {
-                from: "jsonconfig",
-                configUrl: `/data/config.json?cb=${Date.now()}`
-                // from: "inline",
-                // config: {
-                //   serverMode: "full",
-                //   url: "/data/delta.db",
-                //   requestChunkSize: 65536//16384//4096
-                // },
-              },
-            ],
-            workerUrl.toString(),
-            wasmUrl.toString()
-        );
+      }
+  }
 
-        try {
-            this.worker = vfs.worker;
-            this.db = vfs.db;
-            this.configs = vfs.configs;
-        } catch(err) {
-            this.loadingState = "Failed to connect to database!";
-            return;
-        }
-        
-        this.loadingState = "";
-    }
-
-    render() {
-      if (this.loadingState) return <div style={{padding: 10}}>{this.loadingState}</div>;
-      const vfs = {
-          db: this.db,
-          worker: this.worker,
-          configs: this.configs
-      };
-      return (
-        <div>
-          <HashRouter>
-            <Routes>
-              <Route path="/" element={<Layout />}>
-                <Route path="browser" element={<BrowserUI {...vfs}/>} />
-                <Route path="timeline" element={<TimelineUI {...vfs}/>} />
-              </Route>
-            </Routes>
-          </HashRouter>
-        </div>
-      );
-    }
+  const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+  //const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+  root.render(React.createElement(observer(App)));
 }
-
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-root.render(<App />);
