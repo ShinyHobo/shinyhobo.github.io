@@ -6,6 +6,6 @@
     "serverChunkSize": 67108864,
     "urlPrefix": "db.sqlite3.",
     "suffixLength": 3,
-	"cacheBust": "2025-09-29"
+	"cacheBust": "2025-10-10"
 }
 
